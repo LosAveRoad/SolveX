@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveX — Math Modeling</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>SolveX</h2>
+                <button class="btn-icon" id="toggleSidebar" title="Toggle sidebar">☰</button>
+            </div>
+            <button class="btn-new" id="newSession">+ New Problem</button>
+            <div class="session-list" id="sessionList"></div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main">
+            <!-- Input area -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <textarea id="problemInput" placeholder="Describe your mathematical modeling problem..." rows="3"></textarea>
+                    <button class="btn-submit" id="submitBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Progress area -->
+            <div class="progress-area" id="progressArea">
+                <div class="progress-messages" id="progressMessages"></div>
+            </div>
+
+            <!-- Results area -->
+            <div class="results-area" id="resultsArea" style="display:none">
+                <div class="results-header">
+                    <h3>Results</h3>
+                    <button class="btn-download" id="downloadBtn">⬇ Download ZIP</button>
+                </div>
+                <div class="results-files" id="resultsFiles"></div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
