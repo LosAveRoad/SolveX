@@ -39,14 +39,14 @@ class PythonExecute(BaseTool):
     async def execute(
         self,
         code: str,
-        timeout: int = 5,
+        timeout: int = 120,
     ) -> Dict:
         """
         Executes the provided Python code with a timeout.
 
         Args:
             code (str): The Python code to execute.
-            timeout (int): Execution timeout in seconds.
+            timeout (int): Execution timeout in seconds (default: 120).
 
         Returns:
             Dict: Contains 'output' with execution output or error message and 'success' status.
