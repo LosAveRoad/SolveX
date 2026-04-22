@@ -9,7 +9,7 @@ import uuid
 import zipfile
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from sse_starlette.sse import EventSourceResponse
@@ -20,6 +20,7 @@ from app.agent.visualization import VisualizationAgent
 from app.agent.writing import WritingAgent
 from app.flow.flow_factory import FlowFactory, FlowType
 from app.logger import logger
+from app.workspace import prepare_workspace, zip_workspace, list_sessions
 
 app = FastAPI(title="SolveX")
 
@@ -30,8 +31,6 @@ app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 # In-memory session store
 sessions: dict[str, dict] = {}
 
-WORKSPACE = "workspace"
-
 
 @app.get("/")
 async def index():
@@ -40,7 +39,7 @@ async def index():
 
 @app.post("/api/run")
 async def start_run(
-    text: str = "",
+    text: str = Form(""),
     files: list[UploadFile] = File(default=[]),
 ):
     """Start a new SolveX run. Returns session_id immediately."""
@@ -50,38 +49,42 @@ async def start_run(
     session_id = str(uuid.uuid4())[:8]
     queue = asyncio.Queue()
 
-    # Save uploaded data files to temp dir
+    # Save uploaded files to a temp dir, then prepare workspace
     data_dir = None
     if files:
-        data_dir = f"/tmp/solvex_data_{session_id}"
-        os.makedirs(data_dir, exist_ok=True)
+        tmp = f"/tmp/solvex_upload_{session_id}"
+        os.makedirs(tmp, exist_ok=True)
         for f in files:
-            dest = os.path.join(data_dir, f.filename)
+            dest = os.path.join(tmp, f.filename)
             with open(dest, "wb") as out:
-                content = await f.read()
-                out.write(content)
+                out.write(await f.read())
         # If it's a zip, extract it
         if len(files) == 1 and files[0].filename.endswith(".zip"):
-            import zipfile as zf
-            with zf.ZipFile(dest, "r") as z:
-                z.extractall(data_dir)
+            with zipfile.ZipFile(dest, "r") as z:
+                z.extractall(tmp)
             os.remove(dest)
-            # If extraction created a single subdirectory, use that
-            entries = os.listdir(data_dir)
-            if len(entries) == 1 and os.path.isdir(os.path.join(data_dir, entries[0])):
-                data_dir = os.path.join(data_dir, entries[0])
+            entries = os.listdir(tmp)
+            if len(entries) == 1 and os.path.isdir(os.path.join(tmp, entries[0])):
+                data_dir = os.path.join(tmp, entries[0])
+            else:
+                data_dir = tmp
+        else:
+            data_dir = tmp
+
+    # Prepare workspace — unified with CLI
+    ws = prepare_workspace(text, data_dir=data_dir, session_id=session_id)
 
     sessions[session_id] = {
         "id": session_id,
         "problem": text,
         "status": "running",
         "queue": queue,
+        "workspace": str(ws),
         "created_at": time.time(),
-        "data_dir": data_dir,
     }
 
     # Run in background
-    asyncio.create_task(_run_flow(session_id, text, queue, data_dir))
+    asyncio.create_task(_run_flow(session_id, text, queue, str(ws)))
 
     return {"session_id": session_id}
 
@@ -92,8 +95,7 @@ async def stream_events(session_id: str):
     if session_id not in sessions:
         raise HTTPException(status_code=404, detail="Session not found")
 
-    session = sessions[session_id]
-    queue = session["queue"]
+    queue = sessions[session_id]["queue"]
 
     async def event_generator():
         while True:
@@ -101,7 +103,7 @@ async def stream_events(session_id: str):
                 data = await asyncio.wait_for(queue.get(), timeout=30.0)
                 yield {"data": data}
                 parsed = json.loads(data)
-                if parsed.get("type") == "complete" or parsed.get("type") == "error":
+                if parsed.get("type") in ("complete", "error"):
                     break
             except asyncio.TimeoutError:
                 yield {"event": "ping", "data": ""}
@@ -111,43 +113,39 @@ async def stream_events(session_id: str):
 
 @app.get("/api/download/{session_id}")
 async def download_zip(session_id: str):
-    """Download all workspace outputs as a ZIP file."""
+    """Download workspace as ZIP."""
     if session_id not in sessions:
         raise HTTPException(status_code=404, detail="Session not found")
 
-    workspace_dir = Path(WORKSPACE)
-    if not workspace_dir.exists():
+    ws = Path(sessions[session_id]["workspace"])
+    if not ws.exists():
         raise HTTPException(status_code=404, detail="Workspace not found")
 
-    zip_path = Path(f"/tmp/solvex_{session_id}.zip")
-    with zipfile.ZipFile(str(zip_path), "w", zipfile.ZIP_DEFLATED) as zf:
-        for file_path in workspace_dir.rglob("*"):
-            if file_path.is_file() and "__pycache__" not in str(file_path):
-                arcname = f"solvex_output/{file_path.relative_to(workspace_dir)}"
-                zf.write(str(file_path), arcname)
-
+    zip_path = zip_workspace(ws)
     return FileResponse(
-        str(zip_path),
+        zip_path,
         media_type="application/zip",
         filename=f"solvex_{session_id}.zip",
     )
 
 
 @app.get("/api/sessions")
-async def list_sessions():
+async def api_list_sessions():
     """List all sessions."""
-    return [
-        {
+    stored = {s["id"]: s for s in sessions.values()}
+    result = []
+    for s in list_sessions():
+        status = stored[s["id"]]["status"] if s["id"] in stored else "unknown"
+        result.append({
             "id": s["id"],
-            "problem": s["problem"][:80] + ("..." if len(s["problem"]) > 80 else ""),
-            "status": s["status"],
+            "problem": s["problem"] + ("..." if len(s["problem"]) >= 80 else ""),
+            "status": status,
             "created_at": s["created_at"],
-        }
-        for s in sessions.values()
-    ]
+        })
+    return result
 
 
-async def _run_flow(session_id: str, text: str, queue: asyncio.Queue, data_dir: str = None):
+async def _run_flow(session_id: str, text: str, queue: asyncio.Queue, workspace: str):
     """Background task: run the full SolveX flow."""
     try:
         agents = {
@@ -164,7 +162,10 @@ async def _run_flow(session_id: str, text: str, queue: asyncio.Queue, data_dir: 
         )
         flow.event_queue = queue
 
-        result = await asyncio.wait_for(flow.execute(text, data_dir=data_dir), timeout=3600)
+        result = await asyncio.wait_for(
+            flow.execute(text, workspace=workspace),
+            timeout=3600,
+        )
 
         sessions[session_id]["status"] = "completed"
         await queue.put(json.dumps({

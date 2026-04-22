@@ -8,6 +8,7 @@ from app.agent.visualization import VisualizationAgent
 from app.agent.writing import WritingAgent
 from app.flow.flow_factory import FlowFactory, FlowType
 from app.logger import logger
+from app.workspace import prepare_workspace
 
 
 async def run_flow(problem: str, data_dir: str = None):
@@ -17,6 +18,10 @@ async def run_flow(problem: str, data_dir: str = None):
     print("║   Paper → Model → Code → Figures    ║")
     print("╚══════════════════════════════════════╝")
     print("\033[0m")
+
+    # Prepare workspace — problem + data → ~/.solvex/sessions/{id}/
+    ws = prepare_workspace(problem, data_dir=data_dir)
+    print(f"\033[1;36m  Workspace: {ws}\033[0m")
 
     agents = {
         "modeling": ModelingAgent(),
@@ -30,19 +35,18 @@ async def run_flow(problem: str, data_dir: str = None):
             agents=agents,
             max_iterations=3,
         )
-        if data_dir:
-            print(f"\033[1;36m  Data directory: {data_dir}\033[0m")
         logger.warning("Processing your request...")
 
         try:
             start_time = time.time()
             result = await asyncio.wait_for(
-                flow.execute(problem, data_dir=data_dir),
+                flow.execute(problem, workspace=str(ws)),
                 timeout=3600,
             )
             elapsed_time = time.time() - start_time
             logger.info(f"Request processed in {elapsed_time:.2f} seconds")
             print(f"\n\033[1;32mTotal time: {elapsed_time:.1f}s\033[0m")
+            print(f"\033[1;36mWorkspace: {ws}\033[0m")
             logger.info(result)
         except asyncio.TimeoutError:
             logger.error("Request processing timed out after 1 hour")

@@ -1,20 +1,16 @@
 import os
 import shutil
 import time
+from pathlib import Path
 from typing import Union
 
 from app.agent.base import BaseAgent
 from app.flow.base import BaseFlow
 from app.logger import logger
 from app.schema import AgentState, Memory
-
-
-WORKSPACE = "workspace"
-DIR_MODELING = f"{WORKSPACE}/01_modeling"
-DIR_PROGRAMMING = f"{WORKSPACE}/02_programming"
-DIR_FIGURES = f"{WORKSPACE}/03_figures"
-DIR_PAPER = f"{WORKSPACE}/04_paper"
-DIR_DATA = f"{WORKSPACE}/data"
+from app.workspace import (
+    DIR_DATA, DIR_FIGURES, DIR_MODELING, DIR_PAPER, DIR_PROGRAMMING,
+)
 
 
 async def _emit(queue, event_type: str, message: str):
@@ -50,56 +46,37 @@ class SolveXFlow(BaseFlow):
         data["max_iterations"] = max_iterations
         super().__init__(agents, **data)
 
-    async def execute(self, input_text: str, data_dir: str = None) -> str:
+    async def execute(self, input_text: str, workspace: str = None) -> str:
         """Execute the full modeling workflow.
 
         Args:
             input_text: The problem description.
-            data_dir: Optional path to a directory of data files (CSV, XLSX, etc.)
-                      to copy into workspace/data/ for agents to access.
+            workspace: Absolute path to the session workspace root.
+                       Must contain data/ subdir if data files exist.
+                       Output dirs (01_modeling, etc.) will be created if missing.
         """
-        # Clean workspace before each run
-        abs_workspace = os.path.join(os.getcwd(), WORKSPACE)
-        for subdir_name in ["01_modeling", "02_programming", "03_figures", "04_paper", "data"]:
-            subdir = os.path.join(abs_workspace, subdir_name)
-            if os.path.exists(subdir):
-                shutil.rmtree(subdir)
+        ws = Path(workspace) if workspace else Path.cwd() / "workspace"
+        ws = ws.resolve()
 
-        # Resolve absolute paths once — str_replace_editor requires absolute paths
-        cwd = os.getcwd()
-        abs_modeling = os.path.join(cwd, DIR_MODELING)
-        abs_programming = os.path.join(cwd, DIR_PROGRAMMING)
-        abs_figures = os.path.join(cwd, DIR_FIGURES)
-        abs_paper = os.path.join(cwd, DIR_PAPER)
-        abs_data = os.path.join(cwd, DIR_DATA)
+        abs_modeling = ws / DIR_MODELING
+        abs_programming = ws / DIR_PROGRAMMING
+        abs_figures = ws / DIR_FIGURES
+        abs_paper = ws / DIR_PAPER
+        abs_data = ws / DIR_DATA
 
-        # Ensure workspace directories exist
+        # Ensure output directories exist
         for d in [abs_modeling, abs_programming, abs_figures, abs_paper]:
-            os.makedirs(d, exist_ok=True)
+            d.mkdir(parents=True, exist_ok=True)
 
-        # Copy data files into workspace/data/ if provided
+        # Build data info string for prompts (data is already in workspace/data/)
         data_info = ""
-        if data_dir and os.path.exists(data_dir):
-            os.makedirs(abs_data, exist_ok=True)
-            if os.path.isdir(data_dir):
-                for item in os.listdir(data_dir):
-                    src = os.path.join(data_dir, item)
-                    dst = os.path.join(abs_data, item)
-                    if os.path.isfile(src):
-                        shutil.copy2(src, dst)
-                    elif os.path.isdir(src):
-                        shutil.copytree(src, dst)
-            else:
-                # Single file
-                shutil.copy2(data_dir, os.path.join(abs_data, os.path.basename(data_dir)))
-
-            # Build data info string for prompts
-            data_files = []
-            for root, dirs, files in os.walk(abs_data):
-                for f in files:
-                    if not f.startswith(".") and "__pycache__" not in root:
-                        rel = os.path.relpath(os.path.join(root, f), abs_data)
-                        data_files.append(rel)
+        if abs_data.exists():
+            data_files = [
+                os.path.relpath(os.path.join(root, f), abs_data)
+                for root, dirs, files in os.walk(abs_data)
+                for f in files
+                if not f.startswith(".") and "__pycache__" not in root
+            ]
             if data_files:
                 data_info = (
                     f"\nDATA FILES: Available at {abs_data}/\n"
@@ -116,9 +93,10 @@ class SolveXFlow(BaseFlow):
 
         logger.info(f"=== SolveX Started ===")
         logger.info(f"Max iterations: {self.max_iterations}")
+        logger.info(f"Workspace: {ws}")
         await _emit(self.event_queue, "status", "SolveX: Mathematical Modeling System Started")
         await _emit(self.event_queue, "info", f"Max loop iterations: {self.max_iterations}")
-        await _emit(self.event_queue, "info", f"Workspace: {WORKSPACE}/")
+        await _emit(self.event_queue, "info", f"Workspace: {ws}")
         start_time = time.time()
 
         satisfied = False
@@ -182,9 +160,8 @@ class SolveXFlow(BaseFlow):
                     all_output += "\n" + msg.content
 
             # Fallback: generate results_summary.md if ProgrammingAgent didn't create it
-            summary_path = os.path.join(abs_programming, "results_summary.md")
-            if not os.path.exists(summary_path):
-                # Extract key output lines as summary
+            summary_path = abs_programming / "results_summary.md"
+            if not summary_path.exists():
                 summary_lines = ["# Results Summary (auto-generated)\n"]
                 for msg in programming_agent.memory.messages:
                     if msg.content and msg.role == "tool":
@@ -194,8 +171,7 @@ class SolveXFlow(BaseFlow):
                         content = msg.content[:1000]
                         if content.strip():
                             summary_lines.append(f"\n{content}\n")
-                with open(summary_path, "w") as f:
-                    f.write("\n".join(summary_lines))
+                summary_path.write_text("\n".join(summary_lines))
                 logger.info(f"Auto-generated results_summary.md (agent didn't create it)")
 
             if "VERIFICATION_RESULT: SATISFIED" in all_output:
@@ -210,7 +186,6 @@ class SolveXFlow(BaseFlow):
         # === Phase 2: Final modeling plan ===
         await _emit(self.event_queue, "step", "ModelingAgent: Writing final consolidated plan...")
         logger.info(f"--- [ModelingAgent] Writing final plan ---")
-        from app.prompt.modeling import FINAL_PLAN_PROMPT
 
         final_prompt = (
             f"PROBLEM:\n{input_text}\n\n"
@@ -255,8 +230,8 @@ class SolveXFlow(BaseFlow):
             await _emit(self.event_queue, "done", f"Figures saved to {DIR_FIGURES}/")
 
             # Fallback: auto-generate figures_catalog.md if agent didn't create it
-            catalog_path = os.path.join(abs_figures, "figures_catalog.md")
-            if not os.path.exists(catalog_path):
+            catalog_path = abs_figures / "figures_catalog.md"
+            if not catalog_path.exists():
                 figures = [
                     f for f in os.listdir(abs_figures)
                     if f.lower().endswith((".png", ".jpg", ".jpeg", ".svg", ".pdf"))
@@ -267,8 +242,7 @@ class SolveXFlow(BaseFlow):
                         lines.append(f"## Figure {i}: {fig}\n")
                         lines.append(f"![{fig}](./{fig})\n")
                         lines.append(f"Description: Auto-cataloged figure.\n\n")
-                    with open(catalog_path, "w") as f:
-                        f.write("\n".join(lines))
+                    catalog_path.write_text("\n".join(lines))
                     logger.info(f"Auto-generated figures_catalog.md ({len(figures)} figures)")
         else:
             logger.warning("No visualization agent provided, skipping Phase 3a")
@@ -280,16 +254,13 @@ class SolveXFlow(BaseFlow):
             await _emit(self.event_queue, "step", "WritingAgent: Composing LaTeX paper...")
             logger.info(f"\n--- [WritingAgent] Starting ---")
 
-            # Pre-read key files to embed in prompt (avoids agent wasting steps reading)
-            def _read_file(path: str) -> str:
-                if os.path.exists(path):
-                    with open(path, "r") as f:
-                        return f.read()
-                return f"[File not found: {path}]"
+            def _read_file(path) -> str:
+                p = Path(path)
+                return p.read_text() if p.exists() else f"[File not found: {path}]"
 
-            final_plan_content = _read_file(os.path.join(abs_modeling, "final_plan.md"))
-            figures_catalog_content = _read_file(os.path.join(abs_figures, "figures_catalog.md"))
-            abs_paper_path = os.path.join(abs_paper, "main.tex")
+            final_plan_content = _read_file(abs_modeling / "final_plan.md")
+            figures_catalog_content = _read_file(abs_figures / "figures_catalog.md")
+            abs_paper_path = abs_paper / "main.tex"
 
             write_prompt = (
                 f"PROBLEM:\n{input_text}\n\n"
@@ -306,9 +277,8 @@ class SolveXFlow(BaseFlow):
             logger.info(f"--- [WritingAgent] Done ---\n")
 
             # Fallback: if agent wrote to /tmp instead of workspace, move it
-            if not os.path.exists(abs_paper_path) and os.path.exists("/tmp/main.tex"):
-                os.makedirs(os.path.dirname(abs_paper_path), exist_ok=True)
-                shutil.move("/tmp/main.tex", abs_paper_path)
+            if not abs_paper_path.exists() and os.path.exists("/tmp/main.tex"):
+                shutil.move("/tmp/main.tex", str(abs_paper_path))
                 logger.info(f"Moved paper from /tmp to {abs_paper_path}")
 
             await _emit(self.event_queue, "done", f"Paper saved to {DIR_PAPER}/main.tex")
@@ -329,9 +299,5 @@ class SolveXFlow(BaseFlow):
         logger.info(f"=== SolveX Completed ===")
         elapsed = time.time() - start_time
         await _emit(self.event_queue, "status", f"SolveX Completed in {elapsed:.1f}s")
-        await _emit(self.event_queue, "info", "Output files:")
-        await _emit(self.event_queue, "info", f"  {DIR_MODELING}/final_plan.md")
-        await _emit(self.event_queue, "info", f"  {DIR_PROGRAMMING}/")
-        await _emit(self.event_queue, "info", f"  {DIR_FIGURES}/")
-        await _emit(self.event_queue, "info", f"  {DIR_PAPER}/main.tex")
+        await _emit(self.event_queue, "info", f"Workspace: {ws}")
         return result
