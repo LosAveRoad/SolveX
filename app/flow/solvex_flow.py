@@ -181,6 +181,23 @@ class SolveXFlow(BaseFlow):
                 if msg.content:
                     all_output += "\n" + msg.content
 
+            # Fallback: generate results_summary.md if ProgrammingAgent didn't create it
+            summary_path = os.path.join(abs_programming, "results_summary.md")
+            if not os.path.exists(summary_path):
+                # Extract key output lines as summary
+                summary_lines = ["# Results Summary (auto-generated)\n"]
+                for msg in programming_agent.memory.messages:
+                    if msg.content and msg.role == "tool":
+                        content = msg.content[:2000]
+                        summary_lines.append(f"\n## Tool Output\n```\n{content}\n```\n")
+                    elif msg.content and msg.role == "assistant":
+                        content = msg.content[:1000]
+                        if content.strip():
+                            summary_lines.append(f"\n{content}\n")
+                with open(summary_path, "w") as f:
+                    f.write("\n".join(summary_lines))
+                logger.info(f"Auto-generated results_summary.md (agent didn't create it)")
+
             if "VERIFICATION_RESULT: SATISFIED" in all_output:
                 satisfied = True
                 logger.info(f"=== Iteration {iteration}: Verified! ===")
@@ -236,6 +253,23 @@ class SolveXFlow(BaseFlow):
             await visualization_agent.run(viz_prompt)
             logger.info(f"--- [VisualizationAgent] Done ---\n")
             await _emit(self.event_queue, "done", f"Figures saved to {DIR_FIGURES}/")
+
+            # Fallback: auto-generate figures_catalog.md if agent didn't create it
+            catalog_path = os.path.join(abs_figures, "figures_catalog.md")
+            if not os.path.exists(catalog_path):
+                figures = [
+                    f for f in os.listdir(abs_figures)
+                    if f.lower().endswith((".png", ".jpg", ".jpeg", ".svg", ".pdf"))
+                ]
+                if figures:
+                    lines = ["# Figures Catalog\n"]
+                    for i, fig in enumerate(figures, 1):
+                        lines.append(f"## Figure {i}: {fig}\n")
+                        lines.append(f"![{fig}](./{fig})\n")
+                        lines.append(f"Description: Auto-cataloged figure.\n\n")
+                    with open(catalog_path, "w") as f:
+                        f.write("\n".join(lines))
+                    logger.info(f"Auto-generated figures_catalog.md ({len(figures)} figures)")
         else:
             logger.warning("No visualization agent provided, skipping Phase 3a")
 
