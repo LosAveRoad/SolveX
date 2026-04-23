@@ -184,6 +184,11 @@ async def compact_agent_memory(agent, threshold: int = COMPACT_THRESHOLD_TOKENS)
         )
 
         # Replace memory: summary + recent messages
+        # Fix: drop orphaned tool messages at the start of recent_messages
+        # (tool messages must follow an assistant message with tool_calls)
+        while recent_messages and recent_messages[0].role == "tool":
+            recent_messages = recent_messages[1:]
+
         agent.memory = Memory()
         agent.memory.add_message(compact_msg)
         agent.memory.add_messages(recent_messages)

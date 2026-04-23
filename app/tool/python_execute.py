@@ -1,9 +1,14 @@
-import multiprocessing
+import asyncio
+import json
+import os
 import sys
-from io import StringIO
+import tempfile
 from typing import Dict
 
 from app.tool.base import BaseTool
+
+# Use the same Python interpreter that runs this process
+PYTHON_BIN = sys.executable
 
 
 class PythonExecute(BaseTool):
@@ -22,54 +27,74 @@ class PythonExecute(BaseTool):
         "required": ["code"],
     }
 
-    def _run_code(self, code: str, result_dict: dict, safe_globals: dict) -> None:
-        original_stdout = sys.stdout
-        try:
-            output_buffer = StringIO()
-            sys.stdout = output_buffer
-            exec(code, safe_globals, safe_globals)
-            result_dict["observation"] = output_buffer.getvalue()
-            result_dict["success"] = True
-        except Exception as e:
-            result_dict["observation"] = str(e)
-            result_dict["success"] = False
-        finally:
-            sys.stdout = original_stdout
-
     async def execute(
         self,
         code: str,
         timeout: int = 120,
     ) -> Dict:
         """
-        Executes the provided Python code with a timeout.
+        Executes the provided Python code in a subprocess with a timeout.
+
+        Uses subprocess instead of multiprocessing to avoid pickle/spawn issues
+        on macOS + Python 3.13.
 
         Args:
             code (str): The Python code to execute.
             timeout (int): Execution timeout in seconds (default: 120).
 
         Returns:
-            Dict: Contains 'output' with execution output or error message and 'success' status.
+            Dict: Contains 'observation' with output and 'success' status.
         """
+        # Write code to a temp file and run it as a subprocess
+        fd, tmp_path = tempfile.mkstemp(suffix=".py", prefix="solvex_")
+        with os.fdopen(fd, "w") as f:
+            f.write(code)
 
-        with multiprocessing.Manager() as manager:
-            result = manager.dict({"observation": "", "success": False})
-            if isinstance(__builtins__, dict):
-                safe_globals = {"__builtins__": __builtins__}
-            else:
-                safe_globals = {"__builtins__": __builtins__.__dict__.copy()}
-            proc = multiprocessing.Process(
-                target=self._run_code, args=(code, result, safe_globals)
+        try:
+            proc = await asyncio.create_subprocess_exec(
+                PYTHON_BIN, tmp_path,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.STDOUT,
             )
-            proc.start()
-            proc.join(timeout)
-
-            # timeout process
-            if proc.is_alive():
-                proc.terminate()
-                proc.join(1)
+            try:
+                stdout, _ = await asyncio.wait_for(proc.communicate(), timeout=timeout)
+            except asyncio.TimeoutError:
+                proc.kill()
+                await proc.wait()
+                os.unlink(tmp_path)
                 return {
                     "observation": f"Execution timeout after {timeout} seconds",
                     "success": False,
                 }
-            return dict(result)
+
+            output = stdout.decode("utf-8", errors="replace") if stdout else ""
+
+            if proc.returncode == 0:
+                if not output.strip():
+                    # Detect import-only code
+                    stripped = code.strip()
+                    all_lines = [
+                        l.strip()
+                        for l in stripped.split("\n")
+                        if l.strip() and not l.strip().startswith("#")
+                    ]
+                    is_import_only = (
+                        all(l.startswith(("import ", "from ")) for l in all_lines)
+                        if all_lines
+                        else False
+                    )
+                    if is_import_only:
+                        output = (
+                            "Imports loaded successfully. Now write actual computation code with print() "
+                            "to see results. Do NOT repeat imports — just write the logic you need."
+                        )
+                    else:
+                        output = "Code executed successfully (no print output). Use print() to see results."
+                return {"observation": output, "success": True}
+            else:
+                return {"observation": output or f"Process exited with code {proc.returncode}", "success": False}
+
+        except Exception as e:
+            return {"observation": f"Execution failed: {str(e)}", "success": False}
+        finally:
+            os.unlink(tmp_path)

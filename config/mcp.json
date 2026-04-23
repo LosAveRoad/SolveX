@@ -1,12 +1,3 @@
 {
-    "mcpServers": {
-        "web-search-prime": {
-            "type": "sse",
-            "url": "https://open.bigmodel.cn/api/mcp/web_search_prime/sse?Authorization=bb42554938b54241a4f9e86022cb31db.DShTGwiYP0WVvLPa"
-        },
-        "web-reader": {
-            "type": "sse",
-            "url": "https://open.bigmodel.cn/api/mcp/web_reader/sse?Authorization=bb42554938b54241a4f9e86022cb31db.DShTGwiYP0WVvLPa"
-        }
-    }
+    "mcpServers": {}
 }

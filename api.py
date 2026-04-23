@@ -16,7 +16,6 @@ from sse_starlette.sse import EventSourceResponse
 
 from app.agent.modeling import ModelingAgent
 from app.agent.programming import ProgrammingAgent
-from app.agent.visualization import VisualizationAgent
 from app.agent.writing import WritingAgent
 from app.flow.flow_factory import FlowFactory, FlowType
 from app.logger import logger
@@ -151,7 +150,6 @@ async def _run_flow(session_id: str, text: str, queue: asyncio.Queue, workspace:
         agents = {
             "modeling": ModelingAgent(),
             "programming": ProgrammingAgent(),
-            "visualization": VisualizationAgent(),
             "writing": WritingAgent(),
         }
 

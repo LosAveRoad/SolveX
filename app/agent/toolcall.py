@@ -84,6 +84,22 @@ class ToolCallAgent(ReActAgent):
         )
         content = response.content if response and response.content else ""
 
+        # Capture reasoning_content from reasoning models (e.g. DeepSeek Reasoner)
+        # Without this, the model's reasoning history is lost and it repeats actions
+        reasoning_content = ""
+        if hasattr(response, "reasoning_content") and response.reasoning_content:
+            reasoning_content = response.reasoning_content
+            # Log the reasoning
+            reasoning_preview = reasoning_content[:500] + ("..." if len(reasoning_content) > 500 else "")
+            logger.info(f"💭 {self.name}'s reasoning: {reasoning_preview}")
+            # Merge reasoning into content so it's preserved in conversation history
+            if content:
+                content = f"<think/>\n{content}"
+            else:
+                # Model produced only tool calls with no visible content — inject reasoning summary
+                reasoning_summary = reasoning_content[-1000:] if len(reasoning_content) > 1000 else reasoning_content
+                content = f"<think/>\n{reasoning_summary}"
+
         # Log response info
         logger.info(f"✨ {self.name}'s thoughts: {content}")
         logger.info(

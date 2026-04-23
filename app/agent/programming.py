@@ -14,7 +14,7 @@ class ProgrammingAgent(ToolCallAgent):
     system_prompt: str = SYSTEM_PROMPT
     next_step_prompt: str = NEXT_STEP_PROMPT
 
-    max_steps: int = 15
+    max_steps: int = 30
 
     available_tools: ToolCollection = ToolCollection(
         PythonExecute(),

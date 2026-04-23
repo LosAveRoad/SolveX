@@ -13,11 +13,10 @@ BASE_DIR = Path.home() / ".solvex" / "sessions"
 DIR_PROBLEM = "00_problem"
 DIR_MODELING = "01_modeling"
 DIR_PROGRAMMING = "02_programming"
-DIR_FIGURES = "03_figures"
 DIR_PAPER = "04_paper"
 DIR_DATA = "data"
 
-OUTPUT_DIRS = [DIR_MODELING, DIR_PROGRAMMING, DIR_FIGURES, DIR_PAPER]
+OUTPUT_DIRS = [DIR_MODELING, DIR_PROGRAMMING, DIR_PAPER]
 
 
 def new_session_id() -> str:
@@ -38,9 +37,8 @@ def prepare_workspace(
         ~/.solvex/sessions/{session_id}/
         ├── 00_problem/problem.md   ← problem text
         ├── data/                   ← copied data files
-        ├── 01_modeling/            ← agent outputs (cleaned)
-        ├── 02_programming/
-        ├── 03_figures/
+        ├── 01_modeling/            ← master plan + reviews
+        ├── 02_programming/         ← model_N/ subdirs with code + figures
         └── 04_paper/
 
     Args:
