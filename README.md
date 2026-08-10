@@ -9,7 +9,9 @@
 From problem statement to validated model, publication-ready figures, and a complete LaTeX paper.
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI- web%20API-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+
+[![FastAPI](https://img.shields.io/badge/FastAPI-%20web%20API-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 </div>
