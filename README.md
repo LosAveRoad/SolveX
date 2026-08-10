@@ -1,76 +1,112 @@
+<div align="center">
+
+<img src="assets/solvex-logo.png" alt="SolveX logo" width="520" />
+
 # SolveX
 
-Multi-Agent mathematical modeling system based on [OpenManus](https://github.com/mannaandpoem/OpenManus).
+### An AI-native workflow for mathematical modeling competitions
+
+From problem statement to validated model, publication-ready figures, and a complete LaTeX paper.
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI- web%20API-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+</div>
 
 ## Overview
 
-SolveX automates the full mathematical modeling pipeline for competition-style problems:
+SolveX is a multi-agent mathematical modeling system designed for competition-style problems. It coordinates specialized agents through an iterative modeling and programming loop, turning an unstructured problem into a reproducible, reviewable deliverable.
 
+```text
+Problem → Modeling ↔ Programming → Visualization → LaTeX Paper → Output
 ```
-Problem → [Modeling ↔ Programming Loop] → Visualization → LaTeX Paper → Output
-```
 
-**Agents:**
-- **ModelingAgent** — Analyzes problems, searches literature (ArXiv, web), designs innovative models
-- **ProgrammingAgent** — Implements models in Python, verifies results
-- **VisualizationAgent** — Creates publication-quality figures with matplotlib
-- **WritingAgent** — Composes complete LaTeX papers
+## What SolveX delivers
 
-**Key features:**
-- Iterative modeling-programming loop with automatic verification
-- Literature search via ArXiv + web MCP tools
-- Memory compaction for long sessions
-- Data file support (CSV, XLSX, ZIP)
-- FastAPI web UI with SSE streaming + ZIP download
-- 20-minute end-to-end pipeline for competition problems
+- **Modeling** — decomposes the problem, researches relevant methods, and proposes an actionable solution plan.
+- **Programming** — implements the model in Python, runs experiments, and checks results.
+- **Visualization** — produces publication-quality figures with a traceable figure catalog.
+- **Writing** — assembles a complete LaTeX paper from the verified work.
+- **Iteration** — keeps modeling and implementation in a feedback loop instead of treating them as one-shot steps.
 
-## Quick Start
+Additional capabilities include ArXiv and web research, long-session memory compaction, CSV/XLSX/ZIP data inputs, and a FastAPI interface with streaming progress and ZIP export.
+
+## Quick start
+
+### 1. Install
 
 ```bash
-# Setup
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
-# Configure LLM (edit config/config.toml)
-cp config/config.example.toml config/config.toml
-
-# CLI mode
-python run_flow.py --problem tests/competition/2025_C/problem.txt --data tests/competition/2025_C/data/
-
-# Web mode
-python api.py  # open http://localhost:8000
 ```
+
+### 2. Configure your model provider
+
+```bash
+cp config/config.example.toml config/config.toml
+```
+
+Edit `config/config.toml` with your provider, model, and credentials.
+
+### 3. Run a problem
+
+CLI mode:
+
+```bash
+python run_flow.py --problem tests/competition/2025_C/problem.txt --data tests/competition/2025_C/data/
+```
+
+Web mode:
+
+```bash
+python api.py
+```
+
+Then open <http://localhost:8000>.
 
 ## Architecture
 
-```
+```text
 app/
-├── agent/           # Agent implementations (modeling, programming, visualization, writing)
-├── flow/            # Workflow orchestration (SolveXFlow)
-├── prompt/          # System prompts for each agent
-├── service/         # Memory compaction service
-├── tool/            # Tools (python_execute, str_replace_editor, MCP, etc.)
-├── llm.py           # LLM abstraction (supports DeepSeek, OpenAI, Bedrock, Azure, Ollama)
-└── schema.py        # Data models
-config/
-├── config.toml      # LLM configuration
-└── mcp.json         # MCP tool servers
-static/              # Web frontend (HTML/CSS/JS)
-api.py               # FastAPI server
-run_flow.py          # CLI runner
+├── agent/       # Modeling, programming, visualization, and writing agents
+├── flow/        # SolveX workflow orchestration
+├── prompt/      # Agent system prompts
+├── service/     # Memory and session services
+├── tool/        # Execution, editing, and research tools
+├── llm.py       # Provider-agnostic LLM abstraction
+└── schema.py    # Shared data models
+config/          # LLM and MCP configuration
+static/          # Web interface assets
+api.py           # FastAPI entry point
+run_flow.py      # CLI entry point
 ```
 
-## Workspace Output
+## Output layout
 
-Each run produces:
-```
+Each run is organized for inspection and reuse:
+
+```text
 workspace/
-├── 01_modeling/     # plan.md, final_plan.md
-├── 02_programming/  # solution.py, predictions, results
-├── 03_figures/      # PNG figures, figures_catalog.md
-└── 04_paper/        # main.tex (complete LaTeX paper)
+├── 01_modeling/     # Plans and final modeling decisions
+├── 02_programming/  # Source code, predictions, and results
+├── 03_figures/      # Figures and figure catalog
+└── 04_paper/        # Complete LaTeX manuscript
 ```
+
+## Design principles
+
+1. **Reproducibility first** — preserve plans, code, data products, and figures together.
+2. **Verification before narration** — written conclusions should follow executable results.
+3. **Modular agents** — each stage can be inspected, improved, or replaced independently.
+4. **Human reviewable** — intermediate artifacts remain available for debugging and critique.
+
+## Contributing
+
+Issues and pull requests are welcome. When contributing, please include a concise description of the change and, where relevant, a reproducible example or test.
 
 ## License
 
-MIT License — Based on [OpenManus](https://github.com/mannaandpoem/OpenManus).
+SolveX is released under the [MIT License](LICENSE). The project is inspired by and builds on concepts from [OpenManus](https://github.com/FoundationAgents/OpenManus).
+
