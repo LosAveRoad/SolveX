@@ -1,0 +1,12 @@
+schema_version: 1
+paper_id: integration-synthetic-allocation-001
+title: Synthetic Patrol Resource Allocation Fixture
+competition: MCM
+year: 2025
+problem: C
+award: Test Fixture
+language: en
+methods:
+  - integer-programming
+  - resource-allocation
+main_tex: main.tex

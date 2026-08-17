@@ -1,0 +1,36 @@
+\documentclass{article}
+\begin{document}
+
+\begin{abstract}
+This synthetic fixture allocates limited patrol teams across wildlife reserve
+zones.  It is solely an automated-test corpus, not a competition submission.
+\end{abstract}
+
+\section{Problem Context}
+Reserve managers must assign patrol teams to zones with different risk scores.
+The allocation should cover high-risk zones while respecting the available
+staffing budget.
+
+\input{sections/method}
+
+\section{Data Inputs}
+The fixture uses synthetic risk scores, staffing efforts, and a single patrol
+budget.  No external dataset or published result is represented here.
+
+\section{Baseline Policy}
+A simple baseline assigns teams in descending zone order without considering
+the joint staffing limit across the chosen zones.
+
+\section{Sensitivity Analysis}
+The test corpus describes a hypothetical change in the budget and compares the
+chosen zones without reporting any competition result.
+
+\section{Limitations}
+This miniature example omits travel time, uncertainty, and operational details
+so that it remains a compact automated-test fixture.
+
+\section{Conclusion}
+The integer programming formulation makes the resource allocation decision
+auditable for each reserve zone.
+
+\end{document}

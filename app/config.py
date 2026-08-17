@@ -63,6 +63,28 @@ class SearchSettings(BaseModel):
     )
 
 
+class KnowledgeSettings(BaseModel):
+    """Configuration for the local paper knowledge base."""
+
+    enabled: bool = Field(False, description="Whether to enable paper retrieval")
+    qdrant_url: str = Field(
+        "http://127.0.0.1:6333", description="Qdrant HTTP endpoint"
+    )
+    collection_name: str = Field(
+        "solvex_papers", description="Qdrant collection or alias to query"
+    )
+    dense_model: str = Field(
+        "intfloat/multilingual-e5-large", description="Dense embedding model"
+    )
+    sparse_model: str = Field("Qdrant/bm25", description="Sparse embedding model")
+    default_top_k: int = Field(
+        6,
+        ge=1,
+        le=12,
+        description="Default number of retrieved chunks",
+    )
+
+
 class RunflowSettings(BaseModel):
     use_data_analysis_agent: bool = Field(
         default=False, description="Enable data analysis agent in run flow"
@@ -185,6 +207,9 @@ class AppConfig(BaseModel):
     search_config: Optional[SearchSettings] = Field(
         None, description="Search configuration"
     )
+    knowledge_config: KnowledgeSettings = Field(
+        default_factory=KnowledgeSettings, description="Paper knowledge-base configuration"
+    )
     mcp_config: Optional[MCPSettings] = Field(None, description="MCP configuration")
     run_flow_config: Optional[RunflowSettings] = Field(
         None, description="Run flow configuration"
@@ -288,6 +313,7 @@ class Config:
         search_settings = None
         if search_config:
             search_settings = SearchSettings(**search_config)
+        knowledge_settings = KnowledgeSettings(**raw_config.get("knowledge", {}))
         sandbox_config = raw_config.get("sandbox", {})
         if sandbox_config:
             sandbox_settings = SandboxSettings(**sandbox_config)
@@ -324,6 +350,7 @@ class Config:
             "sandbox": sandbox_settings,
             "browser_config": browser_settings,
             "search_config": search_settings,
+            "knowledge_config": knowledge_settings,
             "mcp_config": mcp_settings,
             "run_flow_config": run_flow_settings,
             "daytona_config": daytona_settings,
@@ -350,6 +377,11 @@ class Config:
     @property
     def search_config(self) -> Optional[SearchSettings]:
         return self._config.search_config
+
+    @property
+    def knowledge(self) -> KnowledgeSettings:
+        """Get paper knowledge-base configuration."""
+        return self._config.knowledge_config
 
     @property
     def mcp_config(self) -> MCPSettings:
