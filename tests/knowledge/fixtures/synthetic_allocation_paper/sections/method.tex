@@ -1,0 +1,16 @@
+\section{Integer Programming Formulation}
+We use a binary integer programming model for patrol resource allocation.
+Let $x_i$ equal one when a patrol team is assigned to reserve zone $i$.
+Each selected zone contributes its estimated conservation risk score $r_i$.
+
+\begin{equation}
+\max \sum_i r_i x_i
+\end{equation}
+
+subject to the staffing constraint
+\begin{equation}
+\sum_i c_i x_i \leq B,
+\end{equation}
+where $c_i$ is the patrol effort and $B$ is the total available budget.
+This integer programming formulation prioritizes high-risk zones while
+preserving a transparent resource allocation policy.

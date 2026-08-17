@@ -111,3 +111,18 @@ server_reference = "app.mcp.server" # default server module reference
 # Your can add additional agents into run-flow workflow to solve different-type tasks.
 [runflow]
 use_data_analysis_agent = false     # The Data Analysi Agent to solve various data analysis tasks
+
+# Optional local paper knowledge base. Start it with:
+# docker compose -f docker-compose.knowledge.yml up -d
+[knowledge]
+# Keep disabled until Qdrant is running and papers have been imported.
+enabled = false
+# The Qdrant HTTP endpoint is deliberately bound to localhost by the Compose file.
+qdrant_url = "http://127.0.0.1:6333"
+# Stable Qdrant collection alias used for paper chunks.
+collection_name = "solvex_papers"
+# Embedding models used for dense and sparse hybrid retrieval.
+dense_model = "intfloat/multilingual-e5-large"
+sparse_model = "Qdrant/bm25"
+# Number of chunks returned when a search omits top_k.
+default_top_k = 6

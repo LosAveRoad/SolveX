@@ -7,6 +7,7 @@ from typing import Union
 from app.agent.base import BaseAgent
 from app.flow.base import BaseFlow
 from app.logger import logger
+from app.knowledge.trace import retrieval_trace_path
 from app.prompt.modeling import REVIEW_PROMPT
 from app.schema import AgentState, Memory
 from app.workspace import DIR_DATA, DIR_MODELING, DIR_PAPER, DIR_PROGRAMMING
@@ -117,6 +118,23 @@ class SolveXFlow(BaseFlow):
         super().__init__(agents, **data)
 
     async def execute(
+        self,
+        input_text: str,
+        workspace: str = None,
+        resume_from: int = 0,
+        skip_to_writing: bool = False,
+    ) -> str:
+        ws = Path(workspace) if workspace else Path.cwd() / "workspace"
+        ws = ws.resolve()
+        with retrieval_trace_path(ws / DIR_MODELING / "retrieval_trace.jsonl"):
+            return await self._execute(
+                input_text,
+                workspace=str(ws),
+                resume_from=resume_from,
+                skip_to_writing=skip_to_writing,
+            )
+
+    async def _execute(
         self,
         input_text: str,
         workspace: str = None,

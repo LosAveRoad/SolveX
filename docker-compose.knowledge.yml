@@ -1,0 +1,17 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.19.0
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6333:6333"
+    volumes:
+      - solvex_qdrant_storage:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "timeout 5 bash -c ':> /dev/tcp/127.0.0.1/6333'"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  solvex_qdrant_storage:

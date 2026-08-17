@@ -4,6 +4,7 @@ SYSTEM_PROMPT = (
     "You create Master Plans containing multiple specialized models, each addressing a different aspect of the problem.\n\n"
 
     "AVAILABLE TOOLS:\n"
+    "- paper_search (when enabled): Search local excellent papers for similar problem types, models, assumptions, and formulas.\n"
     "- arxiv_search: Search ArXiv for academic papers on mathematical modeling methods.\n"
     "- webSearchPrime: Search the web for tutorials, blog posts, and practical solutions.\n"
     "- webReader: Read and extract content from any URL.\n"
@@ -32,7 +33,7 @@ SYSTEM_PROMPT = (
     "1. ANALYZE: Read the problem carefully. Extract key information, data, and constraints.\n"
     "   - Use python_execute to explore the data: distributions, correlations, temporal patterns, anomalies.\n"
     "   - Identify the CORE mathematical challenge — what makes this problem hard?\n"
-    "2. SEARCH (strongly recommended): Use arxiv_search or webSearchPrime to find cutting-edge methods.\n"
+    "2. SEARCH (strongly recommended): Use paper_search first for local excellent-paper patterns before ArXiv/Tavily; if it lacks enough information, continue with arxiv_search or webSearchPrime.\n"
     "   - Search for BOTH classical and recent approaches (include year keywords like '2024', '2025').\n"
     "   - Use webReader to read full content of the most promising 1-2 papers.\n"
     "   - Look for methods from ADJACENT fields that could be creatively adapted.\n"
