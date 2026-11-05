@@ -43,7 +43,15 @@ export function safetyExtension(pi: any, writablePrefixes?: string[]): void {
   });
 }
 
-/** 自定义工具（createAgentSession({ customTools })）。 */
+/**
+ * 自定义工具（由 PiAgentRunner 注入 createAgentSession({ customTools })）。
+ *
+ * ADR-0008：只保留有真实实现的工具。旧 Python 运行时的 arxiv_search /
+ * web_search / webReader 曾以 placeholder 形式返回 "...Configure MCP for live
+ * results." 的假结果，模型会据此反复检索、或用 bash + curl 自行联网，请求超时后
+ * 陷入无限重试。它们已从工具白名单和这里的注册表中一并移除；需要联网检索时应
+ * 通过 MCP 单独接入并显式登记到 AVAILABLE_TOOLS。
+ */
 export function buildCustomTools(): any[] {
   return [
     {
@@ -57,30 +65,6 @@ export function buildCustomTools(): any[] {
         } catch (e) {
           return { content: [{ type: "text", text: String(e) }], details: {}, isError: true };
         }
-      },
-    },
-    {
-      name: "arxiv_search", label: "ArXiv Search",
-      description: "Search ArXiv for academic papers on mathematical modeling methods.",
-      parameters: TObject({ query: TString({ description: "Search query" }) }),
-      async execute(_id: string, params: any) {
-        return { content: [{ type: "text", text: `ArXiv search placeholder for: ${params.query}. Configure MCP for live results.` }], details: {} };
-      },
-    },
-    {
-      name: "web_search", label: "Web Search",
-      description: "Search the web for tutorials, blog posts, and practical solutions.",
-      parameters: TObject({ query: TString({ description: "Search query" }) }),
-      async execute(_id: string, params: any) {
-        return { content: [{ type: "text", text: `Web search placeholder for: ${params.query}. Configure MCP for live results.` }], details: {} };
-      },
-    },
-    {
-      name: "webReader", label: "Read URL",
-      description: "Read and extract content from any URL.",
-      parameters: TObject({ url: TString({ description: "URL" }) }),
-      async execute(_id: string, params: any) {
-        return { content: [{ type: "text", text: `URL reader placeholder for: ${params.url}. Configure MCP for live results.` }], details: {} };
       },
     },
   ];
