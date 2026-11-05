@@ -4,14 +4,28 @@
   "type": "module",
   "private": true,
   "dependencies": {
+    "@earendil-works/pi-agent-core": "0.75.3",
+    "@earendil-works/pi-ai": "0.75.3",
+    "@earendil-works/pi-web-ui": "0.75.3",
+    "@fastify/multipart": "^9.0.0",
+    "@fastify/static": "^8.2.0",
+    "@mariozechner/mini-lit": "0.2.0",
+    "@opentelemetry/api": "1.9.0",
     "@solvex/core": "workspace:*",
     "@solvex/pi-runtime": "workspace:*",
     "fastify": "^5.5.0",
-    "@fastify/multipart": "^9.0.0",
-    "@fastify/static": "^8.2.0",
-    "jszip": "^3.10.1"
+    "jszip": "^3.10.1",
+    "lit": "3.3.1",
+    "pdfjs-dist": "5.4.394"
   },
   "exports": {
     ".": "./src/server.ts"
+  },
+  "devDependencies": {
+    "vite": "6.4.1"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
   }
 }

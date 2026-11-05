@@ -34,6 +34,7 @@ apps/web ─┼─→ @solvex/core（零 Pi 依赖，AgentRunner 端口倒置）
 ```bash
 pnpm install
 npm run check        # typecheck + 全量测试
+npm run build:web    # build the Pi-based workspace UI
 ```
 
 ## CLI
@@ -59,7 +60,16 @@ npx tsx apps/cli/src/index.ts serve --fake --port 8000
 参数与旧版 `run_flow.py` 1:1 兼容，新增 `--concurrency N` / `--strict` / `--session-dir` / `--fake`。
 `--strict` 对应 D4：质量门发现 Critical 问题时阻断进入 P4（默认关闭，只告警）。
 
-## WebUI 2.0
+## Workspace WebUI
+
+The browser UI now uses the real `@earendil-works/pi-web-ui` components. Select a
+workspace, upload a PDF/DOCX/MD/TXT problem and data, then start modeling. No chat
+message is required. See [workspace WebUI guide](docs/webui-workspaces.md).
+
+Build before starting: `npm run build:web`. The existing modeling pipeline and
+API remain available.
+
+### Existing runtime features
 
 浏览器打开 `http://127.0.0.1:8000/`，详见 `docs/webui-2.0.md`：
 

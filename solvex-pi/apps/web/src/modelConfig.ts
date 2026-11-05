@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
-import { ConfigStore, thinkingLevelsForModel } from "@solvex/pi-runtime";
+import { ConfigStore, thinkingLevelsForModel, sharedModelRuntime, resolveModelsPath } from "@solvex/pi-runtime";
 import {
   THINKING_LEVELS, maskKey, validateModelCatalog,
   type ModelConfig, type ModelDescriptor, type ThinkingLevel,
@@ -40,7 +40,7 @@ export class ModelConfigService {
 
   private get store(): ConfigStore { return new ConfigStore(this.opts.configPath); }
   private get modelsPath(): string {
-    return this.opts.modelsPath ?? new URL("../packages/pi-runtime/models.json", import.meta.url).pathname;
+    return resolveModelsPath(this.opts.modelsPath);
   }
 
   private refreshSync(): void {
@@ -95,8 +95,18 @@ export class ModelConfigService {
     return this.store.save(patch);
   }
   refresh(): void { this.refreshSync(); }
+  async refreshRuntime(): Promise<void> {
+    const runtime = await sharedModelRuntime({ modelsPath: this.modelsPath });
+    if (!runtime) throw new Error("模型运行时初始化失败，请检查服务端配置");
+    await runtime.refresh();
+  }
   /** 运行时注入凭据：只进内存。 */
-  setApiKey(provider: string, key: string): void { this.runtimeKeys.set(provider, key); }
+  async setApiKey(provider: string, key: string): Promise<void> {
+    const runtime = await sharedModelRuntime({ modelsPath: this.modelsPath });
+    if (!runtime) throw new Error("模型运行时初始化失败，请检查服务端配置");
+    await runtime.setRuntimeApiKey(provider, key);
+    this.runtimeKeys.set(provider, key);
+  }
   setEndpoints(endpoints: { id: string; baseUrl: string; api: string; apiKey?: string; models: string[] }[]): void {
     const providers: Record<string, any> = {};
     for (const e of endpoints) {

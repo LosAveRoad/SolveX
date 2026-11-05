@@ -47,6 +47,7 @@ Runs are resumable, intermediate artifacts stay human-reviewable, and credential
 cd solvex-pi
 pnpm install
 npm run check        # typecheck + full test suite
+npm run build:web    # build the Pi-based workspace WebUI
 ```
 
 ### 3. Run a problem
@@ -63,7 +64,7 @@ Web mode:
 npx tsx apps/cli/src/index.ts serve --port 8000
 ```
 
-Then open <http://127.0.0.1:8000/>. The web server binds to localhost only.
+Then open <http://127.0.0.1:8000/>. Create/select a workspace, upload a PDF/DOCX/MD/TXT problem and data, then start modeling—no chat message needed. See the [workspace WebUI guide](solvex-pi/docs/webui-workspaces.md). The web server binds to localhost only.
 
 No credentials yet? Append `--fake` to either command for a complete run with a synthetic agent and Pi events.
 

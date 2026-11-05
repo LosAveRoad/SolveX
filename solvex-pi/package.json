@@ -12,7 +12,9 @@
     "test:watch": "vitest",
     "check": "npm run typecheck && npm test",
     "cli": "tsx apps/cli/src/index.ts",
-    "serve": "tsx apps/web/src/server.ts"
+    "serve": "tsx apps/cli/src/index.ts serve",
+    "build:web": "npm --prefix apps/web run build",
+    "dev:web": "npm --prefix apps/web run dev"
   },
   "devDependencies": {
     "@types/node": "^22.18.0",

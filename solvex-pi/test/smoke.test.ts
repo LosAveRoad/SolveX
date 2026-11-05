@@ -6,7 +6,8 @@ describe("工程基线", () => {
     const pkg = JSON.parse(readFileSync("package.json", "utf-8"));
     expect(pkg.engines.node).toBe(">=22.19.0");
     expect(readFileSync(".nvmrc", "utf-8").trim()).toBe("22.20.0");
-    expect(process.versions.node).toMatch(/^22\.(19|2\d)\./);
+    const [major, minor] = process.versions.node.split(".").map(Number);
+    expect(major > 22 || (major === 22 && minor >= 19)).toBe(true);
   });
 
   it("workspace 含 4 个包且 Pi SDK 精确锁版本", () => {
