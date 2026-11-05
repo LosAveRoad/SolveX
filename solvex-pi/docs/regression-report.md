@@ -1,6 +1,6 @@
 # 回归报告：旧管线 23 个问题逐条结论
 
-> 依据：`docs/legacy-prompts/` 归档与 `docs/superpowers/plans/2026-04-23-solvex-pipeline-issues.md`（已随源码归档）
+> 依据：`docs/legacy-prompts/` 归档与 1.0 管线缺陷清单（23 个问题；原文件已随 1.0 源码清理，可在 Git 历史中查阅）
 > 验证：`test/regression/legacy-issues.test.ts` + 各阶段专项测试，全部随 `npm test` 运行。
 
 ## 结论汇总
