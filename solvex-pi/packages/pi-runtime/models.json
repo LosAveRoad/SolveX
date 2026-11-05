@@ -1,0 +1,10 @@
+{
+  "providers": {
+    "openai-compatible": {
+      "baseUrl": "$SOLVEX_OPENAI_BASE_URL",
+      "api": "openai-completions",
+      "apiKey": "$SOLVEX_OPENAI_API_KEY",
+      "models": []
+    }
+  }
+}

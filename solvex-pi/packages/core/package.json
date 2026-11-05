@@ -1,0 +1,16 @@
+{
+  "name": "@solvex/core",
+  "version": "2.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  }
+}

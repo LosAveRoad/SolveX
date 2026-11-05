@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+*.log
+.workspace/
+.env.local
+*.env
+
+# Parent repo .gitignore excludes any `workspace/` dir; re-include core workspace module
+!packages/core/src/workspace/
