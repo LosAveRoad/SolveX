@@ -5,7 +5,7 @@ export type ModelRuntimeLike = {
   getAvailable(providerId?: string): Promise<any[]>;
   getModel(providerId: string, modelId: string): any;
   setRuntimeApiKey(providerId: string, apiKey: string): Promise<void>;
-  refresh(): Promise<any>;
+  refresh(options?: { allowNetwork?: boolean }): Promise<any>;
   listCredentials(): Promise<any[]>;
   getRegisteredProviderIds(): readonly string[];
 };
@@ -62,7 +62,7 @@ export class ModelRuntimeManager {
   async setRuntimeApiKey(provider: string, key: string): Promise<void> {
     await this.rt.setRuntimeApiKey(provider, key);
   }
-  async refresh(): Promise<void> { await this.rt.refresh(); }
+  async refresh(): Promise<void> { await this.rt.refresh({ allowNetwork: false }); }
   /** 凭据只回 masked。 */
   async credentials(): Promise<{ provider: string; source: "env" | "auth.json" | "runtime" | "models.json";
                                  masked: string; status: "ok" | "missing" }[]> {

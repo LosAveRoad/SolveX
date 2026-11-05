@@ -5,7 +5,7 @@ import { DIR, META_FILE, modelDirName } from "./paths.js";
 
 export * from "./paths.js";
 
-export type SessionMeta = { id: string; problem: string; status: string; created_at: string };
+export type SessionMeta = { id: string; problem: string; status: string; created_at: string; workspaceId?: string };
 export type WorkspaceInfo = { id: string; root: string; dir: string;
   paths: { problem: string; data: string; modeling: string; programming: string; paper: string } };
 

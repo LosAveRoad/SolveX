@@ -1,8 +1,8 @@
-import { writeFileSync, mkdtempSync, rmSync } from "node:fs";
+import { writeFileSync, mkdtempSync, rmSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
-  prepareWorkspace, ingestData, listSessions, scanArtifacts, writeSessionMeta,
+  prepareWorkspace, ingestData, listSessions, scanArtifacts, writeSessionMeta, META_FILE,
   EventBus, SolveXFlow, FakeAgentRunner, DEFAULT_CONFIG,
   type AgentRunner, type ModelConfig, type WorkspaceInfo,
 } from "@solvex/core";
@@ -27,9 +27,10 @@ export class SessionRegistry {
   }
 
   async create(params: { text: string; files: { filename: string; buffer: Buffer }[];
-                         concurrency?: number; strict?: boolean; byPhase?: any }): Promise<Session> {
+                         concurrency?: number; strict?: boolean; byPhase?: any; workspaceId?: string }): Promise<Session> {
     if (!params.text?.trim()) throw new Error("empty problem text");
     const ws = prepareWorkspace({ root: this.opts.sessionRoot, problem: params.text });
+    if (params.workspaceId) writeSessionMeta(ws, { workspaceId: params.workspaceId });
     const tmp: string[] = [];
     try {
       for (const f of params.files) {
@@ -38,7 +39,7 @@ export class SessionRegistry {
         writeFileSync(p, f.buffer); tmp.push(p);
       }
       if (tmp.length) await ingestData(ws, tmp);
-    } finally { for (const p of tmp) try { rmSync(p, { force: true }); } catch { /* noop */ } }
+    } finally { for (const p of tmp) try { rmSync(join(p, ".."), { recursive: true, force: true }); } catch { /* noop */ } }
 
     const bus = new EventBus();
     attachEventLog(ws, bus, false); // 思考正文默认不落盘
@@ -58,28 +59,35 @@ export class SessionRegistry {
       dataInfo: params.files.length ? `\nDATA FILES: ${params.files.map((f) => f.filename).join(", ")}\n` : "" });
 
     void flow.run(controller.signal).then((summary) => {
-      session.status = summary.status === "completed" ? "completed" : "failed";
+      session.status = session.controller.signal.aborted ? "aborted" : summary.status === "completed" ? "completed" : "failed";
       writeSessionMeta(ws, { status: session.status });
     }).catch(() => {
-      session.status = "failed"; bus.error("pipeline crashed");
-      writeSessionMeta(ws, { status: "failed" });
+      session.status = session.controller.signal.aborted ? "aborted" : "failed";
+      if (session.status === "failed") bus.error("pipeline crashed");
+      writeSessionMeta(ws, { status: session.status });
     });
     return session;
   }
 
   get(id: string): Session | undefined {
+    if (!/^[A-Za-z0-9_-]+$/.test(id)) return undefined;
     const s = this.sessions.get(id);
     if (s) return s;
     // 进程重启后从磁盘恢复只读 session（用于回放）
     const p = join(this.opts.sessionRoot, id);
     try {
       const ws = prepareWorkspace({ root: this.opts.sessionRoot, sessionId: id, mode: "resume" });
+      const meta = JSON.parse(readFileSync(join(ws.dir, META_FILE), "utf8"));
+      const status: Session["status"] = meta.status === "running" ? "failed" :
+        ["completed", "failed", "aborted"].includes(meta.status) ? meta.status : "failed";
+      if (status !== meta.status) writeSessionMeta(ws, { status });
       const s: Session = { id, ws, bus: new EventBus(), controller: new AbortController(),
-        status: "completed", startedAt: 0 };
+        status, startedAt: Date.parse(meta.created_at) || 0 };
       this.sessions.set(id, s); return s;
     } catch { return undefined; }
   }
-  list() { return listSessions(this.opts.sessionRoot); }
+  isRunning(id: string): boolean { return this.sessions.get(id)?.status === "running"; }
+  list() { return listSessions(this.opts.sessionRoot).map(meta => ({ ...meta, status: this.get(meta.id)?.status ?? meta.status })); }
   artifacts(id: string) { const s = this.get(id); return s ? scanArtifacts(s.ws) : []; }
   events(id: string, since = 0) {
     const s = this.get(id); if (!s) return [];

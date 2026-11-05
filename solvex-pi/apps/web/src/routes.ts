@@ -1,5 +1,5 @@
 import { existsSync, readFileSync, statSync } from "node:fs";
-import { join, normalize } from "node:path";
+import { join, normalize, extname } from "node:path";
 import type { FastifyInstance } from "fastify";
 import { zipWorkspace } from "@solvex/core";
 import type { SessionRegistry } from "./runner.js";
@@ -67,7 +67,12 @@ export function registerRoutes(app: FastifyInstance, deps: RouteDeps): void {
     const abs = normalize(join(s.ws.dir, rel));
     if (rel.includes("..") || !abs.startsWith(s.ws.dir) || !existsSync(abs) || !statSync(abs).isFile())
       return reply.code(404).send({ error: "artifact not found" });
-    return reply.type("text/plain; charset=utf-8").send(readFileSync(abs, "utf-8"));
+    const media: Record<string, string> = { ".png":"image/png", ".jpg":"image/jpeg", ".jpeg":"image/jpeg",
+      ".webp":"image/webp", ".gif":"image/gif", ".svg":"image/svg+xml", ".pdf":"application/pdf" };
+    const type = media[extname(abs).toLowerCase()];
+    reply.header("X-Content-Type-Options", "nosniff");
+    return type ? reply.type(type).send(readFileSync(abs))
+      : reply.type("text/plain; charset=utf-8").send(readFileSync(abs, "utf-8"));
   });
 
   // 6) GET /api/events/:id?since=N —— 回放（返回原始 SolveXEvent 数组供前端 reduce）
@@ -101,13 +106,13 @@ export function registerRoutes(app: FastifyInstance, deps: RouteDeps): void {
   });
 
   // 11) POST /api/models/refresh
-  app.post("/api/models/refresh", async () => { modelConfig.refresh(); return modelConfig.get(); });
+  app.post("/api/models/refresh", async () => { modelConfig.refresh(); await modelConfig.refreshRuntime(); return modelConfig.get(); });
 
   // 12) POST /api/models/api-key —— 只进内存，不落盘不进日志
   app.post("/api/models/api-key", async (req, reply) => {
     const b = (req.body ?? {}) as any;
     if (!b.provider || !b.apiKey) return reply.code(400).send({ error: "provider/apiKey required" });
-    modelConfig.setApiKey(String(b.provider), String(b.apiKey));
+    await modelConfig.setApiKey(String(b.provider), String(b.apiKey));
     return { ok: true, provider: b.provider, masked: "sk-••••" };
   });
 
@@ -122,6 +127,7 @@ export function registerRoutes(app: FastifyInstance, deps: RouteDeps): void {
     }));
     if (!list.length) return reply.code(400).send({ error: "invalid endpoints" });
     modelConfig.setEndpoints(list);
+    await modelConfig.refreshRuntime();
     return modelConfig.get();
   });
 

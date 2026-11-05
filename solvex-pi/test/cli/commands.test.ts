@@ -3,10 +3,11 @@ import { execFileSync } from "node:child_process";
 import { mkdtempSync, existsSync, writeFileSync, readdirSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const CLI = "apps/cli/src/index.ts";
-const run = (args: string[]) => execFileSync("npx", ["tsx", CLI, ...args], {
-  cwd: "/workspace", encoding: "utf-8", env: { ...process.env, SOLVEX_FAKE: "1" }, timeout: 60_000 });
+const run = (args: string[]) => execFileSync(process.execPath, ["--import", "tsx", CLI, ...args], {
+  cwd: fileURLToPath(new URL("../../", import.meta.url)), encoding: "utf-8", env: { ...process.env, SOLVEX_FAKE: "1" }, timeout: 60_000 });
 
 describe("T4.3/T4.4/T4.5 CLI 端到端（FakeRunner）", () => {
   it("solvex run --fake 跑通四阶段，退出码 0、产物兼容、输出 session id", () => {
