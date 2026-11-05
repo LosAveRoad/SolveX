@@ -1,5 +1,7 @@
 # SolveX → Pi SDK 迁移设计文档（Migration Design）
 
+> **归档说明（2026-11-05）**：本文为迁移期设计规格的历史存档。文中引用的 1.0 Python 源文件与 `docs/superpowers/plans/2026-04-23-solvex-pipeline-issues.md` 缺陷清单已在 2.0 清理时从仓库移除，可在 Git 历史中查阅；23 个问题的现行结论见 `docs/regression-report.md`。
+
 | 项目 | 内容 |
 | --- | --- |
 | 文档版本 | **v1.1**（已确认决策 / 并行编排 / WebUI 2.0 规格） |
