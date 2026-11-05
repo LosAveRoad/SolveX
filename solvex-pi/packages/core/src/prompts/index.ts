@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { renderTemplate, OFFLINE_PLAN_POLICY } from "./inline/template.js";
+import { renderTemplate, OFFLINE_PLAN_POLICY, WORKSPACE_DISCOVERY_POLICY } from "./inline/template.js";
 
 const here = (f: string) => fileURLToPath(new URL(f, import.meta.url));
 const load = (f: string) => readFileSync(here(f), "utf-8");
@@ -11,7 +11,8 @@ export const modelingNext = () => load("modeling.next.md");
 export const programmingSystem = () => load("programming.system.md");
 export const programmingNext = (vars: { output_dir: string }) =>
   renderTemplate(load("programming.next.md"), vars);
-export const writingSystem = () => load("writing.system.md");
+/** ADR-0009：写作角色可以（且被要求）自行检索共享工作区里的真实产物。 */
+export const writingSystem = () => load("writing.system.md") + WORKSPACE_DISCOVERY_POLICY;
 export const writingNext = () => load("writing.next.md");
 export const visualizationSystem = () => load("visualization.system.md");
 export const visualizationNext = () => load("visualization.next.md");
@@ -29,4 +30,7 @@ export * from "./inline/revision.js";
 export * from "./inline/fix.js";
 export * from "./inline/paper.js";
 export * from "./toolNames.js";
-export { HANDOFF_HINT, OFFLINE_PLAN_POLICY, renderTemplate } from "./inline/template.js";
+export {
+  HANDOFF_HINT, OFFLINE_PLAN_POLICY, RESULTS_CONTRACT, WORKSPACE_DISCOVERY_POLICY,
+  renderTemplate,
+} from "./inline/template.js";

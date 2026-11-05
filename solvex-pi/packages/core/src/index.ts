@@ -12,6 +12,7 @@ export * from "./contracts/modelResult.js";
 export * from "./gates/parseVerdict.js";
 export * from "./gates/validateModelOutput.js";
 export * from "./gates/ensureSummary.js";
+export * from "./gates/artifacts.js";
 export * from "./events/EventBus.js";
 export * from "./flow/dag.js";
 export * from "./flow/scheduler.js";

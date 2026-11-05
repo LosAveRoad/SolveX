@@ -1,5 +1,23 @@
 # Changelog
 
+## 2.0.2 — 2026-11-05（结果证据链与工作区发现，ADR-0009）
+
+### 修复
+- **真实数值被占位符抹掉**：模型产出 CSV 却没写 `results_summary.md` 时，旧兜底一律写
+  `⚠ Not available.`，`aggregate()` 又只聚合摘要，导致 P4 把「计算已完成」误写成
+  「数值计算未完成」。现在 `renderSummaryRetry()` 先补一次专门会话；仍缺失时
+  `summarizeArtifacts()` 扫描目录，把文件名、CSV 表头/行数、数值列 min/mean/max
+  写进兜底摘要与 `all_results_summary.md`。
+- **写作角色看不到共享工作区**：`ROLE_TOOLS.writing` 新增
+  `ls / find / grep / bash / python_execute`（review 仍严格只读）；`writingSystem()`
+  运行时追加 `WORKSPACE_DISCOVERY_POLICY`，要求 ALL RESULTS 出现占位符时必须先检索
+  `02_programming/` 再下结论。此前 P4 的 `read` 对目录返回 `EISDIR`，实测 7 次 read、0 次 CSV。
+- **图片缺失**：`RESULTS_CONTRACT` 强制至少一张 PNG 与六段式摘要；`checkPythonDeps()`
+  探测绘图依赖，`runPython()` 在 `ModuleNotFoundError` 时给出可执行安装指引，
+  不再静默跳过。运行时需预装 `numpy/pandas/matplotlib`。
+- 新增 `PLACEHOLDER_SUMMARY` critical 质量门；`validateRoleTools()` 继续保证白名单 ⊆ 真实工具。
+- 逐字提示词资产与内联模板常量一字未改，所有策略均为运行时追加。
+
 ## 2.0.1 — 2026-11-05（工具契约修复，ADR-0008）
 
 ### 修复

@@ -1,5 +1,25 @@
-import { spawn } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import { Object as TObject, String as TString } from "typebox";
+
+/** ADR-0009：Python 绘图依赖缺失时给出可执行的指引，避免模型静默跳过 figures。 */
+export const PYTHON_PLOTTING_DEPS: readonly string[] = ["numpy", "pandas", "matplotlib"];
+
+export function checkPythonDeps(deps: readonly string[] = PYTHON_PLOTTING_DEPS): string[] {
+  const code = "import importlib.util,json;print(json.dumps(" +
+    `[m for m in ${JSON.stringify(deps)} if importlib.util.find_spec(m) is None]))`;
+  const r = spawnSync("python3", ["-c", code], { encoding: "utf-8" });
+  if (r.status !== 0 || r.error) return [...deps];
+  try { return JSON.parse(String(r.stdout).trim()); } catch { return [...deps]; }
+}
+
+function withDepHint(message: string): string {
+  if (!/ModuleNotFoundError|ImportError/.test(message)) return message;
+  const m = message.match(/No module named ['"]([^'"]+)['"]/);
+  const pkg = m ? m[1] : "the missing package";
+  return `${message}\n[SolveX] Python dependency '${pkg}' is missing in this runtime. ` +
+    `Ask the operator to install it (e.g. pip3 install matplotlib), or record the exact ImportError ` +
+    `in results_summary.md. Do NOT silently skip figure generation.`;
+}
 
 /** 旧提示词依赖「每次调用自带 import + 计算 + print、变量不持久」语义：
  *  spawn 新进程 1:1 复现（T3.3）。 */
@@ -12,7 +32,8 @@ export function runPython(code: string, opts: { cwd: string; signal?: AbortSigna
     p.stdout.on("data", (d) => { out += String(d); });
     p.stderr.on("data", (d) => { err += String(d); });
     p.on("error", reject);
-    p.on("close", (c) => c === 0 ? resolve(out) : reject(new Error(err || `python exited ${c}`)));
+    p.on("close", (c) => c === 0 ? resolve(out)
+      : reject(new Error(withDepHint(err || `python exited ${c}`))));
   });
 }
 

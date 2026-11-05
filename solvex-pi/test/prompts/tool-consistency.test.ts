@@ -23,6 +23,13 @@ describe("T1.6 提示词 ↔ 工具白名单一致性（R4）", () => {
       for (const t of tools) expect(t).toMatch(/^[a-zA-Z_][a-zA-Z0-9_]*$/);
     }
   });
+  it("ADR-0009：writing 具备工作区发现能力，review 仍严格只读", () => {
+    for (const t of ["read", "write", "edit", "ls", "find", "grep", "bash"])
+      expect(ROLE_TOOLS.writing).toContain(t);
+    expect(ROLE_TOOLS.review).toEqual(["read", "grep", "find", "ls"]);
+    expect(ROLE_TOOLS.review).not.toContain("bash");
+    expect(ROLE_TOOLS.review).not.toContain("write");
+  });
   it("R-2：白名单 ⊆ 运行时真实可用工具，且 modeling 不含联网检索工具", () => {
     expect(validateRoleTools()).toEqual([]);
     for (const [role, tools] of Object.entries(ROLE_TOOLS))

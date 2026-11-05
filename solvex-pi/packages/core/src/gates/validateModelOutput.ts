@@ -16,6 +16,10 @@ export function validateModelOutput(modelDir: string): Issue[] {
     const text = readFileSync(summaryPath, "utf-8");
     if (size < 100) issues.push({ code: "EMPTY_SUMMARY", severity: "critical", evidence: `${size} bytes` });
     if (text.includes("<think/>")) issues.push({ code: "RAW_THINK_TAGS", severity: "critical" });
+    // ADR-0009：旧式空占位摘要会把同目录的真实 CSV 全部盖掉，必须作为 critical 暴露。
+    if (/no validated results available/i.test(text))
+      issues.push({ code: "PLACEHOLDER_SUMMARY", severity: "critical",
+        evidence: "results_summary.md is an empty placeholder; real artifacts may be ignored" });
     if (/auto-generated/i.test(text) && !text.includes("⚠"))
       issues.push({ code: "AUTOGEN_UNVALIDATED", severity: "warn" });
   }

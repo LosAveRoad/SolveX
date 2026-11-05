@@ -12,18 +12,21 @@ export const AVAILABLE_TOOLS: ReadonlySet<string> =
   new Set<string>([...SDK_BUILTIN_TOOLS, ...CUSTOM_TOOL_NAMES]);
 
 /**
- * 按角色收紧的工具白名单；review 为只读，从根上消除 A2/F3（评审覆写 master_plan）。
+ * 按角色收紧的工具白名单；review 保持只读，从根上消除 A2/F3（评审覆写 master_plan）。
  *
- * R-2 修正：arxiv_search / web_search / webReader 属于旧 Python 运行时，在 Pi SDK
- * 中没有实现（曾以返回假结果的 placeholder 存在，且从未注册进 session）。把它们
- * 留在白名单里会让模型按提示词去「检索」，再用 bash + curl 模拟联网请求，超时后
- * 反复重试，永远走不到 WRITE 步骤。因此从 modeling 白名单移除。
+ * ADR-0008：移除旧 Python 运行时的 arxiv_search / web_search / webReader（占位符、
+ * 从未注册），避免模型用 bash+curl 模拟联网检索陷入死循环。
+ *
+ * ADR-0009：writing 角色放宽为可发现、可检索整个共享工作区。此前只有
+ * read/write/edit，模型既无法枚举目录（read 对目录返回 EISDIR），也无从得知
+ * 02_programming/ 下真实 CSV 的文件名，只能读回 prompt 里出现过的占位符摘要，
+ * 从而把「计算已完成」误写成「计算未完成」。
  */
 export const ROLE_TOOLS: Record<Role, string[]> = {
   modeling: ["read", "grep", "find", "ls", "bash", "python_execute", "write", "edit"],
   programming: ["read", "write", "edit", "bash", "python_execute"],
   review: ["read", "grep", "find", "ls"],
-  writing: ["read", "write", "edit"],
+  writing: ["read", "write", "edit", "ls", "find", "grep", "bash", "python_execute"],
   visualization: ["read", "write", "edit", "bash", "python_execute"],
 };
 

@@ -1,7 +1,9 @@
 import { describe, it, expect } from "vitest";
 import {
-  renderPlan, renderPlanRetry, renderImplement, renderRevision, renderFix, renderPaper,
-  modelingSystem, HANDOFF_HINT, OFFLINE_PLAN_POLICY,
+  renderPlan, renderPlanRetry, renderImplement, renderSummaryRetry,
+  renderRevision, renderFix, renderPaper,
+  modelingSystem, writingSystem, HANDOFF_HINT, OFFLINE_PLAN_POLICY,
+  RESULTS_CONTRACT, WORKSPACE_DISCOVERY_POLICY,
 } from "@solvex/core";
 
 const V = { input_text: "PROBLEM TEXT", data_info: "DATA INFO\n", master_plan_path: "/ws/01_modeling/master_plan.md",
@@ -53,6 +55,16 @@ describe("T1.5 内联 5 段提示词（附录 A）", () => {
   it("D3 追加句只有一句，不改写原文", () => {
     expect(HANDOFF_HINT.trim().split("\n")).toHaveLength(1);
     expect(HANDOFF_HINT).toContain("the system prefers it over text markers");
+  });
+  it("ADR-0009：结果契约与工作区发现策略在运行时追加", () => {
+    expect(renderImplement(V)).toContain("results_summary.md at the exact path above is MANDATORY");
+    expect(renderImplement(V)).toContain("at least ONE publication-quality figure");
+    expect(renderImplement(V)).toContain("=== YOUR TASK: Implement Model 2 ==="); // 原模板未改
+    expect(renderSummaryRetry({ abs_model_dir: V.abs_model_dir })).toContain("URGENT");
+    expect(writingSystem()).toContain("WORKSPACE DISCOVERY POLICY");
+    expect(writingSystem()).toContain("EISDIR");
+    expect(RESULTS_CONTRACT).toContain("Key Numerical Results");
+    expect(WORKSPACE_DISCOVERY_POLICY).toContain("02_programming/");
   });
   it("ADR-0008：P1 运行时追加离线执行策略，逐字模板本身不改", () => {
     for (const s of [renderPlan(V), renderPlanRetry(V), modelingSystem()]) {
