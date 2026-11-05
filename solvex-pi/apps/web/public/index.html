@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolveX WebUI 2.0 · 控制台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 顶部实时用量条：模型 / thinking / token / ¥ -->
+  <header id="topbar" class="topbar">
+    <div class="brand">
+      <span class="logo">SolveX</span>
+      <span id="bar-status" class="status-dot">未开始</span>
+      <span id="bar-session" class="session-id">未开始</span>
+    </div>
+    <div class="usage">
+      <span id="bar-model" class="metric">模型 —</span>
+      <span id="bar-thinking" class="metric">Thinking: off</span>
+      <span id="bar-tokens" class="metric">输入 0 / 输出 0 / 合计 0</span>
+      <span id="bar-cost" class="metric cost">¥0.00</span>
+    </div>
+    <div class="top-actions">
+      <button id="btn-models" class="btn">模型 ⚙</button>
+      <button id="btn-abort" class="btn danger" disabled>中止</button>
+    </div>
+  </header>
+
+  <!-- 三栏布局 -->
+  <div id="layout" class="layout">
+
+    <!-- 左：会话历史 -->
+    <aside class="sidebar">
+      <button id="btn-new" class="btn primary block">+ 新建会话</button>
+      <h2 class="side-title">会话历史</h2>
+      <ul id="session-list" class="session-list"></ul>
+    </aside>
+
+    <!-- 中：标签页主工作区 -->
+    <main class="workspace">
+      <nav id="tabs" class="tabs">
+        <button class="tab active" data-tab="stages">阶段视图</button>
+        <button class="tab" data-tab="thinking">思考过程</button>
+        <button class="tab" data-tab="artifacts">产物</button>
+        <button class="tab" data-tab="log">日志</button>
+        <label class="hide-thinking">
+          <input type="checkbox" id="hide-thinking"> 隐藏思考
+        </label>
+      </nav>
+      <div id="panels" class="panels">
+        <section id="panel-stages" class="panel active"></section>
+        <section id="panel-thinking" class="panel"></section>
+        <section id="panel-artifacts" class="panel"></section>
+        <section id="panel-log" class="panel"></section>
+      </div>
+    </main>
+
+    <!-- 右：运行阶段 DAG 时间线 -->
+    <aside class="rightbar">
+      <h2 class="side-title">运行阶段</h2>
+      <div id="rightbar" class="timeline"></div>
+    </aside>
+  </div>
+
+  <!-- 底部输入区 -->
+  <footer class="inputbar">
+    <div class="input-main">
+      <textarea id="input-text" class="input textarea" rows="3" placeholder="输入待求解的问题文本 …"></textarea>
+      <div id="dropzone" class="dropzone">
+        拖拽数据文件到此，或
+        <label class="file-label">选择文件<input type="file" id="input-files" multiple hidden></label>
+      </div>
+      <div id="file-list" class="file-list"></div>
+    </div>
+    <div class="input-controls">
+      <label class="ctrl">并行度
+        <input type="range" id="input-concurrency" min="1" max="8" value="3">
+        <span id="concurrency-val">3</span>
+      </label>
+      <label class="ctrl"><input type="checkbox" id="input-strict"> 严格模式</label>
+      <button id="btn-start" class="btn primary xl">开始运行</button>
+    </div>
+  </footer>
+
+  <!-- 模型配置中心抽屉 -->
+  <div id="model-drawer" class="drawer">
+    <button id="drawer-close" class="drawer-backdrop" aria-label="关闭"></button>
+    <div class="drawer-panel">
+      <div id="model-studio" class="drawer-body"></div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

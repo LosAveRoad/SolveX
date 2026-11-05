@@ -1,0 +1,17 @@
+{
+  "name": "@solvex/web",
+  "version": "2.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@solvex/core": "workspace:*",
+    "@solvex/pi-runtime": "workspace:*",
+    "fastify": "^5.5.0",
+    "@fastify/multipart": "^9.0.0",
+    "@fastify/static": "^8.2.0",
+    "jszip": "^3.10.1"
+  },
+  "exports": {
+    ".": "./src/server.ts"
+  }
+}

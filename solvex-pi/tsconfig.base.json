@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": [
+      "ES2023",
+      "DOM"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@solvex/core": [
+        "packages/core/src/index.ts"
+      ],
+      "@solvex/core/*": [
+        "packages/core/src/*"
+      ],
+      "@solvex/pi-runtime": [
+        "packages/pi-runtime/src/index.ts"
+      ],
+      "@solvex/pi-runtime/*": [
+        "packages/pi-runtime/src/*"
+      ],
+      "@earendil-works/pi-coding-agent": [
+        "packages/pi-runtime/node_modules/@earendil-works/pi-coding-agent/dist/index.d.ts"
+      ],
+      "@solvex/web": [
+        "apps/web/src/server.ts"
+      ]
+    }
+  },
+  "include": [
+    "packages/**/src",
+    "apps/**/src",
+    "test",
+    "vitest.config.ts"
+  ]
+}

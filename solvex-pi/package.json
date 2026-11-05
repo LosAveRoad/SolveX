@@ -1,0 +1,25 @@
+{
+  "name": "solvex",
+  "private": true,
+  "version": "2.0.0",
+  "description": "SolveX: multi-model mathematical modeling pipeline orchestrated on Pi coding-agent SDK",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.base.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm test",
+    "cli": "tsx apps/cli/src/index.ts",
+    "serve": "tsx apps/web/src/server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@vitest/coverage-v8": "3.2.7",
+    "jszip": "^3.10.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@solvex/cli",
+  "version": "2.0.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "solvex": "./src/index.ts"
+  },
+  "dependencies": {
+    "@solvex/core": "workspace:*",
+    "@solvex/pi-runtime": "workspace:*",
+    "@solvex/web": "workspace:*"
+  }
+}
