@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.0.1 — 2026-11-05（工具契约修复，ADR-0008）
+
+### 修复
+- **P1 不落盘 `master_plan.md`**：逐字提示词把 `SEARCH` 放在 `WRITE` 之前，而
+  `arxiv_search` / `web_search` / `webReader` 在 Pi SDK 中并不存在且从未注入 session，
+  模型改用 `bash + curl` 模拟联网检索，超时后无限重试，永远走不到 WRITE 步骤。
+- **arxiv 检索死循环**：从 `ROLE_TOOLS.modeling` 与 `buildCustomTools()` 移除三个
+  占位检索工具；`PiAgentRunner` 现在默认注入 `customTools` 并按 `AVAILABLE_TOOLS`
+  过滤未知工具，杜绝「声明了但没接线」的静默失效。
+- 新增 `OFFLINE_PLAN_POLICY` 运行时执行策略（沿用 `HANDOFF_HINT` 的追加模式），
+  明确禁止联网、要求以 `write` 作为首个动作；逐字提示词资产与内联模板常量保持不动，
+  T1.2 / T1.5 快照继续成立。
+- 新增 `test/prompts/tool-contract.test.ts` 等回归断言：白名单必须是运行时工具子集、
+  modeling 不含幽灵检索工具、runner 必须注入 `customTools`。
+
 ## 2.0.0 — 2026-11-05（Pi SDK 重构）
 
 ### 破坏性变更

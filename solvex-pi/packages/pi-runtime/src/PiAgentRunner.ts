@@ -1,5 +1,6 @@
-import { ROLE_TOOLS, type AgentRunner, type RunRequest, type RunResult,
+import { ROLE_TOOLS, AVAILABLE_TOOLS, type AgentRunner, type RunRequest, type RunResult,
          type EventBus } from "@solvex/core";
+import { buildCustomTools } from "../extensions/solvex-tools.js";
 import { loadRealSdk, type PiSdk, type PiSessionLike } from "./sdk.js";
 import { createBridge } from "./eventBridge.js";
 import type { ModelRuntimeManager } from "./modelRuntime.js";
@@ -40,12 +41,18 @@ export class PiAgentRunner implements AgentRunner {
     const scopedModels = req.scopedModels && this.opts.modelRuntime
       ? this.opts.modelRuntime.scopedModels(req.scopedModels) : undefined;
 
+    // 工具契约（ADR-0008）：白名单混入运行时不存在的名字时 SDK 会静默丢弃，
+    // 模型只能拿 bash 兜底；这里统一过滤，并保证自定义工具一定注入 session。
+    const requestedTools = req.tools ?? ROLE_TOOLS[req.role];
+    const tools = requestedTools.filter((t) => AVAILABLE_TOOLS.has(t));
+    const customTools = this.opts.customTools ?? buildCustomTools();
+
     const options: any = {
       cwd: req.cwd,
       sessionManager: sdk.SessionManager.inMemory(),
       resourceLoader: loader,
-      tools: req.tools ?? ROLE_TOOLS[req.role],
-      ...(this.opts.customTools?.length ? { customTools: this.opts.customTools } : {}),
+      tools,
+      ...(customTools.length ? { customTools } : {}),
       ...(this.opts.modelRuntime ? { modelRuntime: this.opts.modelRuntime.rt } : {}),
       ...(model ? { model } : {}),
       ...(req.thinkingLevel ? { thinkingLevel: req.thinkingLevel } : {}),

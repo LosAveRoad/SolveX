@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   renderPlan, renderPlanRetry, renderImplement, renderRevision, renderFix, renderPaper,
-  HANDOFF_HINT,
+  modelingSystem, HANDOFF_HINT, OFFLINE_PLAN_POLICY,
 } from "@solvex/core";
 
 const V = { input_text: "PROBLEM TEXT", data_info: "DATA INFO\n", master_plan_path: "/ws/01_modeling/master_plan.md",
@@ -53,5 +53,17 @@ describe("T1.5 内联 5 段提示词（附录 A）", () => {
   it("D3 追加句只有一句，不改写原文", () => {
     expect(HANDOFF_HINT.trim().split("\n")).toHaveLength(1);
     expect(HANDOFF_HINT).toContain("the system prefers it over text markers");
+  });
+  it("ADR-0008：P1 运行时追加离线执行策略，逐字模板本身不改", () => {
+    for (const s of [renderPlan(V), renderPlanRetry(V), modelingSystem()]) {
+      expect(s).toContain("RUNTIME EXECUTION POLICY");
+      expect(s).toContain("The `write` tool IS registered");
+      expect(s).toContain("network requests are unavailable");
+      expect(s).toContain("arxiv_search");
+    }
+    expect(OFFLINE_PLAN_POLICY).toContain("FIRST action");
+    // 内联模板常量（逐字资产）不得被改写
+    expect(renderPlan(V)).toContain("write a multi-model");
+    expect(renderPlan(V)).toContain("## Model N: Name");
   });
 });

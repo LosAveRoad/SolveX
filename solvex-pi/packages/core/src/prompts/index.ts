@@ -1,11 +1,12 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { renderTemplate } from "./inline/template.js";
+import { renderTemplate, OFFLINE_PLAN_POLICY } from "./inline/template.js";
 
 const here = (f: string) => fileURLToPath(new URL(f, import.meta.url));
 const load = (f: string) => readFileSync(here(f), "utf-8");
 
-export const modelingSystem = () => load("modeling.system.md");
+/** 资产逐字保留，仅 P1 在运行时追加离线执行策略（ADR-0008）。 */
+export const modelingSystem = () => load("modeling.system.md") + OFFLINE_PLAN_POLICY;
 export const modelingNext = () => load("modeling.next.md");
 export const programmingSystem = () => load("programming.system.md");
 export const programmingNext = (vars: { output_dir: string }) =>
@@ -28,4 +29,4 @@ export * from "./inline/revision.js";
 export * from "./inline/fix.js";
 export * from "./inline/paper.js";
 export * from "./toolNames.js";
-export { HANDOFF_HINT, renderTemplate } from "./inline/template.js";
+export { HANDOFF_HINT, OFFLINE_PLAN_POLICY, renderTemplate } from "./inline/template.js";

@@ -18,10 +18,13 @@ describe("T3.3 自定义工具扩展", () => {
   it("非零退出返回错误", async () => {
     await expect(runPython("import sys; sys.exit(3)", { cwd: cwd() })).rejects.toThrow(/exited 3/);
   });
-  it("buildCustomTools 参数 schema 必填校验生效", () => {
+  it("buildCustomTools 只注册有真实实现的工具（ADR-0008）", () => {
     const tools = buildCustomTools();
-    expect(tools.map((t: any) => t.name)).toEqual(
-      expect.arrayContaining(["python_execute", "arxiv_search", "web_search", "webReader"]));
+    const names = tools.map((t: any) => t.name);
+    expect(names).toEqual(["python_execute"]);
+    // 旧 Python 运行时的占位检索工具不得再注册，否则模型会用 bash+curl 模拟联网
+    for (const ghost of ["arxiv_search", "web_search", "webReader"])
+      expect(names).not.toContain(ghost);
     const py: any = tools.find((t: any) => t.name === "python_execute");
     expect(py.parameters.required).toContain("code");
   });
