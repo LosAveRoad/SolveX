@@ -14,7 +14,8 @@ import { validateSummaryShape } from "../contracts/modelResult.js";
 import { ensureSummary } from "../gates/ensureSummary.js";
 import {
   modelingSystem, programmingSystem, writingSystem, renderReview,
-  renderPlan, renderPlanRetry, renderImplement, renderRevision, renderFix, renderPaper,
+  renderPlan, renderPlanRetry, renderImplement, renderSummaryRetry,
+  renderRevision, renderFix, renderPaper,
   ROLE_TOOLS,
 } from "../prompts/index.js";
 import { buildDag, type DagNode } from "./dag.js";
@@ -226,8 +227,15 @@ export class SolveXFlow {
         bus.done(`${m}: Code saved`, 2, node.taskId);
         const summaryPath = join(absModelDir, "results_summary.md");
         if (!existsSync(summaryPath)) {
+          // ADR-0009：先给一次专门的短会话让模型自己写摘要（P1 的 renderPlanRetry 同款兜底），
+          // 仍缺失时才由纯代码扫描目录生成含真实 CSV 数值的证据型摘要，不再抹掉计算结果。
+          bus.warn(`${m}: results_summary.md missing — requesting a dedicated summary turn`, 2, node.taskId);
+          await this.call(this.baseReq(node, "programming", programmingSystem(),
+            renderSummaryRetry({ abs_model_dir: absModelDir })), signal);
+        }
+        if (!existsSync(summaryPath)) {
           ensureSummary(absModelDir, m);
-          bus.warn(`${m}: results_summary.md missing — wrote structured placeholder`, 2, node.taskId);
+          bus.warn(`${m}: results_summary.md still missing — generated evidence-based summary from artifacts`, 2, node.taskId);
         }
         const verdict = parseVerdict({ text: r.text, dir: absModelDir });
         if (verdict.status === "satisfied") break;

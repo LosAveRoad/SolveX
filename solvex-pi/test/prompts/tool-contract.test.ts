@@ -36,6 +36,11 @@ describe("ADR-0008 工具契约回归", () => {
       expect(ROLE_TOOLS.modeling).not.toContain(ghost);
   });
 
+  it("ADR-0009：writing 放宽后仍全部是真实可注册的工具", () => {
+    expect(validateRoleTools()).toEqual([]);
+    for (const t of ROLE_TOOLS.writing) expect(AVAILABLE_TOOLS.has(t)).toBe(true);
+  });
+
   it("runner 注入 customTools，并把未知工具从白名单里过滤掉", async () => {
     const f = makeFakeSdk();
     await new PiAgentRunner({ bus: new EventBus(), sdk: f.sdk }).run({
