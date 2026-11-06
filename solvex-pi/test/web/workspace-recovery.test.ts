@@ -7,7 +7,7 @@ it('recovers interrupted workspaces as failed, rather than claiming a completed 
   const paths = testPaths(); const id = 'old-run';
   mkdirSync(join(paths.sessionRoot,id),{recursive:true});
   writeFileSync(join(paths.sessionRoot,id,'.solvex-meta.json'), JSON.stringify({ id, problem:'A', status:'running',created_at:new Date().toISOString() }));
-  const app = await createServer({fake:true,...paths});
+  const app = await createServer({...paths});
   try {
     const sessions = (await app.inject('/api/sessions')).json();
     expect(sessions.find((s:any)=>s.id===id).status).toBe('failed');

@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.0.3 — 2026-11-06（移除对外演示模式）
+
+### 变更
+- **删除公开演示模式**：`--fake` CLI 选项、`SOLVEX_FAKE` 环境变量、`ServerOptions.fake`
+  与 `SessionRegistry` 的 fake 分支全部移除。CLI 与 WebUI 现在 100% 走真实模型运行时，
+  用户不会再看到或误入合成数据的演示流程。
+- 未知 CLI 选项不再被静默忽略，而是明确报错，避免旧命令误触发真实模型调用。
+- `FakeAgentRunner` 保留为**内部测试实现**：测试通过
+  `installFakeRunner()` 对 `SessionRegistry.prototype.runner` 做 spy 注入，产品代码不再有任何开关。
+- CLI 端到端测试改为验证正常模式的参数解析、`inspect` / `validate` 只读命令与
+  「演示开关及旧环境变量均被拒绝」；四阶段流程覆盖仍由 `test/flow` 与 `test/web` 承担。
+- 清理 README / WebUI 使用说明中的演示命令；历史 benchmark 与迁移状态文档加注说明该模式已下线。
+
 ## 2.0.2 — 2026-11-05（结果证据链与工作区发现，ADR-0009）
 
 ### 修复

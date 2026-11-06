@@ -13,7 +13,6 @@ import { WorkspaceStore, registerWorkspaceRoutes } from "./workspaces.js";
 
 export type ServerOptions = {
   port?: number;
-  fake?: boolean;
   sessionRoot?: string;
   workspaceRoot?: string;
   configPath?: string;
@@ -31,7 +30,7 @@ export async function createServer(opts: ServerOptions = {}) {
   await app.register(multipart, { limits: { fileSize: 50 * 1024 * 1024, files: 30, fields: 20, fieldSize: 8 * 1024 * 1024 } });
   await app.register(fastifyStatic, { root: PUBLIC_DIR, prefix: "/static/" });
 
-  const registry = new SessionRegistry({ fake: opts.fake, sessionRoot: opts.sessionRoot ?? DEFAULT_ROOT,
+  const registry = new SessionRegistry({ sessionRoot: opts.sessionRoot ?? DEFAULT_ROOT,
     configPath: opts.configPath, modelsPath: opts.modelsPath });
   const modelConfig = new ModelConfigService({ configPath: opts.configPath, modelsPath: opts.modelsPath });
   registerRoutes(app, { registry, modelConfig });

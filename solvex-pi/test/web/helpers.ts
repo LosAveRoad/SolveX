@@ -1,6 +1,18 @@
 import { mkdtempSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { vi } from "vitest";
+import { FakeAgentRunner } from "@solvex/core";
+import { SessionRegistry } from "../../apps/web/src/runner.js";
+
+/**
+ * 仅测试内部使用：把 SessionRegistry 的 runner 工厂替换为 FakeAgentRunner。
+ * 产品代码不提供任何演示开关，演示 runner 只能通过这一依赖注入点进入。
+ */
+export function installFakeRunner(opts: Record<string, unknown> = {}) {
+  return vi.spyOn(SessionRegistry.prototype as any, "runner")
+    .mockImplementation(async () => new FakeAgentRunner({ synthetic: true, ...opts }));
+}
 
 export function testPaths() {
   const root = mkdtempSync(join(tmpdir(), "solvex-web-"));

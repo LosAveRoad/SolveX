@@ -14,11 +14,9 @@ npm run build:web
 npm run cli -- serve --port 8000
 ```
 
-Open http://127.0.0.1:8000. For an offline end-to-end demonstration:
-
-```bash
-npm run cli -- serve --fake --port 8000
-```
+Open http://127.0.0.1:8000. Configure at least one model provider credential in
+the WebUI model settings before starting a run. The CLI and the server always
+use the real model runtime; no demonstration switch is exposed.
 
 Rebuild after changing frontend source. A server without a frontend build
 shows build instructions instead of silently serving the old UI. For frontend

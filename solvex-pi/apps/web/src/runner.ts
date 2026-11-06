@@ -3,7 +3,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
   prepareWorkspace, ingestData, listSessions, scanArtifacts, writeSessionMeta, META_FILE,
-  EventBus, SolveXFlow, FakeAgentRunner, DEFAULT_CONFIG,
+  EventBus, SolveXFlow, DEFAULT_CONFIG,
   type AgentRunner, type ModelConfig, type WorkspaceInfo,
 } from "@solvex/core";
 import { PiAgentRunner, sharedModelRuntime } from "@solvex/pi-runtime";
@@ -17,11 +17,11 @@ export type Session = {
 
 export class SessionRegistry {
   private readonly sessions = new Map<string, Session>();
-  constructor(private readonly opts: { fake?: boolean; sessionRoot: string;
+  constructor(private readonly opts: { sessionRoot: string;
     configPath?: string; modelsPath?: string }) {}
 
+  /** 生产路径只构造真实 runner。测试通过 spy 本方法注入 FakeAgentRunner（无公开开关）。 */
   private async runner(bus: EventBus): Promise<AgentRunner> {
-    if (this.opts.fake) return new FakeAgentRunner({ synthetic: true });
     const modelRuntime = await sharedModelRuntime({ modelsPath: this.opts.modelsPath });
     return new PiAgentRunner({ bus, ...(modelRuntime ? { modelRuntime } : {}) });
   }

@@ -10,7 +10,6 @@ export type CliArgs = {
   strict: boolean;
   concurrency: number;
   port: number;
-  fake: boolean;
   sessionId?: string;
   interactive: boolean;
   help: boolean;
@@ -33,16 +32,16 @@ run 选项（与旧版 1:1 兼容）:
       --session-dir DIR          覆盖 ~/.solvex/sessions
       --concurrency N            并行上限（默认 3；=1 等价旧版串行）
       --strict                   Critical 问题阻断进入 P4
-      --fake                     用 FakeAgentRunner 演示（无需模型凭据）
   -h, --help                     显示帮助
 
+运行前需在 WebUI 的「模型设置」中配置至少一个可用的模型 provider 凭据。
 无参数运行 solvex run 时进入交互式问题输入。
 `;
 
 /** 手写解析，保持与旧 run_flow.py 参数一一对应。 */
 export function parseArgs(argv: string[]): CliArgs {
   const a: CliArgs = { command: "run", data: [], skipToWriting: false, strict: false,
-    concurrency: 3, port: 8000, fake: false, interactive: false, help: false };
+    concurrency: 3, port: 8000, interactive: false, help: false };
   const rest = [...argv];
   const cmds: Command[] = ["run", "serve", "inspect", "validate"];
   if (rest.length && cmds.includes(rest[0] as Command)) a.command = rest.shift() as Command;
@@ -60,8 +59,9 @@ export function parseArgs(argv: string[]): CliArgs {
       case "--strict": a.strict = true; break;
       case "--concurrency": a.concurrency = Math.max(1, Number(rest[++i]) || 3); break;
       case "--port": a.port = Number(rest[++i]) || 8000; break;
-      case "--fake": a.fake = true; break;
       default:
+        // 明确拒绝未知选项，避免旧版演示开关被静默忽略后误入真实模型调用。
+        if (x.startsWith("-")) throw new Error(`未知选项: ${x}`);
         if (!x.startsWith("-") && (a.command === "inspect" || a.command === "validate") && !a.sessionId)
           a.sessionId = x;
     }

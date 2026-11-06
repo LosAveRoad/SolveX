@@ -12,7 +12,7 @@ it('a key entered in the WebUI authenticates the runner runtime without appearin
     listCredentials:async()=>[], getRegisteredProviderIds:()=>[] };
   const manager = await ModelRuntimeManager.create({sdkRuntime:rt});
   const shared = vi.spyOn(ModelRuntimeManager,'shared').mockResolvedValue(manager);
-  const app = await createServer({fake:true,...paths});
+  const app = await createServer({...paths});
   try {
     const res = await app.inject({method:'POST',url:'/api/models/api-key',payload:{provider:'anthropic',apiKey:'sk-test-runtime-key'}});
     expect(res.statusCode).toBe(200);

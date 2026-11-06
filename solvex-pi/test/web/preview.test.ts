@@ -2,9 +2,9 @@ import { it, expect } from 'vitest';
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { createServer } from '@solvex/web';
-import { testPaths, startRun, waitForCompletion } from './helpers.js';
+import { testPaths, startRun, waitForCompletion, installFakeRunner } from './helpers.js';
 it('serves figure previews as their original image bytes and generated HTML as inert text', async () => {
- const paths=testPaths(); const app=await createServer({fake:true,...paths});
+ const paths=testPaths(); installFakeRunner(); const app=await createServer({...paths});
  try {
   const {id}=await startRun(app); await waitForCompletion(app,id);
   const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aOrsAAAAASUVORK5CYII=','base64');
