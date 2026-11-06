@@ -1,9 +1,9 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { join, resolve } from "node:path";
+import { join } from "node:path";
 import { homedir } from "node:os";
 import {
-  prepareWorkspace, ingestData, listSessions, scanArtifacts, EventBus,
-  SolveXFlow, FakeAgentRunner, validateModelOutput, DEFAULT_CONFIG,
+  prepareWorkspace, ingestData, scanArtifacts, EventBus,
+  SolveXFlow, validateModelOutput,
   type AgentRunner, type ModelConfig,
 } from "@solvex/core";
 import { PiAgentRunner, ConfigStore, sharedModelRuntime } from "@solvex/pi-runtime";
@@ -29,8 +29,8 @@ async function readProblem(a: CliArgs): Promise<string> {
   return Buffer.concat(chunks).toString("utf-8").trim();
 }
 
-async function makeRunner(a: CliArgs, bus: EventBus): Promise<AgentRunner> {
-  if (a.fake || process.env.SOLVEX_FAKE === "1") return new FakeAgentRunner({ synthetic: true });
+/** 生产路径永远构造真实 runner。FakeAgentRunner 只由内部测试通过依赖注入使用。 */
+async function makeRunner(bus: EventBus): Promise<AgentRunner> {
   // 注入 modelRuntime，让 models.json 自定义端点与 config.json 分档模型真正生效
   const modelRuntime = await sharedModelRuntime();
   return new PiAgentRunner({ bus, ...(modelRuntime ? { modelRuntime } : {}) });
@@ -49,7 +49,7 @@ async function runCommand(a: CliArgs): Promise<number> {
   bus.subscribe((e) => { const s = renderEvent(e); if (s) process.stdout.write(s + "\n"); });
   const store = new ConfigStore();
   const config: ModelConfig = { ...store.load(), concurrency: a.concurrency, strict: a.strict };
-  const flow = new SolveXFlow({ runner: await makeRunner(a, bus), bus, ws, config, problem,
+  const flow = new SolveXFlow({ runner: await makeRunner(bus), bus, ws, config, problem,
     dataInfo: a.data.length ? `\nDATA FILES: ${a.data.join(", ")}\n` : "",
     resumeFrom: a.fromModel, skipToWriting: a.skipToWriting });
   const summary = await flow.run();
@@ -88,8 +88,7 @@ async function validateCommand(a: CliArgs): Promise<number> {
 
 async function serveCommand(a: CliArgs): Promise<number> {
   const { startServer } = await import("@solvex/web");
-  await startServer({ port: a.port, fake: a.fake || process.env.SOLVEX_FAKE === "1",
-    sessionRoot: a.sessionDir ?? SESSION_ROOT });
+  await startServer({ port: a.port, sessionRoot: a.sessionDir ?? SESSION_ROOT });
   process.stdout.write(`SolveX WebUI 2.0: http://127.0.0.1:${a.port}/\n`);
   return 0; // 常驻进程
 }

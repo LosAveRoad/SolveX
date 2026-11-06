@@ -4,8 +4,7 @@
 
 ```bash
 npx tsx apps/cli/src/index.ts serve --port 8000
-# 无凭据演示（FakeRunner + 合成 Pi 事件）
-npx tsx apps/cli/src/index.ts serve --fake --port 8000
+# 凭据在「模型设置」中配置；服务始终走真实模型运行时
 ```
 
 浏览器打开 `http://127.0.0.1:8000/`（服务只绑定回环地址，R5/ADR-10）。

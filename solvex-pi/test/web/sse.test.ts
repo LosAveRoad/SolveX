@@ -1,11 +1,12 @@
 import { describe, it, expect } from "vitest";
 import { createServer } from "@solvex/web";
-import { testPaths, startRun } from "./helpers.js";
+import { testPaths, startRun, installFakeRunner } from "./helpers.js";
 
 describe("T5.2 SSE 全事件流", () => {
   it("event:/id:/data: 格式、Last-Event-ID 续传、complete 关流、ping 心跳", async () => {
     const p = testPaths();
-    const app = await createServer({ fake: true, sessionRoot: p.sessionRoot,
+    installFakeRunner();
+    const app = await createServer({ sessionRoot: p.sessionRoot,
       configPath: p.configPath, modelsPath: p.modelsPath, pingMs: 120 });
     await app.listen({ host: "127.0.0.1", port: 0 });
     const port = (app.server.address() as any).port;

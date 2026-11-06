@@ -28,7 +28,16 @@ describe("T4.1 CLI 参数解析（与旧版 1:1 兼容）", () => {
   });
   it("帮助文本列出旧参数与新增参数", () => {
     for (const k of ["--problem", "--data", "--resume", "--skip-to-writing",
-                     "--concurrency", "--strict", "--fake"])
+                     "--concurrency", "--strict"])
       expect(HELP).toContain(k);
+  });
+
+  it("演示模式不作为公开选项暴露，未知选项直接报错", () => {
+    expect(HELP).not.toContain("--fake");
+    expect(HELP).not.toContain("FakeAgentRunner");
+    expect(HELP).toContain("模型设置");
+    const a = parseArgs(["run", "-p", "p.md"]);
+    expect("fake" in a).toBe(false);
+    expect(() => parseArgs(["run", "--fake"])).toThrow(/未知选项/);
   });
 });

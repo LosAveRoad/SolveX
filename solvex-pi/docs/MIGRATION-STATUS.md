@@ -28,7 +28,7 @@ typecheck   tsc -p tsconfig.base.json --noEmit  ✅
 
 唯一 skip 项：`test/pi/integration.test.ts`（需 `PI_TEST_MODEL` 真实模型凭据，PRE-3）。
 
-## 端到端演示实测（`serve --fake`）
+## 历史端到端演示实测（内部测试 runner，2.0.3 起已不对用户开放）
 
 - 一次完整运行产出 **216 个 SSE 事件**，覆盖 15 种类型（thinking=40 / stage=20 / usage=8 / barrier=6 / complete=1）。
 - 阶段 DAG 11 个节点、34 个产物文件（含上传的 `data/data.csv`）、ZIP 下载合法、凭据响应无 `sk-`。

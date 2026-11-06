@@ -29,7 +29,7 @@ apps/web ─┼─→ @solvex/core（零 Pi 依赖，AgentRunner 端口倒置）
 | --- | --- |
 | Node | **>= 22.19**（本仓库用 22.20.0，见 `.nvmrc`） |
 | pnpm | 10.x |
-| 模型凭据 | 至少 1 个 provider 的 API Key / OAuth（放进环境变量或 `~/.pi/agent/`）；**无凭据时可用 `--fake` 演示** |
+| 模型凭据 | 至少 1 个 provider 的 API Key / OAuth（环境变量或 WebUI「模型设置」中运行时注入）；**运行前必须配置** |
 
 ```bash
 pnpm install
@@ -52,12 +52,10 @@ npx tsx apps/cli/src/index.ts inspect <session_id>
 # 启动 WebUI 2.0（只绑定 127.0.0.1）
 npx tsx apps/cli/src/index.ts serve --port 8000
 
-# 无模型凭据的完整演示（FakeRunner + 合成 Pi 事件）
-npx tsx apps/cli/src/index.ts run --fake -p problem.md
-npx tsx apps/cli/src/index.ts serve --fake --port 8000
+# 凭据在 WebUI「模型设置」中配置；CLI 与 WebUI 始终使用真实模型运行时
 ```
 
-参数与旧版 `run_flow.py` 1:1 兼容，新增 `--concurrency N` / `--strict` / `--session-dir` / `--fake`。
+参数与旧版 `run_flow.py` 1:1 兼容，新增 `--concurrency N` / `--strict` / `--session-dir`；未提供演示模式，未知选项会直接报错。
 `--strict` 对应 D4：质量门发现 Critical 问题时阻断进入 P4（默认关闭，只告警）。
 
 ## Workspace WebUI

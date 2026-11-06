@@ -1,13 +1,14 @@
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { readFileSync, existsSync } from "node:fs";
 import { createServer } from "@solvex/web";
-import { testPaths, multipart, startRun, waitForCompletion } from "./helpers.js";
+import { testPaths, multipart, startRun, waitForCompletion, installFakeRunner } from "./helpers.js";
 
 let app: any; let paths: ReturnType<typeof testPaths>;
 
 beforeAll(async () => {
+  installFakeRunner();
   paths = testPaths();
-  app = await createServer({ fake: true, sessionRoot: paths.sessionRoot,
+  app = await createServer({ sessionRoot: paths.sessionRoot,
     configPath: paths.configPath, modelsPath: paths.modelsPath, pingMs: 200 });
   await app.ready();
 });
