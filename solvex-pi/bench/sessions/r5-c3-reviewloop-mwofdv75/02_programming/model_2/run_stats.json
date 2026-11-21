@@ -1,0 +1,15 @@
+{
+ "status": "ok",
+ "n_seasons": 34,
+ "mean_hit_mode": 0.3618,
+ "mean_hit_draws": 0.3485,
+ "mean_flip_prob": 0.1289,
+ "mean_veto_flip": 0.1227,
+ "zero_flip_seasons": 0,
+ "mean_fanfavor_RANK": 0.9777,
+ "mean_fanfavor_PERCENT": 0.9652,
+ "n_seasons_PERCENT_favor_more": 11,
+ "perm_true": 0.3618,
+ "perm_shuffled": 0.2167,
+ "sample_csv_rows": 134
+}

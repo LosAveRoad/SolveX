@@ -1,0 +1,758 @@
+{
+  "label": "r2-c3-budget",
+  "model": "mistralgw/zai-glm-5-3-flash",
+  "thinking": "medium",
+  "concurrency": 3,
+  "sessionDir": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh",
+  "status": "completed",
+  "wallMs": 1854992,
+  "stagesMs": {
+    "P1": 42827,
+    "P2-IMPL:model_1": 887940,
+    "P2-IMPL:model_2": 624969,
+    "P2-IMPL:model_3": 420997,
+    "barrier-all-results": 0,
+    "P2-REVIEW:model_1": 49773,
+    "P2-REVIEW:model_2": 660838,
+    "P2-REVIEW:model_3": 228209,
+    "barrier-reviews": 0,
+    "P3": 56,
+    "P4": 262918
+  },
+  "stageStates": {
+    "P1": "done",
+    "P2-IMPL:model_1": "done",
+    "P2-IMPL:model_2": "done",
+    "P2-IMPL:model_3": "done",
+    "barrier-all-results": "done",
+    "P2-REVIEW:model_1": "done",
+    "P2-REVIEW:model_2": "done",
+    "P2-REVIEW:model_3": "done",
+    "barrier-reviews": "done",
+    "P3": "done",
+    "P4": "done"
+  },
+  "parallel": {
+    "implWallMs": 887940,
+    "implSumMs": 1933906,
+    "reviewWallMs": 660839,
+    "reviewSumMs": 938820,
+    "implSpeedup": 2.18,
+    "reviewSpeedup": 1.42
+  },
+  "tokens": {
+    "solvexReported": {
+      "total": 5055569,
+      "byTask": {
+        "P1": {
+          "input": 10124,
+          "output": 3600,
+          "cacheRead": 2304,
+          "cost": 0,
+          "calls": 1
+        },
+        "P2-IMPL:model_3": {
+          "input": 133173,
+          "output": 31968,
+          "cacheRead": 588672,
+          "cost": 0,
+          "calls": 1
+        },
+        "P2-IMPL:model_2": {
+          "input": 259012,
+          "output": 48152,
+          "cacheRead": 450432,
+          "cost": 0,
+          "calls": 2
+        },
+        "P2-IMPL:model_1": {
+          "input": 259354,
+          "output": 82213,
+          "cacheRead": 650880,
+          "cost": 0,
+          "calls": 1
+        },
+        "P2-REVIEW:model_1": {
+          "input": 43357,
+          "output": 4642,
+          "cacheRead": 41472,
+          "cost": 0,
+          "calls": 1
+        },
+        "P2-REVIEW:model_3": {
+          "input": 149254,
+          "output": 24398,
+          "cacheRead": 118656,
+          "cost": 0,
+          "calls": 1
+        },
+        "P2-REVIEW:model_2": {
+          "input": 205018,
+          "output": 57314,
+          "cacheRead": 157824,
+          "cost": 0,
+          "calls": 1
+        },
+        "P4": {
+          "input": 296579,
+          "output": 32883,
+          "cacheRead": 1404288,
+          "cost": 0,
+          "calls": 1
+        }
+      }
+    },
+    "finalMessages": {
+      "input": 1355871,
+      "output": 285170,
+      "cacheRead": 3414528,
+      "msgs": 178
+    },
+    "gateway": {
+      "requests": 173,
+      "prompt_tokens": 4770399,
+      "cached_tokens": 3414528,
+      "completion_tokens": 285170
+    }
+  },
+  "tools": {
+    "P1": {
+      "calls": 1,
+      "errors": 0,
+      "byName": {
+        "write": 1
+      }
+    },
+    "P2-IMPL:model_3": {
+      "calls": 30,
+      "errors": 4,
+      "byName": {
+        "write": 4,
+        "read": 1,
+        "bash": 16,
+        "python_execute": 3,
+        "edit": 6
+      }
+    },
+    "P2-IMPL:model_1": {
+      "calls": 35,
+      "errors": 9,
+      "byName": {
+        "write": 13,
+        "read": 3,
+        "bash": 11,
+        "edit": 8
+      }
+    },
+    "P2-IMPL:model_2": {
+      "calls": 40,
+      "errors": 7,
+      "byName": {
+        "write": 5,
+        "bash": 22,
+        "edit": 7,
+        "read": 6
+      }
+    },
+    "P2-REVIEW:model_3": {
+      "calls": 23,
+      "errors": 0,
+      "byName": {
+        "ls": 2,
+        "find": 2,
+        "read": 13,
+        "grep": 6
+      }
+    },
+    "P2-REVIEW:model_2": {
+      "calls": 22,
+      "errors": 0,
+      "byName": {
+        "ls": 5,
+        "read": 8,
+        "grep": 9
+      }
+    },
+    "P2-REVIEW:model_1": {
+      "calls": 11,
+      "errors": 0,
+      "byName": {
+        "ls": 3,
+        "read": 6,
+        "grep": 2
+      }
+    },
+    "P4": {
+      "calls": 40,
+      "errors": 7,
+      "byName": {
+        "write": 1,
+        "edit": 20,
+        "grep": 1,
+        "bash": 16,
+        "read": 2
+      }
+    }
+  },
+  "writes": [
+    {
+      "taskId": "P1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/01_modeling/master_plan.md",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/01_modeling/master_plan.md",
+      "cls": "shared_file",
+      "blocked": true
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/01_modeling/master_plan.md",
+      "cls": "shared_file",
+      "blocked": true
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/01_modeling/master_plan.md",
+      "cls": "shared_file",
+      "blocked": true
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/master_plan.md",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/master_plan.md",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/01_prepare_data.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/01_prepare_data.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/02_fit_hierarchical.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/02_fit_hierarchical.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/02_fit_hierarchical.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/02_fit_hierarchical.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/02_fit_hierarchical.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/02_fit_hierarchical.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/dwts_model2.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/dwts_model2.py",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/dwts_model2.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/dwts_model2.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/dwts_model2.py",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/dwts_model2.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_3/results_summary.md",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/dwts_model2.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/run_all.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/dwts_common.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/results_summary.md",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/results_summary.md",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/run_model1.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/run_model1.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/model_1.py",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/run_model1.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/run_model1.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/dwts_common.py",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/dwts_common.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/run_model1.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/dwts_common.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/dwts_common.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/dwts_common.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/run_model1.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/run_model1.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/make_figures.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/make_figures.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/results_summary.md",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "write",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/handoff.json",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "tool": "edit",
+      "path": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_1/make_figures.py",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "write",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok",
+      "blocked": true
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok"
+    },
+    {
+      "taskId": "P4",
+      "tool": "edit",
+      "path": "04_paper/main.tex",
+      "cls": "ok",
+      "blocked": true
+    }
+  ],
+  "writeClasses": {
+    "ok": 60,
+    "shared_file": 3
+  },
+  "warns": [
+    {
+      "taskId": "P2-IMPL:model_3",
+      "message": "tool write failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool write failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "tool write failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "message": "tool python_execute failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_3",
+      "message": "P2-IMPL:model_3: hit maxTurns=30; session truncated"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "P2-IMPL:model_2: hit maxTurns=30; session truncated"
+    },
+    {
+      "taskId": "P2-IMPL:model_2",
+      "message": "Model 2: results_summary.md missing — requesting a dedicated summary turn"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "tool bash failed"
+    },
+    {
+      "taskId": "P2-IMPL:model_1",
+      "message": "P2-IMPL:model_1: hit maxTurns=30; session truncated"
+    },
+    {
+      "taskId": "P4",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P4",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P4",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P4",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P4",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P4",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P4",
+      "message": "tool edit failed"
+    },
+    {
+      "taskId": "P4",
+      "message": "P4: hit maxTurns=40; session truncated"
+    }
+  ],
+  "lifecycle": {
+    "agent_start": 19,
+    "agent_end": 18,
+    "agent_settled": 14,
+    "agent_settled:aborted": 4,
+    "agent_end:willRetry": 1,
+    "auto_retry:auto_retry_start": 1,
+    "auto_retry:auto_retry_end": 1
+  },
+  "deltaEvents": 42279,
+  "models": [
+    {
+      "name": "Model 3",
+      "dir": "model_3",
+      "verdict": "unknown",
+      "issues": []
+    },
+    {
+      "name": "Model 2",
+      "dir": "model_2",
+      "verdict": "unknown",
+      "issues": []
+    },
+    {
+      "name": "Model 1",
+      "dir": "model_1",
+      "verdict": "unknown",
+      "issues": []
+    }
+  ],
+  "issues": [],
+  "paper": {
+    "exists": true,
+    "bytes": 50001
+  }
+}

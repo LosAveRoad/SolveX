@@ -1,0 +1,4 @@
+model,k,aic,basis,engine
+cluster-OLS judge surface,11.0,11321.956347967069,MLE,"cluster_OLS (cov_type=cluster, clusters=cid)"
+cluster-OLS fan surface,11.0,21497.004853353013,MLE,"cluster_OLS (cov_type=cluster, clusters=cid)"
+MixedLM (primary earlier design),,,n/a,"MixedLM converged, llf = -5981.37 (reported, not primary)"

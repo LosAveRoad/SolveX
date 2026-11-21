@@ -6,6 +6,8 @@ export type PiSessionLike = {
   dispose(): void;
   prompt(text: string): Promise<void>;
   abort(): Promise<void>;
+  /** 运行中插队消息（当前轮工具执行完、下一次 LLM 调用前送达）。 */
+  steer?(text: string): Promise<unknown>;
   waitForIdle(): Promise<void>;
   getLastAssistantText(): string | undefined;
   setModel(model: any): Promise<void>;
@@ -15,7 +17,9 @@ export type PiSessionLike = {
 export type PiSdk = {
   createAgentSession(options: any): Promise<{ session: PiSessionLike }>;
   DefaultResourceLoader: new (options: any) => { reload(): Promise<void> };
-  SessionManager: { inMemory(): unknown; create(cwd: string): unknown };
+  /** open(path, sessionDir, cwd)：打开或在该路径新建一份 JSONL 会话日志（断点续跑基于它）。 */
+  SessionManager: { inMemory(): unknown; create(cwd: string): unknown;
+                    open(path: string, sessionDir?: string, cwdOverride?: string): unknown };
   SettingsManager: { create(...args: any[]): unknown };
   getAgentDir(): string;
   ModelRuntime: { create(options: any): Promise<any> };

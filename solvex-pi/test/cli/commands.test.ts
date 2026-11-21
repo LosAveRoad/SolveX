@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync } from "node:fs";
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -41,6 +41,13 @@ describe("CLI 命令（正常模式；演示 runner 仅由内部测试注入）"
     expect(help).not.toContain("FakeAgentRunner");
     expect(help).toContain("模型设置");
   }, 30_000);
+
+  it("--mcp-preset 未知预设直接报错，且不写坏配置文件", () => {
+    const root = mkdtempSync(join(tmpdir(), "solvex-cli-mcp-"));
+    const cfg = join(root, "mcp.json");
+    expect(() => run(["run", "--mcp-preset", "nope", "--mcp-config", cfg])).toThrow();
+    expect(existsSync(cfg)).toBe(false);
+  }, 60_000);
 
   it("演示开关与旧环境变量都不再被接受", () => {
     expect(() => run(["run", "--fake"])).toThrow();

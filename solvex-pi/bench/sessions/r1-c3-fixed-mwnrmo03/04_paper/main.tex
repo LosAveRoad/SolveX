@@ -1,0 +1,315 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\captionsetup{font=small,labelfont=bf}
+
+\title{Recovering the hidden fan vote in \emph{Dancing with the Stars}: a
+constrained Bayesian reconstruction, rank vs.\ percentage counterfactuals, and
+celebrity covariate impacts}
+\author{Team Reference}
+\date{2026 Mathematical Contest in Modeling --- Problem C}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection{Background and motivation}
+\label{sec:intro}
+
+\emph{Dancing with the Stars} (DWTS), the American counterpart of the British franchise
+\emph{Strictly Come Dancing}, completed its 34th season with the same structural tension
+that has defined it since Season 1: celebrities are scored each week by an expert judge
+panel, while fans vote --- in unknown quantities --- to keep their favorites. The show
+combines the two signals to decide who is eliminated, and the combination rule has
+evolved: ranks in Seasons 1--2, percentages in Seasons 3--27, and a bottom-two judges'
+save from Season 28 onward. Because fan votes were never released, every question the
+producers might ask --- how fan-favorable a given rule is, whether a controversial
+result would flip under the other rule, which celebrity attributes drive fan versus
+judge support --- presupposes an estimate of a quantity that does not exist in the data.
+
+This makes DWTS an \emph{inverse problem}: reconstruct hidden weekly fan votes from judge
+scores, contestant covariates, and the observed elimination record, with honest
+per-couple--week uncertainty. Once reconstructed, the posterior draws of the fan votes
+can be replayed under both combination rules actually used by the show to ask where the
+rules disagree, and whether the choice of rule would have changed documented results.
+Finally, the reconstructed fan shares feed a dual-channel regression that asks \emph{why}
+fans and judges diverge: which celebrity attributes (age, industry, prior fame,
+professional partner) move the judge channel but not the fan channel, or vice versa ---
+the structural source of every ``controversy'' in the show's history.
+
+The problem statement asks five things of us: (1) a model producing estimated fan votes
+per contestant-week with consistency and certainty measures; (2) using those estimates,
+a cross-season comparison of the rank and percentage combination methods, including
+whether either favors fans, and application to the four documented controversies
+(Jerry Rice S2, Billy Ray Cyrus S4, Bristol Palin S11, Bobby Bones S27), plus the
+impact of a judges'-choose-from-bottom-two approach; (3) a model quantifying the impact
+of pro dancers and celebrity characteristics (age, industry, etc.)\ on outcomes, and
+whether they affect judges and fans the same way; (4) a proposed ``fairer or better''
+system with supporting argument; (5) a report (this document) with a producers' memo
+(Appendix A).
+
+\subsection{The data}
+
+The provided file \texttt{data/2026\_MCM\_Problem\_C\_Data.csv} covers Seasons 1--34 of the
+U.S.\ show and contains contestant information (celebrity name, professional partner,
+industry, age), weekly judge scores for every couple-week, and elimination outcomes.
+From these inputs we construct the analysis panel used by all three models:
+\begin{itemize}
+\item \textbf{Scale}: $n = 2864$ couple-week observations across 34 seasons and up to 11
+competition weeks per season, spanning 264 observed elimination events;
+\item \textbf{Judge scores}: weekly panel totals from 8 to 45 points (mean 26.11),
+normalized within week to judge shares $j_{c,w} \in [0.0355,\, 0.5046]$ (mean 0.1257);
+\item \textbf{Celebrity ages}: 14 to 82 (mean 36.16);
+\item \textbf{Industries}: 26 raw categories, consolidated for modeling into
+actor/actress (reference), athlete, comedian, model, singer/rapper, social media
+personality, TV personality, and other;
+\item \textbf{Elimination outcomes}: 298 couple-weeks carry \texttt{status = eliminated}
+(10.4\% of the panel); the residual 2{,}566 are \texttt{alive} weeks;
+\item \textbf{Rule eras}: 814 rank-era and 2{,}050 percentage-era couple-weeks, following
+the documented S1--2 / S3--27 / S28+ segmentation.
+\end{itemize}
+
+From these inputs, Model 1 estimates the missing weekly fan shares; the posterior means
+and standard deviations (mean \texttt{fshare\_mean} $= 0.1178$, mean
+\texttt{fshare\_sd} $= 0.02699$) become the fan channel of Model 3, and the full
+posterior becomes the input distribution of Model 2's counterfactual replays.
+
+\subsection{Our approach in brief}
+
+We built three linked models (documented in the modeling plan and formalized in
+Sections \ref{sec:model2}--\ref{sec:model3}):
+\begin{enumerate}
+\item \textbf{Model 1 --- Bayesian inverse-elimination fan-vote reconstruction.} A
+constrained latent-variable model: weekly fan shares are drawn from a judge-anchored
+Dirichlet prior, and only posterior draws consistent with the observed elimination (a
+hard feasibility region C1--C4) are retained. Output: $n=2864$ posterior medians with
+$q_{025}$, $q_{975}$, IQR, and an identification flag per couple-week.
+\item \textbf{Model 2 --- rank vs.\ percentage counterfactual engine.} Every posterior
+fan-vote draw is recombined under both official combination rules (plus the judges'
+save and a $\lambda$-damped Gamma variant), yielding per-season eliminated couples,
+bottom-two sets, podium flips, and disagreement statistics $D(k)$.
+\item \textbf{Model 3 --- dual-channel mixed effects and survival.} Separate regressions
+for the judge channel $\log(\texttt{Jshare})$ and the fan channel
+$\mathrm{logit}(\texttt{fshare})$ on celebrity covariates, re-estimated per posterior
+draw with bootstrap confidence intervals, plus a discrete-time survival model and
+pro-dancer random effects.
+\end{enumerate}
+
+Section \ref{sec:model1} formalizes Model 1 and reports its reconstruction quality and
+certainty measures; Sections \ref{sec:model2} and \ref{sec:model3} formalize the rule
+engine and the covariate/survival models; Section \ref{sec:results} integrates the
+findings; and Section \ref{sec:conclusion} concludes with recommendations for future
+seasons.
+
+\section{Model 1: Bayesian Inverse-Elimination Fan Vote Reconstruction}
+\label{sec:model1}
+\subsection{Problem statement}
+
+Model 1 addresses the first and most fundamental question: \emph{what were the hidden fan
+votes?} The fan votes $F_{c,w}$ of couple $c$ in week $w$ are never observed. What \emph{is}
+observed is (i) judge scores $J_{c,w}$, (ii) contestant covariates $x_c$ (celebrity age,
+industry, prior fame proxy, season), and (iii) a discrete, censored outcome --- each
+week's elimination. The observation process is therefore a censored ordering: we see the
+argmin of a combined score, not the underlying continuous fan-vote vector. Model 1 turns
+this into an explicit constrained posterior. Its output is the single source of inputs
+for Models 2 and 3, so its estimates must be (a) consistent with every observed
+elimination, (b) uncertainty-quantified per couple-week, and (c) flagged wherever out-of-
+sample identification fails.
+
+\subsection{Mathematical formulation}
+
+Let $\mathcal{C}(w)$ be the couples active in week $w$, $E_w$ the observed eliminated
+couple, and $s \in \{\text{rank}, \text{pct}\}$ the combination rule active in that season.
+We work on the simplex: each week, fan shares $\mathbf{f}_w = (f_{1,w},\dots,f_{|\mathcal
+{C}(w)|,w})$ satisfy $f_{c,w} \ge 0$ and $\sum_{c \in \mathcal{C}(w)} f_{c,w} = 1$.
+
+\paragraph{Judge share.} Within week $w$ we compute the normalized judge share
+\begin{equation}
+j_{c,w} \;=\; \frac{J_{c,w}}{\sum_{c' \in \mathcal{C}(w)} J_{c',w}} \in [0,1].
+\end{equation}
+
+\paragraph{Latent fan utility.} Ranking a couple out of the show is driven by a latent
+Plackett--Luce utility
+\begin{equation}
+u_{c,w} \;=\; \log(F_{c,w}) \;+\; \gamma\, j_{c,w} \;+\; \delta_{c,w},
+\end{equation}
+where $\gamma$ measures how strongly the judge signal leaks into fan voting (a
+\emph{judge-alignment} coefficient) and $\delta_{c,w}$ is a couple-week disturbance. The
+couple with the lowest utility is eliminated, so the observed elimination is an exact
+censored event on $\mathbf{f}_w$: posterior draws must place $E_w$ at the bottom under the
+active rule.
+
+\paragraph{Feasibility region C1--C4.} Four constraint families define the feasible
+polytope:
+\begin{align}
+\text{C1:} \quad & \mathbf{f}_w \in \Delta^{|\mathcal{C}(w)|-1} \quad \text{(simplex)}; \\
+\text{C2:} \quad & \text{eliminated } E_w \text{ has the lowest combined score under rule } s;
+ \\
+\text{C3:} \quad & E_w \text{ must be minimal (noneliminated couples cannot score below
+eliminated couples)}; \\
+\text{C4:} \quad & 0 \le F_{c,w} \le F^{\max}(w) \text{ (vote-capacity upper bound)}.
+\end{align}
+C3 is the binding rank-domination requirement: in every reconstructed week, no surviving
+couple may fall below the eliminated one.
+
+\paragraph{Priors.} Fan shares are anchored to the judge signal, $\mathbf{f}_w \sim
+\text{Dirichlet}(\kappa\, j_{c,w} + g(\mathbf{x}_c))$, with $\kappa$ a concentration
+parameter and $g$ a covariate shift from celebrity attributes; $\gamma$, $\delta$, and the
+hyperparameters receive weakly informative half-Cauchy priors.
+
+\paragraph{Posterior.} The target is
+\begin{equation}
+p(\mathbf{F} \mid \text{data}) \;\propto\;
+p(\mathbf{F})\,\prod_{w}\,
+\big[\, \mathbf{1}[\text{C1--C4 hold for week } w] \,\big],
+\end{equation}
+and we report per couple-week the posterior median fan share $\tilde f_{c,w}$, the 2.5\%
+and 97.5\% quantiles, the interquartile range (IQR), and an \emph{identification flag}
+marking couple-weeks where constraints alone (rather than the prior and covariates) pin
+down the estimate.
+
+\subsection{Implementation}
+
+Model 1 is implemented in \texttt{model\_1/model1\_fan\_votes.py} (16 KB). The pipeline is:
+\begin{enumerate}
+\item \textbf{Tidy panel construction.} Raw CSV builds a per-couple--week panel. Weeks
+where fan shares are simply uninformative (before the first meaningful vote split) are
+labeled \texttt{prior}; weeks carrying elimination information are labeled
+\texttt{constraint}.
+\item \textbf{Sampling.} We use hit-and-run over the polytope implied by C1--C4, with the
+judge-anchored Dirichlet prior as the sampling distribution. Seeded RNG
+(\texttt{rng(1\_000\_000)}-style seeds per season--week) guarantees reproducibility, and
+two independent runs reproduce identical summary tables.
+\item \textbf{Score scale.} Fan votes are expressed on a weekly total scale of
+$10^6$ votes, with per-week totals split by share.
+\item \textbf{Outputs.} \texttt{fan\_votes\_estimates.csv} (2{,}864 couple-week rows:
+median share, $q_{025}/q_{975}$, IQR, rank and percent perspectives) and
+\texttt{consistency\_stats.json}.
+\end{enumerate}
+
+\subsection{Results: how much certainty do we have, and where does it fail?}
+
+\paragraph{Reconstruction consistency.} Model 1 reproduces $231$ of the $264$ observed
+elimination events at posterior-median fan shares --- an \textbf{87.5\% consistency rate}.
+For contrast, we simulated from the prior alone: only a \textbf{21.6\%
+prior-baseline} reproduction rate, meaning the reconstruction beats the uninformed
+baseline by a factor of roughly four. By construction, no surviving couple ever falls
+below an eliminated one (C3 holds for all 2{,}336 constraint weeks, and C4 vote-capacity
+bounds hold throughout). Weekly votes are expressed on a $10^6$-vote season scale, with
+the vote capacity $F^{\max}(w)$ re-derived each week from the number of active couples.
+
+\paragraph{Certainty is not homogeneous.} The mean 95\%-interval width is
+\textbf{0.3458} fan share --- substantial relative to a mean estimated fan share of
+\textbf{0.1178} --- so honest conclusions must be interval-based, not point-based.
+The IQR-median ratio \texttt{W\_ratio} averages \textbf{1.0434}, i.e.\ the interquartile
+range is roughly the same size as the median estimate itself. A regression of
+$\log W$ on week and $|r|$ (the judge--fan share residual) yields
+\begin{equation}
+\log W \;=\; -0.4880 \;-\; 0.02228\,\text{week} \;+\; 5.4998\,|r|,
+\end{equation}
+with the $|r|$ coefficient dominating (intercept $-0.4880$, week slope $-0.02228$). Two
+readings follow: (i) weekly interval width \emph{narrow slightly} over a season (the
+negative slope $-0.02228$), because as couples are eliminated the polytope C1--C4 tightens
+and each remaining couple's feasible region shrinks; (ii) interval width is driven by the
+judge--fan residual $|r|$ (slope $5.4998$ on the log scale) --- couples whose temperament
+conflicts with judges get wide, prior-dominated intervals, exactly the celebrity-heavy
+cases where the latent variable is hardest to pin down from a single elimination event
+per week.
+
+\paragraph{Identification flags.} Of 2{,}864 couple-weeks, \textbf{2{,}336 rows are
+constraint-identified} and \textbf{528 rows are prior-identified} (\texttt{prior}), i.e.\ a
+row whose fan share is set by the judge-anchored prior in weeks the elimination event
+carries no usable signal (for example, weeks where every active couple's combined score
+seat is far from the bottom). Two weeks --- season 1, week 6 and season 3, week 10 ---
+remain entirely infeasible for a rank-consistent fan-share split after their elimination
+events, and are carried as \texttt{prior} rather than silently imputed; in the earliest
+disagreement weeks (e.g.\ weeks involving couples eliminated in season 2, weeks 7 and 8),
+rows are flagged \texttt{not minimal} rather than forced into a spurious split.
+
+\paragraph{Controversy deep-dive.} The reconstruction places the four archetypal
+controversies in a numerical context demanded by the problem statement:
+\begin{itemize}
+\item \textbf{Jerry Rice (Season 2).} Jerry Rice's weekly reconstruction carries fan
+shares up to a \texttt{fan\_share\_q975} of $0.7701$ with median $0.2252$ in the decisive
+final stretch --- the highest single-couple fan support we reconstruct in the rank era
+--- while his combined score sat firmly in the bottom half of the leaderboard, making his
+run to the final the canonical rank-rule rescue.
+\item \textbf{Billy Ray Cyrus (Season 4).} Fan share medians of roughly
+$0.0442$ in his bottom weeks (q025 to $0.3307$ quantile band, \texttt{W\_ratio} $0.2390$)
+carry him through weeks where the judge share was as low as $0.05$ --- the widest
+fan--judge gap of the percentage era at that point in the show's history, and the flash
+point for the S3--S27 percentage-rule switch.
+\item \textbf{Bristol Palin (Season 11).} Her reconstructed median fan share peaks at
+$0.3163$ in week 10 (q025 band $0.0052$--$0.4972$) with \texttt{W\_ratio} $0.1470$: solid
+fan support combined with the lowest judge scores of her season at exactly the weeks the
+percentage rule was least able to save her.
+\item \textbf{Bobby Bones (Season 27).} Similarly, the Season 27 winner's fan share
+reaches $0.4855$ at the median in the decisive week ($q_{975}$ near $0.9070$) against
+bottom-half judge scores, the case that triggered the show's switch to the bottom-two
+judges' save from Season 28 onward.
+\end{itemize}
+
+\paragraph{What the numbers cost.} The single most important caveat is that certainty
+differs by couple-week, driven by the judge--fan residual, and \emph{precisely} the
+controversial couples (Bristol Palin, Bobby Bones, Jerry Rice, Billy Ray Cyrus) fall in
+the widest-interval strata: their high $|r|$ values produce wider intervals through the
+$\log W$ regression, so the model is simultaneously most confident about \emph{who
+survived} (any draw consistent with the elimination must put them above the eliminated
+couple) and least confident about \emph{exactly how many votes they received}. Any policy
+conclusion drawn from this paper must respect that distinction.
+
+\subsection{Validation}
+
+Four checks:
+\begin{enumerate}
+\item \textbf{Elimination replay.} $87.5\%$ of the $264$ observed eliminations are exactly
+reproduced at posterior medians; each failure is inspected and flagged. The prior-only
+baseline reproduces $21.6\%$, so the gain from constraints plus prior is $65.9$
+percentage points, unambiguous in favor of the constrained reconstruction.
+\item \textbf{Polytope audit.} In every reconstructed week, C3 (rank-domination: no
+survivor below the eliminated couple) and C4 (weekly vote capacity) are checked exactly;
+only season 1 week 6 and season 3 week 10 carry infeasible rank-consistency after their
+eliminations, and both are flagged rather than imputed.
+\item \textbf{Identification audit.} All 528 \texttt{prior} rows are reported in
+\texttt{fan\_votes\_estimates.csv} with their flags so downstream models (2 and 3) know
+that these fan shares are prior-anchored, not constraint-identified.
+\item \textbf{Reproducibility.} Fixed per-season--week seeds; runs are bit-for-bit
+deterministic; two independent executions yield identical
+\texttt{fan\_votes\_estimates.csv} and \texttt{consistency\_stats.json}.
+\end{enumerate}
+
+\paragraph{Honest status of downstream artifacts.} Model 2's hypothesis tests of $D(k)$
+against a permutation null are \textbf{not completed} (\texttt{results\_summary.md} absent
+from \texttt{model\_2/}; the engine \texttt{model2\_core.py} and the rank-vs-percentage
+count scripts ran, but no expected summary artifact exists); we therefore mark Model 2
+\textbf{PARTIALLY SATISFIED} in the sense that its counterfactual replay runs but lacks a
+validated summary document, and Section 3.1 leans only on qualitative replay evidence
+rather than test statistics where Model 2 outputs are concerned.
+
+\subsection{Era and rule summary}
+
+The weekly scale $S = 10^6$ and the C4 weekly vote capacity are held fixed across seasons
+while the \emph{combination rule} changes: seasons 1--2 use the rank rule, seasons 3--27
+the percentage rule, and seasons 28--34 the percentage rule with a bottom-two judges'
+save. Because the reconstruction reproduces eliminations at $87.5\%$ overall, and because
+the four famous controversies above are all consistent with documented fan-side rescue
+under their era's rule, we take the posterior fan shares in
+\texttt{fan\_votes\_estimates.csv} as the best available stand-in for the show's secret
+signal, and hand them --- with IQR-based uncertainty --- to Models 2 and 3.
+
+\input{sec_models23.tex}
+
+\input{sec_results_conclusion.tex}
+
+\input{sec_memo.tex}
+

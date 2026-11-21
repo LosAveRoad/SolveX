@@ -1,0 +1,255 @@
+{
+ "revision": "fixed 335->full panel, method-aware identification, defined wRMSE, LOSO added, pro names cleaned",
+ "n_couples": 408,
+ "n_couple_weeks": 2777,
+ "n_pro_levels_raw": 60,
+ "n_pro_levels": 55,
+ "n_weeks_used": 335,
+ "identification": {
+  "rank_formula_seasons": [
+   1,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34
+  ],
+  "qp_inversion_seasons": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27
+  ],
+  "survivor_assumption_rank_seasons": "survivor comb_rank = judge_rank (fans do not reorder survivors); eliminated couple fan_rank forced to n (unique feasible value, not a clip)",
+  "qp_program": "min sum (f - judge_share)^2 s.t. comb_i >= comb_elim + 1e-4, f>=0, sum f = 1",
+  "boundary_share_rows_smoothed": 0
+ },
+ "elimination_consistency_frac": 1.0,
+ "elimination_weeks_total": 264,
+ "elimination_reproduction_note": "enforced by identification (rank formula / QP constraints)",
+ "fans_decisive_weeks_frac_of_elim_weeks": 0.5984848484848485,
+ "judge_only_elimination_weeks_frac": 0.5984848484848485,
+ "fan_decisive_weeks_frac": 0.4015151515151515,
+ "age_mean": 36.282319049333815,
+ "age_sd": 12.871464175031598,
+ "fame_tier_counts": {
+  "1.0": 2588,
+  "2.0": 146,
+  "3.0": 43
+ },
+ "wrmse_definition": "wRMSE = sqrt(mean((pred - identified_fan_share)^2))/mean(identified_fan_share); model pred = posterior-mean mu of fan channel; baselines: uniform 1/n_w per week, and judge-proportional (pred = judge_share); target = identified fan share",
+ "wrmse_ins_model": 0.5313757287564368,
+ "wrmse_ins_judgeprop_baseline": 0.3070606242479695,
+ "wrmse_ins_uniform_baseline": 0.33904105603553886,
+ "loso_wrmse_model": 0.5179661566467307,
+ "loso_wrmse_judgeprop_baseline": 0.1985145921497076,
+ "loso_wrmse_uniform_baseline": 0.24451375961346297,
+ "loso_elimination_metrics": {
+  "model": {
+   "elim_weeks": 297,
+   "hit_bottom2": 0.4208754208754209,
+   "mean_norm_rank_err": 0.33297817035190774
+  },
+  "judge_prop": {
+   "elim_weeks": 297,
+   "hit_bottom2": 0.6195286195286195,
+   "mean_norm_rank_err": 0.2153039254049355
+  },
+  "uniform": {
+   "elim_weeks": 297,
+   "hit_bottom2": 0.6195286195286195,
+   "mean_norm_rank_err": 0.2153039254049355
+  }
+ },
+ "n_seasons_loso": 34,
+ "ppc_corr_proxy": null,
+ "s_pro_judge": 0.07699842370307383,
+ "s_pro_fan": 0.20160934559233687,
+ "s_season_judge": 0.17924021028179227,
+ "s_season_fan": 0.22487167520567933,
+ "delta_summary": {
+  "age_z": {
+   "fan_mean": -0.14762531520953479,
+   "fan_hdi": [
+    -0.17311014151319687,
+    -0.12120066245720391
+   ],
+   "judge_mean": -0.11865380454134467,
+   "judge_hdi": [
+    -0.13668656557065406,
+    -0.10061484908939768
+   ],
+   "delta_mean": -0.028971510668190134,
+   "delta_hdi": [
+    -0.061570900796392006,
+    0.005410520646277131
+   ],
+   "prob_fan_gt_judge": 0.04725
+  },
+  "athlete": {
+   "fan_mean": -0.005013888041019725,
+   "fan_hdi": [
+    -0.06520562450975884,
+    0.052998036241024324
+   ],
+   "judge_mean": 0.0020986962211809704,
+   "judge_hdi": [
+    -0.04061342820576373,
+    0.04465655250447089
+   ],
+   "delta_mean": -0.007112584262200696,
+   "delta_hdi": [
+    -0.07845648160715424,
+    0.07512700126981511
+   ],
+   "prob_fan_gt_judge": 0.4045
+  },
+  "fame_tier": {
+   "fan_mean": 0.0377958013505726,
+   "fan_hdi": [
+    -0.038288618271850115,
+    0.11207912056141446
+   ],
+   "judge_mean": -0.012160027299236724,
+   "judge_hdi": [
+    -0.06745396157655752,
+    0.04013880236193456
+   ],
+   "delta_mean": 0.049955828649809325,
+   "delta_hdi": [
+    -0.04473312894400062,
+    0.15378362755162978
+   ],
+   "prob_fan_gt_judge": 0.87475
+  }
+ },
+ "top10_pros_fan": [
+  [
+   "Charlotte Jorgensen",
+   0.42665834021415333,
+   0.26570382116572555,
+   0.5876128592625811
+  ],
+  [
+   "Jenna Johnson",
+   0.3311732227287887,
+   0.23636145185311597,
+   0.4259849936044614
+  ],
+  [
+   "Val Chmerkovskiy",
+   0.2904688219913115,
+   0.158420877607572,
+   0.42251676637505103
+  ],
+  [
+   "Derek Hough",
+   0.22683429930552612,
+   0.16597313991612234,
+   0.2876954586949299
+  ],
+  [
+   "Alec Mazo",
+   0.2018034619150813,
+   0.08666213846667283,
+   0.3169447853634898
+  ],
+  [
+   "Daniella Karagach",
+   0.18328227955766227,
+   0.09292883908765705,
+   0.2736357200276675
+  ],
+  [
+   "Witney Carson",
+   0.18059647048222766,
+   0.11194143467228203,
+   0.2492515062921733
+  ],
+  [
+   "Kym Johnson",
+   0.15537181855122983,
+   0.08584540695828845,
+   0.2248982301441712
+  ],
+  [
+   "Corky Ballas",
+   0.1541139006216522,
+   0.004647182005735717,
+   0.3035806192375687
+  ],
+  [
+   "Artem Chigvintsev",
+   0.13567177862526367,
+   0.05678745560406563,
+   0.21455610164646172
+  ]
+ ],
+ "bottom5_pros_fan": [
+  [
+   "Brandon Armstrong",
+   -0.20021622459580957,
+   -0.29700845279232935,
+   -0.1034239963992898
+  ],
+  [
+   "Britt Stewart",
+   -0.23146343022370958,
+   -0.3467027153301992,
+   -0.11622414511721997
+  ],
+  [
+   "Pasha Pashkov",
+   -0.2771721454448869,
+   -0.3844386355202891,
+   -0.16990565536948468
+  ],
+  [
+   "Rylee Arnold",
+   -0.39838111507999413,
+   -0.5185085721690833,
+   -0.27825365799090496
+  ],
+  [
+   "Koko Iwasaki",
+   -0.4534014090695182,
+   -0.6028359356724684,
+   -0.30396688246656794
+  ]
+ ],
+ "var_part_judge": {
+  "pro_random_%": 11.351158853106122,
+  "season_random_%": 61.51024006078371,
+  "fixed_effects_%": 27.13860108611016
+ },
+ "var_part_fan": {
+  "pro_random_%": 36.01170945474187,
+  "season_random_%": 44.801435347474914,
+  "fixed_effects_%": 19.18685519778322
+ },
+ "runtime_sec": 85.4
+}

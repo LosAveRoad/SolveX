@@ -1,0 +1,38 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Background and Motivation}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Data Description}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Our Approach}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Paper Outline}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Model 1: Constrained-Ordinal Bayesian Fan-Vote Identification}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problem Statement}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{4}{subsection.2.2}%
+\contentsline {paragraph}{Notation.}{4}{section*.2}%
+\contentsline {paragraph}{Market-share link.}{4}{section*.3}%
+\contentsline {paragraph}{Ordinal elimination likelihood.}{5}{section*.4}%
+\contentsline {subsection}{\numberline {2.3}Implementation}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Results}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Figures}{6}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Validation}{10}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Limitations}{10}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Model 2: Judge--Fan Behavioral Attribution}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Problem Statement}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{11}{subsection.3.2}%
+\contentsline {paragraph}{Anti-sorting control.}{11}{section*.11}%
+\contentsline {subsection}{\numberline {3.3}Implementation}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Results}{11}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Figures}{13}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Validation}{16}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Model 3: Rule Laboratory --- Counterfactual Replay of All 34 Seasons}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problem Statement}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Rules and Mathematical Formulation}{16}{subsection.4.2}%
+\contentsline {paragraph}{The proposed Qualibrium rule.}{17}{section*.18}%
+\contentsline {subsection}{\numberline {4.3}Implementation}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Results}{17}{subsection.4.4}%
+\contentsline {paragraph}{Consistency of estimated fan votes with eliminations.}{17}{section*.19}%
+\contentsline {paragraph}{Historical replay (honest reporting).}{17}{section*.20}%
+\contentsline {paragraph}{Rank vs percent.}{17}{section*.21}%
+\contentsline {paragraph}{Judges-save.}{18}{section*.22}%
+\contentsline {paragraph}{Fairness diagnostics.}{18}{section*.24}%
+\contentsline {paragraph}{Qualibrium impact.}{18}{section*.25}%
+\contentsline {subsection}{\numberline {4.5}Figures}{19}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Validation}{21}{subsection.4.6}%

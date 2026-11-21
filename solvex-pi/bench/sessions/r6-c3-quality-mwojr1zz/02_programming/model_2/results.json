@@ -1,0 +1,444 @@
+{
+ "fanshare_source": "model_1/model1_fanshare.csv:phi_share (canonical)",
+ "fanshare_stage": {
+  "map_nll": 436.58,
+  "beta_judge_coupling": 1.387,
+  "theta_week_coupling": -0.0001,
+  "persona_sd_map": 0.144,
+  "n_constraints": 267,
+  "n_shake_blocks": 500,
+  "n_cop_draws": 1000,
+  "shake_weight_perplexity": 472.5,
+  "issue_score_mean": 13.96,
+  "share_min": 0.0015,
+  "share_max": 0.5702,
+  "exit_recovery_combined_map": [
+   97,
+   235
+  ],
+  "exit_recovery_combined_postmean": [
+   198,
+   235
+  ],
+  "exit_recovery_judge_only": [
+   88,
+   235
+  ]
+ },
+ "certainty": {
+  "cv_mean": 0.62,
+  "cv_week1_2": 0.737,
+  "cv_week4_6": 0.595,
+  "cv_big_ncomp_9plus": 0.683,
+  "cv_small_ncomp_5minus": 0.401,
+  "sd_share_mean": 0.0575
+ },
+ "surfaces": {
+  "R2_judge": 0.3358,
+  "R2_fan": 0.4766,
+  "R2_fan_lite": 0.3924,
+  "rho_lite": 0.6224,
+  "n_obs": 2777,
+  "n_params": 116
+ },
+ "decomposition": {
+  "residual_icc_run_judge": 0.4504,
+  "residual_icc_run_fan": 0.7776
+ },
+ "loso_r2_nofe": {
+  "judge": 0.1685,
+  "fan": 0.199
+ },
+ "paired_week_slopes": {
+  "n_runs": 326,
+  "djudge_z": -0.4726,
+  "djudge_z_p": 0.0,
+  "dper_judge": 1.5223,
+  "dper_judge_p": 0.0,
+  "dlogitfan": 0.1145,
+  "dlogitfan_p": 0.000721
+ },
+ "loso_r2": {
+  "judge": 0.1405,
+  "judge_recal": 0.157,
+  "fan": -2.6327,
+  "fan_recal": 0.1695
+ },
+ "loso_target_check": {
+  "judge_target_0.25_met_recal": false,
+  "fan_target_0.15_met_recal": true
+ },
+ "era_drift": [
+  {
+   "era": "2005-2012 (S1-17)",
+   "n_rows": 1264,
+   "mean_logit_fanshare": -2.1708,
+   "mean_fanshare": 0.1313,
+   "mean_abs_gap_fan_judge": 0.052,
+   "mean_withinweek_fanjudge_spearman": 0.539,
+   "median_topbottom_share_ratio": 6.03
+  },
+  {
+   "era": "2013-2020 (S18-27)",
+   "n_rows": 811,
+   "mean_logit_fanshare": -2.3097,
+   "mean_fanshare": 0.1184,
+   "mean_abs_gap_fan_judge": 0.0551,
+   "mean_withinweek_fanjudge_spearman": 0.51,
+   "median_topbottom_share_ratio": 7.33
+  },
+  {
+   "era": "2021-2025 (S28-34)",
+   "n_rows": 702,
+   "mean_logit_fanshare": -2.4129,
+   "mean_fanshare": 0.104,
+   "mean_abs_gap_fan_judge": 0.0432,
+   "mean_withinweek_fanjudge_spearman": 0.465,
+   "median_topbottom_share_ratio": 6.69
+  }
+ ],
+ "consistency": {
+  "single_exit_weeks_exact_combined": [
+   170,
+   206
+  ],
+  "single_exit_weeks_exact_judge": [
+   82,
+   206
+  ],
+  "allweeks_bottom3_combined": [
+   232,
+   235
+  ],
+  "allweeks_bottom3_judge": [
+   179,
+   235
+  ],
+  "multiexit_weeks_exactset_combined": [
+   28,
+   29
+  ]
+ },
+ "pro_rankings": {
+  "n_eligible_pros": 41,
+  "top5_judge_eligible": [
+   {
+    "pro": "Derek Hough",
+    "effect_judge": 0.662,
+    "effect_fan": 0.534,
+    "judge_lo95": 0.447,
+    "judge_hi95": 0.942,
+    "fan_lo95": 0.341,
+    "fan_hi95": 0.808,
+    "n_seasons": 17,
+    "n_runs": 17,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Artem Chigvintsev",
+    "effect_judge": 0.392,
+    "effect_fan": -0.102,
+    "judge_lo95": -0.009,
+    "judge_hi95": 0.698,
+    "fan_lo95": -0.564,
+    "fan_hi95": 0.344,
+    "n_seasons": 12,
+    "n_runs": 12,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Valentin Chmerkovskiy",
+    "effect_judge": 0.28,
+    "effect_fan": 0.308,
+    "judge_lo95": 0.082,
+    "judge_hi95": 0.478,
+    "fan_lo95": 0.029,
+    "fan_hi95": 0.593,
+    "n_seasons": 21,
+    "n_runs": 21,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Corky Ballas",
+    "effect_judge": 0.255,
+    "effect_fan": 0.047,
+    "judge_lo95": -0.564,
+    "judge_hi95": 0.998,
+    "fan_lo95": -0.444,
+    "fan_hi95": 0.511,
+    "n_seasons": 2,
+    "n_runs": 2,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Mark Ballas",
+    "effect_judge": 0.188,
+    "effect_fan": 0.031,
+    "judge_lo95": -0.146,
+    "judge_hi95": 0.494,
+    "fan_lo95": -0.356,
+    "fan_hi95": 0.35,
+    "n_seasons": 21,
+    "n_runs": 21,
+    "eligible_min2seasons": true
+   }
+  ],
+  "bottom5_judge_eligible": [
+   {
+    "pro": "Koko Iwasaki",
+    "effect_judge": -1.516,
+    "effect_fan": -0.968,
+    "judge_lo95": -1.755,
+    "judge_hi95": 0.318,
+    "fan_lo95": -1.695,
+    "fan_hi95": 0.394,
+    "n_seasons": 2,
+    "n_runs": 2,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Elena Grinenko",
+    "effect_judge": -1.501,
+    "effect_fan": -1.01,
+    "judge_lo95": -1.871,
+    "judge_hi95": 0.102,
+    "fan_lo95": -2.162,
+    "fan_hi95": 0.164,
+    "n_seasons": 2,
+    "n_runs": 2,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Ashly DelGrosso",
+    "effect_judge": -1.102,
+    "effect_fan": -0.773,
+    "judge_lo95": -2.533,
+    "judge_hi95": -0.024,
+    "fan_lo95": -1.168,
+    "fan_hi95": -0.04,
+    "n_seasons": 4,
+    "n_runs": 4,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Rylee Arnold",
+    "effect_judge": -1.058,
+    "effect_fan": -0.084,
+    "judge_lo95": -1.643,
+    "judge_hi95": -0.066,
+    "fan_lo95": -0.541,
+    "fan_hi95": 0.436,
+    "n_seasons": 3,
+    "n_runs": 3,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Lacey Schwimmer",
+    "effect_judge": -0.459,
+    "effect_fan": -0.127,
+    "judge_lo95": -1.058,
+    "judge_hi95": -0.012,
+    "fan_lo95": -0.586,
+    "fan_hi95": 0.323,
+    "n_seasons": 6,
+    "n_runs": 6,
+    "eligible_min2seasons": true
+   }
+  ],
+  "top5_fan_eligible": [
+   {
+    "pro": "Derek Hough",
+    "effect_judge": 0.662,
+    "effect_fan": 0.534,
+    "judge_lo95": 0.447,
+    "judge_hi95": 0.942,
+    "fan_lo95": 0.341,
+    "fan_hi95": 0.808,
+    "n_seasons": 17,
+    "n_runs": 17,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Daniella Karagach",
+    "effect_judge": -0.266,
+    "effect_fan": 0.402,
+    "judge_lo95": -0.894,
+    "judge_hi95": 0.352,
+    "fan_lo95": -0.342,
+    "fan_hi95": 1.027,
+    "n_seasons": 6,
+    "n_runs": 6,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Kym Johnson",
+    "effect_judge": 0.148,
+    "effect_fan": 0.322,
+    "judge_lo95": -0.146,
+    "judge_hi95": 0.451,
+    "fan_lo95": -0.107,
+    "fan_hi95": 0.847,
+    "n_seasons": 15,
+    "n_runs": 15,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Jenna Johnson",
+    "effect_judge": -0.195,
+    "effect_fan": 0.32,
+    "judge_lo95": -1.285,
+    "judge_hi95": 0.617,
+    "fan_lo95": -0.517,
+    "fan_hi95": 1.125,
+    "n_seasons": 9,
+    "n_runs": 9,
+    "eligible_min2seasons": true
+   },
+   {
+    "pro": "Valentin Chmerkovskiy",
+    "effect_judge": 0.28,
+    "effect_fan": 0.308,
+    "judge_lo95": 0.082,
+    "judge_hi95": 0.478,
+    "fan_lo95": 0.029,
+    "fan_hi95": 0.593,
+    "n_seasons": 21,
+    "n_runs": 21,
+    "eligible_min2seasons": true
+   }
+  ],
+  "corr_judge_fan_effects_eligible": 0.623,
+  "corr_judge_fan_effects_all": 0.472,
+  "known_elite_ranks_judge": {
+   "Derek Hough": 1,
+   "Mark Ballas": 5,
+   "Cheryl Burke": 15,
+   "Valentin Chmerkovskiy": 3
+  }
+ },
+ "industry_effects": {
+  "top3_judge": [
+   {
+    "industry": "Producer",
+    "effect_judge": 1.019,
+    "effect_fan": 0.632,
+    "judge_lo95": 0.048,
+    "judge_hi95": 1.996,
+    "fan_lo95": -0.112,
+    "fan_hi95": 1.381,
+    "n_runs": 1
+   },
+   {
+    "industry": "Astronaut",
+    "effect_judge": 0.817,
+    "effect_fan": 0.396,
+    "judge_lo95": -0.276,
+    "judge_hi95": 2.227,
+    "fan_lo95": -0.353,
+    "fan_hi95": 0.968,
+    "n_runs": 1
+   },
+   {
+    "industry": "Musician",
+    "effect_judge": 0.644,
+    "effect_fan": 1.034,
+    "judge_lo95": 0.026,
+    "judge_hi95": 0.983,
+    "fan_lo95": -0.115,
+    "fan_hi95": 1.444,
+    "n_runs": 1
+   }
+  ],
+  "bottom3_judge": [
+   {
+    "industry": "Fitness Instructor",
+    "effect_judge": -0.935,
+    "effect_fan": 0.712,
+    "judge_lo95": -1.229,
+    "judge_hi95": 0.214,
+    "fan_lo95": -0.09,
+    "fan_hi95": 1.045,
+    "n_runs": 1
+   },
+   {
+    "industry": "Politician",
+    "effect_judge": -0.964,
+    "effect_fan": 0.16,
+    "judge_lo95": -1.691,
+    "judge_hi95": 0.138,
+    "fan_lo95": -0.816,
+    "fan_hi95": 0.974,
+    "n_runs": 3
+   },
+   {
+    "industry": "Con artist",
+    "effect_judge": -1.245,
+    "effect_fan": -2.045,
+    "judge_lo95": -1.475,
+    "judge_hi95": 0.217,
+    "fan_lo95": -2.354,
+    "fan_hi95": 0.08,
+    "n_runs": 1
+   }
+  ]
+ },
+ "sign_discipline": {
+  "age_curve_min_15_45_judge": -0.967,
+  "age_curve_min_15_45_fan": -0.9298,
+  "week_curve_start_end_judge": [
+   -0.038,
+   -0.477
+  ],
+  "week_curve_start_end_fan": [
+   0.001,
+   1.351
+  ],
+  "paired_within_run_djudge_mean": -0.4726,
+  "paired_within_run_dlogitfan_mean": 0.1145,
+  "paired_n_runs": 326,
+  "paired_djudge_t_p": [
+   -15.936,
+   0.0
+  ],
+  "paired_dlogitfan_t_p": [
+   3.414,
+   0.00072
+  ]
+ },
+ "restricted_pro_effects": {
+  "R_pro_naive_judge_wk2plus": 0.1283574711270381,
+  "R_fame_control_judge": 0.11618697782777021,
+  "R_pro_restricted_judge": 0.11350746525514854,
+  "R_pro_naive_fan_wk2plus": 0.1342524769705674,
+  "R_fame_control_fan": 0.7170279677982205,
+  "R_pro_restricted_fan": 0.13433258554020566
+ },
+ "counterfactual_swap": {
+  "pro_by_judge": {
+   "best": "Derek Hough",
+   "median": "Peta Murgatroyd",
+   "worst": "Koko Iwasaki"
+  },
+  "predictions_judge_z_and_fanshare": {
+   "best": [
+    0.672,
+    0.1685
+   ],
+   "median": [
+    -0.081,
+    0.1055
+   ],
+   "worst": [
+    -1.505,
+    0.0432
+   ]
+  }
+ },
+ "meta": {
+  "seed": 2026,
+  "n_perm": 1000,
+  "n_boot": 2000,
+  "n_shake": 500,
+  "n_cop": 1000
+ }
+}

@@ -1,0 +1,422 @@
+row_id,celebrity_name,u_fan_appeal
+48,Marie Osmond,2.5
+101,Mya,1.75
+206,Amy Purdy,1.5
+226,Riker Lynch,1.5
+45,Helio Castroneves,1.5
+246,Bindi Irwin,1.5
+56,Jason Taylor,1.5
+57,Kristi Yamaguchi,1.5
+255,Paige VanZant,1.5
+258,Ginger Zee,1.5
+160,Katherine Jenkins,1.5
+265,Calvin Johnson Jr.,1.5
+71,Lance Bass,1.5
+310,Evanna Lynch,1.5
+82,Belinda Carlisle,1.375
+19,Joey Lawrence,1.375
+413,Robert Irwin,1.25
+207,Meryl Davis,1.25
+117,Kyle Massey,1.25
+417,Alix Earle,1.25
+244,Nick Carter,1.25
+103,Kelly Osbourne,1.125
+13,Master P,1.125
+180,Jacoby Jones,1.125
+63,Cloris Leachman,1.0
+36,Joey Fatone,1.0
+202,Candace Cameron Bure,1.0
+66,Misty May-Treanor,1.0
+307,Josh Norman,1.0
+409,Elaine Hendrix,1.0
+257,Nyle DiMarco,1.0
+306,Tonya Harding,1.0
+4,Joey McIntyre,1.0
+50,Cristian de la Fuente,1.0
+240,Alek Skarlatos,1.0
+412,Andy Richter,1.0
+308,Adam Rippon,1.0
+102,Donny Osmond,1.0
+378,Shangela,1.0
+29,Clyde Drexler,0.875
+356,Cody Rigsby,0.875
+2,Evander Holyfield,0.875
+214,Janel Parrish,0.75
+129,Kirstie Alley,0.75
+287,Frankie Muniz,0.75
+344,Nelly,0.75
+184,Kellie Pickler,0.75
+383,Alyson Hannigan,0.75
+370,Wayne Brady,0.75
+338,Justina Machado,0.75
+345,Kaitlyn Bristowe,0.75
+98,Tom DeLay,0.75
+266,Laurie Hernandez,0.75
+174,Melissa Rycroft,0.75
+399,Danny Amendola,0.75
+111,Nicole Scherzinger,0.75
+288,Jordan Fisher,0.75
+320,Alexis Ren,0.75
+243,Tamar Braxton,0.75
+75,Gilles Marini,0.75
+127,Ralph Macchio,0.75
+393,Ariana Madix,0.75
+223,Sadie Robertson,0.75
+157,Donald Driver,0.75
+363,Amanda Kloots,0.75
+165,Kelly Monaco,0.75
+358,Jimmie Allen,0.75
+46,Mel B,0.75
+74,Brooke Burke,0.625
+199,Billy Dee Williams,0.625
+280,David Ross,0.625
+278,Bonner Bolton,0.625
+284,Normani,0.625
+113,Kate Gosselin,0.625
+318,Bobby Bones,0.625
+272,Jana Kramer,0.5
+269,James Hinchcliffe,0.5
+80,Shawn Johnson,0.5
+281,Rashad Jennings,0.5
+96,Joanna Krupa,0.5
+390,Harry Jowsey,0.5
+126,Bristol Palin,0.5
+150,William Levy,0.5
+24,Sara Evans,0.5
+176,Zendaya,0.5
+30,Laila Ali,0.5
+368,Trevor Donovan,0.5
+35,Billy Ray Cyrus,0.5
+168,Shawn Johnson,0.5
+348,Jeannie Mai,0.5
+321,Joe Amabile,0.5
+294,Lindsey Stirling,0.5
+55,Marissa Jaret Winokur,0.5
+14,Drew Lachey,0.5
+342,Nev Schulman,0.5
+11,Jerry Rice,0.5
+65,Cody Linley,0.5
+333,Hannah Brown,0.5
+130,Hines Ward,0.5
+128,Chelsea Kane,0.5
+220,Michael Waltrip,0.375
+107,Buzz Aldrin,0.375
+106,Niecy Nash,0.375
+182,Andy Dick,0.375
+197,Jack Osbourne,0.375
+328,Sean Spicer,0.375
+398,Dwight Howard,0.375
+79,Ty Murray,0.375
+377,Vinny Guadagnino,0.375
+92,Chuck Liddell,0.375
+68,Warren Sapp,0.375
+353,"Mike ""The Miz"" Mizanin",0.375
+194,Bill Engvall,0.375
+148,Nancy Grace,0.25
+230,Robert Herjavec,0.25
+147,Chaz Bono,0.25
+49,Mark Cuban,0.25
+351,Melora Hardin,0.25
+346,Carole Baskin,0.25
+158,Gavin DeGraw,0.25
+143,Hope Solo,0.25
+232,Noah Galloway,0.25
+149,Rob Kardashian,0.25
+167,Emmitt Smith,0.25
+41,Jennie Garth,0.25
+248,Paula Deen,0.25
+227,Rumer Willis,0.25
+369,Daniel Durant,0.25
+218,Tommy Chong,0.25
+21,Emmitt Smith,0.25
+20,Mario Lopez,0.25
+1,Kelly Monaco,0.25
+396,Reginald VelJohnson,0.25
+201,James Maslow,0.25
+190,Leah Remini,0.25
+191,Corbin Bleu,0.25
+141,J.R. Martinez,0.25
+420,Dylan Efron,0.25
+323,James Van Der Beek,0.25
+109,Evan Lysacek,0.25
+303,Jennie Finch Daigle,0.25
+297,Drew Scott,0.25
+112,Erin Andrews,0.25
+296,Nick Lachey,0.25
+254,Antonio Brown,0.25
+313,Milo Manheim,0.25
+91,Mark Dacascos,0.25
+343,AJ McLean,0.25
+259,Wanya Morris,0.125
+161,Maria Menounos,0.125
+25,Jerry Springer,0.125
+140,Ricki Lake,0.125
+89,Debi Mazar,0.125
+37,Leeza Gibbons,0.125
+120,Kurt Warner,0.125
+87,Melissa Rycroft,0.125
+53,Marlee Matlin,0.125
+164,Kirstie Alley,0.125
+108,Chad Ochocinco,0.125
+67,Maurice Greene,0.125
+231,Charlotte McKinney,0.125
+124,The Situation,0.125
+155,Melissa Gilbert,0.125
+100,Aaron Carter,0.125
+347,Monica Aldama,0.125
+146,Carson Kressley,0.125
+350,Brian Austin Green,0.125
+236,Gary Busey,0.125
+235,Chris Soules,0.125
+215,Alfonso Ribeiro,0.125
+166,Apolo Anton Ohno,0.125
+401,Ilona Maher,0.0
+205,Charlie White,0.0
+292,Victoria Arlen,0.0
+416,Scott Hoying,0.0
+406,Joey Graziadei,0.0
+404,Phaedra Parks,0.0
+204,Diana Nyad,0.0
+252,Doug Flutie,0.0
+304,Chris Mazdzer,0.0
+279,Simone Biles,0.0
+222,Bethany Mota,0.0
+367,Joseph Baena,0.0
+224,Suzanne Somers,0.0
+362,Kenya Moore,0.0
+270,Babyface,0.0
+267,Amber Rose,0.0
+325,Ray Lewis,0.0
+242,Andy Grammer,0.0
+326,Lamar Odom,0.0
+335,Jesse Metcalfe,0.0
+341,Johnny Weir,0.0
+247,Kim Zolciak-Biermann,0.0
+291,Terrell Owens,0.0
+0,John O'Hurley,0.0
+85,Steve-O,0.0
+18,Monique Coleman,0.0
+104,Aiden Turner,0.0
+95,Michael Irvin,0.0
+81,Steve Wozniak,0.0
+137,Kendra Wilkinson,0.0
+69,Jeffrey Ross,0.0
+61,Mario,0.0
+38,Cameron Mathison,0.0
+31,Apolo Anton Ohno,0.0
+177,Dorothy Hamill,0.0
+26,Tucker Carlson,0.0
+179,Alexandra Raisman,0.0
+47,Wayne Newton,0.0
+10,Stacy Keibler,0.0
+187,Valerie Harper,0.0
+192,Amber Riley,0.0
+186,Sean Lowe,0.0
+340,Veron Davis,-0.125
+139,David Arquette,-0.125
+118,Jennifer Grey,-0.125
+238,Carlos PenaVega,-0.125
+285,Nick Viall,-0.125
+60,Adam Carolla,-0.125
+395,Eric Roberts,-0.125
+64,Susan Lucci,-0.125
+136,Wendy Williams,-0.125
+73,Rocco DiSpirito,-0.125
+359,Olivia Jade,-0.125
+135,Romeo,-0.125
+315,Mary Lou Retton,-0.125
+263,Marilu Henner,-0.125
+132,Chris Jericho,-0.125
+122,Michael Bolton,-0.125
+39,Jane Seymour,-0.125
+52,Priscilla Presley,-0.125
+405,Jenn Tran,-0.125
+365,Cheryl Ladd,-0.125
+408,Danielle Fishel,-0.125
+173,Bristol Palin,-0.125
+382,Barry Williams,-0.125
+290,Nikki Bella,-0.125
+371,Sam Champion,-0.125
+311,Nancy McKeon,-0.25
+78,Lawrence Taylor,-0.25
+419,Whitney Leavitt,-0.25
+316,DeMarcus Ware,-0.25
+312,John Schneider,-0.25
+162,Gilles Marini,-0.25
+175,Ingo Rademacher,-0.25
+264,Ryan Lochte,-0.25
+198,Bill Nye,-0.25
+305,Mirai Nagasu,-0.25
+275,Mr. T,-0.25
+123,Brandy,-0.25
+211,Antonio Sabato Jr.,-0.25
+93,Natalie Coughlin,-0.25
+277,Nancy Kerrigan,-0.25
+119,Rick Fox,-0.25
+159,Gladys Knight,-0.25
+273,Terra Jole,-0.25
+8,George Hamilton,-0.25
+352,Matt James,-0.25
+154,Roshon Fegan,-0.25
+349,Martin Kove,-0.25
+169,Pamela Anderson,-0.25
+28,Ian Ziering,-0.25
+153,Jaleel White,-0.25
+54,Shannon Elizabeth,-0.25
+58,Monica Seles,-0.25
+415,Lauren Jauregui,-0.25
+372,Jessie James Decker,-0.25
+375,Charli D'Amelio,-0.25
+189,Elizabeth Berkley Lauren,-0.25
+250,Kim Fields,-0.25
+332,Karamo Brown,-0.25
+274,Charo,-0.25
+97,Kathy Ireland,-0.375
+403,Brooks Nader,-0.375
+94,Louie Vito,-0.375
+90,Melissa Joan Hart,-0.375
+309,Juan Pablo Di Pace,-0.375
+418,Jen Affleck,-0.375
+72,Kim Kardashian,-0.375
+40,Sabrina Bryan,-0.375
+27,John Ratzenberger,-0.375
+379,Gabby Windey,-0.375
+387,Tyson Beckford,-0.375
+110,Pamela Anderson,-0.375
+210,NeNe Leakes,-0.375
+213,Lea Thompson,-0.375
+283,Erika Jayne,-0.375
+152,Sherri Sheperd,-0.375
+262,Maureen McCormick,-0.375
+144,Chynna Phillips,-0.375
+188,Brant Daugherty,-0.375
+217,Randy Couture,-0.375
+234,Patti LaBelle,-0.375
+253,Von Miller,-0.375
+228,Nastia Liukin,-0.375
+256,Geraldo Rivera,-0.5
+381,Mira Sorvino,-0.5
+314,Danelle Umstead,-0.5
+133,Petra Nemcova,-0.5
+172,Drew Lachey,-0.5
+114,Jake Pavelka,-0.5
+84,Lil' Kim,-0.5
+354,Suni Lee,-0.5
+156,Martina Navratilova,-0.5
+251,Jodie Sweetin,-0.5
+249,Mischa Barton,-0.5
+142,Metta World Peace (Ron),-0.5
+241,Chaka Khan,-0.5
+70,Toni Braxton,-0.5
+178,Victor Ortiz,-0.5
+59,Penn Jillette,-0.5
+116,Florence Henderson,-0.5
+208,Drew Carey,-0.5
+16,Harry Hamlin,-0.5
+7,Tia Carrere,-0.5
+298,Vanessa Lachey,-0.5
+388,Jason Mraz,-0.5
+299,Jamie Anderson,-0.5
+282,Chris Kattan,-0.5
+300,Johnny Damon,-0.5
+301,Kareem Abdul-Jabbar,-0.5
+3,Rachel Hunter,-0.5
+200,Danica McKellar,-0.5
+17,Vivica A. Fox,-0.5
+181,D. L. Hughley,-0.5
+268,Rick Perry,-0.5
+392,Charity Lawson,-0.5
+391,Mauricio Umansky,-0.5
+407,Corey Feldman,-0.5
+237,Alexa PenaVega,-0.625
+203,Sean Avery,-0.625
+385,Adrian Peterson,-0.625
+163,Sabrina Bryan,-0.625
+229,Michael Sam,-0.625
+366,Selma Blair,-0.625
+171,Joey Fatone,-0.625
+376,Teresa Giudice,-0.625
+219,Betsey Johnson,-0.625
+34,Heather Mills,-0.625
+42,Floyd Mayweather Jr.,-0.625
+131,Sugar Ray Leonard,-0.625
+319,Tinashe,-0.625
+330,Lauren Alaina,-0.625
+276,Heather Morris,-0.625
+402,Anna Delvey,-0.75
+183,Wynonna Judd,-0.75
+216,Lolo Jones,-0.75
+260,Marla Maples,-0.75
+196,"Nicole ""Snooki"" Polizzi",-0.75
+225,Willow Shields,-0.75
+170,Helio Castroneves,-0.75
+212,Jonathan Bennett,-0.75
+322,Kate Flannery,-0.75
+364,Jason Lewis,-0.75
+361,Christine Chiu,-0.75
+83,Chuck Wicks,-0.75
+23,Willa Ford,-0.75
+286,Sasha Pieterse,-0.75
+43,Josie Maran,-0.75
+293,Barbara Corcoran,-0.75
+329,Mary Wilson,-0.75
+337,Skai Jackson,-0.875
+410,Baron Davis,-1.0
+86,Holly Madison,-1.0
+289,Derek Fisher,-1.0
+5,Trista Sutter,-1.0
+317,Nikki Glaser,-1.0
+6,Tatum O'Neal,-1.0
+374,Heidi D'Amelio,-1.0
+373,Jordin Sparks,-1.0
+411,Jordan Chiles,-1.0
+380,Jamie Lynn Spears,-1.0
+51,Steve Guttenberg,-1.0
+334,Anne Heche,-1.0
+271,Vanilla Ice,-1.0
+15,Kenny Mayne,-1.0
+400,Stephen Nedoroscik,-1.0
+295,Debbie Gibson,-1.0
+121,Margaret Cho,-1.125
+185,Lisa Vanderpump,-1.125
+9,Lisa Rinna,-1.125
+195,Christina Milian,-1.125
+360,JoJo Siwa,-1.125
+32,Shandi Finnessey,-1.125
+261,Jake T. Austin,-1.25
+302,Arike Ogunbowale,-1.25
+193,Keyshawn Johnson,-1.25
+414,Hilaria Baldwin,-1.25
+239,Victor Espinoza,-1.25
+44,Albert Reed,-1.25
+331,Ally Brooke,-1.25
+355,Iman Shumpert,-1.25
+245,Hayes Grier,-1.25
+138,Elisabetta Canalis,-1.25
+324,Kel Mitchell,-1.25
+76,Denise Richards,-1.25
+339,Charles Oakley,-1.25
+221,Tavis Smiley,-1.25
+386,Matt Walsh,-1.25
+394,Tori Spelling,-1.25
+384,Xochitl Gomez,-1.25
+88,Ashley Hamiliton,-1.25
+22,Shanna Moakler,-1.25
+134,Mike Catherwood,-1.25
+145,Kristin Cavallari,-1.5
+62,Ted McGinley,-1.5
+115,David Hasselhoff,-1.5
+151,Jack Wagner,-1.5
+99,Macy Gray,-1.5
+336,Chrishell Stause,-1.5
+397,Chandler Kinney,-1.5
+33,Paulina Porizkova,-1.5
+389,Lele Pons,-1.5
+357,Melanie C,-1.5
+327,Sailor Brinkley-Cook,-1.5
+125,Audrina Patridge,-1.5
+12,Giselle Fernandez,-1.5
+209,Cody Simpson,-1.625
+77,David Alan Grier,-1.75
+233,Redfoo,-2.0
+105,Shannen Doherty,-2.0

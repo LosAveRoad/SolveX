@@ -1,0 +1,1 @@
+{"status": "complete", "issues": "Trait/industry Credible intervals span zero (sample-size limited); rule-optimizer fairness metric corner-dominated by fan-share MC noise at omega=0.", "fixInstructions": "Reduce Dirichlet MC noise concentration (Fs*800) and re-anchor fairness on observed eliminations before rerunning the grid.", "summaryPath": "results_summary.md"}

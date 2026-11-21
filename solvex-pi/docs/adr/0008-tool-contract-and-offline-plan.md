@@ -49,3 +49,11 @@
   变成硬断言，防止同类漂移再次发生。
 - 已知遗留：`safetyExtension`（R5/R11 路径拦截）仍未注入 `extensionFactories`，
   属于同类「声明未接线」问题，建议单独提交处理，本 ADR 不扩大改动面。
+
+---
+
+> **后续修订（2026-11-06，ADR-0011）**：上述第 4 点「逐字资产一个字不改、靠追加
+> 覆盖策略压住工具说明」的做法已被取代。`modeling.system.md` 现在不含任何工具名，
+> 工具清单改由 `PiAgentRunner` 从运行时发现后注入；`OFFLINE_PLAN_POLICY` 也去掉了
+> 工具名硬编码。本 ADR 的其余结论（移除幽灵工具、runner 注入 customTools、
+> 白名单契约校验）继续有效。

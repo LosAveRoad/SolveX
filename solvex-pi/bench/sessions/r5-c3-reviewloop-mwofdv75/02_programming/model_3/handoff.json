@@ -1,0 +1,42 @@
+{
+  "status": "SATISFIED",
+  "issues": [],
+  "fixInstructions": "No further fixes required. All 7 round-3 fixes are implemented and verified end-to-end (5.9s total runtime). Design rank asserted (11 cols == rank 11); no silent orthogonalization of u_i (prediction check logged: predicted mean 1.141 == observed 1.141, max 2.525 vs 2.4 ceiling noted); SE model replaced with grid-neighbourhood std (rel SE percentiles 4.4/5.8/7.6/8.8%); estimated_fan_votes.csv has 421 cid rows with 10 withdrew->NaN; theta_estimates.csv regenerated as a true 200-draw cid bootstrap; agreement_ablation.csv uses the 6-row within-(season,week) schema (A=0.9517 vs random baseline 0.2664, delta_A=+0.0138 with the fix-6 fan-appeal prior); hazard_fit_coef.csv makes every hazard number file-backed; every CSV and the summary carry the cluster_OLS engine annotation; stale MixedLM artifacts deleted (mixedlm_coefficients.csv, old theta_estimates.csv).",
+  "summaryPath": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r5-c3-reviewloop-mwofdv75/02_programming/model_3/results_summary.md",
+  "additionalFiles": [
+    "hazard_fit_coef.csv (11-row hazard coefficient table, fix 7)",
+    "response_surface_coefficients.csv (22 rows, single converged design, engine-annotated)",
+    "sensitivity_grid.csv (170-point gamma x wscale grid)",
+    "addendum_cluster_ols.md (round-2 addendum, superseded - retained as history)"
+  ],
+  "keyNumbers": {
+    "engine": "cluster_OLS (cov_type=cluster, clusters=cid)",
+    "n_cid": 421,
+    "n_at_risk_rows": 2781,
+    "gamma_hat": 0.7,
+    "wscale_hat": 0.3,
+    "hazard_u_i_OR": 0.175,
+    "hazard_pro_p": 0.549,
+    "judge_u_i": 1.2115,
+    "judge_pro": 0.0281,
+    "judge_interaction": -0.1258,
+    "fan_u_i": 4.4829,
+    "fan_pro": 0.1045,
+    "fan_interaction": -0.2197,
+    "fan_vs_judge_u_i_amplification": 3.7,
+    "A_without_prior": 0.9517,
+    "A_with_prior": 0.9655,
+    "delta_A": 0.0138,
+    "baseline_random": 0.2664,
+    "hazard_pct_of_actual_eliminated": 0.9592,
+    "R2_backtest_leakfree": 0.4763,
+    "R2_judge_surface": 0.4538,
+    "R2_fan_surface": 0.4857,
+    "rel_SE_p25_p50_p75_p95": [0.0444, 0.0577, 0.0758, 0.0876],
+    "aic_cluster_ols_judge": 11321.96,
+    "aic_cluster_ols_fan": 21497.0,
+    "shapiro_W": 0.99,
+    "n_boot": 200,
+    "runtime_sec": 5.9
+  }
+}

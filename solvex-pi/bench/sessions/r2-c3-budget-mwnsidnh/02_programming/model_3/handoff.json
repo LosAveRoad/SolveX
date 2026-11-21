@@ -1,0 +1,14 @@
+{
+ "ks_judge": 0.1308569016462643,
+ "loso_mean": 0.7079998283854279,
+ "loso_median": 0.7225853028557175,
+ "sigma_pro_judge": 0.15054482043807996,
+ "sigma_pro_fan": 0.15196058813830587,
+ "figures": [
+  "fig1_pro_effects_scatter.png",
+  "fig2_covariate_divergence_forest.png",
+  "fig3_pro_caterpillar_and_variance.png",
+  "fig4_age_effect_curve.png"
+ ],
+ "status": "complete"
+}

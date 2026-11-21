@@ -1,11 +1,15 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync, statSync, copyFileSync, createReadStream } from "node:fs";
 import { join, relative, basename, extname } from "node:path";
 import JSZip from "jszip";
-import { DIR, META_FILE, modelDirName } from "./paths.js";
+import { DIR, META_FILE, RUNTIME_FILE, modelDirName } from "./paths.js";
 
 export * from "./paths.js";
+export * from "./runs.js";
+export * from "./runtime.js";
 
-export type SessionMeta = { id: string; problem: string; status: string; created_at: string; workspaceId?: string };
+export type SessionMeta = { id: string; problem: string; status: string; created_at: string; workspaceId?: string;
+  /** 首次运行时注入 prompt 的数据说明；续跑沿用同一份，保证中断前后的 prompt 一致。 */
+  dataInfo?: string };
 export type WorkspaceInfo = { id: string; root: string; dir: string;
   paths: { problem: string; data: string; modeling: string; programming: string; paper: string } };
 
@@ -122,7 +126,7 @@ export function scanArtifacts(ws: WorkspaceInfo): { path: string; size: number; 
   const out: { path: string; size: number; isDir: boolean }[] = [];
   const visit = (d: string) => {
     for (const n of readdirSync(d)) {
-      if (n === META_FILE || n === "events.jsonl") continue;
+      if (n === META_FILE || n === RUNTIME_FILE || n === "events.jsonl" || n === ".solvex") continue;
       const p = join(d, n);
       const isDir = statSync(p).isDirectory();
       out.push({ path: relative(ws.dir, p).split("\\").join("/"), size: isDir ? 0 : statSync(p).size, isDir });

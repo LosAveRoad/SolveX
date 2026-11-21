@@ -1,0 +1,2527 @@
+season,celebrity,rule,rule_label,placement_hist,p_win,med_place,p_top3
+1,Evander Holyfield,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.0
+1,Evander Holyfield,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0
+1,Evander Holyfield,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.9955
+1,Evander Holyfield,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.166
+1,Evander Holyfield,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0
+1,Evander Holyfield,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0
+1,Joey McIntyre,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,3.0,0.996
+1,Joey McIntyre,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,3.0,0.997
+1,Joey McIntyre,r3_rank_save,Rank + judges-save,3,0.0,6.0,0.218
+1,Joey McIntyre,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.9635
+1,Joey McIntyre,r5_qualibrium,Qualibrium (proposed),3,0.0,3.0,0.9995
+1,Joey McIntyre,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,3.0,0.998
+1,John O'Hurley,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+1,John O'Hurley,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+1,John O'Hurley,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.1105
+1,John O'Hurley,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9985
+1,John O'Hurley,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+1,John O'Hurley,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+1,Kelly Monaco,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+1,Kelly Monaco,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+1,Kelly Monaco,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.484
+1,Kelly Monaco,r4_pct_save,Percent + judges-save,1,0.0,5.0,0.492
+1,Kelly Monaco,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+1,Kelly Monaco,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+1,Rachel Hunter,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,0.0,0.956
+1,Rachel Hunter,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,0.0,0.961
+1,Rachel Hunter,r3_rank_save,Rank + judges-save,4,0.0,4.0,0.485
+1,Rachel Hunter,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.607
+1,Rachel Hunter,r5_qualibrium,Qualibrium (proposed),4,0.0,0.0,0.586
+1,Rachel Hunter,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,0.0,0.9995
+1,Trista Sutter,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.9735
+1,Trista Sutter,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.9505
+1,Trista Sutter,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+1,Trista Sutter,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.333
+1,Trista Sutter,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.9025
+1,Trista Sutter,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.9985
+2,Drew Lachey,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+2,Drew Lachey,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+2,Drew Lachey,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.0105
+2,Drew Lachey,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9945
+2,Drew Lachey,r5_qualibrium,Qualibrium (proposed),1,0.0,0.0,0.9985
+2,Drew Lachey,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+2,George Hamilton,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.1175
+2,George Hamilton,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.051
+2,George Hamilton,r3_rank_save,Rank + judges-save,5,0.0,0.0,1.0
+2,George Hamilton,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.25
+2,George Hamilton,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0235
+2,George Hamilton,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0085
+2,Giselle Fernandez,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.997
+2,Giselle Fernandez,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.997
+2,Giselle Fernandez,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.868
+2,Giselle Fernandez,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.594
+2,Giselle Fernandez,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.9945
+2,Giselle Fernandez,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,1.0
+2,Jerry Rice,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+2,Jerry Rice,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+2,Jerry Rice,r3_rank_save,Rank + judges-save,2,0.0,0.0,0.534
+2,Jerry Rice,r4_pct_save,Percent + judges-save,2,0.0,4.0,0.468
+2,Jerry Rice,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.853
+2,Jerry Rice,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+2,Kenny Mayne,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.596
+2,Kenny Mayne,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.507
+2,Kenny Mayne,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+2,Kenny Mayne,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.5065
+2,Kenny Mayne,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.468
+2,Kenny Mayne,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.599
+2,Lisa Rinna,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.449
+2,Lisa Rinna,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.4875
+2,Lisa Rinna,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.9355
+2,Lisa Rinna,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.1585
+2,Lisa Rinna,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.1295
+2,Lisa Rinna,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,0.0,0.9
+2,Master P,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.0
+2,Master P,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.0
+2,Master P,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+2,Master P,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.0525
+2,Master P,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.0
+2,Master P,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.0
+2,Stacy Keibler,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+2,Stacy Keibler,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+2,Stacy Keibler,r3_rank_save,Rank + judges-save,3,0.0,4.0,0.024
+2,Stacy Keibler,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.9905
+2,Stacy Keibler,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.997
+2,Stacy Keibler,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+2,Tatum O'Neal,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.5255
+2,Tatum O'Neal,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.4785
+2,Tatum O'Neal,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.8875
+2,Tatum O'Neal,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.5475
+2,Tatum O'Neal,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.461
+2,Tatum O'Neal,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.565
+2,Tia Carrere,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.002
+2,Tia Carrere,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.0605
+2,Tia Carrere,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.942
+2,Tia Carrere,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.4795
+2,Tia Carrere,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.052
+2,Tia Carrere,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.032
+3,Emmitt Smith,r1_rank,Rank (S1-2/S28+ hist.),1,0.0,0.0,0.6335
+3,Emmitt Smith,r2_percent,Percent 50/50 (S3-27 hist.),1,0.0,0.0,0.804
+3,Emmitt Smith,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.009
+3,Emmitt Smith,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.666
+3,Emmitt Smith,r5_qualibrium,Qualibrium (proposed),1,0.0,0.0,0.8545
+3,Emmitt Smith,r6_pct_hi,Percent judge-heavy (w=0.7),1,0.0,0.0,0.5705
+3,Harry Hamlin,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.865
+3,Harry Hamlin,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.452
+3,Harry Hamlin,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+3,Harry Hamlin,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.4065
+3,Harry Hamlin,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.4135
+3,Harry Hamlin,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.6025
+3,Jerry Springer,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.0
+3,Jerry Springer,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.0
+3,Jerry Springer,r3_rank_save,Rank + judges-save,5,0.0,0.0,1.0
+3,Jerry Springer,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.0515
+3,Jerry Springer,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.0
+3,Jerry Springer,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.0
+3,Joey Lawrence,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,4.0,0.336
+3,Joey Lawrence,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,4.0,0.0295
+3,Joey Lawrence,r3_rank_save,Rank + judges-save,3,0.0,6.0,0.2295
+3,Joey Lawrence,r4_pct_save,Percent + judges-save,3,0.0,4.0,0.177
+3,Joey Lawrence,r5_qualibrium,Qualibrium (proposed),3,0.0,4.0,0.0325
+3,Joey Lawrence,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,4.0,0.0355
+3,Mario Lopez,r1_rank,Rank (S1-2/S28+ hist.),2,0.0,0.0,0.621
+3,Mario Lopez,r2_percent,Percent 50/50 (S3-27 hist.),2,0.0,0.0,0.965
+3,Mario Lopez,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.018
+3,Mario Lopez,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.64
+3,Mario Lopez,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.9645
+3,Mario Lopez,r6_pct_hi,Percent judge-heavy (w=0.7),2,0.0,0.0,0.9575
+3,Monique Coleman,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,5.0,0.0565
+3,Monique Coleman,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,5.0,0.114
+3,Monique Coleman,r3_rank_save,Rank + judges-save,4,0.0,9.0,0.3445
+3,Monique Coleman,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.175
+3,Monique Coleman,r5_qualibrium,Qualibrium (proposed),4,0.0,5.0,0.1195
+3,Monique Coleman,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,5.0,0.1165
+3,Sara Evans,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,7.0,0.1255
+3,Sara Evans,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,8.0,0.24
+3,Sara Evans,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.661
+3,Sara Evans,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.339
+3,Sara Evans,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.26
+3,Sara Evans,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,8.0,0.12
+3,Shanna Moakler,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.9865
+3,Shanna Moakler,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.8725
+3,Shanna Moakler,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+3,Shanna Moakler,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.7405
+3,Shanna Moakler,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.821
+3,Shanna Moakler,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.93
+3,Tucker Carlson,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,11.0,0.051
+3,Tucker Carlson,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.083
+3,Tucker Carlson,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+3,Tucker Carlson,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.5015
+3,Tucker Carlson,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.151
+3,Tucker Carlson,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.033
+3,Vivica A. Fox,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.92
+3,Vivica A. Fox,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.819
+3,Vivica A. Fox,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.8365
+3,Vivica A. Fox,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.7265
+3,Vivica A. Fox,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.792
+3,Vivica A. Fox,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.948
+3,Willa Ford,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,9.0,0.477
+3,Willa Ford,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,9.0,0.4805
+3,Willa Ford,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.8975
+3,Willa Ford,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.5155
+3,Willa Ford,r5_qualibrium,Qualibrium (proposed),7,0.0,9.0,0.417
+3,Willa Ford,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.674
+4,Apolo Anton Ohno,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+4,Apolo Anton Ohno,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+4,Apolo Anton Ohno,r3_rank_save,Rank + judges-save,1,0.0,3.0,0.51
+4,Apolo Anton Ohno,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.527
+4,Apolo Anton Ohno,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+4,Apolo Anton Ohno,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+4,Billy Ray Cyrus,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.005
+4,Billy Ray Cyrus,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0
+4,Billy Ray Cyrus,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.999
+4,Billy Ray Cyrus,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.112
+4,Billy Ray Cyrus,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0
+4,Billy Ray Cyrus,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0
+4,Clyde Drexler,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.0
+4,Clyde Drexler,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.0
+4,Clyde Drexler,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+4,Clyde Drexler,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.068
+4,Clyde Drexler,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.0
+4,Clyde Drexler,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.0
+4,Heather Mills,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.997
+4,Heather Mills,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.966
+4,Heather Mills,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.8505
+4,Heather Mills,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.627
+4,Heather Mills,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.972
+4,Heather Mills,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.991
+4,Ian Ziering,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.002
+4,Ian Ziering,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0055
+4,Ian Ziering,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.527
+4,Ian Ziering,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.269
+4,Ian Ziering,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.005
+4,Ian Ziering,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.007
+4,Joey Fatone,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+4,Joey Fatone,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+4,Joey Fatone,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.4985
+4,Joey Fatone,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9915
+4,Joey Fatone,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+4,Joey Fatone,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+4,John Ratzenberger,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,7.0,0.0085
+4,John Ratzenberger,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.026
+4,John Ratzenberger,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+4,John Ratzenberger,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.089
+4,John Ratzenberger,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.024
+4,John Ratzenberger,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.0125
+4,Laila Ali,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+4,Laila Ali,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+4,Laila Ali,r3_rank_save,Rank + judges-save,3,0.0,4.0,0.0365
+4,Laila Ali,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.972
+4,Laila Ali,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+4,Laila Ali,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+4,Leeza Gibbons,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.694
+4,Leeza Gibbons,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.6755
+4,Leeza Gibbons,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.9875
+4,Leeza Gibbons,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.4075
+4,Leeza Gibbons,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.657
+4,Leeza Gibbons,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.7255
+4,Paulina Porizkova,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.9805
+4,Paulina Porizkova,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.942
+4,Paulina Porizkova,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+4,Paulina Porizkova,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.861
+4,Paulina Porizkova,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.9305
+4,Paulina Porizkova,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.9555
+4,Shandi Finnessey,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.7585
+4,Shandi Finnessey,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.7595
+4,Shandi Finnessey,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+4,Shandi Finnessey,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.507
+4,Shandi Finnessey,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.7345
+4,Shandi Finnessey,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.816
+5,Albert Reed,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,1.0
+5,Albert Reed,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.985
+5,Albert Reed,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+5,Albert Reed,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.8945
+5,Albert Reed,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.97
+5,Albert Reed,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.9965
+5,Cameron Mathison,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,0.0,0.7795
+5,Cameron Mathison,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.496
+5,Cameron Mathison,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.811
+5,Cameron Mathison,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.219
+5,Cameron Mathison,r5_qualibrium,Qualibrium (proposed),5,0.0,0.0,0.512
+5,Cameron Mathison,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,0.0,0.535
+5,Floyd Mayweather Jr.,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.698
+5,Floyd Mayweather Jr.,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.5495
+5,Floyd Mayweather Jr.,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+5,Floyd Mayweather Jr.,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.283
+5,Floyd Mayweather Jr.,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.531
+5,Floyd Mayweather Jr.,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.595
+5,Helio Castroneves,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+5,Helio Castroneves,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+5,Helio Castroneves,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.021
+5,Helio Castroneves,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.782
+5,Helio Castroneves,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+5,Helio Castroneves,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+5,Jane Seymour,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.0025
+5,Jane Seymour,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.025
+5,Jane Seymour,r3_rank_save,Rank + judges-save,6,0.0,8.0,0.4305
+5,Jane Seymour,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.237
+5,Jane Seymour,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.025
+5,Jane Seymour,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.0155
+5,Jennie Garth,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.1715
+5,Jennie Garth,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0855
+5,Jennie Garth,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.6665
+5,Jennie Garth,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.217
+5,Jennie Garth,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.064
+5,Jennie Garth,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.1105
+5,Josie Maran,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,12.0,0.192
+5,Josie Maran,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.269
+5,Josie Maran,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+5,Josie Maran,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.549
+5,Josie Maran,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.3235
+5,Josie Maran,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,12.0,0.2025
+5,Marie Osmond,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+5,Marie Osmond,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+5,Marie Osmond,r3_rank_save,Rank + judges-save,3,0.0,6.0,0.4045
+5,Marie Osmond,r4_pct_save,Percent + judges-save,3,0.0,3.0,0.7675
+5,Marie Osmond,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+5,Marie Osmond,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+5,Mark Cuban,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.0
+5,Mark Cuban,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.0035
+5,Mark Cuban,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+5,Mark Cuban,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.0985
+5,Mark Cuban,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.0025
+5,Mark Cuban,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.0055
+5,Mel B,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+5,Mel B,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+5,Mel B,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.0115
+5,Mel B,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9935
+5,Mel B,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+5,Mel B,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+5,Sabrina Bryan,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.9795
+5,Sabrina Bryan,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.898
+5,Sabrina Bryan,r3_rank_save,Rank + judges-save,7,0.0,8.0,0.2335
+5,Sabrina Bryan,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.6055
+5,Sabrina Bryan,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.907
+5,Sabrina Bryan,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.949
+5,Wayne Newton,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.0125
+5,Wayne Newton,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.0225
+5,Wayne Newton,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+5,Wayne Newton,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.215
+5,Wayne Newton,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.03
+5,Wayne Newton,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.013
+6,Adam Carolla,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,9.0,0.087
+6,Adam Carolla,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.0715
+6,Adam Carolla,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+6,Adam Carolla,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.304
+6,Adam Carolla,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.0735
+6,Adam Carolla,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.0395
+6,Cristian de la Fuente,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+6,Cristian de la Fuente,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+6,Cristian de la Fuente,r3_rank_save,Rank + judges-save,3,1.0,1.0,1.0
+6,Cristian de la Fuente,r4_pct_save,Percent + judges-save,3,0.0,4.0,0.465
+6,Cristian de la Fuente,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+6,Cristian de la Fuente,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+6,Jason Taylor,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+6,Jason Taylor,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+6,Jason Taylor,r3_rank_save,Rank + judges-save,2,0.0,3.0,0.5195
+6,Jason Taylor,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.5875
+6,Jason Taylor,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+6,Jason Taylor,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+6,Kristi Yamaguchi,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+6,Kristi Yamaguchi,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+6,Kristi Yamaguchi,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.4995
+6,Kristi Yamaguchi,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9445
+6,Kristi Yamaguchi,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+6,Kristi Yamaguchi,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+6,Mario,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,0.0,0.9275
+6,Mario,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.4995
+6,Mario,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.7315
+6,Mario,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.3095
+6,Mario,r5_qualibrium,Qualibrium (proposed),5,0.0,0.0,0.5325
+6,Mario,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,0.0,0.629
+6,Marissa Jaret Winokur,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0
+6,Marissa Jaret Winokur,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0
+6,Marissa Jaret Winokur,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.8515
+6,Marissa Jaret Winokur,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.1745
+6,Marissa Jaret Winokur,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0
+6,Marissa Jaret Winokur,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0
+6,Marlee Matlin,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.0785
+6,Marlee Matlin,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.0655
+6,Marlee Matlin,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.9875
+6,Marlee Matlin,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.2975
+6,Marlee Matlin,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.057
+6,Marlee Matlin,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.028
+6,Monica Seles,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,12.0,0.0605
+6,Monica Seles,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,12.0,0.1955
+6,Monica Seles,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+6,Monica Seles,r4_pct_save,Percent + judges-save,11,0.0,12.0,0.3945
+6,Monica Seles,r5_qualibrium,Qualibrium (proposed),11,0.0,12.0,0.2245
+6,Monica Seles,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,12.0,0.145
+6,Penn Jillette,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.7235
+6,Penn Jillette,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.562
+6,Penn Jillette,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+6,Penn Jillette,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.5915
+6,Penn Jillette,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.537
+6,Penn Jillette,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.6155
+6,Priscilla Presley,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.117
+6,Priscilla Presley,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.26
+6,Priscilla Presley,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.736
+6,Priscilla Presley,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.31
+6,Priscilla Presley,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.2575
+6,Priscilla Presley,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.239
+6,Shannon Elizabeth,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.775
+6,Shannon Elizabeth,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.728
+6,Shannon Elizabeth,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.991
+6,Shannon Elizabeth,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.288
+6,Shannon Elizabeth,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.753
+6,Shannon Elizabeth,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.8405
+6,Steve Guttenberg,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.096
+6,Steve Guttenberg,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.1975
+6,Steve Guttenberg,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+6,Steve Guttenberg,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.4265
+6,Steve Guttenberg,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.1945
+6,Steve Guttenberg,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,12.0,0.2045
+7,Brooke Burke,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+7,Brooke Burke,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+7,Brooke Burke,r3_rank_save,Rank + judges-save,1,0.0,6.0,0.0055
+7,Brooke Burke,r4_pct_save,Percent + judges-save,1,1.0,1.0,1.0
+7,Brooke Burke,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+7,Brooke Burke,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+7,Cloris Leachman,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.001
+7,Cloris Leachman,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.0
+7,Cloris Leachman,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+7,Cloris Leachman,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.08
+7,Cloris Leachman,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.0
+7,Cloris Leachman,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.0
+7,Cody Linley,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,5.0,0.002
+7,Cody Linley,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,5.0,0.0215
+7,Cody Linley,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.544
+7,Cody Linley,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.174
+7,Cody Linley,r5_qualibrium,Qualibrium (proposed),4,0.0,5.0,0.0315
+7,Cody Linley,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,5.0,0.009
+7,Jeffrey Ross,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,13.0,0.019
+7,Jeffrey Ross,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,13.0,0.017
+7,Jeffrey Ross,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+7,Jeffrey Ross,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.5095
+7,Jeffrey Ross,r5_qualibrium,Qualibrium (proposed),13,0.0,13.0,0.0375
+7,Jeffrey Ross,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,13.0,0.004
+7,Kim Kardashian,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.948
+7,Kim Kardashian,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.733
+7,Kim Kardashian,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+7,Kim Kardashian,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.7105
+7,Kim Kardashian,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.691
+7,Kim Kardashian,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.809
+7,Lance Bass,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+7,Lance Bass,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+7,Lance Bass,r3_rank_save,Rank + judges-save,3,0.0,5.0,0.064
+7,Lance Bass,r4_pct_save,Percent + judges-save,3,0.0,4.0,0.4525
+7,Lance Bass,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+7,Lance Bass,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+7,Maurice Greene,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.1615
+7,Maurice Greene,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.28
+7,Maurice Greene,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.918
+7,Maurice Greene,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.225
+7,Maurice Greene,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.291
+7,Maurice Greene,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.312
+7,Misty May-Treanor,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,1.0
+7,Misty May-Treanor,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.9995
+7,Misty May-Treanor,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.9885
+7,Misty May-Treanor,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.9995
+7,Misty May-Treanor,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.9995
+7,Misty May-Treanor,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,1.0
+7,Rocco DiSpirito,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,10.0,0.022
+7,Rocco DiSpirito,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,10.0,0.0425
+7,Rocco DiSpirito,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+7,Rocco DiSpirito,r4_pct_save,Percent + judges-save,9,0.0,10.0,0.2125
+7,Rocco DiSpirito,r5_qualibrium,Qualibrium (proposed),9,0.0,10.0,0.045
+7,Rocco DiSpirito,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,10.0,0.039
+7,Susan Lucci,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.781
+7,Susan Lucci,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.39
+7,Susan Lucci,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+7,Susan Lucci,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.303
+7,Susan Lucci,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.4175
+7,Susan Lucci,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.5865
+7,Ted McGinley,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.8395
+7,Ted McGinley,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.85
+7,Ted McGinley,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+7,Ted McGinley,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.921
+7,Ted McGinley,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.8215
+7,Ted McGinley,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.897
+7,Toni Braxton,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.747
+7,Toni Braxton,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.709
+7,Toni Braxton,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.8865
+7,Toni Braxton,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.6035
+7,Toni Braxton,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.708
+7,Toni Braxton,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.7685
+7,Warren Sapp,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+7,Warren Sapp,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+7,Warren Sapp,r3_rank_save,Rank + judges-save,2,0.0,6.0,0.0495
+7,Warren Sapp,r4_pct_save,Percent + judges-save,2,0.0,4.0,0.2945
+7,Warren Sapp,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+7,Warren Sapp,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+8,Belinda Carlisle,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,1.0
+8,Belinda Carlisle,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.9515
+8,Belinda Carlisle,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+8,Belinda Carlisle,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.78
+8,Belinda Carlisle,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.935
+8,Belinda Carlisle,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,0.0,0.9685
+8,Chuck Wicks,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.8685
+8,Chuck Wicks,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.864
+8,Chuck Wicks,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.999
+8,Chuck Wicks,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.394
+8,Chuck Wicks,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.898
+8,Chuck Wicks,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.945
+8,David Alan Grier,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.8985
+8,David Alan Grier,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.8085
+8,David Alan Grier,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+8,David Alan Grier,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.633
+8,David Alan Grier,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.773
+8,David Alan Grier,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.8805
+8,Denise Richards,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.9775
+8,Denise Richards,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.974
+8,Denise Richards,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+8,Denise Richards,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.7605
+8,Denise Richards,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.9505
+8,Denise Richards,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.9945
+8,Gilles Marini,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+8,Gilles Marini,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+8,Gilles Marini,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.48
+8,Gilles Marini,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.994
+8,Gilles Marini,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+8,Gilles Marini,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+8,Holly Madison,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.5365
+8,Holly Madison,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.497
+8,Holly Madison,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+8,Holly Madison,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.592
+8,Holly Madison,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.472
+8,Holly Madison,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.584
+8,Lawrence Taylor,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.0035
+8,Lawrence Taylor,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.004
+8,Lawrence Taylor,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+8,Lawrence Taylor,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.282
+8,Lawrence Taylor,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.003
+8,Lawrence Taylor,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.0015
+8,Lil' Kim,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,0.0,0.807
+8,Lil' Kim,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,0.0,0.825
+8,Lil' Kim,r3_rank_save,Rank + judges-save,5,0.0,6.0,0.3065
+8,Lil' Kim,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.369
+8,Lil' Kim,r5_qualibrium,Qualibrium (proposed),5,0.0,0.0,0.908
+8,Lil' Kim,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,0.0,0.948
+8,Melissa Rycroft,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+8,Melissa Rycroft,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+8,Melissa Rycroft,r3_rank_save,Rank + judges-save,3,0.0,5.0,0.069
+8,Melissa Rycroft,r4_pct_save,Percent + judges-save,3,0.0,4.0,0.338
+8,Melissa Rycroft,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+8,Melissa Rycroft,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+8,Shawn Johnson,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+8,Shawn Johnson,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+8,Shawn Johnson,r3_rank_save,Rank + judges-save,1,0.0,3.0,0.5055
+8,Shawn Johnson,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.8535
+8,Shawn Johnson,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+8,Shawn Johnson,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+8,Steve Wozniak,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,11.0,0.004
+8,Steve Wozniak,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.003
+8,Steve Wozniak,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+8,Steve Wozniak,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.1225
+8,Steve Wozniak,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.0045
+8,Steve Wozniak,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.0
+8,Steve-O,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.0
+8,Steve-O,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.0
+8,Steve-O,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+8,Steve-O,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.0785
+8,Steve-O,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.0
+8,Steve-O,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.0
+8,Ty Murray,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0
+8,Ty Murray,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0
+8,Ty Murray,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.964
+8,Ty Murray,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.11
+8,Ty Murray,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0
+8,Ty Murray,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0
+9,Aaron Carter,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.125
+9,Aaron Carter,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.2465
+9,Aaron Carter,r3_rank_save,Rank + judges-save,5,0.0,8.0,0.427
+9,Aaron Carter,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.4465
+9,Aaron Carter,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.217
+9,Aaron Carter,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.197
+9,Ashley Hamiliton,r1_rank,Rank (S1-2/S28+ hist.),16,0.0,16.0,0.362
+9,Ashley Hamiliton,r2_percent,Percent 50/50 (S3-27 hist.),16,0.0,0.0,0.5545
+9,Ashley Hamiliton,r3_rank_save,Rank + judges-save,16,0.0,0.0,1.0
+9,Ashley Hamiliton,r4_pct_save,Percent + judges-save,16,0.0,0.0,0.7725
+9,Ashley Hamiliton,r5_qualibrium,Qualibrium (proposed),16,0.0,0.0,0.5785
+9,Ashley Hamiliton,r6_pct_hi,Percent judge-heavy (w=0.7),16,0.0,0.0,0.532
+9,Chuck Liddell,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.892
+9,Chuck Liddell,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.543
+9,Chuck Liddell,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+9,Chuck Liddell,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.539
+9,Chuck Liddell,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.51
+9,Chuck Liddell,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.6165
+9,Debi Mazar,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.8965
+9,Debi Mazar,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.7575
+9,Debi Mazar,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+9,Debi Mazar,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.7725
+9,Debi Mazar,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.726
+9,Debi Mazar,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.8325
+9,Donny Osmond,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+9,Donny Osmond,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+9,Donny Osmond,r3_rank_save,Rank + judges-save,1,0.0,8.0,0.167
+9,Donny Osmond,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.5125
+9,Donny Osmond,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+9,Donny Osmond,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+9,Joanna Krupa,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,0.0,0.9815
+9,Joanna Krupa,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,5.0,0.3485
+9,Joanna Krupa,r3_rank_save,Rank + judges-save,4,0.0,8.0,0.2005
+9,Joanna Krupa,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.231
+9,Joanna Krupa,r5_qualibrium,Qualibrium (proposed),4,0.0,5.0,0.2085
+9,Joanna Krupa,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,0.0,0.549
+9,Kathy Ireland,r1_rank,Rank (S1-2/S28+ hist.),14,0.0,14.0,0.392
+9,Kathy Ireland,r2_percent,Percent 50/50 (S3-27 hist.),14,0.0,14.0,0.4435
+9,Kathy Ireland,r3_rank_save,Rank + judges-save,14,0.0,0.0,1.0
+9,Kathy Ireland,r4_pct_save,Percent + judges-save,14,0.0,0.0,0.593
+9,Kathy Ireland,r5_qualibrium,Qualibrium (proposed),14,0.0,14.0,0.4385
+9,Kathy Ireland,r6_pct_hi,Percent judge-heavy (w=0.7),14,0.0,14.0,0.4455
+9,Kelly Osbourne,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+9,Kelly Osbourne,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+9,Kelly Osbourne,r3_rank_save,Rank + judges-save,3,0.0,5.0,0.1675
+9,Kelly Osbourne,r4_pct_save,Percent + judges-save,3,0.0,4.0,0.424
+9,Kelly Osbourne,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+9,Kelly Osbourne,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+9,Louie Vito,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,10.0,0.3565
+9,Louie Vito,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,10.0,0.173
+9,Louie Vito,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+9,Louie Vito,r4_pct_save,Percent + judges-save,8,0.0,10.0,0.3125
+9,Louie Vito,r5_qualibrium,Qualibrium (proposed),8,0.0,10.0,0.1735
+9,Louie Vito,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,10.0,0.185
+9,Macy Gray,r1_rank,Rank (S1-2/S28+ hist.),15,0.0,16.0,0.264
+9,Macy Gray,r2_percent,Percent 50/50 (S3-27 hist.),15,0.0,0.0,0.565
+9,Macy Gray,r3_rank_save,Rank + judges-save,15,0.0,0.0,1.0
+9,Macy Gray,r4_pct_save,Percent + judges-save,15,0.0,0.0,0.78
+9,Macy Gray,r5_qualibrium,Qualibrium (proposed),15,0.0,0.0,0.5775
+9,Macy Gray,r6_pct_hi,Percent judge-heavy (w=0.7),15,0.0,0.0,0.5565
+9,Mark Dacascos,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,8.0,0.0
+9,Mark Dacascos,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,8.0,0.001
+9,Mark Dacascos,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.94
+9,Mark Dacascos,r4_pct_save,Percent + judges-save,6,0.0,8.0,0.4535
+9,Mark Dacascos,r5_qualibrium,Qualibrium (proposed),6,0.0,8.0,0.0005
+9,Mark Dacascos,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,8.0,0.0005
+9,Melissa Joan Hart,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,10.0,0.263
+9,Melissa Joan Hart,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,10.0,0.346
+9,Melissa Joan Hart,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.6215
+9,Melissa Joan Hart,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.544
+9,Melissa Joan Hart,r5_qualibrium,Qualibrium (proposed),9,0.0,10.0,0.344
+9,Melissa Joan Hart,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,10.0,0.369
+9,Michael Irvin,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.0
+9,Michael Irvin,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.0005
+9,Michael Irvin,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+9,Michael Irvin,r4_pct_save,Percent + judges-save,7,0.0,10.0,0.0625
+9,Michael Irvin,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.0005
+9,Michael Irvin,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.0
+9,Mya,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+9,Mya,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+9,Mya,r3_rank_save,Rank + judges-save,2,0.0,6.0,0.014
+9,Mya,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.543
+9,Mya,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+9,Mya,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+9,Natalie Coughlin,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.741
+9,Natalie Coughlin,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.7475
+9,Natalie Coughlin,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.537
+9,Natalie Coughlin,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.7405
+9,Natalie Coughlin,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.7435
+9,Natalie Coughlin,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.777
+9,Tom DeLay,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,0.548
+9,Tom DeLay,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.5545
+9,Tom DeLay,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+9,Tom DeLay,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.563
+9,Tom DeLay,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.5805
+9,Tom DeLay,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,13.0,0.488
+10,Aiden Turner,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.6965
+10,Aiden Turner,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.5465
+10,Aiden Turner,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+10,Aiden Turner,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.3375
+10,Aiden Turner,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.545
+10,Aiden Turner,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.593
+10,Buzz Aldrin,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.016
+10,Buzz Aldrin,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.0165
+10,Buzz Aldrin,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+10,Buzz Aldrin,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.135
+10,Buzz Aldrin,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.025
+10,Buzz Aldrin,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.0075
+10,Chad Ochocinco,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0005
+10,Chad Ochocinco,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0
+10,Chad Ochocinco,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.939
+10,Chad Ochocinco,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.198
+10,Chad Ochocinco,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.001
+10,Chad Ochocinco,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0
+10,Erin Andrews,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+10,Erin Andrews,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+10,Erin Andrews,r3_rank_save,Rank + judges-save,3,0.0,3.0,0.5285
+10,Erin Andrews,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.653
+10,Erin Andrews,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+10,Erin Andrews,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+10,Evan Lysacek,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+10,Evan Lysacek,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+10,Evan Lysacek,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.0375
+10,Evan Lysacek,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.837
+10,Evan Lysacek,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+10,Evan Lysacek,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+10,Jake Pavelka,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.075
+10,Jake Pavelka,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.1635
+10,Jake Pavelka,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+10,Jake Pavelka,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.4765
+10,Jake Pavelka,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.1595
+10,Jake Pavelka,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.1655
+10,Kate Gosselin,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.005
+10,Kate Gosselin,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.008
+10,Kate Gosselin,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+10,Kate Gosselin,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.0705
+10,Kate Gosselin,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.008
+10,Kate Gosselin,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.0015
+10,Nicole Scherzinger,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+10,Nicole Scherzinger,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+10,Nicole Scherzinger,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.496
+10,Nicole Scherzinger,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9055
+10,Nicole Scherzinger,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+10,Nicole Scherzinger,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+10,Niecy Nash,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.0045
+10,Niecy Nash,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0205
+10,Niecy Nash,r3_rank_save,Rank + judges-save,5,0.0,0.0,1.0
+10,Niecy Nash,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.121
+10,Niecy Nash,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0155
+10,Niecy Nash,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.013
+10,Pamela Anderson,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.8775
+10,Pamela Anderson,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.7515
+10,Pamela Anderson,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.9895
+10,Pamela Anderson,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.4295
+10,Pamela Anderson,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.767
+10,Pamela Anderson,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.7935
+10,Shannen Doherty,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,1.0
+10,Shannen Doherty,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.999
+10,Shannen Doherty,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+10,Shannen Doherty,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.9205
+10,Shannen Doherty,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.997
+10,Shannen Doherty,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,1.0
+11,Audrina Patridge,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.888
+11,Audrina Patridge,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.786
+11,Audrina Patridge,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.575
+11,Audrina Patridge,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.5675
+11,Audrina Patridge,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.772
+11,Audrina Patridge,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.9095
+11,Brandy,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.4635
+11,Brandy,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0975
+11,Brandy,r3_rank_save,Rank + judges-save,4,0.0,6.0,0.0505
+11,Brandy,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.8045
+11,Brandy,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0435
+11,Brandy,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.2265
+11,Bristol Palin,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+11,Bristol Palin,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+11,Bristol Palin,r3_rank_save,Rank + judges-save,3,0.0,3.0,0.586
+11,Bristol Palin,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.6075
+11,Bristol Palin,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+11,Bristol Palin,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+11,David Hasselhoff,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.8385
+11,David Hasselhoff,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.6865
+11,David Hasselhoff,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+11,David Hasselhoff,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.721
+11,David Hasselhoff,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.6945
+11,David Hasselhoff,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.6985
+11,Florence Henderson,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.335
+11,Florence Henderson,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.2315
+11,Florence Henderson,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+11,Florence Henderson,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.2195
+11,Florence Henderson,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.225
+11,Florence Henderson,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.338
+11,Jennifer Grey,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+11,Jennifer Grey,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+11,Jennifer Grey,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.4775
+11,Jennifer Grey,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9125
+11,Jennifer Grey,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+11,Jennifer Grey,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+11,Kurt Warner,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.0
+11,Kurt Warner,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0
+11,Kurt Warner,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.8595
+11,Kurt Warner,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1945
+11,Kurt Warner,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0
+11,Kurt Warner,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0
+11,Kyle Massey,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+11,Kyle Massey,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+11,Kyle Massey,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.391
+11,Kyle Massey,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.584
+11,Kyle Massey,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+11,Kyle Massey,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+11,Margaret Cho,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.008
+11,Margaret Cho,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.1445
+11,Margaret Cho,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+11,Margaret Cho,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.31
+11,Margaret Cho,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.162
+11,Margaret Cho,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.113
+11,Michael Bolton,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,11.0,0.024
+11,Michael Bolton,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.008
+11,Michael Bolton,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+11,Michael Bolton,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.42
+11,Michael Bolton,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.0165
+11,Michael Bolton,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.002
+11,Rick Fox,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.57
+11,Rick Fox,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.187
+11,Rick Fox,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.9415
+11,Rick Fox,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.351
+11,Rick Fox,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.215
+11,Rick Fox,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.2915
+11,The Situation,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,9.0,0.0065
+11,The Situation,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.054
+11,The Situation,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+11,The Situation,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.2435
+11,The Situation,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.063
+11,The Situation,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.0165
+12,Chelsea Kane,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+12,Chelsea Kane,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+12,Chelsea Kane,r3_rank_save,Rank + judges-save,3,0.0,3.0,0.503
+12,Chelsea Kane,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.986
+12,Chelsea Kane,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+12,Chelsea Kane,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+12,Chris Jericho,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.004
+12,Chris Jericho,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.017
+12,Chris Jericho,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.505
+12,Chris Jericho,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.474
+12,Chris Jericho,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.016
+12,Chris Jericho,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.011
+12,Hines Ward,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+12,Hines Ward,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+12,Hines Ward,r3_rank_save,Rank + judges-save,1,0.0,3.0,0.526
+12,Hines Ward,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.828
+12,Hines Ward,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+12,Hines Ward,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+12,Kendra Wilkinson,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,9.0,0.0455
+12,Kendra Wilkinson,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,8.0,0.026
+12,Kendra Wilkinson,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.992
+12,Kendra Wilkinson,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.101
+12,Kendra Wilkinson,r5_qualibrium,Qualibrium (proposed),6,0.0,8.0,0.029
+12,Kendra Wilkinson,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,8.0,0.014
+12,Kirstie Alley,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+12,Kirstie Alley,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+12,Kirstie Alley,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.2395
+12,Kirstie Alley,r4_pct_save,Percent + judges-save,2,0.0,3.0,0.8575
+12,Kirstie Alley,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+12,Kirstie Alley,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+12,Mike Catherwood,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.854
+12,Mike Catherwood,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.657
+12,Mike Catherwood,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+12,Mike Catherwood,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.3615
+12,Mike Catherwood,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.6525
+12,Mike Catherwood,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.668
+12,Petra Nemcova,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.3655
+12,Petra Nemcova,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.4365
+12,Petra Nemcova,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.693
+12,Petra Nemcova,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.4615
+12,Petra Nemcova,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.432
+12,Petra Nemcova,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.478
+12,Ralph Macchio,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0
+12,Ralph Macchio,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0
+12,Ralph Macchio,r3_rank_save,Rank + judges-save,4,0.0,6.0,0.2
+12,Ralph Macchio,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.1645
+12,Ralph Macchio,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0
+12,Ralph Macchio,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0
+12,Romeo,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.001
+12,Romeo,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.1785
+12,Romeo,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.866
+12,Romeo,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1905
+12,Romeo,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.184
+12,Romeo,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.208
+12,Sugar Ray Leonard,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.5595
+12,Sugar Ray Leonard,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.604
+12,Sugar Ray Leonard,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+12,Sugar Ray Leonard,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.2855
+12,Sugar Ray Leonard,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.5975
+12,Sugar Ray Leonard,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.632
+12,Wendy Williams,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.015
+12,Wendy Williams,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.0135
+12,Wendy Williams,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+12,Wendy Williams,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.219
+12,Wendy Williams,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.0205
+12,Wendy Williams,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.005
+13,Carson Kressley,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.013
+13,Carson Kressley,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.0495
+13,Carson Kressley,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+13,Carson Kressley,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.183
+13,Carson Kressley,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.05
+13,Carson Kressley,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.0355
+13,Chaz Bono,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.0
+13,Chaz Bono,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.001
+13,Chaz Bono,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+13,Chaz Bono,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.0505
+13,Chaz Bono,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.001
+13,Chaz Bono,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.0005
+13,Chynna Phillips,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.871
+13,Chynna Phillips,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.7015
+13,Chynna Phillips,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.6485
+13,Chynna Phillips,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.6715
+13,Chynna Phillips,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.6935
+13,Chynna Phillips,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.7515
+13,David Arquette,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.6935
+13,David Arquette,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.6035
+13,David Arquette,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.9525
+13,David Arquette,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.3175
+13,David Arquette,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.616
+13,David Arquette,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.6755
+13,Elisabetta Canalis,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.6365
+13,Elisabetta Canalis,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.585
+13,Elisabetta Canalis,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+13,Elisabetta Canalis,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.5705
+13,Elisabetta Canalis,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.551
+13,Elisabetta Canalis,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.6475
+13,Hope Solo,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0175
+13,Hope Solo,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0055
+13,Hope Solo,r3_rank_save,Rank + judges-save,4,0.0,5.0,0.433
+13,Hope Solo,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.2625
+13,Hope Solo,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.031
+13,Hope Solo,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0005
+13,J.R. Martinez,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+13,J.R. Martinez,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+13,J.R. Martinez,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.495
+13,J.R. Martinez,r4_pct_save,Percent + judges-save,1,0.0,3.0,0.7565
+13,J.R. Martinez,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+13,J.R. Martinez,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+13,Kristin Cavallari,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,1.0
+13,Kristin Cavallari,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.993
+13,Kristin Cavallari,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.997
+13,Kristin Cavallari,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.88
+13,Kristin Cavallari,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.99
+13,Kristin Cavallari,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.998
+13,Metta World Peace (Ron),r1_rank,Rank (S1-2/S28+ hist.),12,0.0,12.0,0.367
+13,Metta World Peace (Ron),r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.456
+13,Metta World Peace (Ron),r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+13,Metta World Peace (Ron),r4_pct_save,Percent + judges-save,12,0.0,0.0,0.552
+13,Metta World Peace (Ron),r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.503
+13,Metta World Peace (Ron),r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,12.0,0.386
+13,Nancy Grace,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.0
+13,Nancy Grace,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0
+13,Nancy Grace,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.9985
+13,Nancy Grace,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1525
+13,Nancy Grace,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0
+13,Nancy Grace,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0
+13,Ricki Lake,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+13,Ricki Lake,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+13,Ricki Lake,r3_rank_save,Rank + judges-save,3,0.0,4.0,0.017
+13,Ricki Lake,r4_pct_save,Percent + judges-save,3,0.0,3.0,0.888
+13,Ricki Lake,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+13,Ricki Lake,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+13,Rob Kardashian,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+13,Rob Kardashian,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+13,Rob Kardashian,r3_rank_save,Rank + judges-save,2,0.0,3.0,0.5855
+13,Rob Kardashian,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.8635
+13,Rob Kardashian,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+13,Rob Kardashian,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+14,Donald Driver,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+14,Donald Driver,r2_percent,Percent 50/50 (S3-27 hist.),1,0.0,0.0,0.979
+14,Donald Driver,r3_rank_save,Rank + judges-save,1,0.0,6.0,0.1965
+14,Donald Driver,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9225
+14,Donald Driver,r5_qualibrium,Qualibrium (proposed),1,0.0,0.0,0.984
+14,Donald Driver,r6_pct_hi,Percent judge-heavy (w=0.7),1,0.0,0.0,0.974
+14,Gavin DeGraw,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,9.0,0.076
+14,Gavin DeGraw,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.101
+14,Gavin DeGraw,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+14,Gavin DeGraw,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.299
+14,Gavin DeGraw,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.1005
+14,Gavin DeGraw,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.0865
+14,Gladys Knight,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.0725
+14,Gladys Knight,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.0685
+14,Gladys Knight,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.997
+14,Gladys Knight,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.141
+14,Gladys Knight,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.059
+14,Gladys Knight,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.0215
+14,Jack Wagner,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.778
+14,Jack Wagner,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.7465
+14,Jack Wagner,r3_rank_save,Rank + judges-save,11,0.0,0.0,0.999
+14,Jack Wagner,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.7085
+14,Jack Wagner,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.731
+14,Jack Wagner,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.7565
+14,Jaleel White,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.8985
+14,Jaleel White,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.7425
+14,Jaleel White,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.543
+14,Jaleel White,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.4945
+14,Jaleel White,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.75
+14,Jaleel White,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.806
+14,Katherine Jenkins,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+14,Katherine Jenkins,r2_percent,Percent 50/50 (S3-27 hist.),2,0.0,4.0,0.329
+14,Katherine Jenkins,r3_rank_save,Rank + judges-save,2,0.0,7.0,0.0075
+14,Katherine Jenkins,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.514
+14,Katherine Jenkins,r5_qualibrium,Qualibrium (proposed),2,0.0,4.0,0.4315
+14,Katherine Jenkins,r6_pct_hi,Percent judge-heavy (w=0.7),2,0.0,4.0,0.2355
+14,Maria Menounos,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,6.0,0.0
+14,Maria Menounos,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,6.0,0.0005
+14,Maria Menounos,r3_rank_save,Rank + judges-save,4,0.0,4.0,0.3955
+14,Maria Menounos,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.1515
+14,Maria Menounos,r5_qualibrium,Qualibrium (proposed),4,0.0,6.0,0.0005
+14,Maria Menounos,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,6.0,0.0015
+14,Martina Navratilova,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,12.0,0.113
+14,Martina Navratilova,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.1845
+14,Martina Navratilova,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+14,Martina Navratilova,r4_pct_save,Percent + judges-save,12,0.0,12.0,0.378
+14,Martina Navratilova,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.207
+14,Martina Navratilova,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,12.0,0.159
+14,Melissa Gilbert,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.0
+14,Melissa Gilbert,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.0
+14,Melissa Gilbert,r3_rank_save,Rank + judges-save,5,0.0,0.0,1.0
+14,Melissa Gilbert,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.1395
+14,Melissa Gilbert,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.0
+14,Melissa Gilbert,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.0
+14,Roshon Fegan,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.726
+14,Roshon Fegan,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.7035
+14,Roshon Fegan,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.562
+14,Roshon Fegan,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.4435
+14,Roshon Fegan,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.7185
+14,Roshon Fegan,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.807
+14,Sherri Sheperd,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.2555
+14,Sherri Sheperd,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.522
+14,Sherri Sheperd,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+14,Sherri Sheperd,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.496
+14,Sherri Sheperd,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.514
+14,Sherri Sheperd,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.559
+14,William Levy,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+14,William Levy,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.9985
+14,William Levy,r3_rank_save,Rank + judges-save,3,0.0,4.0,0.035
+14,William Levy,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.991
+14,William Levy,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.999
+14,William Levy,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,0.0,0.995
+15,Apolo Anton Ohno,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,0.0,0.5875
+15,Apolo Anton Ohno,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.285
+15,Apolo Anton Ohno,r3_rank_save,Rank + judges-save,5,0.0,7.0,0.2755
+15,Apolo Anton Ohno,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.464
+15,Apolo Anton Ohno,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.208
+15,Apolo Anton Ohno,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.3775
+15,Bristol Palin,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,11.0,0.0
+15,Bristol Palin,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,11.0,0.002
+15,Bristol Palin,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+15,Bristol Palin,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.1375
+15,Bristol Palin,r5_qualibrium,Qualibrium (proposed),9,0.0,11.0,0.0025
+15,Bristol Palin,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,11.0,0.002
+15,Drew Lachey,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,11.0,0.3505
+15,Drew Lachey,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.478
+15,Drew Lachey,r3_rank_save,Rank + judges-save,11,0.0,0.0,0.997
+15,Drew Lachey,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.681
+15,Drew Lachey,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.479
+15,Drew Lachey,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.4905
+15,Emmitt Smith,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,5.0,0.0
+15,Emmitt Smith,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,5.0,0.003
+15,Emmitt Smith,r3_rank_save,Rank + judges-save,4,0.0,7.0,0.456
+15,Emmitt Smith,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.288
+15,Emmitt Smith,r5_qualibrium,Qualibrium (proposed),4,0.0,5.0,0.002
+15,Emmitt Smith,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,5.0,0.0025
+15,Gilles Marini,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.937
+15,Gilles Marini,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.1755
+15,Gilles Marini,r3_rank_save,Rank + judges-save,6,0.0,9.0,0.4145
+15,Gilles Marini,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.2025
+15,Gilles Marini,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.1995
+15,Gilles Marini,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.247
+15,Helio Castroneves,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.997
+15,Helio Castroneves,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.933
+15,Helio Castroneves,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.9995
+15,Helio Castroneves,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.857
+15,Helio Castroneves,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.93
+15,Helio Castroneves,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.9325
+15,Joey Fatone,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.992
+15,Joey Fatone,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.9375
+15,Joey Fatone,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+15,Joey Fatone,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.7425
+15,Joey Fatone,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.916
+15,Joey Fatone,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.96
+15,Kelly Monaco,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+15,Kelly Monaco,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+15,Kelly Monaco,r3_rank_save,Rank + judges-save,3,0.0,3.0,0.5815
+15,Kelly Monaco,r4_pct_save,Percent + judges-save,3,0.0,3.0,0.786
+15,Kelly Monaco,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+15,Kelly Monaco,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+15,Kirstie Alley,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.0
+15,Kirstie Alley,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.0005
+15,Kirstie Alley,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+15,Kirstie Alley,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.0415
+15,Kirstie Alley,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.0005
+15,Kirstie Alley,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.0005
+15,Melissa Rycroft,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+15,Melissa Rycroft,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+15,Melissa Rycroft,r3_rank_save,Rank + judges-save,1,0.0,3.0,0.523
+15,Melissa Rycroft,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.999
+15,Melissa Rycroft,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+15,Melissa Rycroft,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+15,Pamela Anderson,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,13.0,0.0765
+15,Pamela Anderson,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,13.0,0.21
+15,Pamela Anderson,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+15,Pamela Anderson,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.529
+15,Pamela Anderson,r5_qualibrium,Qualibrium (proposed),13,0.0,13.0,0.248
+15,Pamela Anderson,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,13.0,0.18
+15,Sabrina Bryan,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.9455
+15,Sabrina Bryan,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.704
+15,Sabrina Bryan,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.6285
+15,Sabrina Bryan,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.6855
+15,Sabrina Bryan,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.675
+15,Sabrina Bryan,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.8035
+15,Shawn Johnson,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+15,Shawn Johnson,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+15,Shawn Johnson,r3_rank_save,Rank + judges-save,2,1.0,1.0,1.0
+15,Shawn Johnson,r4_pct_save,Percent + judges-save,2,0.0,3.0,0.9425
+15,Shawn Johnson,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+15,Shawn Johnson,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+16,Alexandra Raisman,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,0.0,0.681
+16,Alexandra Raisman,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,5.0,0.4245
+16,Alexandra Raisman,r3_rank_save,Rank + judges-save,4,1.0,1.0,1.0
+16,Alexandra Raisman,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.4505
+16,Alexandra Raisman,r5_qualibrium,Qualibrium (proposed),4,0.0,5.0,0.3245
+16,Alexandra Raisman,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,0.0,0.5325
+16,Andy Dick,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.0055
+16,Andy Dick,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.0
+16,Andy Dick,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+16,Andy Dick,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.1105
+16,Andy Dick,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.0
+16,Andy Dick,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.0
+16,D. L. Hughley,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,10.0,0.148
+16,D. L. Hughley,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,10.0,0.2665
+16,D. L. Hughley,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+16,D. L. Hughley,r4_pct_save,Percent + judges-save,9,0.0,10.0,0.083
+16,D. L. Hughley,r5_qualibrium,Qualibrium (proposed),9,0.0,10.0,0.262
+16,D. L. Hughley,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,10.0,0.2815
+16,Dorothy Hamill,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,1.0
+16,Dorothy Hamill,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,1.0
+16,Dorothy Hamill,r3_rank_save,Rank + judges-save,12,0.0,0.0,0.813
+16,Dorothy Hamill,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.6275
+16,Dorothy Hamill,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,1.0
+16,Dorothy Hamill,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,1.0
+16,Ingo Rademacher,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.007
+16,Ingo Rademacher,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.008
+16,Ingo Rademacher,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.9675
+16,Ingo Rademacher,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.2355
+16,Ingo Rademacher,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.0055
+16,Ingo Rademacher,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.0035
+16,Jacoby Jones,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,5.0,0.319
+16,Jacoby Jones,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.5755
+16,Jacoby Jones,r3_rank_save,Rank + judges-save,3,1.0,1.0,1.0
+16,Jacoby Jones,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.5085
+16,Jacoby Jones,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.6755
+16,Jacoby Jones,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,5.0,0.4675
+16,Kellie Pickler,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+16,Kellie Pickler,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+16,Kellie Pickler,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.036
+16,Kellie Pickler,r4_pct_save,Percent + judges-save,1,1.0,1.0,1.0
+16,Kellie Pickler,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+16,Kellie Pickler,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+16,Lisa Vanderpump,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.6345
+16,Lisa Vanderpump,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.456
+16,Lisa Vanderpump,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+16,Lisa Vanderpump,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.435
+16,Lisa Vanderpump,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.457
+16,Lisa Vanderpump,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.4775
+16,Sean Lowe,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,7.0,0.0125
+16,Sean Lowe,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.011
+16,Sean Lowe,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+16,Sean Lowe,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.269
+16,Sean Lowe,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.005
+16,Sean Lowe,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.003
+16,Victor Ortiz,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,9.0,0.018
+16,Victor Ortiz,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,9.0,0.044
+16,Victor Ortiz,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+16,Victor Ortiz,r4_pct_save,Percent + judges-save,8,0.0,9.0,0.216
+16,Victor Ortiz,r5_qualibrium,Qualibrium (proposed),8,0.0,9.0,0.0445
+16,Victor Ortiz,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,9.0,0.0385
+16,Wynonna Judd,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,12.0,0.218
+16,Wynonna Judd,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,12.0,0.3445
+16,Wynonna Judd,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+16,Wynonna Judd,r4_pct_save,Percent + judges-save,11,0.0,12.0,0.442
+16,Wynonna Judd,r5_qualibrium,Qualibrium (proposed),11,0.0,12.0,0.353
+16,Wynonna Judd,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,12.0,0.313
+16,Zendaya,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+16,Zendaya,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+16,Zendaya,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.011
+16,Zendaya,r4_pct_save,Percent + judges-save,2,1.0,1.0,1.0
+16,Zendaya,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+16,Zendaya,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+17,Amber Riley,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+17,Amber Riley,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+17,Amber Riley,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.0115
+17,Amber Riley,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.873
+17,Amber Riley,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+17,Amber Riley,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+17,Bill Engvall,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0
+17,Bill Engvall,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0
+17,Bill Engvall,r3_rank_save,Rank + judges-save,4,1.0,1.0,1.0
+17,Bill Engvall,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.03
+17,Bill Engvall,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0
+17,Bill Engvall,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0
+17,Bill Nye,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,12.0,0.2135
+17,Bill Nye,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.212
+17,Bill Nye,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+17,Bill Nye,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.1385
+17,Bill Nye,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.221
+17,Bill Nye,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.1965
+17,Brant Daugherty,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.8955
+17,Brant Daugherty,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.877
+17,Brant Daugherty,r3_rank_save,Rank + judges-save,7,0.0,8.0,0.4155
+17,Brant Daugherty,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.487
+17,Brant Daugherty,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.8695
+17,Brant Daugherty,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.9265
+17,Christina Milian,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,1.0
+17,Christina Milian,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.9875
+17,Christina Milian,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.8645
+17,Christina Milian,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.853
+17,Christina Milian,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.9855
+17,Christina Milian,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.997
+17,Corbin Bleu,r1_rank,Rank (S1-2/S28+ hist.),2,0.0,0.0,0.9995
+17,Corbin Bleu,r2_percent,Percent 50/50 (S3-27 hist.),2,0.0,0.0,0.9995
+17,Corbin Bleu,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.002
+17,Corbin Bleu,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.741
+17,Corbin Bleu,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.997
+17,Corbin Bleu,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+17,Elizabeth Berkley Lauren,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,7.0,0.21
+17,Elizabeth Berkley Lauren,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.0315
+17,Elizabeth Berkley Lauren,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.731
+17,Elizabeth Berkley Lauren,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.1455
+17,Elizabeth Berkley Lauren,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.043
+17,Elizabeth Berkley Lauren,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.1075
+17,Jack Osbourne,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,0.0,0.995
+17,Jack Osbourne,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.9965
+17,Jack Osbourne,r3_rank_save,Rank + judges-save,3,0.0,6.0,0.082
+17,Jack Osbourne,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.625
+17,Jack Osbourne,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.991
+17,Jack Osbourne,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,0.0,0.9995
+17,Keyshawn Johnson,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.736
+17,Keyshawn Johnson,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.691
+17,Keyshawn Johnson,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+17,Keyshawn Johnson,r4_pct_save,Percent + judges-save,12,0.0,12.0,0.3865
+17,Keyshawn Johnson,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.68
+17,Keyshawn Johnson,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.709
+17,Leah Remini,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,8.0,0.0015
+17,Leah Remini,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0165
+17,Leah Remini,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.989
+17,Leah Remini,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1395
+17,Leah Remini,r5_qualibrium,Qualibrium (proposed),5,0.0,9.0,0.022
+17,Leah Remini,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,9.0,0.0115
+17,"Nicole ""Snooki"" Polizzi",r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.8425
+17,"Nicole ""Snooki"" Polizzi",r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.792
+17,"Nicole ""Snooki"" Polizzi",r3_rank_save,Rank + judges-save,8,0.0,0.0,0.969
+17,"Nicole ""Snooki"" Polizzi",r4_pct_save,Percent + judges-save,8,0.0,0.0,0.6395
+17,"Nicole ""Snooki"" Polizzi",r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.791
+17,"Nicole ""Snooki"" Polizzi",r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.83
+17,Valerie Harper,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.028
+17,Valerie Harper,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.054
+17,Valerie Harper,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+17,Valerie Harper,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.216
+17,Valerie Harper,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.06
+17,Valerie Harper,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.0285
+18,Amy Purdy,r1_rank,Rank (S1-2/S28+ hist.),2,0.0,0.0,0.9995
+18,Amy Purdy,r2_percent,Percent 50/50 (S3-27 hist.),2,0.0,0.0,0.999
+18,Amy Purdy,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.0075
+18,Amy Purdy,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9955
+18,Amy Purdy,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.9995
+18,Amy Purdy,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+18,Billy Dee Williams,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,11.0,0.009
+18,Billy Dee Williams,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.0045
+18,Billy Dee Williams,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+18,Billy Dee Williams,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.26
+18,Billy Dee Williams,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.01
+18,Billy Dee Williams,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.0005
+18,Candace Cameron Bure,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,5.0,0.304
+18,Candace Cameron Bure,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.5405
+18,Candace Cameron Bure,r3_rank_save,Rank + judges-save,3,0.0,8.0,0.274
+18,Candace Cameron Bure,r4_pct_save,Percent + judges-save,3,0.0,5.0,0.4495
+18,Candace Cameron Bure,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.7345
+18,Candace Cameron Bure,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,5.0,0.28
+18,Charlie White,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,0.0,0.7785
+18,Charlie White,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.373
+18,Charlie White,r3_rank_save,Rank + judges-save,5,0.0,7.0,0.2135
+18,Charlie White,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.3995
+18,Charlie White,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.393
+18,Charlie White,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.4355
+18,Cody Simpson,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.986
+18,Cody Simpson,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.983
+18,Cody Simpson,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+18,Cody Simpson,r4_pct_save,Percent + judges-save,9,0.0,10.0,0.2955
+18,Cody Simpson,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.9745
+18,Cody Simpson,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.9925
+18,Danica McKellar,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,1.0
+18,Danica McKellar,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.851
+18,Danica McKellar,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.922
+18,Danica McKellar,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.394
+18,Danica McKellar,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.878
+18,Danica McKellar,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.906
+18,Diana Nyad,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.772
+18,Diana Nyad,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.812
+18,Diana Nyad,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+18,Diana Nyad,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.6565
+18,Diana Nyad,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.771
+18,Diana Nyad,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.873
+18,Drew Carey,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,9.0,0.0005
+18,Drew Carey,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,9.0,0.003
+18,Drew Carey,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+18,Drew Carey,r4_pct_save,Percent + judges-save,8,0.0,9.0,0.0945
+18,Drew Carey,r5_qualibrium,Qualibrium (proposed),8,0.0,9.0,0.003
+18,Drew Carey,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,9.0,0.0015
+18,James Maslow,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,5.0,0.097
+18,James Maslow,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,5.0,0.058
+18,James Maslow,r3_rank_save,Rank + judges-save,4,0.0,10.0,0.3265
+18,James Maslow,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.0955
+18,James Maslow,r5_qualibrium,Qualibrium (proposed),4,0.0,5.0,0.029
+18,James Maslow,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,6.0,0.098
+18,Meryl Davis,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+18,Meryl Davis,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+18,Meryl Davis,r3_rank_save,Rank + judges-save,1,0.0,6.0,0.013
+18,Meryl Davis,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.71
+18,Meryl Davis,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+18,Meryl Davis,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+18,NeNe Leakes,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.079
+18,NeNe Leakes,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.152
+18,NeNe Leakes,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+18,NeNe Leakes,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.153
+18,NeNe Leakes,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.1375
+18,NeNe Leakes,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.126
+18,Sean Avery,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.929
+18,Sean Avery,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.9525
+18,Sean Avery,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+18,Sean Avery,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.6945
+18,Sean Avery,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.9085
+18,Sean Avery,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.984
+19,Alfonso Ribeiro,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+19,Alfonso Ribeiro,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+19,Alfonso Ribeiro,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.0065
+19,Alfonso Ribeiro,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.8005
+19,Alfonso Ribeiro,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+19,Alfonso Ribeiro,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+19,Antonio Sabato Jr.,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,9.0,0.159
+19,Antonio Sabato Jr.,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,9.0,0.1075
+19,Antonio Sabato Jr.,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.9995
+19,Antonio Sabato Jr.,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.1905
+19,Antonio Sabato Jr.,r5_qualibrium,Qualibrium (proposed),8,0.0,9.0,0.111
+19,Antonio Sabato Jr.,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,9.0,0.152
+19,Bethany Mota,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0
+19,Bethany Mota,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0005
+19,Bethany Mota,r3_rank_save,Rank + judges-save,4,1.0,1.0,1.0
+19,Bethany Mota,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.808
+19,Bethany Mota,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0005
+19,Bethany Mota,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0005
+19,Betsey Johnson,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,13.0,0.204
+19,Betsey Johnson,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,13.0,0.2415
+19,Betsey Johnson,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+19,Betsey Johnson,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.2825
+19,Betsey Johnson,r5_qualibrium,Qualibrium (proposed),10,0.0,12.0,0.2635
+19,Betsey Johnson,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,13.0,0.216
+19,Janel Parrish,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+19,Janel Parrish,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.9995
+19,Janel Parrish,r3_rank_save,Rank + judges-save,3,0.0,5.0,0.025
+19,Janel Parrish,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.996
+19,Janel Parrish,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.9995
+19,Janel Parrish,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,0.0,0.9995
+19,Jonathan Bennett,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,10.0,0.1205
+19,Jonathan Bennett,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,10.0,0.214
+19,Jonathan Bennett,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+19,Jonathan Bennett,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.246
+19,Jonathan Bennett,r5_qualibrium,Qualibrium (proposed),9,0.0,10.0,0.222
+19,Jonathan Bennett,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,10.0,0.219
+19,Lea Thompson,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.904
+19,Lea Thompson,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.9
+19,Lea Thompson,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.504
+19,Lea Thompson,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.3025
+19,Lea Thompson,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.9265
+19,Lea Thompson,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.971
+19,Lolo Jones,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,0.7905
+19,Lolo Jones,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.735
+19,Lolo Jones,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+19,Lolo Jones,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.648
+19,Lolo Jones,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.718
+19,Lolo Jones,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,0.0,0.7635
+19,Michael Waltrip,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.0005
+19,Michael Waltrip,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.003
+19,Michael Waltrip,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+19,Michael Waltrip,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.037
+19,Michael Waltrip,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.0035
+19,Michael Waltrip,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.001
+19,Randy Couture,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,11.0,0.1645
+19,Randy Couture,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.3525
+19,Randy Couture,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+19,Randy Couture,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.5245
+19,Randy Couture,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.3715
+19,Randy Couture,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.3065
+19,Sadie Robertson,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+19,Sadie Robertson,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+19,Sadie Robertson,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.0625
+19,Sadie Robertson,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9085
+19,Sadie Robertson,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+19,Sadie Robertson,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+19,Tavis Smiley,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.9385
+19,Tavis Smiley,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.9105
+19,Tavis Smiley,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+19,Tavis Smiley,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.7945
+19,Tavis Smiley,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.8875
+19,Tavis Smiley,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.938
+19,Tommy Chong,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.0
+19,Tommy Chong,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0
+19,Tommy Chong,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.997
+19,Tommy Chong,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1445
+19,Tommy Chong,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0
+19,Tommy Chong,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0
+20,Charlotte McKinney,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.5825
+20,Charlotte McKinney,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.559
+20,Charlotte McKinney,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+20,Charlotte McKinney,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.312
+20,Charlotte McKinney,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.5575
+20,Charlotte McKinney,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.5555
+20,Chris Soules,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.0035
+20,Chris Soules,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.0015
+20,Chris Soules,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.9985
+20,Chris Soules,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.0655
+20,Chris Soules,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.0
+20,Chris Soules,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.0
+20,Michael Sam,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.9385
+20,Michael Sam,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.7685
+20,Michael Sam,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+20,Michael Sam,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.618
+20,Michael Sam,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.749
+20,Michael Sam,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.822
+20,Nastia Liukin,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,0.0,0.9415
+20,Nastia Liukin,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.357
+20,Nastia Liukin,r3_rank_save,Rank + judges-save,4,0.0,4.0,0.1315
+20,Nastia Liukin,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.5295
+20,Nastia Liukin,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.274
+20,Nastia Liukin,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,2.0,0.5
+20,Noah Galloway,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+20,Noah Galloway,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.75
+20,Noah Galloway,r3_rank_save,Rank + judges-save,3,0.0,7.0,0.4945
+20,Noah Galloway,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.6755
+20,Noah Galloway,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.8265
+20,Noah Galloway,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+20,Patti LaBelle,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.1575
+20,Patti LaBelle,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.203
+20,Patti LaBelle,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+20,Patti LaBelle,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.1925
+20,Patti LaBelle,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.2025
+20,Patti LaBelle,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.231
+20,Redfoo,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,1.0
+20,Redfoo,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,1.0
+20,Redfoo,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+20,Redfoo,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.575
+20,Redfoo,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.999
+20,Redfoo,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,1.0
+20,Riker Lynch,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+20,Riker Lynch,r2_percent,Percent 50/50 (S3-27 hist.),2,0.0,0.0,0.9995
+20,Riker Lynch,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.0145
+20,Riker Lynch,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.998
+20,Riker Lynch,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.9995
+20,Riker Lynch,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+20,Robert Herjavec,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.0
+20,Robert Herjavec,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.0025
+20,Robert Herjavec,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.996
+20,Robert Herjavec,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.085
+20,Robert Herjavec,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.0015
+20,Robert Herjavec,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.0
+20,Rumer Willis,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+20,Rumer Willis,r2_percent,Percent 50/50 (S3-27 hist.),1,0.0,0.0,0.8785
+20,Rumer Willis,r3_rank_save,Rank + judges-save,1,0.0,6.0,0.0215
+20,Rumer Willis,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.7745
+20,Rumer Willis,r5_qualibrium,Qualibrium (proposed),1,0.0,0.0,0.8975
+20,Rumer Willis,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+20,Suzanne Somers,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.538
+20,Suzanne Somers,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.424
+20,Suzanne Somers,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+20,Suzanne Somers,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.3925
+20,Suzanne Somers,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.4135
+20,Suzanne Somers,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.511
+20,Willow Shields,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,1.0
+20,Willow Shields,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.992
+20,Willow Shields,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.517
+20,Willow Shields,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.8415
+20,Willow Shields,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.992
+20,Willow Shields,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.993
+21,Alek Skarlatos,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,6.0,0.015
+21,Alek Skarlatos,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.5785
+21,Alek Skarlatos,r3_rank_save,Rank + judges-save,3,0.0,6.0,0.24
+21,Alek Skarlatos,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.9575
+21,Alek Skarlatos,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.7205
+21,Alek Skarlatos,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,6.0,0.3925
+21,Alexa PenaVega,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,9.0,0.269
+21,Alexa PenaVega,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,9.0,0.1075
+21,Alexa PenaVega,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.5355
+21,Alexa PenaVega,r4_pct_save,Percent + judges-save,6,0.0,8.0,0.13
+21,Alexa PenaVega,r5_qualibrium,Qualibrium (proposed),6,0.0,9.0,0.121
+21,Alexa PenaVega,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,9.0,0.237
+21,Andy Grammer,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.015
+21,Andy Grammer,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.245
+21,Andy Grammer,r3_rank_save,Rank + judges-save,7,0.0,9.0,0.4725
+21,Andy Grammer,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.465
+21,Andy Grammer,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.1845
+21,Andy Grammer,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.114
+21,Bindi Irwin,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+21,Bindi Irwin,r2_percent,Percent 50/50 (S3-27 hist.),1,0.0,0.0,0.9995
+21,Bindi Irwin,r3_rank_save,Rank + judges-save,1,0.0,6.0,0.0025
+21,Bindi Irwin,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.999
+21,Bindi Irwin,r5_qualibrium,Qualibrium (proposed),1,0.0,0.0,0.999
+21,Bindi Irwin,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+21,Carlos PenaVega,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,0.0,0.933
+21,Carlos PenaVega,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,6.0,0.2345
+21,Carlos PenaVega,r3_rank_save,Rank + judges-save,4,0.0,0.0,0.5225
+21,Carlos PenaVega,r4_pct_save,Percent + judges-save,4,0.0,6.0,0.252
+21,Carlos PenaVega,r5_qualibrium,Qualibrium (proposed),4,0.0,6.0,0.1825
+21,Carlos PenaVega,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,6.0,0.444
+21,Chaka Khan,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,13.0,0.046
+21,Chaka Khan,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,13.0,0.101
+21,Chaka Khan,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+21,Chaka Khan,r4_pct_save,Percent + judges-save,13,0.0,13.0,0.383
+21,Chaka Khan,r5_qualibrium,Qualibrium (proposed),13,0.0,13.0,0.1235
+21,Chaka Khan,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,13.0,0.0695
+21,Gary Busey,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,11.0,0.05
+21,Gary Busey,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.09
+21,Gary Busey,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+21,Gary Busey,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.1865
+21,Gary Busey,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.106
+21,Gary Busey,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.0515
+21,Hayes Grier,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.9885
+21,Hayes Grier,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.903
+21,Hayes Grier,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.9705
+21,Hayes Grier,r4_pct_save,Percent + judges-save,8,0.0,9.0,0.3785
+21,Hayes Grier,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.8995
+21,Hayes Grier,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.91
+21,Kim Zolciak-Biermann,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.9925
+21,Kim Zolciak-Biermann,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.924
+21,Kim Zolciak-Biermann,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+21,Kim Zolciak-Biermann,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.663
+21,Kim Zolciak-Biermann,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.9285
+21,Kim Zolciak-Biermann,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.926
+21,Nick Carter,r1_rank,Rank (S1-2/S28+ hist.),2,0.0,0.0,0.884
+21,Nick Carter,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+21,Nick Carter,r3_rank_save,Rank + judges-save,2,0.0,6.0,0.05
+21,Nick Carter,r4_pct_save,Percent + judges-save,2,0.0,6.0,0.4225
+21,Nick Carter,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+21,Nick Carter,r6_pct_hi,Percent judge-heavy (w=0.7),2,0.0,0.0,0.914
+21,Paula Deen,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,10.0,0.255
+21,Paula Deen,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,10.0,0.1235
+21,Paula Deen,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+21,Paula Deen,r4_pct_save,Percent + judges-save,9,0.0,10.0,0.0615
+21,Paula Deen,r5_qualibrium,Qualibrium (proposed),9,0.0,10.0,0.1135
+21,Paula Deen,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,10.0,0.044
+21,Tamar Braxton,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,7.0,0.0455
+21,Tamar Braxton,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,7.0,0.4235
+21,Tamar Braxton,r3_rank_save,Rank + judges-save,5,0.0,10.0,0.1925
+21,Tamar Braxton,r4_pct_save,Percent + judges-save,5,0.0,7.0,0.4505
+21,Tamar Braxton,r5_qualibrium,Qualibrium (proposed),5,0.0,7.0,0.3155
+21,Tamar Braxton,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,7.0,0.2185
+21,Victor Espinoza,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.762
+21,Victor Espinoza,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.779
+21,Victor Espinoza,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+21,Victor Espinoza,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.773
+21,Victor Espinoza,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.751
+21,Victor Espinoza,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.83
+22,Antonio Brown,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.0
+22,Antonio Brown,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0005
+22,Antonio Brown,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.7185
+22,Antonio Brown,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1935
+22,Antonio Brown,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0005
+22,Antonio Brown,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0005
+22,Doug Flutie,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,9.0,0.01
+22,Doug Flutie,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.026
+22,Doug Flutie,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+22,Doug Flutie,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.125
+22,Doug Flutie,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.022
+22,Doug Flutie,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.0095
+22,Geraldo Rivera,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,12.0,0.1555
+22,Geraldo Rivera,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.1875
+22,Geraldo Rivera,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+22,Geraldo Rivera,r4_pct_save,Percent + judges-save,12,0.0,12.0,0.2575
+22,Geraldo Rivera,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.2195
+22,Geraldo Rivera,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,12.0,0.15
+22,Ginger Zee,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,5.0,0.2045
+22,Ginger Zee,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.754
+22,Ginger Zee,r3_rank_save,Rank + judges-save,3,0.0,6.0,0.0265
+22,Ginger Zee,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.8755
+22,Ginger Zee,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.8265
+22,Ginger Zee,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,0.0,0.643
+22,Jodie Sweetin,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,8.0,0.0045
+22,Jodie Sweetin,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,8.0,0.0305
+22,Jodie Sweetin,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.9095
+22,Jodie Sweetin,r4_pct_save,Percent + judges-save,6,0.0,8.0,0.2185
+22,Jodie Sweetin,r5_qualibrium,Qualibrium (proposed),6,0.0,8.0,0.034
+22,Jodie Sweetin,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,8.0,0.062
+22,Kim Fields,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.651
+22,Kim Fields,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.5295
+22,Kim Fields,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.9985
+22,Kim Fields,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.523
+22,Kim Fields,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.531
+22,Kim Fields,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.5295
+22,Marla Maples,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.9815
+22,Marla Maples,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.926
+22,Marla Maples,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.9995
+22,Marla Maples,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.792
+22,Marla Maples,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.923
+22,Marla Maples,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.943
+22,Mischa Barton,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,11.0,0.069
+22,Mischa Barton,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.162
+22,Mischa Barton,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+22,Mischa Barton,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.24
+22,Mischa Barton,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.16
+22,Mischa Barton,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.157
+22,Nyle DiMarco,r1_rank,Rank (S1-2/S28+ hist.),1,0.0,0.0,0.8
+22,Nyle DiMarco,r2_percent,Percent 50/50 (S3-27 hist.),1,0.0,0.0,0.909
+22,Nyle DiMarco,r3_rank_save,Rank + judges-save,1,0.0,3.0,0.532
+22,Nyle DiMarco,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.962
+22,Nyle DiMarco,r5_qualibrium,Qualibrium (proposed),1,0.0,0.0,0.938
+22,Nyle DiMarco,r6_pct_hi,Percent judge-heavy (w=0.7),1,0.0,0.0,0.873
+22,Paige VanZant,r1_rank,Rank (S1-2/S28+ hist.),2,0.0,0.0,0.998
+22,Paige VanZant,r2_percent,Percent 50/50 (S3-27 hist.),2,0.0,0.0,0.9985
+22,Paige VanZant,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.4935
+22,Paige VanZant,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9805
+22,Paige VanZant,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.9995
+22,Paige VanZant,r6_pct_hi,Percent judge-heavy (w=0.7),2,0.0,0.0,0.998
+22,Von Miller,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.324
+22,Von Miller,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.492
+22,Von Miller,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+22,Von Miller,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.471
+22,Von Miller,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.5015
+22,Von Miller,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.508
+22,Wanya Morris,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,6.0,0.0
+22,Wanya Morris,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,5.0,0.0
+22,Wanya Morris,r3_rank_save,Rank + judges-save,4,0.0,5.0,0.392
+22,Wanya Morris,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.259
+22,Wanya Morris,r5_qualibrium,Qualibrium (proposed),4,0.0,5.0,0.0
+22,Wanya Morris,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,5.0,0.0
+23,Amber Rose,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,9.0,0.474
+23,Amber Rose,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.4695
+23,Amber Rose,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+23,Amber Rose,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.313
+23,Amber Rose,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.462
+23,Amber Rose,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.3865
+23,Babyface,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,11.0,0.0135
+23,Babyface,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.0265
+23,Babyface,r3_rank_save,Rank + judges-save,11,0.0,0.0,0.935
+23,Babyface,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.462
+23,Babyface,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.0295
+23,Babyface,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.011
+23,Calvin Johnson Jr.,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+23,Calvin Johnson Jr.,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+23,Calvin Johnson Jr.,r3_rank_save,Rank + judges-save,3,0.0,8.0,0.117
+23,Calvin Johnson Jr.,r4_pct_save,Percent + judges-save,3,0.0,4.0,0.438
+23,Calvin Johnson Jr.,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+23,Calvin Johnson Jr.,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+23,Jake T. Austin,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,0.9315
+23,Jake T. Austin,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.8335
+23,Jake T. Austin,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+23,Jake T. Austin,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.594
+23,Jake T. Austin,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.8135
+23,Jake T. Austin,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,0.0,0.849
+23,James Hinchcliffe,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+23,James Hinchcliffe,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+23,James Hinchcliffe,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.0045
+23,James Hinchcliffe,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.737
+23,James Hinchcliffe,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+23,James Hinchcliffe,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+23,Jana Kramer,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0
+23,Jana Kramer,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0
+23,Jana Kramer,r3_rank_save,Rank + judges-save,4,1.0,1.0,1.0
+23,Jana Kramer,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.396
+23,Jana Kramer,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0
+23,Jana Kramer,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0
+23,Laurie Hernandez,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+23,Laurie Hernandez,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+23,Laurie Hernandez,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.009
+23,Laurie Hernandez,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.79
+23,Laurie Hernandez,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+23,Laurie Hernandez,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+23,Marilu Henner,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.004
+23,Marilu Henner,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.056
+23,Marilu Henner,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.5685
+23,Marilu Henner,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.1325
+23,Marilu Henner,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.0485
+23,Marilu Henner,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.037
+23,Maureen McCormick,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.946
+23,Maureen McCormick,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.732
+23,Maureen McCormick,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+23,Maureen McCormick,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.3725
+23,Maureen McCormick,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.7285
+23,Maureen McCormick,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.7415
+23,Rick Perry,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,13.0,0.1495
+23,Rick Perry,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.2645
+23,Rick Perry,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+23,Rick Perry,r4_pct_save,Percent + judges-save,12,0.0,12.0,0.2515
+23,Rick Perry,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.2755
+23,Rick Perry,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,12.0,0.24
+23,Ryan Lochte,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.4545
+23,Ryan Lochte,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.3995
+23,Ryan Lochte,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+23,Ryan Lochte,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.235
+23,Ryan Lochte,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.4
+23,Ryan Lochte,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.41
+23,Terra Jole,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,7.0,0.2695
+23,Terra Jole,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,7.0,0.1285
+23,Terra Jole,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.8885
+23,Terra Jole,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.1035
+23,Terra Jole,r5_qualibrium,Qualibrium (proposed),5,0.0,7.0,0.158
+23,Terra Jole,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,7.0,0.246
+23,Vanilla Ice,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,12.0,0.2475
+23,Vanilla Ice,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.399
+23,Vanilla Ice,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+23,Vanilla Ice,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.5015
+23,Vanilla Ice,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.3955
+23,Vanilla Ice,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.446
+24,Bonner Bolton,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,5.0,0.0
+24,Bonner Bolton,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,5.0,0.0025
+24,Bonner Bolton,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.964
+24,Bonner Bolton,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1585
+24,Bonner Bolton,r5_qualibrium,Qualibrium (proposed),5,0.0,5.0,0.0
+24,Bonner Bolton,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,5.0,0.0
+24,Charo,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.6135
+24,Charo,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.556
+24,Charo,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+24,Charo,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.491
+24,Charo,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.556
+24,Charo,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.5725
+24,Chris Kattan,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.6625
+24,Chris Kattan,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.5115
+24,Chris Kattan,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+24,Chris Kattan,r4_pct_save,Percent + judges-save,12,0.0,12.0,0.316
+24,Chris Kattan,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.519
+24,Chris Kattan,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.51
+24,David Ross,r1_rank,Rank (S1-2/S28+ hist.),2,0.0,4.0,0.2165
+24,David Ross,r2_percent,Percent 50/50 (S3-27 hist.),2,0.0,0.0,0.6005
+24,David Ross,r3_rank_save,Rank + judges-save,2,0.0,11.0,0.358
+24,David Ross,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.602
+24,David Ross,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.8025
+24,David Ross,r6_pct_hi,Percent judge-heavy (w=0.7),2,0.0,4.0,0.317
+24,Erika Jayne,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.637
+24,Erika Jayne,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.394
+24,Erika Jayne,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+24,Erika Jayne,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.3435
+24,Erika Jayne,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.385
+24,Erika Jayne,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.4485
+24,Heather Morris,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.9965
+24,Heather Morris,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.6365
+24,Heather Morris,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.7885
+24,Heather Morris,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.617
+24,Heather Morris,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.635
+24,Heather Morris,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.789
+24,Mr. T,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.0235
+24,Mr. T,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.122
+24,Mr. T,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+24,Mr. T,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.146
+24,Mr. T,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.124
+24,Mr. T,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.1015
+24,Nancy Kerrigan,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.7955
+24,Nancy Kerrigan,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.6775
+24,Nancy Kerrigan,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.692
+24,Nancy Kerrigan,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.6825
+24,Nancy Kerrigan,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.718
+24,Nancy Kerrigan,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.7805
+24,Nick Viall,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,7.0,0.0005
+24,Nick Viall,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.0145
+24,Nick Viall,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.993
+24,Nick Viall,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.2085
+24,Nick Viall,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.013
+24,Nick Viall,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.01
+24,Normani,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,0.0,0.7915
+24,Normani,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.916
+24,Normani,r3_rank_save,Rank + judges-save,3,0.0,5.0,0.009
+24,Normani,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.8445
+24,Normani,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.9245
+24,Normani,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,0.0,0.923
+24,Rashad Jennings,r1_rank,Rank (S1-2/S28+ hist.),1,0.0,0.0,0.9835
+24,Rashad Jennings,r2_percent,Percent 50/50 (S3-27 hist.),1,0.0,0.0,0.9885
+24,Rashad Jennings,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.015
+24,Rashad Jennings,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.967
+24,Rashad Jennings,r5_qualibrium,Qualibrium (proposed),1,0.0,0.0,0.989
+24,Rashad Jennings,r6_pct_hi,Percent judge-heavy (w=0.7),1,0.0,0.0,0.986
+24,Simone Biles,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,0.0,0.9635
+24,Simone Biles,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.433
+24,Simone Biles,r3_rank_save,Rank + judges-save,4,0.0,4.0,0.243
+24,Simone Biles,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.25
+24,Simone Biles,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.2635
+24,Simone Biles,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,0.0,0.7375
+25,Barbara Corcoran,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,13.0,0.0505
+25,Barbara Corcoran,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,13.0,0.1245
+25,Barbara Corcoran,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+25,Barbara Corcoran,r4_pct_save,Percent + judges-save,13,0.0,13.0,0.315
+25,Barbara Corcoran,r5_qualibrium,Qualibrium (proposed),13,0.0,13.0,0.1445
+25,Barbara Corcoran,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,13.0,0.107
+25,Debbie Gibson,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,1.0
+25,Debbie Gibson,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.916
+25,Debbie Gibson,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+25,Debbie Gibson,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.835
+25,Debbie Gibson,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.897
+25,Debbie Gibson,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.925
+25,Derek Fisher,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,11.0,0.393
+25,Derek Fisher,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,11.0,0.4285
+25,Derek Fisher,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+25,Derek Fisher,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.4775
+25,Derek Fisher,r5_qualibrium,Qualibrium (proposed),11,0.0,11.0,0.4285
+25,Derek Fisher,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,11.0,0.464
+25,Drew Scott,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,4.0,0.0
+25,Drew Scott,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,4.0,0.0
+25,Drew Scott,r3_rank_save,Rank + judges-save,4,1.0,1.0,1.0
+25,Drew Scott,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.1835
+25,Drew Scott,r5_qualibrium,Qualibrium (proposed),4,0.0,4.0,0.0
+25,Drew Scott,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,4.0,0.0
+25,Frankie Muniz,r1_rank,Rank (S1-2/S28+ hist.),3,0.0,0.0,0.9805
+25,Frankie Muniz,r2_percent,Percent 50/50 (S3-27 hist.),3,0.0,0.0,0.974
+25,Frankie Muniz,r3_rank_save,Rank + judges-save,3,0.0,8.0,0.089
+25,Frankie Muniz,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.5075
+25,Frankie Muniz,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.9695
+25,Frankie Muniz,r6_pct_hi,Percent judge-heavy (w=0.7),3,0.0,0.0,0.9745
+25,Jordan Fisher,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+25,Jordan Fisher,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+25,Jordan Fisher,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.0045
+25,Jordan Fisher,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9245
+25,Jordan Fisher,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+25,Jordan Fisher,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+25,Lindsey Stirling,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+25,Lindsey Stirling,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+25,Lindsey Stirling,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.015
+25,Lindsey Stirling,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9685
+25,Lindsey Stirling,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+25,Lindsey Stirling,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+25,Nick Lachey,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,9.0,0.0005
+25,Nick Lachey,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.0065
+25,Nick Lachey,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+25,Nick Lachey,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.132
+25,Nick Lachey,r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.007
+25,Nick Lachey,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.0025
+25,Nikki Bella,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.004
+25,Nikki Bella,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.0395
+25,Nikki Bella,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.997
+25,Nikki Bella,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.438
+25,Nikki Bella,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.032
+25,Nikki Bella,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.028
+25,Sasha Pieterse,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.9705
+25,Sasha Pieterse,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.827
+25,Sasha Pieterse,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+25,Sasha Pieterse,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.3735
+25,Sasha Pieterse,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.8265
+25,Sasha Pieterse,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.8445
+25,Terrell Owens,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,8.0,0.013
+25,Terrell Owens,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,8.0,0.039
+25,Terrell Owens,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.9975
+25,Terrell Owens,r4_pct_save,Percent + judges-save,6,0.0,8.0,0.1565
+25,Terrell Owens,r5_qualibrium,Qualibrium (proposed),6,0.0,8.0,0.039
+25,Terrell Owens,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,8.0,0.0415
+25,Vanessa Lachey,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.7775
+25,Vanessa Lachey,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.6875
+25,Vanessa Lachey,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.987
+25,Vanessa Lachey,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.616
+25,Vanessa Lachey,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.6945
+25,Vanessa Lachey,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.7565
+25,Victoria Arlen,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.161
+25,Victoria Arlen,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.0635
+25,Victoria Arlen,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.9175
+25,Victoria Arlen,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.163
+25,Victoria Arlen,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.078
+25,Victoria Arlen,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.1185
+26,Adam Rippon,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+26,Adam Rippon,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+26,Adam Rippon,r3_rank_save,Rank + judges-save,1,0.0,3.0,0.588
+26,Adam Rippon,r4_pct_save,Percent + judges-save,1,0.0,0.0,1.0
+26,Adam Rippon,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+26,Adam Rippon,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+26,Arike Ogunbowale,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.9
+26,Arike Ogunbowale,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.5625
+26,Arike Ogunbowale,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.9975
+26,Arike Ogunbowale,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.7735
+26,Arike Ogunbowale,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.534
+26,Arike Ogunbowale,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.739
+26,Chris Mazdzer,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.0
+26,Chris Mazdzer,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.001
+26,Chris Mazdzer,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.9995
+26,Chris Mazdzer,r4_pct_save,Percent + judges-save,5,0.0,0.0,0.619
+26,Chris Mazdzer,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.0015
+26,Chris Mazdzer,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.001
+26,Jamie Anderson,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.7195
+26,Jamie Anderson,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.6705
+26,Jamie Anderson,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+26,Jamie Anderson,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.8365
+26,Jamie Anderson,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.6625
+26,Jamie Anderson,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.703
+26,Jennie Finch Daigle,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.0
+26,Jennie Finch Daigle,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.0
+26,Jennie Finch Daigle,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+26,Jennie Finch Daigle,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.3775
+26,Jennie Finch Daigle,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.0
+26,Jennie Finch Daigle,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.0
+26,Johnny Damon,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,10.0,0.296
+26,Johnny Damon,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,10.0,0.386
+26,Johnny Damon,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+26,Johnny Damon,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.679
+26,Johnny Damon,r5_qualibrium,Qualibrium (proposed),9,0.0,10.0,0.406
+26,Johnny Damon,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,10.0,0.3395
+26,Josh Norman,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+26,Josh Norman,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+26,Josh Norman,r3_rank_save,Rank + judges-save,2,0.0,3.0,0.624
+26,Josh Norman,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.959
+26,Josh Norman,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+26,Josh Norman,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+26,Kareem Abdul-Jabbar,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.0
+26,Kareem Abdul-Jabbar,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.002
+26,Kareem Abdul-Jabbar,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+26,Kareem Abdul-Jabbar,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.307
+26,Kareem Abdul-Jabbar,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.002
+26,Kareem Abdul-Jabbar,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.001
+26,Mirai Nagasu,r1_rank,Rank (S1-2/S28+ hist.),4,0.0,6.0,0.2165
+26,Mirai Nagasu,r2_percent,Percent 50/50 (S3-27 hist.),4,0.0,6.0,0.003
+26,Mirai Nagasu,r3_rank_save,Rank + judges-save,4,0.0,8.0,0.489
+26,Mirai Nagasu,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.8405
+26,Mirai Nagasu,r5_qualibrium,Qualibrium (proposed),4,0.0,6.0,0.0025
+26,Mirai Nagasu,r6_pct_hi,Percent judge-heavy (w=0.7),4,0.0,6.0,0.0075
+26,Tonya Harding,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+26,Tonya Harding,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+26,Tonya Harding,r3_rank_save,Rank + judges-save,3,0.0,0.0,0.918
+26,Tonya Harding,r4_pct_save,Percent + judges-save,3,0.0,3.0,1.0
+26,Tonya Harding,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+26,Tonya Harding,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+27,Alexis Ren,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+27,Alexis Ren,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+27,Alexis Ren,r3_rank_save,Rank + judges-save,4,0.0,6.0,0.0765
+27,Alexis Ren,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.495
+27,Alexis Ren,r5_qualibrium,Qualibrium (proposed),4,0.0,0.0,0.998
+27,Alexis Ren,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+27,Bobby Bones,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+27,Bobby Bones,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+27,Bobby Bones,r3_rank_save,Rank + judges-save,1,1.0,1.0,1.0
+27,Bobby Bones,r4_pct_save,Percent + judges-save,1,0.0,4.0,0.32
+27,Bobby Bones,r5_qualibrium,Qualibrium (proposed),1,0.0,6.0,0.1595
+27,Bobby Bones,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+27,Danelle Umstead,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.5415
+27,Danelle Umstead,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.516
+27,Danelle Umstead,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+27,Danelle Umstead,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.5065
+27,Danelle Umstead,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.481
+27,Danelle Umstead,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.5865
+27,DeMarcus Ware,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.071
+27,DeMarcus Ware,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.4815
+27,DeMarcus Ware,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.593
+27,DeMarcus Ware,r4_pct_save,Percent + judges-save,7,0.0,0.0,0.62
+27,DeMarcus Ware,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.4655
+27,DeMarcus Ware,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.4485
+27,Evanna Lynch,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+27,Evanna Lynch,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+27,Evanna Lynch,r3_rank_save,Rank + judges-save,3,0.0,4.0,0.0485
+27,Evanna Lynch,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.971
+27,Evanna Lynch,r5_qualibrium,Qualibrium (proposed),3,0.0,0.0,0.994
+27,Evanna Lynch,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+27,Joe Amabile,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.0
+27,Joe Amabile,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.0
+27,Joe Amabile,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+27,Joe Amabile,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.008
+27,Joe Amabile,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.0
+27,Joe Amabile,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.0
+27,John Schneider,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,9.0,0.0095
+27,John Schneider,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,9.0,0.017
+27,John Schneider,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+27,John Schneider,r4_pct_save,Percent + judges-save,8,0.0,9.0,0.1105
+27,John Schneider,r5_qualibrium,Qualibrium (proposed),8,0.0,9.0,0.015
+27,John Schneider,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,9.0,0.013
+27,Juan Pablo Di Pace,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,0.0,0.9995
+27,Juan Pablo Di Pace,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,0.0,0.619
+27,Juan Pablo Di Pace,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.5105
+27,Juan Pablo Di Pace,r4_pct_save,Percent + judges-save,5,0.0,0.0,0.7685
+27,Juan Pablo Di Pace,r5_qualibrium,Qualibrium (proposed),5,0.0,0.0,0.7425
+27,Juan Pablo Di Pace,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,0.0,0.8375
+27,Mary Lou Retton,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,1.0
+27,Mary Lou Retton,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.9815
+27,Mary Lou Retton,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.8245
+27,Mary Lou Retton,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.6645
+27,Mary Lou Retton,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.9785
+27,Mary Lou Retton,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.993
+27,Milo Manheim,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+27,Milo Manheim,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+27,Milo Manheim,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.012
+27,Milo Manheim,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9915
+27,Milo Manheim,r5_qualibrium,Qualibrium (proposed),2,0.0,0.0,0.9525
+27,Milo Manheim,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+27,Nancy McKeon,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.9655
+27,Nancy McKeon,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.8165
+27,Nancy McKeon,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+27,Nancy McKeon,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.681
+27,Nancy McKeon,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.7895
+27,Nancy McKeon,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.9005
+27,Nikki Glaser,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,0.791
+27,Nikki Glaser,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.876
+27,Nikki Glaser,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+27,Nikki Glaser,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.7695
+27,Nikki Glaser,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.844
+27,Nikki Glaser,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,0.0,0.9285
+27,Tinashe,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,1.0
+27,Tinashe,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,1.0
+27,Tinashe,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.884
+27,Tinashe,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.9935
+27,Tinashe,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.9995
+27,Tinashe,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,1.0
+28,Ally Brooke,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+28,Ally Brooke,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+28,Ally Brooke,r3_rank_save,Rank + judges-save,3,0.0,5.0,0.01
+28,Ally Brooke,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.9555
+28,Ally Brooke,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+28,Ally Brooke,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+28,Hannah Brown,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+28,Hannah Brown,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+28,Hannah Brown,r3_rank_save,Rank + judges-save,1,0.0,8.0,0.0685
+28,Hannah Brown,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.8855
+28,Hannah Brown,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+28,Hannah Brown,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+28,James Van Der Beek,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,6.0,0.0005
+28,James Van Der Beek,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.0005
+28,James Van Der Beek,r3_rank_save,Rank + judges-save,5,0.0,8.0,0.0865
+28,James Van Der Beek,r4_pct_save,Percent + judges-save,5,0.0,0.0,0.706
+28,James Van Der Beek,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.0005
+28,James Van Der Beek,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.001
+28,Karamo Brown,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.9835
+28,Karamo Brown,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.94
+28,Karamo Brown,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+28,Karamo Brown,r4_pct_save,Percent + judges-save,8,0.0,10.0,0.2
+28,Karamo Brown,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.947
+28,Karamo Brown,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.971
+28,Kate Flannery,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.886
+28,Kate Flannery,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.889
+28,Kate Flannery,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.552
+28,Kate Flannery,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.3585
+28,Kate Flannery,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.909
+28,Kate Flannery,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.949
+28,Kel Mitchell,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+28,Kel Mitchell,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+28,Kel Mitchell,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.079
+28,Kel Mitchell,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9745
+28,Kel Mitchell,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+28,Kel Mitchell,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+28,Lamar Odom,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,11.0,0.0075
+28,Lamar Odom,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.0235
+28,Lamar Odom,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+28,Lamar Odom,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.0635
+28,Lamar Odom,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.031
+28,Lamar Odom,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.016
+28,Lauren Alaina,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+28,Lauren Alaina,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+28,Lauren Alaina,r3_rank_save,Rank + judges-save,4,1.0,1.0,1.0
+28,Lauren Alaina,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.861
+28,Lauren Alaina,r5_qualibrium,Qualibrium (proposed),4,1.0,1.0,1.0
+28,Lauren Alaina,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+28,Mary Wilson,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.9645
+28,Mary Wilson,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.8955
+28,Mary Wilson,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+28,Mary Wilson,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.7055
+28,Mary Wilson,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.8675
+28,Mary Wilson,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.9475
+28,Ray Lewis,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.958
+28,Ray Lewis,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.97
+28,Ray Lewis,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+28,Ray Lewis,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.8275
+28,Ray Lewis,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.966
+28,Ray Lewis,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.977
+28,Sailor Brinkley-Cook,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,1.0
+28,Sailor Brinkley-Cook,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.989
+28,Sailor Brinkley-Cook,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.992
+28,Sailor Brinkley-Cook,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.7975
+28,Sailor Brinkley-Cook,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.975
+28,Sailor Brinkley-Cook,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,1.0
+28,Sean Spicer,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,7.0,0.0
+28,Sean Spicer,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.0
+28,Sean Spicer,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+28,Sean Spicer,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.0095
+28,Sean Spicer,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.0
+28,Sean Spicer,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.0
+29,AJ McLean,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.313
+29,AJ McLean,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.048
+29,AJ McLean,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.7725
+29,AJ McLean,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.3865
+29,AJ McLean,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.078
+29,AJ McLean,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.1175
+29,Anne Heche,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,0.694
+29,Anne Heche,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.555
+29,Anne Heche,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+29,Anne Heche,r4_pct_save,Percent + judges-save,13,0.0,13.0,0.367
+29,Anne Heche,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.5385
+29,Anne Heche,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,0.0,0.6025
+29,Carole Baskin,r1_rank,Rank (S1-2/S28+ hist.),14,0.0,14.0,0.1365
+29,Carole Baskin,r2_percent,Percent 50/50 (S3-27 hist.),14,0.0,14.0,0.1415
+29,Carole Baskin,r3_rank_save,Rank + judges-save,14,0.0,0.0,1.0
+29,Carole Baskin,r4_pct_save,Percent + judges-save,14,0.0,14.0,0.257
+29,Carole Baskin,r5_qualibrium,Qualibrium (proposed),14,0.0,14.0,0.166
+29,Carole Baskin,r6_pct_hi,Percent judge-heavy (w=0.7),14,0.0,14.0,0.097
+29,Charles Oakley,r1_rank,Rank (S1-2/S28+ hist.),15,0.0,0.0,0.611
+29,Charles Oakley,r2_percent,Percent 50/50 (S3-27 hist.),15,0.0,0.0,0.599
+29,Charles Oakley,r3_rank_save,Rank + judges-save,15,0.0,0.0,1.0
+29,Charles Oakley,r4_pct_save,Percent + judges-save,15,0.0,15.0,0.433
+29,Charles Oakley,r5_qualibrium,Qualibrium (proposed),15,0.0,0.0,0.6025
+29,Charles Oakley,r6_pct_hi,Percent judge-heavy (w=0.7),15,0.0,0.0,0.61
+29,Chrishell Stause,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,9.0,0.4655
+29,Chrishell Stause,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,9.0,0.25
+29,Chrishell Stause,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.9975
+29,Chrishell Stause,r4_pct_save,Percent + judges-save,8,0.0,9.0,0.204
+29,Chrishell Stause,r5_qualibrium,Qualibrium (proposed),8,0.0,9.0,0.273
+29,Chrishell Stause,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,9.0,0.3235
+29,Jeannie Mai,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.909
+29,Jeannie Mai,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.9055
+29,Jeannie Mai,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.975
+29,Jeannie Mai,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.828
+29,Jeannie Mai,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.9135
+29,Jeannie Mai,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.8675
+29,Jesse Metcalfe,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,12.0,0.1295
+29,Jesse Metcalfe,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.412
+29,Jesse Metcalfe,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+29,Jesse Metcalfe,r4_pct_save,Percent + judges-save,12,0.0,12.0,0.4255
+29,Jesse Metcalfe,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.419
+29,Jesse Metcalfe,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,12.0,0.4
+29,Johnny Weir,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,0.5965
+29,Johnny Weir,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.0445
+29,Johnny Weir,r3_rank_save,Rank + judges-save,6,0.0,8.0,0.141
+29,Johnny Weir,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.433
+29,Johnny Weir,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.0615
+29,Johnny Weir,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.07
+29,Justina Machado,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+29,Justina Machado,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+29,Justina Machado,r3_rank_save,Rank + judges-save,4,0.0,5.0,0.0545
+29,Justina Machado,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.8765
+29,Justina Machado,r5_qualibrium,Qualibrium (proposed),4,1.0,1.0,1.0
+29,Justina Machado,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+29,Kaitlyn Bristowe,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+29,Kaitlyn Bristowe,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+29,Kaitlyn Bristowe,r3_rank_save,Rank + judges-save,1,0.0,7.0,0.015
+29,Kaitlyn Bristowe,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.5545
+29,Kaitlyn Bristowe,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+29,Kaitlyn Bristowe,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+29,Monica Aldama,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.0275
+29,Monica Aldama,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.059
+29,Monica Aldama,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.9185
+29,Monica Aldama,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.41
+29,Monica Aldama,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.0605
+29,Monica Aldama,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.0605
+29,Nelly,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+29,Nelly,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+29,Nelly,r3_rank_save,Rank + judges-save,3,0.0,0.0,0.5135
+29,Nelly,r4_pct_save,Percent + judges-save,3,0.0,5.0,0.229
+29,Nelly,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+29,Nelly,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+29,Nev Schulman,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+29,Nev Schulman,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+29,Nev Schulman,r3_rank_save,Rank + judges-save,2,0.0,7.0,0.054
+29,Nev Schulman,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.7195
+29,Nev Schulman,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+29,Nev Schulman,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+29,Skai Jackson,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,7.0,0.006
+29,Skai Jackson,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,7.0,0.004
+29,Skai Jackson,r3_rank_save,Rank + judges-save,5,0.0,13.0,0.378
+29,Skai Jackson,r4_pct_save,Percent + judges-save,5,0.0,7.0,0.133
+29,Skai Jackson,r5_qualibrium,Qualibrium (proposed),5,0.0,7.0,0.0065
+29,Skai Jackson,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,7.0,0.002
+29,Veron Davis,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.88
+29,Veron Davis,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.745
+29,Veron Davis,r3_rank_save,Rank + judges-save,11,0.0,0.0,0.9995
+29,Veron Davis,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.5095
+29,Veron Davis,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.741
+29,Veron Davis,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.7875
+30,Amanda Kloots,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+30,Amanda Kloots,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+30,Amanda Kloots,r3_rank_save,Rank + judges-save,4,0.0,8.0,0.0195
+30,Amanda Kloots,r4_pct_save,Percent + judges-save,4,0.0,4.0,0.4615
+30,Amanda Kloots,r5_qualibrium,Qualibrium (proposed),4,1.0,1.0,1.0
+30,Amanda Kloots,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+30,Brian Austin Green,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,13.0,0.0
+30,Brian Austin Green,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,13.0,0.0205
+30,Brian Austin Green,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+30,Brian Austin Green,r4_pct_save,Percent + judges-save,13,0.0,13.0,0.299
+30,Brian Austin Green,r5_qualibrium,Qualibrium (proposed),13,0.0,13.0,0.0205
+30,Brian Austin Green,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,13.0,0.026
+30,Christine Chiu,r1_rank,Rank (S1-2/S28+ hist.),14,0.0,0.0,1.0
+30,Christine Chiu,r2_percent,Percent 50/50 (S3-27 hist.),14,0.0,0.0,0.911
+30,Christine Chiu,r3_rank_save,Rank + judges-save,14,0.0,0.0,1.0
+30,Christine Chiu,r4_pct_save,Percent + judges-save,14,0.0,0.0,0.7425
+30,Christine Chiu,r5_qualibrium,Qualibrium (proposed),14,0.0,0.0,0.898
+30,Christine Chiu,r6_pct_hi,Percent judge-heavy (w=0.7),14,0.0,0.0,0.9435
+30,Cody Rigsby,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+30,Cody Rigsby,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+30,Cody Rigsby,r3_rank_save,Rank + judges-save,3,1.0,1.0,1.0
+30,Cody Rigsby,r4_pct_save,Percent + judges-save,3,0.0,4.0,0.3645
+30,Cody Rigsby,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+30,Cody Rigsby,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+30,Iman Shumpert,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+30,Iman Shumpert,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+30,Iman Shumpert,r3_rank_save,Rank + judges-save,1,0.0,4.0,0.2425
+30,Iman Shumpert,r4_pct_save,Percent + judges-save,1,1.0,1.0,1.0
+30,Iman Shumpert,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+30,Iman Shumpert,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+30,Jimmie Allen,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,8.0,0.0
+30,Jimmie Allen,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.001
+30,Jimmie Allen,r3_rank_save,Rank + judges-save,7,0.0,0.0,0.948
+30,Jimmie Allen,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.3565
+30,Jimmie Allen,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.001
+30,Jimmie Allen,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.001
+30,JoJo Siwa,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+30,JoJo Siwa,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+30,JoJo Siwa,r3_rank_save,Rank + judges-save,2,0.0,4.0,0.0035
+30,JoJo Siwa,r4_pct_save,Percent + judges-save,2,0.0,0.0,0.9905
+30,JoJo Siwa,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+30,JoJo Siwa,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+30,Kenya Moore,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.135
+30,Kenya Moore,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.212
+30,Kenya Moore,r3_rank_save,Rank + judges-save,10,0.0,0.0,0.9845
+30,Kenya Moore,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.446
+30,Kenya Moore,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.212
+30,Kenya Moore,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.202
+30,Martin Kove,r1_rank,Rank (S1-2/S28+ hist.),15,0.0,15.0,0.0395
+30,Martin Kove,r2_percent,Percent 50/50 (S3-27 hist.),15,0.0,15.0,0.038
+30,Martin Kove,r3_rank_save,Rank + judges-save,15,0.0,0.0,1.0
+30,Martin Kove,r4_pct_save,Percent + judges-save,15,0.0,15.0,0.2335
+30,Martin Kove,r5_qualibrium,Qualibrium (proposed),15,0.0,15.0,0.06
+30,Martin Kove,r6_pct_hi,Percent judge-heavy (w=0.7),15,0.0,15.0,0.013
+30,Matt James,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,13.0,0.036
+30,Matt James,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,13.0,0.2135
+30,Matt James,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+30,Matt James,r4_pct_save,Percent + judges-save,12,0.0,13.0,0.3575
+30,Matt James,r5_qualibrium,Qualibrium (proposed),12,0.0,13.0,0.208
+30,Matt James,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,13.0,0.2445
+30,Melanie C,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,1.0
+30,Melanie C,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.926
+30,Melanie C,r3_rank_save,Rank + judges-save,11,0.0,0.0,0.9895
+30,Melanie C,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.882
+30,Melanie C,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.9205
+30,Melanie C,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.958
+30,Melora Hardin,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.0445
+30,Melora Hardin,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.0215
+30,Melora Hardin,r3_rank_save,Rank + judges-save,6,0.0,8.0,0.3735
+30,Melora Hardin,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.403
+30,Melora Hardin,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.0265
+30,Melora Hardin,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.03
+30,"Mike ""The Miz"" Mizanin",r1_rank,Rank (S1-2/S28+ hist.),9,0.0,9.0,0.0835
+30,"Mike ""The Miz"" Mizanin",r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,9.0,0.139
+30,"Mike ""The Miz"" Mizanin",r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+30,"Mike ""The Miz"" Mizanin",r4_pct_save,Percent + judges-save,9,0.0,9.0,0.226
+30,"Mike ""The Miz"" Mizanin",r5_qualibrium,Qualibrium (proposed),9,0.0,9.0,0.136
+30,"Mike ""The Miz"" Mizanin",r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,9.0,0.1525
+30,Olivia Jade,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.3185
+30,Olivia Jade,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.048
+30,Olivia Jade,r3_rank_save,Rank + judges-save,8,0.0,9.0,0.4585
+30,Olivia Jade,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.468
+30,Olivia Jade,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.0745
+30,Olivia Jade,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.104
+30,Suni Lee,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,0.0,0.765
+30,Suni Lee,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,6.0,0.2215
+30,Suni Lee,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.8125
+30,Suni Lee,r4_pct_save,Percent + judges-save,5,0.0,6.0,0.3435
+30,Suni Lee,r5_qualibrium,Qualibrium (proposed),5,0.0,6.0,0.2875
+30,Suni Lee,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,6.0,0.319
+31,Charli D'Amelio,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+31,Charli D'Amelio,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+31,Charli D'Amelio,r3_rank_save,Rank + judges-save,1,0.0,7.0,0.005
+31,Charli D'Amelio,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9965
+31,Charli D'Amelio,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+31,Charli D'Amelio,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+31,Cheryl Ladd,r1_rank,Rank (S1-2/S28+ hist.),14,0.0,14.0,0.128
+31,Cheryl Ladd,r2_percent,Percent 50/50 (S3-27 hist.),14,0.0,14.0,0.2505
+31,Cheryl Ladd,r3_rank_save,Rank + judges-save,14,0.0,0.0,1.0
+31,Cheryl Ladd,r4_pct_save,Percent + judges-save,14,0.0,14.0,0.371
+31,Cheryl Ladd,r5_qualibrium,Qualibrium (proposed),14,0.0,14.0,0.2585
+31,Cheryl Ladd,r6_pct_hi,Percent judge-heavy (w=0.7),14,0.0,14.0,0.2375
+31,Daniel Durant,r1_rank,Rank (S1-2/S28+ hist.),5,0.0,7.0,0.0055
+31,Daniel Durant,r2_percent,Percent 50/50 (S3-27 hist.),5,0.0,7.0,0.007
+31,Daniel Durant,r3_rank_save,Rank + judges-save,5,0.0,0.0,0.9995
+31,Daniel Durant,r4_pct_save,Percent + judges-save,5,0.0,7.0,0.361
+31,Daniel Durant,r5_qualibrium,Qualibrium (proposed),5,0.0,7.0,0.008
+31,Daniel Durant,r6_pct_hi,Percent judge-heavy (w=0.7),5,0.0,7.0,0.0085
+31,Gabby Windey,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+31,Gabby Windey,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+31,Gabby Windey,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.0215
+31,Gabby Windey,r4_pct_save,Percent + judges-save,2,1.0,1.0,1.0
+31,Gabby Windey,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+31,Gabby Windey,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+31,Heidi D'Amelio,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,9.0,0.0175
+31,Heidi D'Amelio,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,9.0,0.041
+31,Heidi D'Amelio,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.9835
+31,Heidi D'Amelio,r4_pct_save,Percent + judges-save,8,0.0,9.0,0.452
+31,Heidi D'Amelio,r5_qualibrium,Qualibrium (proposed),8,0.0,9.0,0.0335
+31,Heidi D'Amelio,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,9.0,0.0315
+31,Jason Lewis,r1_rank,Rank (S1-2/S28+ hist.),16,0.0,0.0,0.6005
+31,Jason Lewis,r2_percent,Percent 50/50 (S3-27 hist.),16,0.0,0.0,0.6925
+31,Jason Lewis,r3_rank_save,Rank + judges-save,16,0.0,0.0,1.0
+31,Jason Lewis,r4_pct_save,Percent + judges-save,16,0.0,0.0,0.728
+31,Jason Lewis,r5_qualibrium,Qualibrium (proposed),16,0.0,0.0,0.702
+31,Jason Lewis,r6_pct_hi,Percent judge-heavy (w=0.7),16,0.0,0.0,0.6865
+31,Jessie James Decker,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.883
+31,Jessie James Decker,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.6575
+31,Jessie James Decker,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+31,Jessie James Decker,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.3555
+31,Jessie James Decker,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.632
+31,Jessie James Decker,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.7205
+31,Jordin Sparks,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.9135
+31,Jordin Sparks,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.819
+31,Jordin Sparks,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+31,Jordin Sparks,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.522
+31,Jordin Sparks,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.828
+31,Jordin Sparks,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.862
+31,Joseph Baena,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.8905
+31,Joseph Baena,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.657
+31,Joseph Baena,r3_rank_save,Rank + judges-save,11,0.0,0.0,1.0
+31,Joseph Baena,r4_pct_save,Percent + judges-save,11,0.0,12.0,0.486
+31,Joseph Baena,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.644
+31,Joseph Baena,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.709
+31,Sam Champion,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,13.0,0.072
+31,Sam Champion,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,13.0,0.226
+31,Sam Champion,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+31,Sam Champion,r4_pct_save,Percent + judges-save,13,0.0,13.0,0.379
+31,Sam Champion,r5_qualibrium,Qualibrium (proposed),13,0.0,13.0,0.224
+31,Sam Champion,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,13.0,0.22
+31,Selma Blair,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,1.0
+31,Selma Blair,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.999
+31,Selma Blair,r3_rank_save,Rank + judges-save,12,0.0,0.0,0.9565
+31,Selma Blair,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.9955
+31,Selma Blair,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.999
+31,Selma Blair,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.999
+31,Shangela,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+31,Shangela,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+31,Shangela,r3_rank_save,Rank + judges-save,4,1.0,1.0,1.0
+31,Shangela,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.5105
+31,Shangela,r5_qualibrium,Qualibrium (proposed),4,1.0,1.0,1.0
+31,Shangela,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+31,Teresa Giudice,r1_rank,Rank (S1-2/S28+ hist.),15,0.0,0.0,0.7305
+31,Teresa Giudice,r2_percent,Percent 50/50 (S3-27 hist.),15,0.0,0.0,0.718
+31,Teresa Giudice,r3_rank_save,Rank + judges-save,15,0.0,0.0,1.0
+31,Teresa Giudice,r4_pct_save,Percent + judges-save,15,0.0,0.0,0.647
+31,Teresa Giudice,r5_qualibrium,Qualibrium (proposed),15,0.0,0.0,0.699
+31,Teresa Giudice,r6_pct_hi,Percent judge-heavy (w=0.7),15,0.0,0.0,0.7415
+31,Trevor Donovan,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,7.0,0.0
+31,Trevor Donovan,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,7.0,0.0005
+31,Trevor Donovan,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.6315
+31,Trevor Donovan,r4_pct_save,Percent + judges-save,6,0.0,7.0,0.434
+31,Trevor Donovan,r5_qualibrium,Qualibrium (proposed),6,0.0,7.0,0.0005
+31,Trevor Donovan,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,7.0,0.0
+31,Vinny Guadagnino,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,9.0,0.0
+31,Vinny Guadagnino,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,9.0,0.0
+31,Vinny Guadagnino,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+31,Vinny Guadagnino,r4_pct_save,Percent + judges-save,7,0.0,9.0,0.0365
+31,Vinny Guadagnino,r5_qualibrium,Qualibrium (proposed),7,0.0,9.0,0.0
+31,Vinny Guadagnino,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,9.0,0.0
+31,Wayne Brady,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+31,Wayne Brady,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+31,Wayne Brady,r3_rank_save,Rank + judges-save,3,1.0,1.0,1.0
+31,Wayne Brady,r4_pct_save,Percent + judges-save,3,0.0,5.0,0.489
+31,Wayne Brady,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+31,Wayne Brady,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+32,Adrian Peterson,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,0.6815
+32,Adrian Peterson,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.6285
+32,Adrian Peterson,r3_rank_save,Rank + judges-save,11,0.0,0.0,0.9995
+32,Adrian Peterson,r4_pct_save,Percent + judges-save,11,0.0,11.0,0.4765
+32,Adrian Peterson,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.5825
+32,Adrian Peterson,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.696
+32,Alyson Hannigan,r1_rank,Rank (S1-2/S28+ hist.),5,1.0,1.0,1.0
+32,Alyson Hannigan,r2_percent,Percent 50/50 (S3-27 hist.),5,1.0,1.0,1.0
+32,Alyson Hannigan,r3_rank_save,Rank + judges-save,5,1.0,1.0,1.0
+32,Alyson Hannigan,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.255
+32,Alyson Hannigan,r5_qualibrium,Qualibrium (proposed),5,1.0,1.0,1.0
+32,Alyson Hannigan,r6_pct_hi,Percent judge-heavy (w=0.7),5,1.0,1.0,1.0
+32,Ariana Madix,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+32,Ariana Madix,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+32,Ariana Madix,r3_rank_save,Rank + judges-save,3,0.0,7.0,0.0255
+32,Ariana Madix,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.858
+32,Ariana Madix,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+32,Ariana Madix,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+32,Barry Williams,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,9.0,0.057
+32,Barry Williams,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,8.0,0.0885
+32,Barry Williams,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+32,Barry Williams,r4_pct_save,Percent + judges-save,7,0.0,8.0,0.114
+32,Barry Williams,r5_qualibrium,Qualibrium (proposed),7,0.0,8.0,0.087
+32,Barry Williams,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,8.0,0.107
+32,Charity Lawson,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+32,Charity Lawson,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+32,Charity Lawson,r3_rank_save,Rank + judges-save,4,0.0,5.0,0.0855
+32,Charity Lawson,r4_pct_save,Percent + judges-save,4,0.0,0.0,0.9755
+32,Charity Lawson,r5_qualibrium,Qualibrium (proposed),4,1.0,1.0,1.0
+32,Charity Lawson,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+32,Harry Jowsey,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.0
+32,Harry Jowsey,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.0
+32,Harry Jowsey,r3_rank_save,Rank + judges-save,6,0.0,0.0,1.0
+32,Harry Jowsey,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.022
+32,Harry Jowsey,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.0
+32,Harry Jowsey,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.0
+32,Jamie Lynn Spears,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,0.9975
+32,Jamie Lynn Spears,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.932
+32,Jamie Lynn Spears,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+32,Jamie Lynn Spears,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.859
+32,Jamie Lynn Spears,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.904
+32,Jamie Lynn Spears,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,0.0,0.973
+32,Jason Mraz,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+32,Jason Mraz,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+32,Jason Mraz,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.0585
+32,Jason Mraz,r4_pct_save,Percent + judges-save,2,0.0,5.0,0.4945
+32,Jason Mraz,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+32,Jason Mraz,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+32,Lele Pons,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,1.0
+32,Lele Pons,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.9485
+32,Lele Pons,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.9985
+32,Lele Pons,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.804
+32,Lele Pons,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.9425
+32,Lele Pons,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.986
+32,Matt Walsh,r1_rank,Rank (S1-2/S28+ hist.),14,0.0,0.0,0.629
+32,Matt Walsh,r2_percent,Percent 50/50 (S3-27 hist.),14,0.0,0.0,0.6135
+32,Matt Walsh,r3_rank_save,Rank + judges-save,14,0.0,0.0,1.0
+32,Matt Walsh,r4_pct_save,Percent + judges-save,14,0.0,0.0,0.659
+32,Matt Walsh,r5_qualibrium,Qualibrium (proposed),14,0.0,0.0,0.618
+32,Matt Walsh,r6_pct_hi,Percent judge-heavy (w=0.7),14,0.0,0.0,0.618
+32,Mauricio Umansky,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,13.0,0.069
+32,Mauricio Umansky,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,12.0,0.1125
+32,Mauricio Umansky,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+32,Mauricio Umansky,r4_pct_save,Percent + judges-save,9,0.0,11.0,0.21
+32,Mauricio Umansky,r5_qualibrium,Qualibrium (proposed),9,0.0,11.0,0.147
+32,Mauricio Umansky,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,13.0,0.0835
+32,Mira Sorvino,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,0.0,0.9475
+32,Mira Sorvino,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,0.0,0.889
+32,Mira Sorvino,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+32,Mira Sorvino,r4_pct_save,Percent + judges-save,10,0.0,0.0,0.635
+32,Mira Sorvino,r5_qualibrium,Qualibrium (proposed),10,0.0,0.0,0.879
+32,Mira Sorvino,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,0.0,0.942
+32,Tyson Beckford,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,12.0,0.1465
+32,Tyson Beckford,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.28
+32,Tyson Beckford,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+32,Tyson Beckford,r4_pct_save,Percent + judges-save,12,0.0,12.0,0.3985
+32,Tyson Beckford,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.3005
+32,Tyson Beckford,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,12.0,0.223
+32,Xochitl Gomez,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+32,Xochitl Gomez,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+32,Xochitl Gomez,r3_rank_save,Rank + judges-save,1,0.0,5.0,0.004
+32,Xochitl Gomez,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9905
+32,Xochitl Gomez,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+32,Xochitl Gomez,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+33,Anna Delvey,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.7785
+33,Anna Delvey,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.7025
+33,Anna Delvey,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+33,Anna Delvey,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.81
+33,Anna Delvey,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.6805
+33,Anna Delvey,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.737
+33,Brooks Nader,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,1.0
+33,Brooks Nader,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.941
+33,Brooks Nader,r3_rank_save,Rank + judges-save,9,0.0,0.0,1.0
+33,Brooks Nader,r4_pct_save,Percent + judges-save,9,0.0,0.0,0.792
+33,Brooks Nader,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.9355
+33,Brooks Nader,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.95
+33,Chandler Kinney,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+33,Chandler Kinney,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+33,Chandler Kinney,r3_rank_save,Rank + judges-save,3,0.0,5.0,0.005
+33,Chandler Kinney,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.9625
+33,Chandler Kinney,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+33,Chandler Kinney,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+33,Danny Amendola,r1_rank,Rank (S1-2/S28+ hist.),5,1.0,1.0,1.0
+33,Danny Amendola,r2_percent,Percent 50/50 (S3-27 hist.),5,1.0,1.0,1.0
+33,Danny Amendola,r3_rank_save,Rank + judges-save,5,1.0,1.0,1.0
+33,Danny Amendola,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.1685
+33,Danny Amendola,r5_qualibrium,Qualibrium (proposed),5,1.0,1.0,1.0
+33,Danny Amendola,r6_pct_hi,Percent judge-heavy (w=0.7),5,1.0,1.0,1.0
+33,Dwight Howard,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,6.0,0.0
+33,Dwight Howard,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,6.0,0.001
+33,Dwight Howard,r3_rank_save,Rank + judges-save,6,0.0,0.0,0.619
+33,Dwight Howard,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.1535
+33,Dwight Howard,r5_qualibrium,Qualibrium (proposed),6,0.0,6.0,0.0005
+33,Dwight Howard,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,6.0,0.0
+33,Eric Roberts,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,11.0,0.0075
+33,Eric Roberts,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.0155
+33,Eric Roberts,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+33,Eric Roberts,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.195
+33,Eric Roberts,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.0185
+33,Eric Roberts,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.0115
+33,Ilona Maher,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+33,Ilona Maher,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+33,Ilona Maher,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.39
+33,Ilona Maher,r4_pct_save,Percent + judges-save,2,0.0,5.0,0.216
+33,Ilona Maher,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+33,Ilona Maher,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+33,Jenn Tran,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,0.0,0.942
+33,Jenn Tran,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,0.0,0.7025
+33,Jenn Tran,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+33,Jenn Tran,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.4145
+33,Jenn Tran,r5_qualibrium,Qualibrium (proposed),7,0.0,0.0,0.685
+33,Jenn Tran,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,0.0,0.812
+33,Joey Graziadei,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+33,Joey Graziadei,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+33,Joey Graziadei,r3_rank_save,Rank + judges-save,1,0.0,6.0,0.0405
+33,Joey Graziadei,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.949
+33,Joey Graziadei,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+33,Joey Graziadei,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+33,Phaedra Parks,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,8.0,0.2735
+33,Phaedra Parks,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,8.0,0.393
+33,Phaedra Parks,r3_rank_save,Rank + judges-save,8,0.0,0.0,1.0
+33,Phaedra Parks,r4_pct_save,Percent + judges-save,8,0.0,0.0,0.502
+33,Phaedra Parks,r5_qualibrium,Qualibrium (proposed),8,0.0,8.0,0.3935
+33,Phaedra Parks,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,8.0,0.4305
+33,Reginald VelJohnson,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,11.0,0.0005
+33,Reginald VelJohnson,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,11.0,0.004
+33,Reginald VelJohnson,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+33,Reginald VelJohnson,r4_pct_save,Percent + judges-save,10,0.0,11.0,0.212
+33,Reginald VelJohnson,r5_qualibrium,Qualibrium (proposed),10,0.0,11.0,0.0055
+33,Reginald VelJohnson,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,11.0,0.0005
+33,Stephen Nedoroscik,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+33,Stephen Nedoroscik,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+33,Stephen Nedoroscik,r3_rank_save,Rank + judges-save,4,0.0,5.0,0.31
+33,Stephen Nedoroscik,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.415
+33,Stephen Nedoroscik,r5_qualibrium,Qualibrium (proposed),4,1.0,1.0,1.0
+33,Stephen Nedoroscik,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+33,Tori Spelling,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,0.0,0.9755
+33,Tori Spelling,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,0.0,0.9635
+33,Tori Spelling,r3_rank_save,Rank + judges-save,12,0.0,0.0,1.0
+33,Tori Spelling,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.7935
+33,Tori Spelling,r5_qualibrium,Qualibrium (proposed),12,0.0,0.0,0.9465
+33,Tori Spelling,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.9805
+34,Alix Earle,r1_rank,Rank (S1-2/S28+ hist.),2,1.0,1.0,1.0
+34,Alix Earle,r2_percent,Percent 50/50 (S3-27 hist.),2,1.0,1.0,1.0
+34,Alix Earle,r3_rank_save,Rank + judges-save,2,0.0,5.0,0.0165
+34,Alix Earle,r4_pct_save,Percent + judges-save,2,1.0,1.0,1.0
+34,Alix Earle,r5_qualibrium,Qualibrium (proposed),2,1.0,1.0,1.0
+34,Alix Earle,r6_pct_hi,Percent judge-heavy (w=0.7),2,1.0,1.0,1.0
+34,Andy Richter,r1_rank,Rank (S1-2/S28+ hist.),7,0.0,7.0,0.0
+34,Andy Richter,r2_percent,Percent 50/50 (S3-27 hist.),7,0.0,7.0,0.0
+34,Andy Richter,r3_rank_save,Rank + judges-save,7,0.0,0.0,1.0
+34,Andy Richter,r4_pct_save,Percent + judges-save,7,0.0,7.0,0.005
+34,Andy Richter,r5_qualibrium,Qualibrium (proposed),7,0.0,7.0,0.0
+34,Andy Richter,r6_pct_hi,Percent judge-heavy (w=0.7),7,0.0,7.0,0.0
+34,Baron Davis,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,0.0,0.906
+34,Baron Davis,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,0.0,0.763
+34,Baron Davis,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+34,Baron Davis,r4_pct_save,Percent + judges-save,13,0.0,0.0,0.7115
+34,Baron Davis,r5_qualibrium,Qualibrium (proposed),13,0.0,0.0,0.742
+34,Baron Davis,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,0.0,0.8025
+34,Corey Feldman,r1_rank,Rank (S1-2/S28+ hist.),13,0.0,14.0,0.0235
+34,Corey Feldman,r2_percent,Percent 50/50 (S3-27 hist.),13,0.0,14.0,0.102
+34,Corey Feldman,r3_rank_save,Rank + judges-save,13,0.0,0.0,1.0
+34,Corey Feldman,r4_pct_save,Percent + judges-save,13,0.0,14.0,0.367
+34,Corey Feldman,r5_qualibrium,Qualibrium (proposed),13,0.0,14.0,0.112
+34,Corey Feldman,r6_pct_hi,Percent judge-heavy (w=0.7),13,0.0,14.0,0.085
+34,Danielle Fishel,r1_rank,Rank (S1-2/S28+ hist.),8,0.0,0.0,0.9485
+34,Danielle Fishel,r2_percent,Percent 50/50 (S3-27 hist.),8,0.0,0.0,0.7835
+34,Danielle Fishel,r3_rank_save,Rank + judges-save,8,0.0,0.0,0.991
+34,Danielle Fishel,r4_pct_save,Percent + judges-save,8,0.0,8.0,0.2335
+34,Danielle Fishel,r5_qualibrium,Qualibrium (proposed),8,0.0,0.0,0.7855
+34,Danielle Fishel,r6_pct_hi,Percent judge-heavy (w=0.7),8,0.0,0.0,0.849
+34,Dylan Efron,r1_rank,Rank (S1-2/S28+ hist.),4,1.0,1.0,1.0
+34,Dylan Efron,r2_percent,Percent 50/50 (S3-27 hist.),4,1.0,1.0,1.0
+34,Dylan Efron,r3_rank_save,Rank + judges-save,4,0.0,7.0,0.173
+34,Dylan Efron,r4_pct_save,Percent + judges-save,4,0.0,5.0,0.2775
+34,Dylan Efron,r5_qualibrium,Qualibrium (proposed),4,1.0,1.0,1.0
+34,Dylan Efron,r6_pct_hi,Percent judge-heavy (w=0.7),4,1.0,1.0,1.0
+34,Elaine Hendrix,r1_rank,Rank (S1-2/S28+ hist.),5,1.0,1.0,1.0
+34,Elaine Hendrix,r2_percent,Percent 50/50 (S3-27 hist.),5,1.0,1.0,1.0
+34,Elaine Hendrix,r3_rank_save,Rank + judges-save,5,1.0,1.0,1.0
+34,Elaine Hendrix,r4_pct_save,Percent + judges-save,5,0.0,5.0,0.382
+34,Elaine Hendrix,r5_qualibrium,Qualibrium (proposed),5,1.0,1.0,1.0
+34,Elaine Hendrix,r6_pct_hi,Percent judge-heavy (w=0.7),5,1.0,1.0,1.0
+34,Hilaria Baldwin,r1_rank,Rank (S1-2/S28+ hist.),11,0.0,0.0,1.0
+34,Hilaria Baldwin,r2_percent,Percent 50/50 (S3-27 hist.),11,0.0,0.0,0.989
+34,Hilaria Baldwin,r3_rank_save,Rank + judges-save,11,0.0,0.0,0.932
+34,Hilaria Baldwin,r4_pct_save,Percent + judges-save,11,0.0,0.0,0.969
+34,Hilaria Baldwin,r5_qualibrium,Qualibrium (proposed),11,0.0,0.0,0.986
+34,Hilaria Baldwin,r6_pct_hi,Percent judge-heavy (w=0.7),11,0.0,0.0,0.9925
+34,Jen Affleck,r1_rank,Rank (S1-2/S28+ hist.),9,0.0,0.0,0.911
+34,Jen Affleck,r2_percent,Percent 50/50 (S3-27 hist.),9,0.0,0.0,0.6975
+34,Jen Affleck,r3_rank_save,Rank + judges-save,9,0.0,0.0,0.8755
+34,Jen Affleck,r4_pct_save,Percent + judges-save,9,0.0,9.0,0.344
+34,Jen Affleck,r5_qualibrium,Qualibrium (proposed),9,0.0,0.0,0.6985
+34,Jen Affleck,r6_pct_hi,Percent judge-heavy (w=0.7),9,0.0,0.0,0.7775
+34,Jordan Chiles,r1_rank,Rank (S1-2/S28+ hist.),3,1.0,1.0,1.0
+34,Jordan Chiles,r2_percent,Percent 50/50 (S3-27 hist.),3,1.0,1.0,1.0
+34,Jordan Chiles,r3_rank_save,Rank + judges-save,3,0.0,8.0,0.041
+34,Jordan Chiles,r4_pct_save,Percent + judges-save,3,0.0,0.0,0.839
+34,Jordan Chiles,r5_qualibrium,Qualibrium (proposed),3,1.0,1.0,1.0
+34,Jordan Chiles,r6_pct_hi,Percent judge-heavy (w=0.7),3,1.0,1.0,1.0
+34,Lauren Jauregui,r1_rank,Rank (S1-2/S28+ hist.),12,0.0,12.0,0.214
+34,Lauren Jauregui,r2_percent,Percent 50/50 (S3-27 hist.),12,0.0,12.0,0.4965
+34,Lauren Jauregui,r3_rank_save,Rank + judges-save,12,0.0,0.0,0.9835
+34,Lauren Jauregui,r4_pct_save,Percent + judges-save,12,0.0,0.0,0.5875
+34,Lauren Jauregui,r5_qualibrium,Qualibrium (proposed),12,0.0,12.0,0.4915
+34,Lauren Jauregui,r6_pct_hi,Percent judge-heavy (w=0.7),12,0.0,0.0,0.516
+34,Robert Irwin,r1_rank,Rank (S1-2/S28+ hist.),1,1.0,1.0,1.0
+34,Robert Irwin,r2_percent,Percent 50/50 (S3-27 hist.),1,1.0,1.0,1.0
+34,Robert Irwin,r3_rank_save,Rank + judges-save,1,0.0,6.0,0.0385
+34,Robert Irwin,r4_pct_save,Percent + judges-save,1,0.0,0.0,0.9505
+34,Robert Irwin,r5_qualibrium,Qualibrium (proposed),1,1.0,1.0,1.0
+34,Robert Irwin,r6_pct_hi,Percent judge-heavy (w=0.7),1,1.0,1.0,1.0
+34,Scott Hoying,r1_rank,Rank (S1-2/S28+ hist.),10,0.0,10.0,0.4895
+34,Scott Hoying,r2_percent,Percent 50/50 (S3-27 hist.),10,0.0,10.0,0.4235
+34,Scott Hoying,r3_rank_save,Rank + judges-save,10,0.0,0.0,1.0
+34,Scott Hoying,r4_pct_save,Percent + judges-save,10,0.0,10.0,0.335
+34,Scott Hoying,r5_qualibrium,Qualibrium (proposed),10,0.0,10.0,0.4225
+34,Scott Hoying,r6_pct_hi,Percent judge-heavy (w=0.7),10,0.0,10.0,0.487
+34,Whitney Leavitt,r1_rank,Rank (S1-2/S28+ hist.),6,0.0,0.0,1.0
+34,Whitney Leavitt,r2_percent,Percent 50/50 (S3-27 hist.),6,0.0,0.0,0.9365
+34,Whitney Leavitt,r3_rank_save,Rank + judges-save,6,0.0,8.0,0.4795
+34,Whitney Leavitt,r4_pct_save,Percent + judges-save,6,0.0,6.0,0.4685
+34,Whitney Leavitt,r5_qualibrium,Qualibrium (proposed),6,0.0,0.0,0.944
+34,Whitney Leavitt,r6_pct_hi,Percent judge-heavy (w=0.7),6,0.0,0.0,0.9495

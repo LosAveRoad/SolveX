@@ -1,0 +1,62 @@
+[
+  {
+    "scenario": "review",
+    "rep": 1,
+    "submitted": true,
+    "nudges": 0,
+    "rejections": 0,
+    "toolCalls": 2,
+    "seconds": 22,
+    "note": "verdict=NEEDS_REVISION"
+  },
+  {
+    "scenario": "fix",
+    "rep": 1,
+    "submitted": true,
+    "nudges": 0,
+    "rejections": 0,
+    "toolCalls": 2,
+    "seconds": 19,
+    "note": "results={\"p_win_A\": 0.6, \"p_win_B\": 0.4}"
+  },
+  {
+    "scenario": "paper",
+    "rep": 1,
+    "submitted": false,
+    "nudges": 2,
+    "rejections": 0,
+    "toolCalls": 0,
+    "seconds": 130,
+    "note": "memo.tex=false input=false"
+  },
+  {
+    "scenario": "review",
+    "rep": 2,
+    "submitted": true,
+    "nudges": 0,
+    "rejections": 0,
+    "toolCalls": 2,
+    "seconds": 37,
+    "note": "verdict=NEEDS_REVISION"
+  },
+  {
+    "scenario": "fix",
+    "rep": 2,
+    "submitted": true,
+    "nudges": 0,
+    "rejections": 0,
+    "toolCalls": 2,
+    "seconds": 38,
+    "note": "results={\"p_win_A\": 0.6, \"p_win_B\": 0.4}"
+  },
+  {
+    "scenario": "paper",
+    "rep": 2,
+    "submitted": true,
+    "nudges": 0,
+    "rejections": 0,
+    "toolCalls": 2,
+    "seconds": 124,
+    "note": "memo.tex=true input=true"
+  }
+]

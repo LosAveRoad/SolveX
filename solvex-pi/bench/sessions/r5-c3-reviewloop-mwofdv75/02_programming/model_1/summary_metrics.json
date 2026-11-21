@@ -1,0 +1,13 @@
+{
+  "n_contestant_weeks": 91,
+  "n_seasons": 19,
+  "overall_swing_rate_A": 0.8681,
+  "mean_swing_margin": 0.00936,
+  "median_swing_margin": 0.0064,
+  "mean_certainty_entropy_K": 0.9973,
+  "mean_K_eliminated": 0.9972,
+  "mean_K_survived": 0.9995,
+  "mean_top_share": 0.1475,
+  "kendall_tau_margin_vs_eliminated": -0.0743,
+  "kendall_tau_top_share_vs_eliminated": -0.2808
+}

@@ -1,0 +1,43 @@
+{
+  "n_seasons": 34,
+  "n_contestants": 421,
+  "n_couple_weeks_estimated": 2249,
+  "n_week_events": 264,
+  "consistency": {
+    "pct_feasible_share": 1.0,
+    "rank_feasible_share": 1.0,
+    "n_weeks_infeasible_pct": 0,
+    "bootstrap_hit_rate_pct_mean": 0.7379419191919192,
+    "bootstrap_hit_rate_pct_min": 0.13666666666666666,
+    "bootstrap_hit_rate_pct_q25": 0.56,
+    "n_weeks_hit_below_090": 173,
+    "gamma_max_pct_mean": 0.08822864850822572,
+    "gamma_max_pct_max": 0.19716312056737587,
+    "gamma_max_pct_q25": 0.05921460321306099,
+    "gamma_max_range_check_violations": 0,
+    "corr_bandwidth_vs_gamma_max": 0.1273049186331852,
+    "n_weeks_kappa_at_cap": 116
+  },
+  "judges_alone": {
+    "pct": 0.32196969696969696,
+    "rank": 0.32196969696969696,
+    "n_weeks": 264
+  },
+  "null_model_test": {
+    "mean_null_hit_rate": 0.22741666666666668,
+    "pooled_model_hits": 58445,
+    "pooled_model_draws": 79200,
+    "pooled_null_hits": 60038,
+    "pooled_null_draws": 264000,
+    "pooled_chi2": 70243.30084517077,
+    "pooled_p_value": 0.0,
+    "n_weeks_binom_p_lt_0point01": 253,
+    "median_binom_p_value": 9.16228484592461e-102
+  },
+  "holdout": {
+    "n_tests": 162,
+    "accuracy": 0.41975308641975306,
+    "baseline_random": 0.1578218934700416,
+    "mean_beta": 0.0
+  }
+}

@@ -1,0 +1,4 @@
+archetype,age,b_pro_sd,pred_log_Jshare,pred_relative_Jshare,pred_survival_hazard_mult
+"young athlete, weak pro (-1sd)",24,-1.0,2.3340919149226114,0.9459794429895427,0.6747714597003537
+average cast (0),42,0.0,2.3886414061120345,0.9990155354715027,1.015245085673606
+"veteran actor, star pro (+1sd)",58,1.0,2.446145745597381,1.0581471321306772,1.4597295467341687

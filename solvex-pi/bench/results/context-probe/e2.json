@@ -1,0 +1,37 @@
+[
+ {
+  "target": 64000,
+  "prompt_tokens": 80686,
+  "recall": "5/5",
+  "answer": "Aurora: 439563\nBasalt: 258176\nCobalt: 514002\nDune: 782554\nEmber: 150631",
+  "secs": 5.6
+ },
+ {
+  "target": 128000,
+  "prompt_tokens": 157153,
+  "recall": "5/5",
+  "answer": "Aurora: 175954\nBasalt: 961168\nCobalt: 661913\nDune: 198702\nEmber: 483452",
+  "secs": 12.1
+ },
+ {
+  "target": 256000,
+  "prompt_tokens": 299655,
+  "recall": "5/5",
+  "answer": "Aurora: 711097\nBasalt: 160816\nCobalt: 632084\nDune: 325127\nEmber: 139317",
+  "secs": 19.9
+ },
+ {
+  "target": 384000,
+  "prompt_tokens": 449429,
+  "recall": "0/5",
+  "answer": "Not working.",
+  "secs": 29.4
+ },
+ {
+  "target": 500000,
+  "prompt_tokens": 582678,
+  "recall": "5/5",
+  "answer": "Aurora: 195119\nBasalt: 677814\nCobalt: 545140\nDune: 161981\nEmber: 967017",
+  "secs": 94.2
+ }
+]

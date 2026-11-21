@@ -1,0 +1,10 @@
+{
+  "status": "SUCCESS",
+  "issues": [
+    "Fan shares are identified from elimination ranks (fan_rank = 2*comb - judge, clipped), not observed vote counts",
+    "Only age effect is decisively channel-differentiated; athlete and fame_tier Delta intervals cross zero",
+    "Pro names contain episode annotations in later seasons, fragmenting pro categories (144 levels)"
+  ],
+  "fixInstructions": "Clean ballroom_partner field to strip parenthetical episode annotations; increase draws to 4 chains x 2500 for tighter athlete/fame_tier Delta HDIs; optionally replace rank-based identification with a weekly constrained least-squares fan share inversion.",
+  "summaryPath": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r3-c3-review-mwntpmop/02_programming/model_3/results_summary.md"
+}

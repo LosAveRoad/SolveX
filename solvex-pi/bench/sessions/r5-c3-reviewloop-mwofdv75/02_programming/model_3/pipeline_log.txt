@@ -1,0 +1,29 @@
+[    0.0s] Removed stale artifact: theta_estimates.csv
+[    0.0s] Loading /Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r5-c3-reviewloop-mwofdv75/data/2026_MCM_Problem_C_Data.csv
+[    0.0s] Industry collapse (fix 1/7): 7 levels, min n = 10
+[    0.1s] Celebrity-week panel: 4095 modelling rows, 411 contestant-seasons, weeks 1-11; withdrew rows censored: 104
+[    0.1s] Design verification (fix 1): rank 11 == n_cols 11 OK; cols = ['const', 'age_z', 'u_i', 'pro_mean_score', 'u_i_x_pro', 'Athlete', 'Comedian', 'Model', 'Other', 'Singer/Rapper', 'TV Personality']
+[    0.1s] Hazard Logit (2781 at-risk rows): age_z=-0.039 (p=0.6149) | u_i=-1.741 (p=0.0000) | pro_mean_score=-0.138 (p=0.5486) | u_i_x_pro=-0.148 (p=0.6157)
+[    0.1s] G-estimation optimum (fix 7, file-backed): gamma=0.70, wscale=0.30, obj=-0.5055
+[    0.1s] SE model (fix 2): grid neighbourhood of 8 parameter pairs (objective within 10% of optimum) -> per-week SE = std across neighbourhood
+[    0.2s] estimated_fan_votes.csv (fix 3/4): 421 cid rows, 10 withdrew (NaN), relative SE percentiles p25/p50/p75/p95 = [0.0444, 0.0577, 0.0758, 0.0876]
+[    0.2s] Prediction check (fix 1): predicted log scores mean = 1.141 (observed 1.141), max = 2.525 (<= 2.4)
+[    0.2s] Surface[judge_score] engine=cluster_OLS (cov_type=cluster, clusters=cid): R2 = 0.454, max SE = 0.057 (must be < 100)
+[    0.2s] Surface[fan_vote] engine=cluster_OLS (cov_type=cluster, clusters=cid): R2 = 0.486, max SE = 0.289 (must be < 100)
+[    0.2s] Response-surface coefficients written: response_surface_coefficients.csv (22 rows, engine = cluster_OLS (cov_type=cluster, clusters=cid))
+[    2.6s] MixedLM converged, llf = -5981.37 (reported, not primary)
+[    2.6s] AIC comparison (valid MLE basis for both cluster-OLS engines):
+                    model    k      aic basis                                       engine
+cluster-OLS judge surface 11.0 11321.96   MLE cluster_OLS (cov_type=cluster, clusters=cid)
+  cluster-OLS fan surface 11.0 21497.00   MLE cluster_OLS (cov_type=cluster, clusters=cid)
+[    3.2s]   bootstrap 50/200 (1s)
+[    3.9s]   bootstrap 100/200 (1s)
+[    4.5s]   bootstrap 150/200 (2s)
+[    5.1s]   bootstrap 200/200 (3s)
+[    5.1s] theta_estimates.csv regenerated (fix 4): true cid bootstrap, 200 draws
+[    5.2s] delta_pro_swap.csv refreshed: judge channel range [-0.070, 0.000] (mean |D| = 0.033); 120 pro x response rows
+[    5.2s] A within (season, week) (fix 5): without = 0.9517 (276/290), with fan-appeal prior = 0.9655, delta_A = +0.0138, within-week random baseline = 0.2664
+[    5.2s] Below-chance diagnosis (fix 5): mean hazard-percentile of ACTUAL eliminated = 0.959 (1.0 = hazard ranked them first) -> hazard separates well; bug elsewhere
+[    5.2s] Back-test split: 313 train / 98 held-out cids, 985 held-out rows
+[    5.2s] Back-test R2 (leak-free): 0.476; diagnostics written; Shapiro W = 0.990 (p = 1.47e-16)
+[    5.9s] Figures 1-5 regenerated

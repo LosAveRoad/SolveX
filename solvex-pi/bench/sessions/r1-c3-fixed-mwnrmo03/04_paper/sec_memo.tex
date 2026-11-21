@@ -1,0 +1,54 @@
+\appendix
+\section{Producers' Memo: Advice for future seasons}\label{app:memo}
+
+\subsection*{To: Producers, \emph{Dancing with the Stars}}
+\subsection*{Re: How to combine judge scores and fan votes}
+
+\textbf{Executive summary.} We reconstructed the hidden weekly fan votes for all 34
+seasons (2{,}864 couple-weeks, 264 eliminations) from judge scores and the elimination
+record alone. The reconstruction reproduces 87.5\% of observed eliminations exactly
+(21.6\% for a judge-anchored prior alone), and its uncertainty is mappable ---
+concentrated precisely on the contestants whose fan support diverged from the judges
+(Jerry Rice, Billy Ray Cyrus, Bristol Palin, Bobby Bones). Which combination rule you
+use matters mostly for exactly those contestants. Our concrete advice:
+
+\begin{enumerate}
+\item \textbf{Do not rely on the pure percentage rule.} It lets a big absolute fan
+lead overturn any judge deficit: our reconstruction has Bobby Bones' decisive-week
+fan-share median at 0.4855 (q975 near 0.9070) over bottom-half judge scores, and
+Bristol Palin's at 0.3163 in her decisive week. An organized fan base can capture
+this rule.
+\item \textbf{Do not return to the pure rank rule either.} It caps fan influence at
+one rank step per week; it produced the Jerry Rice final (reconstructed late-season
+fan-share median 0.2252--0.3293 with 95\% upper bound 0.7701 over bottom-half judge
+scores) that triggered the change to percentages.
+\item \textbf{Adopt a $\lambda$-damped combination with the judges' save on the
+bottom two}, i.e.\ $A_{c,w} = (1-\lambda)\,j_{c,w} + \lambda\,f_{c,w}$ with
+$\lambda \in [0.3,\,0.5]$ and the panel choosing between the bottom two. This is the
+targeted fix: judges can veto the worst case (a Bobby Bones-type winner) without
+being able to override fan sentiment week after week.
+\item \textbf{Account for casting effects.} Prior fame is the single largest
+fan-side driver ($\beta^F = 0.3896$ vs.\ $\beta^J = 0.1189$; divergence
+$E_g = -0.2708$, FDR-significant) and cuts weekly elimination hazard by $\sim$35\%.
+Athletes carry a fan-side bonus ($E_g = -0.1228$); comedians and social-media
+personalities are judge-favored ($E_g = +0.1278$, $+0.1211$); being a model
+multiplies elimination hazard by $\approx 3.08$. If you want judge-driven outcomes,
+cast judge-side archetypes; if you want drama and fan engagement, cast fan-side
+archetypes --- and expect rule stress accordingly.
+\item \textbf{Pro quality is real but separate.} Derek Hough's couples' effect
+($b_{pro} = 8.844$, 74 bottom-two weeks, 45\% of them rescued by the judges' save)
+is the largest pro effect, and leave-one-pro-out refits confirm it is not a
+single-dancer artifact. Factor pro effects into partnership announcements.
+\item \textbf{Always report uncertainty with any fan-vote estimate.} Certainty is
+not uniform: 95\%-interval widths average 0.346 fan share and grow with the
+fan--judge divergence ($\log W$ residual slope $+5.4998$). Any producer-facing
+fan-vote estimate should be released as an interval, not a point.
+\end{enumerate}
+
+\noindent Bottom line: the elimination record contains enough information to recover
+fan votes to an 87.5\% consistency standard, the divergence between fans and judges
+is explainable from cast attributes, and the recommended rule --- a damped,
+percentage-based combination with a bottom-two judges' save --- protects against
+the documented failure modes of both historical systems.
+
+\end{document}

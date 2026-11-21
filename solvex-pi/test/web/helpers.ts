@@ -16,8 +16,9 @@ export function installFakeRunner(opts: Record<string, unknown> = {}) {
 
 export function testPaths() {
   const root = mkdtempSync(join(tmpdir(), "solvex-web-"));
-  return { root, sessionRoot: join(root, "sessions"), configPath: join(root, "config.json"),
-           modelsPath: join(root, "models.json") };
+  return { root, sessionRoot: join(root, "sessions"), workspaceRoot: join(root, "workspaces"),
+           configPath: join(root, "config.json"), modelsPath: join(root, "models.json"),
+           mcpConfigPath: join(root, "mcp.json") };
 }
 
 /** 手写标准 multipart body，避免额外依赖；字段名与前端 toFormEntries 一致。 */

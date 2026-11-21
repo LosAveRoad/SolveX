@@ -1,0 +1,45 @@
+{
+  "status": "SATISFIED",
+  "review_round": 2,
+  "output_dir": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r3-c3-review-mwntpmop/02_programming/model_1/",
+  "summaryPath": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r3-c3-review-mwntpmop/02_programming/model_1/results_summary.md",
+  "issues": [
+    "Posterior was an undefined mixture (adaptive-phase draws retained while q still recentering)",
+    "Data-dependent prior double-used the elimination constraint (v0-recentering), CIs too narrow",
+    "Plan's hierarchical logit / Metropolis-within-Gibbs was claimed but never implemented",
+    "Finale ordering constraint present in point estimate but missing from the sampler",
+    "repl_prob=1.0 headlined as validation; honest V1 prior-lift statistics omitted from summary",
+    "Dead code lines in parse_data(...) and posterior_week(...)"
+  ],
+  "fixInstructions": [
+    "Fix 1: two-phase protocol implemented (adapt_q=True path): Phase-1 accepted draws collected only for adaptation (q = KAPPA0*(0.25+0.75*accepted_mean/accepted_mean.max())), discarded, Phase 2 fixed-q retains only Phase-2 draws; lo90/hi90/mean/cv from Phase 2 only; per-week eff_retention + phase1_discarded reported in weekly_diagnostics.csv; default adapt_q=False freezes q from the first draw so all retained draws are iid.",
+    "Fix 2 (option a): v0-recentering removed; fixed judge-informed prior q_i = KAPPA0*exp(theta*s_i)/sum(exp(theta*s_j)) with theta=6.0, KAPPA0=12.0 for all weeks; pipeline fully re-run; CI widths grew from mean 0.117 to 0.241, CV 0.333 to 0.725.",
+    "Fix 3: feasible() now accepts order_pairs/is_finale and enforces c[i] >= c[j]-TOL for all ordering pairs per batch row, matching feasible_single; point estimate additionally uses an explicit ordering penalty plus deterministic bubble-sort fallback.",
+    "Fix 4 (option a): results_summary.md 'Model Parameters' rewritten to describe the actual truncated-Dirichlet rejection-sampling model; all Metropolis-within-Gibbs / hierarchical-logit claims deleted; the hierarchical extension is listed as an unimplemented limitation instead.",
+    "Fix 5: V1 prior-lift statistics (P(correct elimination): mean 0.3409, median 0.1917, min 0.0 over 264 elimination weeks; lift ~2.9x) and V3 rule-sensitivity counts (21/254 S3+ weeks = 8.3% rule-disagreement) now headline the summary; repl_prob demoted to a sampler-correctness footnote and the >=0.85 forward-test claim retracted.",
+    "Fix 6: dead lines removed from model1_core.py; pipeline re-run; weekly_panel.csv row-identical to revision 1 (diff clean), fan_votes_point.csv unchanged in distribution (margin mean 1.3432 -> 1.3367, Nelder-Mead path identical, RNG split makes it deterministic), the two posterior CSVs intentionally differ (fix 1-3 change the posterior by design)."
+  ],
+  "key_results": {
+    "weeks_processed": 335,
+    "contestant_weeks": 2777,
+    "v1_prior_P_correct_elimination": {"mean": 0.3409, "median": 0.1917, "min": 0.0, "weeks": 264},
+    "v3_rule_disagreement_weeks": {"tested": 254, "flipped": 21, "fraction": 0.083},
+    "v2_elimination_violations": "0 / 257 ordinary weeks; 32/34 finale orderings satisfied (S27 W9, S33 W9 residual)",
+    "pooled_fan_share": {"mean": 0.1206, "median": 0.1057, "sd": 0.0684, "min": 0.0039, "max": 0.6149},
+    "ci_width_90": {"mean": 0.2413, "median": 0.2489, "min": 0.0122, "max": 0.4628},
+    "cv": {"mean": 0.7247, "median": 0.7544},
+    "corr_fan_judge": 0.839,
+    "sampler": {"median_acceptance": 0.1875, "weeks_below_1000_draws": 2, "min_draws": 17}
+  },
+  "data_files": [
+    "weekly_panel.csv (2777x16)", "fan_votes_point.csv (2777x4)",
+    "fan_votes_posterior.csv (2777x17)", "weekly_diagnostics.csv (335x12)",
+    "validation_output.txt (V1-V4 log)"
+  ],
+  "figures": [
+    "figures/fig1_fan_vs_judge_scatter.png",
+    "figures/fig2_uncertainty_heatmap.png",
+    "figures/fig3_controversy_trajectories.png"
+  ],
+  "code_files": ["model1_core.py", "model1_validation.py"]
+}

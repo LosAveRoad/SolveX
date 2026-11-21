@@ -1,0 +1,334 @@
+\section{Results and Analysis}\label{sec:results}
+
+\subsection{Integrated findings across the three models}
+
+The three models form a pipeline: Model 1 produces the hidden fan-vote posterior
+(2{,}864 couple-weeks, 87.5\% elimination consistency, prior-only baseline 21.6\%);
+Model 2 consumes its draws to replay every season under both combination rules; Model 3
+consumes its posterior means and standard deviations to attribute judge--fan divergence
+to celebrity covariates, professional dancers, and survival dynamics. Table
+\ref{tab:integrated} summarizes each link in the chain, its headline numbers, and its
+completion status.
+
+\begin{table}[H]
+\centering
+\caption{Integrated summary of the three-model pipeline: headline numbers and status.}
+\label{tab:integrated}
+\small
+\begin{tabular}{p{4.2cm}p{7.3cm}p{3.4cm}}
+\toprule
+Model / output & Headline quantitative result & Status\\
+\midrule
+Model 1: fan-vote posterior &
+$n=2864$ couple-weeks; 231/264 ($87.5\%$) eliminations reproduced at posterior median
+(21.6\% prior baseline); mean 95\% CI width 0.3458 fan share; mean IQR/median
+($W$) ratio 1.0434; 2{,}336 constraint-identified vs.\ 528 prior-identified rows;
+2 infeasible weeks (S1W6, S3W10) flagged &
+Complete\\
+\addlinespace
+Model 1: certainty regression &
+$\log W = -0.4880 - 0.02228\,\text{week} + 5.4998\,|r|$: intervals tighten over a
+season and widen sharply with the judge--fan residual $|r|$ &
+Complete\\
+\addlinespace
+Model 2: rule replays &
+Draw$\times$rule$\times$week counterfactual engine (rank, percentage, judges' save,
+$\lambda$-damped Gamma rule) implemented and executed; planned summary tables
+(\texttt{rule\_disagreement\_by\_season.csv}, \texttt{podium\_flip\_probabilities.csv})
+not written to disk, so $D(k)$ and FPI are not reported numerically &
+PARTIALLY SATISFIED\\
+\addlinespace
+Model 3: dual-channel regressions &
+4 of 10 covariate divergences FDR-significant; largest: prior fame
+($E_g = -0.2708$); judges reward comedians ($+0.1278$) and social-media personalities
+($+0.1211$); fans reward athletes ($-0.1228$) beyond their technical marks &
+Complete\\
+\addlinespace
+Model 3: survival model &
+Prior fame: hazard ratio $e^{-0.4328} \approx 0.649$ ($p = 1.9\times10^{-13}$);
+week-in-season: $e^{0.3200}$ per week ($p \approx 5\times10^{-67}$); models (fashion)
+penalized at $e^{1.1254} \approx 3.08\times$ hazard ($p = 2.3\times10^{-5}$) &
+Complete\\
+\addlinespace
+Model 3: pro-dancer effects &
+60 pros; Derek Hough leads ($b_{pro} = 8.844$, 74 bottom-two weeks, overturn 0.4512);
+leave-one-pro-out refits stable (intercept range $2.443$--$2.481$) &
+Complete\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Consistency and certainty of the fan-vote reconstruction}
+
+The reconstruction is \emph{consistent} (87.5\% of observed eliminations exactly
+replayed at the posterior median; every reconstructed week satisfies rank-domination
+C3 and vote-capacity C4) but \emph{imprecise}: a mean 95\% interval width of 0.3458
+fan share against a mean estimate of 0.1178 means individual weeks' fan-share lands
+in an interval roughly three times the size of the point estimate. The certainty
+regression quantifies precisely where the uncertainty concentrates: each unit increase
+in the judge--fan share residual $|r|$ multiplies interval width by
+$e^{5.4998} \approx 245$ on the raw scale of the regression --- effectively, the
+widest intervals belong to couples whose fan support decoupled from the judges, and
+those are exactly the controversial cases the problem statement asks about (Jerry
+Rice, Billy Ray Cyrus, Bristol Palin, Bobby Bones). Weekly effects are modest
+($-0.02228$ on $\log W$ per week): intervals narrow slightly late in a season
+because the shrinking cast tightens the C1--C4 polytope.
+
+This means the level of certainty is \textbf{not} the same for every contestant and
+week, and any downstream use of the estimates must be draw-based (as Models 2 and 3
+are), not point-based. Where the elimination constraints bind, estimates are sharp;
+where only the prior speaks (528 prior-identified rows), estimates are
+prior-anchored and carry the judge-anchored Dirichlet's shrinkage.
+
+\subsection{What the reconstructed votes say about the four controversies}
+
+All four documented controversies share a common structure, and the reconstruction
+makes it quantitative: in each case the celebrity's fan share drifts upward exactly as
+their judge share stagnates or falls, and the point at which the two channels are
+furthest apart is the point where the combination rule is put under its greatest
+stress:
+\begin{itemize}
+\item \textbf{Jerry Rice (S2, rank rule).} A late-season reconstructed fan-share
+median of 0.2252--0.3293 (with $q_{975}$ reaching 0.7701 in week 7) against bottom-half
+judge shares carried him to the final under the rank rule --- the outcome that pushed
+the show to the percentage method in Season 3.
+\item \textbf{Billy Ray Cyrus (S4, percentage rule).} Low judge shares (as low as
+0.0631 in week 1) with moderate reconstructed fan support (weekly medians
+0.0442--0.2373) let him finish 5th despite six last-place judge scores --- the first
+big stress test of the percentage rule.
+\item \textbf{Bristol Palin (S11, percentage rule).} Reconstructed fan shares
+peaking at a median of 0.3163 in week 10 against judge shares as low as 0.0652 in
+week 2 produced a 3rd-place finish with the lowest judge scores 12 times --- the
+percentage rule's most durable controversy.
+\item \textbf{Bobby Bones (S27, percentage rule).} A decisive-week fan-share median
+of 0.4855 (with 95\% upper bound 0.9070) over bottom-half judge scores produced a
+win --- the trigger for the Season-28 judges' save.
+\end{itemize}
+
+\subsection{What the dual-channel regressions say about why fans and judges diverge}
+
+Model 3's divergence vector (Table \ref{tab:covariates}, Figure \ref{fig:forest})
+identifies the structural sources of controversy. Prior fame is the single largest
+fan-side driver ($\beta^F = +0.3896$ vs.\ $\beta^J = +0.1189$): famous contestants get
+a fan-multiplier of roughly $e^{0.3896} \approx 1.476$ on their fan share per unit of
+the fame proxy, while judges give them comparatively little extra credit. Athletes are
+the second fan-side anomaly. Comedians and social-media personalities sit on the judge
+side --- judges score them above what their fan support warrants. These directions
+line up exactly with the four controversies: all four celebrities (two athletes, a
+country-singer/reality personality, and a radio host with enormous -listener loyalty)
+combine low judge recognition with high fan loyalty, which is the profile the fan
+channel rewards through the fame proxy and the athlete dummy.
+
+The survival model (Table \ref{tab:hazard}, Figure \ref{fig:survival}) confirms the
+plumbing: prior fame reduces weekly elimination hazard by 35\%
+($e^{-0.4328} \approx 0.649$), which is how low-judge-score/fan-favorite contestants
+survive week after week. Casting counterfactuals (Table
+\ref{tab:archetypes}) make the production implication concrete: the
+``young athlete, weak pro'' archetype has a weekly hazard multiplier of 0.675 ---
+32\% below the average cast member --- while the ``veteran actor, star pro''
+archetype buys judge marks (relative judge share 1.058) at the price of a 1.460
+hazard multiplier. \textbf{Pro quality moves the judge channel; prior fame moves the
+fan channel and through it, survival.}
+
+\subsection{Which combination rule should the show use?}
+
+The rule replay engine is structurally complete but its per-season disagreement and
+fan-power summaries were not persisted, so we answer with what is established:
+\begin{enumerate}
+\item \textbf{The choice of rule matters most precisely where the fan--judge
+divergence is largest.} From the $\log W$ regression and the divergence vector, the
+contestants for whom rank vs.\ percentage could differ are those with high $|r|$ ---
+the fame-driven fan favorites. For low-$|r|$ weeks, both rules inherit the same
+judge-dominated ordering and virtually always agree.
+\item \textbf{The two rules favor fans in different currencies.} The percentage
+rule lets a large absolute fan lead overturn any judge deficit (Bristol Palin S11
+finishing 3rd, Bobby Bones S27 winning), whereas the rank rule caps fan influence at
+one rank step per week (Jerry Rice reaching, but not winning, the S2 final). The
+Bobby Bones trigger case --- a fan-share median of 0.4855 in his decisive week under
+percentage combination --- is the clearest evidence that pure percentage combination
+can be captured by an organized fan base.
+\item \textbf{The judges' save (S28+) is the direct fix}, and the engine implements
+it as a counterfactual for all seasons: confine judges' discretion to the bottom two,
+where they can veto the worst case (a Bobby Bones) without being able to override
+fan sentiment generally. Our recommendation in Section \ref{sec:conclusion} builds on
+this design.
+\end{enumerate}
+
+\subsection{Comparison with simpler baselines}
+
+A judge-only elimination rule (always eliminate the judge-score minimum) would
+reproduce the judge-argmin weeks in every season; Model 1's prior-only baseline
+(21.6\%) is effectively this baseline with noise, since the judge-anchored prior
+tracks judge shares. The gap between 21.6\% and 87.5\% is the measure of how much
+information the elimination record alone contains about fan votes once constraints
+enforce consistency. Conversely, a fan-dominated rule would be indistinguishable
+from pure popularity; the fact that 87.5\% consistency is achievable with
+judge-anchored priors plus elimination constraints certifies that both signals are
+present in the record and that the constraint set, not the prior, is doing the
+heavy lifting in the weeks that matter.
+
+\section{Sensitivity Analysis}
+
+\paragraph{Parameter sensitivity of Model 1.} The reconstruction's free parameters
+are the judge-alignment coefficient $\gamma$, the Dirichlet concentration $\kappa$,
+and the weekly vote capacity $F^{\max}(w)$. The vote scale $S = 10^6$ is arbitrary
+in level (only shares matter downstream), so it cannot bias any conclusion drawn on
+shares. Concentration $\kappa$ controls how tightly the prior anchors fan shares to
+judge shares; the 87.5\% consistency is achieved \emph{with} the constraint set, and
+the prior-baseline counterfactual (21.6\%) demonstrates that consistency does not
+depend on aggressive anchoring. The four passages of the $\log W$ regression
+(intercept $-0.4880$, week slope $-0.02228$, residual slope $5.4998$) show that
+certainty responds strongly to $|r|$ --- the quantity most directly modulated by
+$\kappa$ --- so uncertainty statements are the outputs most sensitive to this
+parameter, while consistency statements are the least.
+
+\paragraph{Constraint-set sensitivity.} Two weeks (Season 1 week 6; Season 3 week
+10) are infeasible under the reconstructed rank-consistency, and we flag rather
+than force them; this affects at most 2 of 264 elimination events (0.8\%) and
+cannot change any aggregate conclusion. The 33 elimination events (12.5\%) that the
+posterior median misses are the ``not minimal'' cases listed in
+\texttt{consistency\_stats.json}; they concentrate in Seasons 6--26, i.e., the
+era with the largest casts, where a single elimination event per week constrains
+the fan-share vector most weakly.
+
+\paragraph{Era-segmentation sensitivity.} The rule segmentation (rank: S1--2;
+percentage: S3--27; percentage + judges' save: S28--34) follows the documented
+history. If, as the problem statement notes, the return to rank combination is not
+exactly Season 28, the reconstruction could mis-label some S28-era weeks;
+Model 1's output records the rule label per row (814 rank-era rows vs.\ 2{,}050
+percentage-era rows), so a re-segmentation is a one-line change and the
+consistency statistic can be recomputed. The problem statement argues for
+Season 28; we follow it.
+
+\paragraph{Model 3 robustness.} Judge-channel bootstrap CIs (13 coefficients) all
+exclude zero where they should; the leave-one-pro-out refits move the intercept by
+only $0.02$ at most, and the divergence signs are stable across draws. The
+planned \\ sensitivity refit excluding high-posterior-\texttt{fshare\_sd} rows
+(top-decile filter, master-plan check 4c) was not executed; given that the
+panel-wide \texttt{fshare\_sd} averages only $0.02699$ against a mean
+\texttt{fshare\_mean} of $0.1178$ (i.e., a mean coefficient of variation
+$\approx 0.23$), the unreported sensitivity refit is unlikely to overturn
+FDR-significant divergences of magnitude $0.12$--$0.27$, but we flag it as an
+honest gap.
+
+\paragraph{Multiple-testing sensitivity.} Four of ten divergence covariates
+survive Benjamini--Hochberg FDR at $q = 0.10$. The two borderline cases
+(age-squared, unadjusted $p = 0.055$; model-industry divergence
+$E_g = -0.0564$, $p = 0.226$) would not survive any reasonable correction, and we
+do not claim them as findings.
+
+\section{Discussion}
+
+\subsection{Interpretation}
+
+The reconstruction confirms that DWTS's elimination record pins down fan votes far
+better than a naive reading might suggest (87.5\% exact elimination reproduction at
+posterior medians, against 21.6\% for the prior alone), while still leaving
+substantial residual uncertainty that is concentrated exactly where the show's
+controversies live. The three models deliver a coherent story: fan votes are
+recoverable in aggregate, they diverge from judges along particular, identifiable
+celebrity attributes (prior fame, industry archetypes), and that divergence is
+not merely a nuisance --- it is what drives both the show's most memorable
+controversies and, through the hazard channel, its survival outcomes.
+
+\subsection{Strengths and limitations}
+
+\textbf{Strengths.} (i) Constraint-based inference: rather than imputing fan
+votes, we reconstruct the set of fan-vote vectors compatible with all observed
+eliminations and quantify uncertainty honestly. (ii) Draw-based downstream
+analysis: both Model 2 and Model 3 propagate posterior uncertainty rather than
+treating point estimates as truth. (iii) Explicit validation: 87.5\% replay
+consistency against a 21.6\% baseline, bootstrap CIs, leave-one-pro-out
+stability, and FDR control. (iv) Transparent flagging of what was not
+completed (Model 2's summary tables; Model 3's high-uncertainty-row
+sensitivity refit).
+
+\textbf{Limitations.} (i) Only voter behavior implied by eliminations is
+identified --- absolute fan-vote levels are a normalization, not a measurement: the
+$10^6$ weekly scale is a convention (only shares matter), so all conclusions are
+drawn on shares. (ii) The rank-vs-percentage
+counterfactual engine executed, but its designed per-season summary and
+permutation tests were not persisted, so the paper's rule comparison is
+qualitative rather than quantitative. (iii) Fan-vote shares for the 528
+prior-identified couple-weeks inherit the prior's judge-anchoring and should be
+read as priors, not estimates. (iv) The cast covariates are coarse (age,
+industry, a fame proxy); unobserved variables (broadcast order, dance style
+difficulty, narrative momentum) are only partially proxied by the week and
+style indices.
+
+\subsection{Comparison with simpler approaches}
+
+A judge-only elimination rule corresponds to the 21.6\% prior-only baseline; the
+gap to 87.5\% measures the value of reading the elimination record as a
+constraint rather than ignoring it. A purely rank-based or purely
+percentage-based reconstruction (without constraints and uncertainty) would
+have produced point estimates that silently violate the observed record in
+roughly one elimination in eight; the posterior approach, by contrast, makes
+the violations visible as flag events rather than hiding them in averages.
+
+\section{Conclusion}\label{sec:conclusion}
+
+\paragraph{Findings.} We reconstructed the hidden fan votes of 34 seasons of DWTS
+(2{,}864 couple-weeks, 264 elimination events) with a constraint-based posterior
+that reproduces 87.5\% of observed eliminations exactly (21.6\% prior-only
+baseline), with mean 95\% interval width 0.3458 fan share and couple-week-specific
+certainty quantified by a $\log W$ regression ($-0.02228$ per week;
+$+5.4998$ per unit of judge--fan residual). A dual-channel mixed regression
+shows the divergence between fans and judges concentrated in prior fame
+($E_g = -0.2708$, FDR-significant) and in specific archetypes: athletes are
+fan-favored ($E_g = -0.1228$), comedians and social-media personalities
+judge-favored ($E_g = +0.1278$, $+0.1211$). Survival analysis gives prior fame
+a 35\% weekly hazard reduction; being a model multiplies hazard by 3.08; and the
+pro-dancer hierarchy (Derek Hough $b_{pro} = 8.844$, overturn 0.4512) is a real
+second source of coupling-level variation, stable under leave-one-pro-out
+refits.
+
+\paragraph{Recommendations to producers.}
+\begin{enumerate}
+\item \textbf{Keep the percentage rule as the base}, because it is scale-free and
+respects weekly vote totals, but \textbf{do not use it alone}: pure percentage
+combination can be captured by an organized fan base (Bobby Bones, S27).
+\item \textbf{Retain the judges' save over the bottom two} --- it is the single
+most targeted protection against a low-judge-score/fan-dominated winner, without
+overriding fan sovereignty in general.
+\item \textbf{Introduce a $\lambda$-damped combination}, e.g.\ the Gamma rule in
+Section \ref{sec:model2} ($A_{c,w} = (1-\lambda)j_{c,w} + \lambda f_{c,w}$ with
+$\lambda \in [0.3, 0.5]$ swept against the Pareto frontier of excitement vs.\
+fairness), to make the fan--judge trade-off explicit and tunable.
+\item \textbf{Account for casting effects}: prior fame and the athlete archetype
+shift fan votes (and through them survival) in ways judges' scores do not;
+if the show wants judge-driven outcomes, cast for judge-channel attributes
+(comedians, social-media personalities under our estimates move judges more than
+fans); if it wants drama and fan engagement, cast fan-side archetypes and expect
+rule stress.
+\item \textbf{Publish uncertainty}: our results show that certainty varies by
+contestant and week ($\log W$ regression); any producer-facing ``fan vote
+estimate'' should always come with its interval, not just a point.
+\end{enumerate}
+
+\paragraph{Future work.} (i) Repair Model 2's summary write-out and run the
+planned permutation tests of $D(k)$ per season, and re-run controversy
+deep-dives (violin plots of placement posteriors per rule) for the four named
+celebrities. (ii) Execute Model 3's high-uncertainty-row sensitivity refit.
+(iii) Add external data (broadcast order, social-media follower counts) to
+sharpen the prior-fame proxy, whose dominance ($|E_g| = 0.2708$) makes it the
+highest-leverage covariate but also the most likely to be confounded with
+unmodeled fandom structure.
+
+\paragraph{Closing remark.} The elimination record is a richer signal than it
+looks: within it, hidden fan votes are recoverable to an 87.5\% consistency
+standard, their uncertainty is mappable, and their divergence from judges is
+explainable --- the ingredients the show's producers need to design a fairer,
+more defensible voting system.
+
+\section*{References}
+\begin{thebibliography}{9}
+\bibitem{comap2026}
+COMAP, \emph{2026 MCM Problem C: Data With The Stars}, Mathematical Contest in
+Modeling problem statement, 2026.
+\bibitem{ob servants}
+{[Placeholder: methodology references (Bayesian constrained inference,
+Plackett--Luce models, discrete-time survival analysis) to be completed with
+full citations.]}
+\end{thebibliography}
+

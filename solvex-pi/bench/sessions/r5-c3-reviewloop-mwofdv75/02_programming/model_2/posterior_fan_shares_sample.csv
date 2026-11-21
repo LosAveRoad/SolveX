@@ -1,0 +1,135 @@
+season,week,celebrity,mean_share,judge_points
+2,1,Stacy Keibler,0.113236,22.0
+2,1,Jerry Rice,0.070459,21.0
+2,1,Drew Lachey,0.337411,24.0
+2,1,Lisa Rinna,0.027089,19.0
+2,1,George Hamilton,0.016469,18.0
+2,1,Tia Carrere,0.042971,20.0
+2,1,Master P,0.000835,12.0
+2,1,Giselle Fernandez,0.198010,23.0
+2,1,Tatum O'Neal,0.192413,23.0
+2,1,Kenny Mayne,0.001108,13.0
+2,2,Stacy Keibler,0.280900,51.0
+2,2,Jerry Rice,0.083728,44.0
+2,2,Drew Lachey,0.312223,51.0
+2,2,Lisa Rinna,0.032463,39.0
+2,2,George Hamilton,0.041833,40.0
+2,2,Tia Carrere,0.059518,42.0
+2,2,Master P,0.004562,28.0
+2,2,Giselle Fernandez,0.144986,47.0
+2,2,Tatum O'Neal,0.039787,40.0
+2,3,Stacy Keibler,0.276309,78.0
+2,3,Jerry Rice,0.062475,63.0
+2,3,Drew Lachey,0.305753,78.0
+2,3,Lisa Rinna,0.069043,64.0
+2,3,George Hamilton,0.057495,62.0
+2,3,Tia Carrere,0.105760,68.0
+2,3,Master P,0.007141,42.0
+2,3,Giselle Fernandez,0.116026,69.0
+2,4,Stacy Keibler,0.257830,104.0
+2,4,Jerry Rice,0.088013,87.0
+2,4,Drew Lachey,0.338455,106.0
+2,4,Lisa Rinna,0.108180,90.0
+2,4,George Hamilton,0.067181,83.0
+2,4,Tia Carrere,0.133515,93.0
+2,4,Master P,0.006826,50.0
+2,5,Stacy Keibler,0.293383,134.0
+2,5,Jerry Rice,0.092581,110.0
+2,5,Drew Lachey,0.294893,133.0
+2,5,Lisa Rinna,0.119749,115.0
+2,5,George Hamilton,0.080823,107.0
+2,5,Tia Carrere,0.118570,115.0
+2,6,Stacy Keibler,0.321597,164.0
+2,6,Jerry Rice,0.102524,133.0
+2,6,Drew Lachey,0.341932,163.0
+2,6,Lisa Rinna,0.142710,142.0
+2,6,George Hamilton,0.091238,130.0
+2,7,Stacy Keibler,0.345781,191.5
+2,7,Jerry Rice,0.109230,153.5
+2,7,Drew Lachey,0.368691,190.5
+2,7,Lisa Rinna,0.176298,168.5
+2,8,Stacy Keibler,0.411486,220.2
+2,8,Jerry Rice,0.145091,180.2
+2,8,Drew Lachey,0.443423,219.5
+27,1,Alexis Ren,0.139415,22.0
+27,1,Evanna Lynch,0.005555,18.0
+27,1,Milo Manheim,0.027126,20.0
+27,1,Bobby Bones,0.026896,20.0
+27,1,Joe Amabile,0.000216,14.0
+27,1,Juan Pablo Di Pace,0.135212,22.0
+27,1,John Schneider,0.005355,18.0
+27,1,DeMarcus Ware,0.297392,23.0
+27,1,Mary Lou Retton,0.026972,20.0
+27,1,Tinashe,0.308751,23.0
+27,1,Nancy McKeon,0.018104,19.5
+27,1,Danelle Umstead,0.005449,18.0
+27,1,Nikki Glaser,0.003559,17.5
+27,2,Alexis Ren,0.131201,46.5
+27,2,Evanna Lynch,0.044301,42.0
+27,2,Milo Manheim,0.116713,46.0
+27,2,Bobby Bones,0.023926,39.5
+27,2,Joe Amabile,0.003305,31.5
+27,2,Juan Pablo Di Pace,0.188804,48.0
+27,2,John Schneider,0.024821,39.5
+27,2,DeMarcus Ware,0.133183,46.5
+27,2,Mary Lou Retton,0.055479,43.0
+27,2,Tinashe,0.239642,49.0
+27,2,Nancy McKeon,0.027047,40.0
+27,2,Danelle Umstead,0.011578,36.5
+27,3,Alexis Ren,0.114682,72.5
+27,3,Evanna Lynch,0.077910,69.0
+27,3,Milo Manheim,0.123023,73.0
+27,3,Bobby Bones,0.035087,62.5
+27,3,Joe Amabile,0.007861,49.5
+27,3,Juan Pablo Di Pace,0.224318,78.0
+27,3,John Schneider,0.028420,60.5
+27,3,DeMarcus Ware,0.115807,72.5
+27,3,Mary Lou Retton,0.060097,67.0
+27,3,Tinashe,0.178565,76.0
+27,3,Nancy McKeon,0.034230,62.0
+27,4,Alexis Ren,0.123512,97.5
+27,4,Evanna Lynch,0.089649,93.0
+27,4,Milo Manheim,0.173248,102.0
+27,4,Bobby Bones,0.039515,82.5
+27,4,Joe Amabile,0.010100,64.5
+27,4,Juan Pablo Di Pace,0.171578,102.0
+27,4,John Schneider,0.036826,81.5
+27,4,DeMarcus Ware,0.099521,94.5
+27,4,Mary Lou Retton,0.088246,93.0
+27,4,Tinashe,0.167804,102.0
+27,5,Alexis Ren,0.166072,126.5
+27,5,Evanna Lynch,0.098165,117.0
+27,5,Milo Manheim,0.189719,129.0
+27,5,Bobby Bones,0.045471,103.5
+27,5,Joe Amabile,0.013101,81.5
+27,5,Juan Pablo Di Pace,0.214421,131.0
+27,5,John Schneider,0.049159,105.5
+27,5,DeMarcus Ware,0.121492,120.5
+27,5,Mary Lou Retton,0.102401,118.0
+27,6,Alexis Ren,0.159176,153.5
+27,6,Evanna Lynch,0.112969,146.0
+27,6,Milo Manheim,0.196732,159.0
+27,6,Bobby Bones,0.046580,125.5
+27,6,Joe Amabile,0.018096,103.5
+27,6,Juan Pablo Di Pace,0.211240,161.0
+27,6,John Schneider,0.044487,124.5
+27,6,DeMarcus Ware,0.116383,146.5
+27,6,Mary Lou Retton,0.094339,142.0
+27,7,Alexis Ren,0.166659,181.0
+27,7,Evanna Lynch,0.138872,175.5
+27,7,Milo Manheim,0.206820,188.0
+27,7,Bobby Bones,0.060103,152.0
+27,7,Joe Amabile,0.024316,127.0
+27,7,Juan Pablo Di Pace,0.218654,189.0
+27,7,John Schneider,0.058756,151.5
+27,7,DeMarcus Ware,0.125819,173.0
+27,8,Alexis Ren,0.207829,210.0
+27,8,Evanna Lynch,0.173027,204.5
+27,8,Milo Manheim,0.243736,215.5
+27,8,Bobby Bones,0.071996,174.5
+27,8,Joe Amabile,0.033913,150.0
+27,8,Juan Pablo Di Pace,0.269499,219.0
+27,9,Alexis Ren,0.289429,238.5
+27,9,Evanna Lynch,0.260542,234.5
+27,9,Milo Manheim,0.341754,245.5
+27,9,Bobby Bones,0.108274,201.5

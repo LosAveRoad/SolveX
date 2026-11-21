@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "issues": [
+    "FIXED (review, critical): gamma_max was computed by bisection whose feasibility check ignored the margin gamma in the soft_repair fallback path, driving 110/264 weeks to the hard-coded 0.5 bracket (mathematically impossible, gamma_max <= 1/n_surv). Now computed exactly via scipy.optimize.linprog (HiGHS): mean 0.088, max 0.197, 0 bound violations.",
+    "FIXED (review #2): '110/264 at gamma_max >= 0.5' and '25% <= 0.0054 quartile' claims removed; weekly_certainty.csv gamma_max columns regenerated from the LP; fig4 left panel redrawn with per-week 1/n_surv bound overlay; band-width-vs-gamma_max correlation recomputed (Pearson r = 0.127) and the old 'widest exactly when gamma_max tiny' narrative replaced.",
+    "FIXED (review #3): judges-alone statistic now computed in code: 64/264 = 32.2% of week-events had the eliminated couple strictly minimal on judge scores; identical pct/rank; stored in consistency_report.json as judges_alone.{pct,rank,n_weeks}; replaces unsupported '37.9%'.",
+    "FIXED (review #4): real tests added. Per-week one-sided binomial test (K=300 calibrated draws vs Laplace-smoothed per-week null rate): 253/264 weeks p < 0.01, median p ~ 9e-102. Pooled 2x2 chi-square model-vs-null: chi2 = 70243, p ~ 1e-300. Columns null_p_value placeholders removed; null_model_pvalues.csv now holds null_hit_rate, model_hit_rate, and binom_p_value_model_vs_null.",
+    "FIXED (review #5): fig2 caption restricted to pct-rule gap (no rank-rule 'S28 shift' claim); '74-96%' hit-rate phrasing replaced with exact stats (mean 0.738, range 0.137-0.943) and the 116 kappa-capped weeks listed in kappa_capped_weeks.csv.",
+    "RESIDUAL (acceptable, disclosed): fan votes identified as relative shares only; 116/264 weeks have kappa at cap (weakly informative weeks); hold-out temperature beta degenerate (0.0) so hold-out reduces to judge-rank prior baseline; cvxpy unavailable so SLSQP + projected-gradient fallback used for the KL point estimates (gamma_max now solver-independent via LP)."
+  ],
+  "fixInstructions": "No further fixes required. If re-running: python3 me_fvi.py (writes all CSV/JSON outputs and consistency_report.json), then python3 make_figures.py (regenerates 4 PNGs in figures/). Total runtime < 15 s.",
+  "summaryPath": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r4-c3-journal-mwodcgan/02_programming/model_1/results_summary.md"
+}

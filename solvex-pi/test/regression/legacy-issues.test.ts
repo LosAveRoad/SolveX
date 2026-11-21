@@ -99,9 +99,11 @@ describe("阶段 6：23 个旧问题回归（docs/superpowers/plans/2026-04-23�
   });
 
   it("E1：按角色独立 maxTurns，源码中不存在全局 3600s 硬杀", () => {
-    expect(DEFAULT_MAX_TURNS.modeling).toBe(25);
-    expect(DEFAULT_MAX_TURNS.programming).toBe(30);
-    expect(DEFAULT_MAX_TURNS.writing).toBe(40);
+    // ADR-0014：按实测放宽（实现会话 3/3 每轮撞 30 轮上限）
+    expect(DEFAULT_MAX_TURNS.modeling).toBe(60);
+    expect(DEFAULT_MAX_TURNS.programming).toBe(90);
+    expect(DEFAULT_MAX_TURNS.review).toBe(50);
+    expect(DEFAULT_MAX_TURNS.writing).toBe(100);
     const src = readFileSync("packages/core/src/flow/SolveXFlow.ts", "utf-8");
     expect(src).not.toContain("3600");
     expect(src).not.toContain("wait_for");

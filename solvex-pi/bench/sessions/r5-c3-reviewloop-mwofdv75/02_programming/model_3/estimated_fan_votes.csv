@@ -1,0 +1,422 @@
+cid,celebrity_name,pro_name,industry,age,season,weeks_competed,estimated_total_fan_votes,fan_vote_se,vote_note
+John O'Hurley | S1,John O'Hurley,Charlotte Jorgensen,Actor/Actress,50.0,1,6.0,51283432.29087113,2911901.037716376,estimated
+Kelly Monaco | S1,Kelly Monaco,Alec Mazo,Actor/Actress,29.0,1,6.0,43806244.173064314,3259871.726712487,estimated
+Evander Holyfield | S1,Evander Holyfield,Edyta Sliwinska,Athlete,42.0,1,3.0,9677573.528762363,579134.0532578756,estimated
+Rachel Hunter | S1,Rachel Hunter,Jonathan Roberts,Model,35.0,1,4.0,23465078.552531414,2400169.59047253,estimated
+Joey McIntyre | S1,Joey McIntyre,Ashly DelGrosso,Singer/Rapper,32.0,1,6.0,40885663.327009246,3240858.2020618636,estimated
+Trista Sutter | S1,Trista Sutter,Louis van Amstel,TV Personality,32.0,1,2.0,6405272.718245342,480432.2352332646,estimated
+Tatum O'Neal | S2,Tatum O'Neal,Nick Kosovich,Actor/Actress,42.0,2,2.0,5847990.644770907,316328.6266888139,estimated
+Tia Carrere | S2,Tia Carrere,Maksim Chmerkoskiy,Actor/Actress,39.0,2,5.0,27687936.0342422,2537554.8749782746,estimated
+George Hamilton | S2,George Hamilton,Edyta Sliwinska,Actor/Actress,66.0,2,6.0,36908596.24009269,3073584.5309681674,estimated
+Lisa Rinna | S2,Lisa Rinna,Louis van Amstel,Actor/Actress,42.0,2,7.0,51924967.71390208,3576609.927323343,estimated
+Stacy Keibler | S2,Stacy Keibler,Tony Dovolani,Athlete,26.0,2,8.0,70938638.82398643,3437271.266155198,estimated
+Jerry Rice | S2,Jerry Rice,Anna Trebunskaya,Athlete,43.0,2,8.0,62589443.6171636,3849737.33671454,estimated
+Giselle Fernandez | S2,Giselle Fernandez,Jonathan Roberts,Other,44.0,2,3.0,13646903.110016946,1491005.4761133783,estimated
+Master P | S2,Master P,Ashly DelGrosso,Singer/Rapper,35.0,2,4.0,15235240.062605608,1127276.6819012922,estimated
+Drew Lachey | S2,Drew Lachey,Cheryl Burke,Singer/Rapper,29.0,2,8.0,75184957.84525277,3045989.9386138613,estimated
+Kenny Mayne | S2,Kenny Mayne,Andrea Hale,Other,46.0,2,1.0,2864150.313204917,213533.63527482495,estimated
+Harry Hamlin | S3,Harry Hamlin,Ashly DelGrosso,Actor/Actress,54.0,3,3.0,10641178.36925365,813501.3867762359,estimated
+Vivica A. Fox | S3,Vivica A. Fox,Nick Kosovich,Actor/Actress,42.0,3,4.0,17625423.25390979,1597244.0472494618,estimated
+Monique Coleman | S3,Monique Coleman,Louis van Amstel,Actor/Actress,25.0,3,8.0,59048777.64204416,3889130.8858959735,estimated
+Joey Lawrence | S3,Joey Lawrence,Edyta Sliwinska,Actor/Actress,30.0,3,10.0,83763170.36156902,4361999.7284224285,estimated
+Mario Lopez | S3,Mario Lopez,Karina Smirnoff,Actor/Actress,32.0,3,10.0,91786238.55541483,3945392.307978235,estimated
+Emmitt Smith | S3,Emmitt Smith,Cheryl Burke,Athlete,37.0,3,10.0,91469391.4617708,3967494.118749009,estimated
+Shanna Moakler | S3,Shanna Moakler,Jesse DeSoto,Model,31.0,3,2.0,6444070.043212176,491978.5573397423,estimated
+Willa Ford | S3,Willa Ford,Maksim Chmerkoskiy,Singer/Rapper,25.0,3,5.0,29065946.866857562,2667907.0782726896,estimated
+Sara Evans | S3,Sara Evans,Tony Dovolani,Singer/Rapper,35.0,3,10.0,,,withdrew
+Jerry Springer | S3,Jerry Springer,Kym Johnson,TV Personality,62.0,3,7.0,46114935.572595425,3488130.754298944,estimated
+Tucker Carlson | S3,Tucker Carlson,Elena Grinenko,TV Personality,37.0,3,1.0,2827981.949661022,198775.09299920834,estimated
+John Ratzenberger | S4,John Ratzenberger,Edyta Sliwinska,Actor/Actress,59.0,4,7.0,37162111.96862446,2822745.6089087725,estimated
+Ian Ziering | S4,Ian Ziering,Cheryl Burke,Actor/Actress,42.0,4,9.0,71907913.6258999,4140218.042005709,estimated
+Clyde Drexler | S4,Clyde Drexler,Elena Grinenko,Athlete,44.0,4,5.0,17896967.81047066,1011274.197706681,estimated
+Laila Ali | S4,Laila Ali,Maksim Chmerkoskiy,Athlete,29.0,4,10.0,90819470.52008781,4011332.387915482,estimated
+Apolo Anton Ohno | S4,Apolo Anton Ohno,Julianne Hough,Athlete,24.0,4,10.0,92616379.90549707,3885191.63521644,estimated
+Shandi Finnessey | S4,Shandi Finnessey,Brian Fortuna,Other,28.0,4,3.0,10999048.747111714,899932.8648928883,estimated
+Paulina Porizkova | S4,Paulina Porizkova,Alec Mazo,Model,41.0,4,2.0,5623866.906100657,251880.58061417614,estimated
+Heather Mills | S4,Heather Mills,Jonathan Roberts,Model,39.0,4,6.0,32254420.244475957,2672565.689718634,estimated
+Billy Ray Cyrus | S4,Billy Ray Cyrus,Karina Smirnoff,Singer/Rapper,45.0,4,8.0,52482415.623380825,3747703.8284589793,estimated
+Joey Fatone | S4,Joey Fatone,Kym Johnson,Singer/Rapper,30.0,4,10.0,95189701.70889972,3676903.7347056083,estimated
+Leeza Gibbons | S4,Leeza Gibbons,Tony Dovolani,TV Personality,50.0,4,4.0,15963248.553945243,1275863.9111798562,estimated
+Cameron Mathison | S5,Cameron Mathison,Edyta Sliwinska,Actor/Actress,38.0,5,8.0,55669255.13474426,3851368.6955858753,estimated
+Jane Seymour | S5,Jane Seymour,Tony Dovolani,Actor/Actress,56.0,5,7.0,44633020.35982683,3421962.058721403,estimated
+Sabrina Bryan | S5,Sabrina Bryan,Mark Ballas,Actor/Actress,23.0,5,6.0,36150618.748103,3023169.9668332697,estimated
+Jennie Garth | S5,Jennie Garth,Derek Hough,Actor/Actress,35.0,5,9.0,74390551.14665695,4066041.505885776,estimated
+Floyd Mayweather Jr.  | S5,Floyd Mayweather Jr. ,Karina Smirnoff,Athlete,30.0,5,4.0,15122146.757860027,1103889.1536102449,estimated
+Josie Maran | S5,Josie Maran,Alec Mazo,Model,29.0,5,1.0,2445188.9427637025,49476.818906028224,estimated
+Albert Reed | S5,Albert Reed,Anna Trebunskaya,Model,22.0,5,2.0,5903870.12288234,332570.4159288434,estimated
+Helio Castroneves | S5,Helio Castroneves,Julianne Hough,Other,32.0,5,10.0,96151537.92895049,3590316.085944395,estimated
+Mel B | S5,Mel B,Maksim Chmerkoskiy,Singer/Rapper,32.0,5,10.0,95513084.52712089,3648337.2178588845,estimated
+Wayne Newton | S5,Wayne Newton,Cheryl Burke,Singer/Rapper,65.0,5,3.0,11111424.463316998,926903.9753278929,estimated
+Marie Osmond | S5,Marie Osmond,Jonathan Roberts,Singer/Rapper,47.0,5,10.0,88382377.64616631,4158098.2620868194,estimated
+Mark Cuban | S5,Mark Cuban,Kym Johnson,TV Personality,49.0,5,5.0,24521493.37323601,2145606.395010347,estimated
+Cristian de la Fuente | S6,Cristian de la Fuente,Cheryl Burke,Actor/Actress,34.0,6,10.0,87455868.52738671,4206717.579184152,estimated
+Steve Guttenberg | S6,Steve Guttenberg,Anna Trebunskaya,Actor/Actress,49.0,6,3.0,9387429.23539087,508924.6219027644,estimated
+Priscilla Presley | S6,Priscilla Presley,Louis van Amstel,Actor/Actress,62.0,6,5.0,23836485.957272433,2045207.7238901197,estimated
+Marlee Matlin | S6,Marlee Matlin,Fabian Sanchez,Actor/Actress,42.0,6,6.0,31644007.508588925,2604247.481701841,estimated
+Shannon Elizabeth | S6,Shannon Elizabeth,Derek Hough,Actor/Actress,34.0,6,7.0,45970753.606517226,3482473.4592134035,estimated
+Marissa Jaret Winokur | S6,Marissa Jaret Winokur,Tony Dovolani,Actor/Actress,35.0,6,9.0,67739116.64649668,4191486.3352077934,estimated
+Jason Taylor | S6,Jason Taylor,Edyta Sliwinska,Athlete,33.0,6,10.0,88419520.72601978,4156067.4382881597,estimated
+Kristi Yamaguchi | S6,Kristi Yamaguchi,Mark Ballas,Athlete,36.0,6,10.0,94664889.25070497,3722105.867227439,estimated
+Monica Seles | S6,Monica Seles,Jonathan Roberts,Athlete,34.0,6,2.0,5090023.594648333,104354.95588504164,estimated
+Penn Jillette | S6,Penn Jillette,Kym Johnson,Other,53.0,6,2.0,6565224.492302261,528077.6513384463,estimated
+Adam Carolla | S6,Adam Carolla,Julianne Hough,Other,43.0,6,4.0,17537494.48825442,1581015.2520823847,estimated
+Mario | S6,Mario,Karina Smirnoff,Singer/Rapper,21.0,6,8.0,62375019.22950433,3854408.0576989856,estimated
+Ted McGinley | S7,Ted McGinley,Inna Brayer,Actor/Actress,50.0,7,1.0,2655276.3196743852,129651.69689764238,estimated
+Cloris Leachman | S7,Cloris Leachman,Corky Ballas,Actor/Actress,82.0,7,6.0,31258507.195977032,2559325.2432373045,estimated
+Susan Lucci | S7,Susan Lucci,Tony Dovolani,Actor/Actress,61.0,7,7.0,45978910.54122756,3482798.0055956645,estimated
+Cody Linley | S7,Cody Linley,Julianne Hough,Actor/Actress,18.0,7,9.0,73512007.50639592,4096015.3630163632,estimated
+Misty May-Treanor | S7,Misty May-Treanor,Maksim Chmerkoskiy,Athlete,31.0,7,10.0,,,withdrew
+Maurice Greene | S7,Maurice Greene,Cheryl Burke,Athlete,34.0,7,8.0,59503755.83038792,3888576.0396844223,estimated
+Warren Sapp | S7,Warren Sapp,Kym Johnson,Athlete,35.0,7,10.0,90816162.94465822,4011550.368940266,estimated
+Jeffrey Ross | S7,Jeffrey Ross,Edyta Sliwinska,Comedian,43.0,7,1.0,2416386.235687315,38895.94945392599,estimated
+Toni Braxton | S7,Toni Braxton,Alec Mazo,Singer/Rapper,40.0,7,5.0,28468553.20706682,2614518.13990453,estimated
+Lance Bass | S7,Lance Bass,Lacey Schwimmer,Singer/Rapper,29.0,7,10.0,94762066.1629286,3713843.3129246524,estimated
+Kim Kardashian | S7,Kim Kardashian,Mark Ballas,TV Personality,27.0,7,2.0,6793755.681700464,596219.580397558,estimated
+Rocco DiSpirito | S7,Rocco DiSpirito,Karina Smirnoff,TV Personality,41.0,7,4.0,17953883.667413633,1656990.9795694107,estimated
+Brooke Burke | S7,Brooke Burke,Derek Hough,TV Personality,37.0,7,10.0,100716503.40598816,3108032.358054628,estimated
+Gilles Marini | S8,Gilles Marini,Cheryl Burke,Actor/Actress,33.0,8,11.0,106142657.85888638,3936855.8476802963,estimated
+Denise Richards | S8,Denise Richards,Maksim Chmerkoskiy,Actor/Actress,38.0,8,3.0,9218877.99249284,468377.7162699333,estimated
+David Alan Grier | S8,David Alan Grier,Kym Johnson,Actor/Actress,52.0,8,5.0,21801257.516830772,1718994.7740382731,estimated
+Lawrence Taylor | S8,Lawrence Taylor,Edyta Sliwinska,Athlete,50.0,8,7.0,37301489.220735736,2837814.9800064736,estimated
+Ty Murray | S8,Ty Murray,Chelsie Hightower,Athlete,39.0,8,10.0,76323047.54269457,4490280.477721499,estimated
+Shawn Johnson | S8,Shawn Johnson,Mark Ballas,Athlete,17.0,8,11.0,103434329.54930566,4144588.756252608,estimated
+Steve Wozniak | S8,Steve Wozniak,Karina Smirnoff,Other,58.0,8,4.0,15360704.51951617,1153136.6298760034,estimated
+Belinda Carlisle | S8,Belinda Carlisle,Jonathan Roberts,Singer/Rapper,50.0,8,2.0,6360238.971410893,467041.4845798509,estimated
+Chuck Wicks | S8,Chuck Wicks,Julianne Hough,Singer/Rapper,29.0,8,8.0,58162623.60154928,3886380.3996159923,estimated
+Lil' Kim | S8,Lil' Kim,Derek Hough,Singer/Rapper,34.0,8,9.0,77408946.49908862,3931799.454319862,estimated
+Steve-O | S8,Steve-O,Lacey Schwimmer,TV Personality,34.0,8,6.0,27712963.13056232,2086553.4993556922,estimated
+Holly Madison | S8,Holly Madison,Dmitry Chaplin,TV Personality,30.0,8,4.0,15349380.333694901,1150806.4373376635,estimated
+Melissa Rycroft | S8,Melissa Rycroft,Tony Dovolani,TV Personality,26.0,8,11.0,105623813.94382179,3979101.939514258,estimated
+Ashley Hamiliton | S9,Ashley Hamiliton,Edyta Sliwinska,Actor/Actress,34.0,9,1.0,2612065.6706247237,112768.85355841261,estimated
+Debi Mazar | S9,Debi Mazar,Maksim Chmerkoskiy,Actor/Actress,45.0,9,3.0,10902474.53759456,876682.7969500857,estimated
+Melissa Joan Hart | S9,Melissa Joan Hart,Mark Ballas,Actor/Actress,33.0,9,6.0,34848693.62094249,2922872.991506869,estimated
+Mark Dacascos | S9,Mark Dacascos,Lacey Schwimmer,Actor/Actress,45.0,9,7.0,47130003.06154903,3523197.1477428973,estimated
+Chuck Liddell | S9,Chuck Liddell,Anna Trebunskaya,Athlete,39.0,9,4.0,15951695.552821983,1273536.240007451,estimated
+Natalie Coughlin | S9,Natalie Coughlin,Alec Mazo,Athlete,27.0,9,5.0,25421446.36804984,2269461.850789859,estimated
+Louie Vito | S9,Louie Vito,Chelsie Hightower,Athlete,21.0,9,6.0,32465098.331014916,2695332.0256406264,estimated
+Michael Irvin | S9,Michael Irvin,Anna Demidova,Athlete,43.0,9,7.0,40895982.77003363,3176631.767914127,estimated
+Joanna Krupa | S9,Joanna Krupa,Derek Hough,Model,30.0,9,9.0,81915304.54165885,3639224.1751135252,estimated
+Kathy Ireland | S9,Kathy Ireland,Tony Dovolani,Model,46.0,9,2.0,6655742.439714052,555070.7957124703,estimated
+Tom DeLay | S9,Tom DeLay,Cheryl Burke,Other,62.0,9,10.0,,,withdrew
+Macy Gray | S9,Macy Gray,Jonathan Roberts,Singer/Rapper,42.0,9,1.0,3133658.0209704572,325557.1566595929,estimated
+Aaron Carter | S9,Aaron Carter,Karina Smirnoff,Singer/Rapper,21.0,9,8.0,65243731.63257584,3767564.331766809,estimated
+Mya | S9,Mya,Dmitry Chaplin,Singer/Rapper,29.0,9,10.0,98414895.94917662,3366597.924813049,estimated
+Donny Osmond | S9,Donny Osmond,Kym Johnson,Singer/Rapper,51.0,9,10.0,96374418.15737736,3569547.4181834175,estimated
+Kelly Osbourne | S9,Kelly Osbourne,Louis van Amstel,TV Personality,24.0,9,10.0,90766654.27704208,4014806.9931634865,estimated
+Aiden Turner | S10,Aiden Turner,Edyta Sliwinska,Actor/Actress,32.0,10,4.0,13368724.685895197,735830.9395289299,estimated
+Shannen Doherty | S10,Shannen Doherty,Mark Ballas,Actor/Actress,38.0,10,2.0,5119987.237923292,112361.38552089299,estimated
+Niecy Nash | S10,Niecy Nash,Louis van Amstel,Actor/Actress,40.0,10,8.0,50836499.29244241,3668216.9370992593,estimated
+Buzz Aldrin | S10,Buzz Aldrin,Ashly DelGrosso,Other,80.0,10,3.0,10370877.220410438,747839.0193253268,estimated
+Chad Ochocinco | S10,Chad Ochocinco,Cheryl Burke,Athlete,32.0,10,9.0,67363765.54773355,4191580.5698128594,estimated
+Evan Lysacek | S10,Evan Lysacek,Anna Trebunskaya,Athlete,24.0,10,10.0,88487729.78605194,4152321.6015323442,estimated
+Pamela Anderson | S10,Pamela Anderson,Damian Whitewood,Model,42.0,10,7.0,45677468.754716545,3470446.4482753533,estimated
+Nicole Scherzinger | S10,Nicole Scherzinger,Derek Hough,Singer/Rapper,31.0,10,10.0,99646916.39549024,3232310.218934365,estimated
+Erin Andrews | S10,Erin Andrews,Maksim Chmerkoskiy,Other,32.0,10,10.0,93777431.52176265,3795336.087197894,estimated
+Kate Gosselin | S10,Kate Gosselin,Tony Dovolani,TV Personality,35.0,10,5.0,20231437.77779905,1443893.8025340782,estimated
+Jake Pavelka | S10,Jake Pavelka,Chelsie Hightower,TV Personality,32.0,10,6.0,33104329.743195176,2761812.2217226564,estimated
+David Hasselhoff | S11,David Hasselhoff,Kym Johnson,Actor/Actress,58.0,11,1.0,2390349.3728256933,29426.674141713967,estimated
+Florence Henderson | S11,Florence Henderson,Corky Ballas,Actor/Actress,76.0,11,5.0,22518546.688910805,1838373.695258003,estimated
+Kyle Massey | S11,Kyle Massey,Lacey Schwimmer,Actor/Actress,19.0,11,10.0,87650544.46832167,4196826.2772108745,estimated
+Jennifer Grey | S11,Jennifer Grey,Derek Hough,Actor/Actress,50.0,11,10.0,95857166.72687547,3617337.3749837647,estimated
+Rick Fox | S11,Rick Fox,Cheryl Burke,Athlete,41.0,11,7.0,46300842.2551413,3495176.822640674,estimated
+Kurt Warner | S11,Kurt Warner,Anna Trebunskaya,Athlete,39.0,11,8.0,54050778.42113967,3807002.7298064823,estimated
+Margaret Cho | S11,Margaret Cho,Louis van Amstel,Comedian,41.0,11,3.0,9173629.847418081,457530.1741800894,estimated
+Michael Bolton | S11,Michael Bolton,Chelsie Hightower,Singer/Rapper,57.0,11,2.0,6359350.512684464,466777.4416314053,estimated
+Brandy | S11,Brandy,Maksim Chmerkoskiy,Singer/Rapper,31.0,11,9.0,81399815.20794347,3678453.5740220645,estimated
+The Situation | S11,The Situation,Karina Smirnoff,TV Personality,28.0,11,4.0,15951113.20488289,1273418.8813621332,estimated
+Audrina Patridge | S11,Audrina Patridge,Tony Dovolani,TV Personality,25.0,11,6.0,37322585.060375705,3098623.080182556,estimated
+Bristol Palin | S11,Bristol Palin,Mark Ballas,TV Personality,19.0,11,10.0,87132084.30227813,4222787.790234188,estimated
+Ralph Macchio | S12,Ralph Macchio,Karina Smirnoff,Actor/Actress,49.0,12,9.0,68790317.5130192,4187237.708718461,estimated
+Chelsea Kane | S12,Chelsea Kane,Mark Ballas,Actor/Actress,22.0,12,10.0,90365042.65377362,4040797.7983728247,estimated
+Kirstie Alley | S12,Kirstie Alley,Maksim Chmerkoskiy,Actor/Actress,60.0,12,10.0,86820923.0516736,4237784.093454208,estimated
+Hines Ward | S12,Hines Ward,Kym Johnson,Athlete,35.0,12,10.0,89857372.3633224,4072570.134268149,estimated
+Sugar Ray Leonard | S12,Sugar Ray Leonard,Anna Trebunskaya,Athlete,54.0,12,4.0,14022154.965560135,873642.3099416492,estimated
+Chris Jericho | S12,Chris Jericho,Cheryl Burke,Athlete,40.0,12,6.0,31665014.322580185,2606656.2020617938,estimated
+Petra Nemcova | S12,Petra Nemcova,Dmitry Chaplin,Model,31.0,12,5.0,22806881.838201616,1885069.6490316906,estimated
+Mike Catherwood | S12,Mike Catherwood,Lacey Schwimmer,Other,32.0,12,2.0,5813078.918549562,306213.68339686876,estimated
+Romeo | S12,Romeo,Chelsie Hightower,Singer/Rapper,21.0,12,8.0,59123649.33317819,3889131.2310133977,estimated
+Wendy Williams | S12,Wendy Williams,Tony Dovolani,TV Personality,46.0,12,3.0,9449563.129764881,523920.97589352564,estimated
+Kendra Wilkinson | S12,Kendra Wilkinson,Louis van Amstel,TV Personality,25.0,12,7.0,42632448.38439061,3304512.9351411187,estimated
+Elisabetta Canalis | S13,Elisabetta Canalis,Valentin Chmerkovskiy,Actor/Actress,33.0,13,2.0,5442694.763941137,200750.540783486,estimated
+David Arquette | S13,David Arquette,Kym Johnson,Actor/Actress,40.0,13,7.0,43293826.62223658,3346902.9802686884,estimated
+Ricki Lake | S13,Ricki Lake,Derek Hough,Actor/Actress,42.0,13,10.0,95347741.63410692,3663011.4819760197,estimated
+J.R. Martinez | S13,J.R. Martinez,Karina Smirnoff,Actor/Actress,28.0,13,10.0,91341056.95780116,3976309.598554308,estimated
+Metta World Peace (Ron) | S13,Metta World Peace (Ron),Peta Murgatroyd,Athlete,31.0,13,1.0,2267736.145116476,13858.979248447147,estimated
+Hope Solo | S13,Hope Solo,Maksim Chmerkoskiy,Athlete,30.0,13,9.0,71012560.90016335,4158981.143491379,estimated
+Chynna Phillips | S13,Chynna Phillips,Tony Dovolani,Singer/Rapper,43.0,13,4.0,18972011.23534371,1832701.595095504,estimated
+Kristin Cavallari | S13,Kristin Cavallari,Mark Ballas,TV Personality,24.0,13,3.0,11581797.017853998,1038597.2573093781,estimated
+Carson Kressley | S13,Carson Kressley,Anna Trebunskaya,TV Personality,41.0,13,5.0,24266557.159143835,2108841.5263356254,estimated
+Chaz Bono | S13,Chaz Bono,Lacey Schwimmer,TV Personality,42.0,13,6.0,32685027.40682185,2718647.4537553806,estimated
+Nancy Grace | S13,Nancy Grace,Tristan MacManus,TV Personality,51.0,13,8.0,56593803.40123445,3869057.3291901527,estimated
+Rob Kardashian | S13,Rob Kardashian,Cheryl Burke,TV Personality,24.0,13,10.0,92290110.338989,3909250.3714777264,estimated
+William Levy | S14,William Levy,Cheryl Burke,Actor/Actress,31.0,14,10.0,88193700.65716262,4168316.815807108,estimated
+Jack Wagner | S14,Jack Wagner,Anna Trebunskaya,Actor/Actress,52.0,14,3.0,9016602.223085394,420026.3278667648,estimated
+Sherri Sheperd | S14,Sherri Sheperd,Valentin Chmerkovskiy,Actor/Actress,44.0,14,4.0,14235999.507611737,918680.9022569979,estimated
+Jaleel White | S14,Jaleel White,Kym Johnson,Actor/Actress,35.0,14,7.0,42310591.613590896,3282617.7622705447,estimated
+Roshon Fegan | S14,Roshon Fegan,Chelsie Hightower,Actor/Actress,20.0,14,8.0,53666897.455811635,3793972.644104747,estimated
+Melissa Gilbert | S14,Melissa Gilbert,Maksim Chmerkoskiy,Actor/Actress,47.0,14,8.0,51042675.450103514,3679140.292470637,estimated
+Martina Navratilova | S14,Martina Navratilova,Tony Dovolani,Athlete,55.0,14,2.0,4807375.1797043225,30767.93654491815,estimated
+Donald Driver | S14,Donald Driver,Peta Murgatroyd,Athlete,37.0,14,10.0,85725639.85417585,4287096.45572521,estimated
+Gavin DeGraw | S14,Gavin DeGraw,Karina Smirnoff,Singer/Rapper,35.0,14,5.0,22657595.377893332,1860988.9383673081,estimated
+Gladys Knight | S14,Gladys Knight,Tristan MacManus,Singer/Rapper,67.0,14,6.0,32069783.39347036,2652268.583697566,estimated
+Katherine Jenkins | S14,Katherine Jenkins,Mark Ballas,Singer/Rapper,31.0,14,10.0,94275026.21710287,3754768.294840583,estimated
+Maria Menounos | S14,Maria Menounos,Derek Hough,TV Personality,33.0,14,9.0,76232719.06616572,3989895.7423046166,estimated
+Gilles Marini | S15,Gilles Marini,Peta Murgatroyd,Actor/Actress,36.0,15,10.0,74617704.92230134,4484901.837380601,estimated
+Sabrina Bryan | S15,Sabrina Bryan,Louis van Amstel,Actor/Actress,28.0,15,6.0,32717617.93594405,2722063.1308310037,estimated
+Kirstie Alley | S15,Kirstie Alley,Maksim Chmerkoskiy,Actor/Actress,61.0,15,10.0,69792470.67605387,4398720.9990858,estimated
+Kelly Monaco | S15,Kelly Monaco,Valentin Chmerkovskiy,Actor/Actress,36.0,15,10.0,87290702.81179741,4214974.5589019405,estimated
+Apolo Anton Ohno | S15,Apolo Anton Ohno,Karina Smirnoff,Athlete,30.0,15,10.0,80337619.43031995,4451646.540809945,estimated
+Emmitt Smith | S15,Emmitt Smith,Cheryl Burke,Athlete,43.0,15,10.0,81630298.29712878,4423943.536132435,estimated
+Shawn Johnson | S15,Shawn Johnson,Derek Hough,Athlete,20.0,15,10.0,90631969.97950576,4023607.860064963,estimated
+Pamela Anderson | S15,Pamela Anderson,Tristan MacManus,Model,45.0,15,7.0,18698388.407582924,138264.57139268343,estimated
+Helio Castroneves | S15,Helio Castroneves,Chelsie Hightower,Other,37.0,15,10.0,43816792.023223855,2227391.0600504186,estimated
+Joey Fatone | S15,Joey Fatone,Kym Johnson,Singer/Rapper,35.0,15,10.0,35612149.915539496,1142900.7867106006,estimated
+Drew Lachey | S15,Drew Lachey,Anna Trebunskaya,Singer/Rapper,36.0,15,10.0,41426612.80574516,1917496.734535462,estimated
+Bristol Palin | S15,Bristol Palin,Mark Ballas,TV Personality,21.0,15,10.0,43904569.33085183,2238587.883736984,estimated
+Melissa Rycroft | S15,Melissa Rycroft,Tony Dovolani,TV Personality,29.0,15,10.0,91042333.98561756,3996525.710023845,estimated
+Ingo Rademacher | S16,Ingo Rademacher,Kym Johnson,Actor/Actress,41.0,16,9.0,65685476.472482294,4182817.9485660703,estimated
+Zendaya | S16,Zendaya,Valentin Chmerkovskiy,Actor/Actress,16.0,16,10.0,91895641.74238187,3937649.0105291693,estimated
+Dorothy Hamill | S16,Dorothy Hamill,Tristan MacManus,Athlete,56.0,16,10.0,,,withdrew
+Victor Ortiz | S16,Victor Ortiz,Lindsay Arnold,Athlete,26.0,16,6.0,27082015.645425018,1992316.09792219,estimated
+Alexandra Raisman | S16,Alexandra Raisman,Mark Ballas,Athlete,18.0,16,10.0,90269841.55903447,4046847.756189022,estimated
+Jacoby Jones | S16,Jacoby Jones,Karina Smirnoff,Athlete,28.0,16,10.0,86315306.68540493,4261219.463392032,estimated
+D. L. Hughley | S16,D. L. Hughley,Cheryl Burke,Comedian,50.0,16,5.0,17333811.375278175,905017.1637739553,estimated
+Andy Dick | S16,Andy Dick,Sharna Burgess,Comedian,47.0,16,7.0,34516230.96127917,2511318.902591524,estimated
+Wynonna Judd | S16,Wynonna Judd,Tony Dovolani,Singer/Rapper,48.0,16,3.0,9567475.30405321,552441.5081364461,estimated
+Kellie Pickler | S16,Kellie Pickler,Derek Hough,Singer/Rapper,26.0,16,10.0,96510084.51837951,3556773.91037693,estimated
+Lisa Vanderpump | S16,Lisa Vanderpump,Gleb Savchenko,TV Personality,52.0,16,4.0,15007052.316299148,1080017.7563466707,estimated
+Sean Lowe | S16,Sean Lowe,Peta Murgatroyd,TV Personality,29.0,16,8.0,53764151.77784511,3797364.7348007034,estimated
+Valerie Harper | S17,Valerie Harper,Tristan MacManus,Actor/Actress,74.0,17,4.0,12208021.98194378,493255.7394358175,estimated
+Brant Daugherty | S17,Brant Daugherty,Peta Murgatroyd,Actor/Actress,28.0,17,8.0,49833774.857416786,3611158.4241862837,estimated
+Elizabeth Berkley Lauren | S17,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Actor/Actress,39.0,17,9.0,66293476.73637089,4187728.715994019,estimated
+Leah Remini | S17,Leah Remini,Tony Dovolani,Actor/Actress,43.0,17,10.0,75336791.81965074,4488760.056340066,estimated
+Corbin Bleu | S17,Corbin Bleu,Karina Smirnoff,Actor/Actress,24.0,17,11.0,97158966.14107397,4510361.442955991,estimated
+Amber Riley | S17,Amber Riley,Derek Hough,Actor/Actress,27.0,17,11.0,100743882.85076807,4320636.949106954,estimated
+Keyshawn Johnson | S17,Keyshawn Johnson,Sharna Burgess,Athlete,41.0,17,2.0,4348891.718029156,79927.1580290863,estimated
+Bill Engvall | S17,Bill Engvall,Emma Slater,Comedian,56.0,17,11.0,84182023.27852455,4785259.517950821,estimated
+Christina Milian | S17,Christina Milian,Mark Ballas,Singer/Rapper,31.0,17,5.0,23362892.23409708,1972872.2489165456,estimated
+"Nicole ""Snooki"" Polizzi | S17","Nicole ""Snooki"" Polizzi",Sasha Farber,TV Personality,25.0,17,7.0,42037486.85627758,3263391.2639726074,estimated
+Jack Osbourne | S17,Jack Osbourne,Cheryl Burke,TV Personality,27.0,17,11.0,99542440.07580382,4389843.803411511,estimated
+Bill Nye | S17,Bill Nye,Tyne Stecklein,TV Personality,57.0,17,3.0,8595927.611398418,320871.45193108614,estimated
+Billy Dee Williams | S18,Billy Dee Williams,Emma Slater,Actor/Actress,76.0,18,10.0,,,withdrew
+Danica McKellar | S18,Danica McKellar,Valentin Chmerkovskiy,Actor/Actress,39.0,18,8.0,57349482.36234983,3879392.0721311113,estimated
+James Maslow | S18,James Maslow,Peta Murgatroyd,Actor/Actress,23.0,18,10.0,84777641.35544164,4325428.773072386,estimated
+Candace Cameron Bure | S18,Candace Cameron Bure,Mark Ballas,Actor/Actress,37.0,18,10.0,83321076.36918303,4376501.650197613,estimated
+Sean Avery | S18,Sean Avery,Karina Smirnoff,Athlete,33.0,18,2.0,4944789.719280756,66089.57629723118,estimated
+Diana Nyad | S18,Diana Nyad,Henry Byalikov,Athlete,64.0,18,2.0,4478067.0873755645,49945.42007704609,estimated
+Charlie White | S18,Charlie White,Sharna Burgess,Athlete,26.0,18,9.0,71229030.5272098,4154832.8726741895,estimated
+Amy Purdy | S18,Amy Purdy,Derek Hough,Athlete,34.0,18,10.0,90408929.04871212,4037994.537868791,estimated
+Meryl Davis | S18,Meryl Davis,Maksim Chmerkoskiy,Athlete,27.0,18,10.0,89518002.2389192,4093139.4791319147,estimated
+Drew Carey | S18,Drew Carey,Cheryl Burke,Comedian,55.0,18,6.0,29096727.050771262,2283184.466806603,estimated
+Cody Simpson | S18,Cody Simpson,Witney Carson,Singer/Rapper,17.0,18,5.0,24542923.027051203,2148663.757054539,estimated
+NeNe Leakes | S18,NeNe Leakes,Tony Dovolani,TV Personality,46.0,18,7.0,43867293.35746461,3380814.5069622807,estimated
+Antonio Sabato Jr. | S19,Antonio Sabato Jr.,Cheryl Burke,Actor/Actress,42.0,19,7.0,37065015.7748608,2812165.723371647,estimated
+Jonathan Bennett | S19,Jonathan Bennett,Allison Holker,Actor/Actress,33.0,19,6.0,27522594.164511703,2058406.3319540839,estimated
+Lea Thompson | S19,Lea Thompson,Artem Chigvintsev,Actor/Actress,53.0,19,9.0,67312509.67128475,4191535.259711467,estimated
+Janel Parrish | S19,Janel Parrish,Valentin Chmerkovskiy,Actor/Actress,25.0,19,11.0,101500845.20844945,4274077.12782636,estimated
+Alfonso Ribeiro | S19,Alfonso Ribeiro,Witney Carson,Actor/Actress,42.0,19,11.0,102610514.89896795,4201634.937470469,estimated
+Lolo Jones | S19,Lolo Jones,Keo Motsepe,Athlete,32.0,19,1.0,2110711.0236723553,65781.3356385604,estimated
+Randy Couture | S19,Randy Couture,Karina Smirnoff,Athlete,51.0,19,3.0,9189774.78146911,461398.7115008367,estimated
+Tommy Chong | S19,Tommy Chong,Peta Murgatroyd,Comedian,76.0,19,10.0,72135013.28009,4453696.679362582,estimated
+Betsey Johnson | S19,Betsey Johnson,Tony Dovolani,Other,72.0,19,4.0,16960128.7416284,1472142.7983914397,estimated
+Michael Waltrip | S19,Michael Waltrip,Emma Slater,Other,51.0,19,8.0,50209591.61532016,3633307.180561125,estimated
+Tavis Smiley | S19,Tavis Smiley,Sharna Burgess,Other,50.0,19,2.0,6449485.177037291,493590.77840861934,estimated
+Bethany Mota | S19,Bethany Mota,Derek Hough,Other,18.0,19,11.0,108254260.93272074,3752436.521299977,estimated
+Sadie Robertson | S19,Sadie Robertson,Mark Ballas,TV Personality,17.0,19,11.0,103407489.29937729,4146491.6750228787,estimated
+Suzanne Somers | S20,Suzanne Somers,Tony Dovolani,Actor/Actress,68.0,20,5.0,20422562.489563156,1478262.1767246146,estimated
+Willow Shields | S20,Willow Shields,Mark Ballas,Actor/Actress,14.0,20,7.0,43743036.008979835,3373691.3095846884,estimated
+Riker Lynch | S20,Riker Lynch,Allison Holker,Actor/Actress,23.0,20,10.0,89023649.02093259,4122147.320411307,estimated
+Rumer Willis | S20,Rumer Willis,Valentin Chmerkovskiy,Actor/Actress,26.0,20,10.0,90633726.6622853,4023493.620914689,estimated
+Nastia Liukin | S20,Nastia Liukin,Derek Hough,Athlete,25.0,20,9.0,76637112.34004356,3970759.0338442405,estimated
+Michael Sam | S20,Michael Sam,Peta Murgatroyd,Athlete,25.0,20,4.0,13489497.102893248,761291.8489728045,estimated
+Robert Herjavec | S20,Robert Herjavec,Kym Johnson,Other,52.0,20,8.0,58174597.14764613,3886451.3528979546,estimated
+Charlotte McKinney | S20,Charlotte McKinney,Keo Motsepe,Model,21.0,20,3.0,8666696.021379229,337397.77476126066,estimated
+Noah Galloway | S20,Noah Galloway,Sharna Burgess,Other,33.0,20,10.0,88838626.98967785,4132714.0166025315,estimated
+Redfoo | S20,Redfoo,Emma Slater,Singer/Rapper,39.0,20,2.0,5803302.042359682,303385.70269148017,estimated
+Patti LaBelle | S20,Patti LaBelle,Artem Chigvintsev,Singer/Rapper,70.0,20,6.0,32907186.281736635,2741728.666563716,estimated
+Chris Soules | S20,Chris Soules,Witney Carson,TV Personality,33.0,20,8.0,53753299.38643487,3796989.279662804,estimated
+Gary Busey | S21,Gary Busey,Anna Trebunskaya,Actor/Actress,71.0,21,4.0,13129261.566151224,685414.7971998974,estimated
+Alexa PenaVega | S21,Alexa PenaVega,Mark Ballas,Actor/Actress,27.0,21,9.0,67209807.99609652,4191402.381873421,estimated
+Carlos PenaVega | S21,Carlos PenaVega,Witney Carson,Actor/Actress,26.0,21,11.0,100165119.38241972,4354690.369692325,estimated
+Victor Espinoza | S21,Victor Espinoza,Karina Smirnoff,Athlete,43.0,21,2.0,5004090.850969443,81602.63588017391,estimated
+Alek Skarlatos | S21,Alek Skarlatos,Lindsay Arnold,Other,22.0,21,11.0,101300678.1032164,4286613.085535858,estimated
+Chaka Khan | S21,Chaka Khan,Keo Motsepe,Singer/Rapper,62.0,21,2.0,5900500.87742377,331589.379649569,estimated
+Andy Grammer | S21,Andy Grammer,Allison Holker,Singer/Rapper,31.0,21,8.0,56650387.364982516,3869959.511790328,estimated
+Tamar Braxton | S21,Tamar Braxton,Valentin Chmerkovskiy,Singer/Rapper,38.0,21,11.0,,,withdrew
+Nick Carter | S21,Nick Carter,Sharna Burgess,Singer/Rapper,35.0,21,11.0,104894849.87677658,4036472.974887551,estimated
+Hayes Grier | S21,Hayes Grier,Emma Slater,Other,15.0,21,7.0,44416908.97157483,3410828.4552893657,estimated
+Bindi Irwin | S21,Bindi Irwin,Derek Hough,TV Personality,17.0,21,11.0,107349079.50562991,3833987.275467663,estimated
+Kim Zolciak-Biermann | S21,Kim Zolciak-Biermann,Tony Dovolani,TV Personality,37.0,21,11.0,,,withdrew
+Paula Deen | S21,Paula Deen,Louis van Amstel,TV Personality,68.0,21,6.0,28298997.312472112,2171580.553865693,estimated
+Mischa Barton | S22,Mischa Barton,Artem Chigvintsev,Actor/Actress,30.0,22,3.0,7404828.272714568,55979.71563959923,estimated
+Kim Fields | S22,Kim Fields,Sasha Farber,Actor/Actress,46.0,22,7.0,39695338.34838487,3074367.9790134113,estimated
+Jodie Sweetin | S22,Jodie Sweetin,Keo Motsepe,Actor/Actress,34.0,22,8.0,51427208.709799014,3698774.38718312,estimated
+Doug Flutie | S22,Doug Flutie,Karina Smirnoff,Athlete,53.0,22,6.0,26192071.998617742,1855021.7929952724,estimated
+Von Miller | S22,Von Miller,Witney Carson,Athlete,27.0,22,7.0,39136804.33780496,3023012.4698256673,estimated
+Antonio Brown | S22,Antonio Brown,Sharna Burgess,Athlete,27.0,22,9.0,66256543.62686609,4187486.744098944,estimated
+Paige VanZant | S22,Paige VanZant,Mark Ballas,Athlete,22.0,22,10.0,88199127.61680473,4168025.1711183456,estimated
+Geraldo Rivera | S22,Geraldo Rivera,Edyta Sliwinska,Other,72.0,22,2.0,5423247.398322026,195321.1022970272,estimated
+Nyle DiMarco | S22,Nyle DiMarco,Peta Murgatroyd,Model,26.0,22,10.0,88666716.68583417,4142390.7413484966,estimated
+Ginger Zee | S22,Ginger Zee,Valentin Chmerkovskiy,Other,35.0,22,10.0,92847333.20220873,3867847.5023344103,estimated
+Wanya Morris | S22,Wanya Morris,Lindsay Arnold,Singer/Rapper,42.0,22,9.0,76696338.08841085,3967882.840586607,estimated
+Marla Maples | S22,Marla Maples,Tony Dovolani,TV Personality,52.0,22,4.0,15296736.368404042,1139963.5995004852,estimated
+Jake T. Austin | S23,Jake T. Austin,Jenna Johnson,Actor/Actress,21.0,23,2.0,4508412.296827707,42758.343733091824,estimated
+Maureen McCormick | S23,Maureen McCormick,Artem Chigvintsev,Actor/Actress,60.0,23,7.0,37248480.5161226,2832100.086300967,estimated
+Marilu Henner | S23,Marilu Henner,Derek Hough,Actor/Actress,64.0,23,9.0,65012035.76940475,4175071.041440764,estimated
+Ryan Lochte | S23,Ryan Lochte,Cheryl Burke,Athlete,32.0,23,8.0,47235002.761321835,3433163.7341384143,estimated
+Calvin Johnson Jr. | S23,Calvin Johnson Jr.,Lindsay Arnold,Athlete,30.0,23,11.0,97393078.62904572,4499502.046662422,estimated
+Laurie Hernandez | S23,Laurie Hernandez,Valentin Chmerkovskiy,Athlete,16.0,23,11.0,101650335.58143449,4264609.467577232,estimated
+Amber Rose | S23,Amber Rose,Maksim Chmerkoskiy,Model,32.0,23,6.0,28111711.958704293,2144679.0158887245,estimated
+Rick Perry | S23,Rick Perry,Emma Slater,Other,66.0,23,3.0,10072308.412420362,675142.5414387085,estimated
+James Hinchcliffe | S23,James Hinchcliffe,Sharna Burgess,Other,29.0,23,11.0,106135131.30053224,3937477.1671758816,estimated
+Babyface | S23,Babyface,Allison Holker,Singer/Rapper,57.0,23,4.0,15526215.136539835,1187101.3687422927,estimated
+Vanilla Ice | S23,Vanilla Ice,Witney Carson,Singer/Rapper,48.0,23,4.0,15379217.869734637,1156944.4440087653,estimated
+Jana Kramer | S23,Jana Kramer,Gleb Savchenko,Singer/Rapper,32.0,23,11.0,100730923.74120791,4321414.052016737,estimated
+Terra Jole | S23,Terra Jole,Sasha Farber,TV Personality,36.0,23,10.0,84765854.23183008,4325880.070888995,estimated
+Charo | S24,Charo,Keo Motsepe,Actor/Actress,66.0,24,3.0,8728744.286534945,351942.776207898,estimated
+Mr. T | S24,Mr. T,Kym Herjavec,Actor/Actress,64.0,24,4.0,13340469.687940456,729876.9433083334,estimated
+Heather Morris | S24,Heather Morris,Maksim Chmerkoskiy,Actor/Actress,30.0,24,6.0,32731151.929696426,2723478.5784661905,estimated
+Nancy Kerrigan | S24,Nancy Kerrigan,Artem Chigvintsev,Athlete,47.0,24,7.0,43896613.776222266,3382477.190964899,estimated
+Bonner Bolton | S24,Bonner Bolton,Sharna Burgess,Athlete,29.0,24,8.0,50029218.798078455,3622790.9804615695,estimated
+Simone Biles | S24,Simone Biles,Sasha Farber,Athlete,20.0,24,9.0,74446517.57415888,4063993.6128537985,estimated
+David Ross | S24,David Ross,Lindsay Arnold,Athlete,40.0,24,10.0,83690488.17860393,4364443.694278334,estimated
+Rashad Jennings | S24,Rashad Jennings,Emma Slater,Athlete,32.0,24,10.0,88453234.33816957,4154218.6522517633,estimated
+Chris Kattan | S24,Chris Kattan,Witney Carson,Comedian,46.0,24,2.0,4469246.537028169,52024.43335079781,estimated
+Erika Jayne | S24,Erika Jayne,Gleb Savchenko,Singer/Rapper,45.0,24,5.0,24024187.45772811,2073225.6836327347,estimated
+Normani | S24,Normani,Valentin Chmerkovskiy,Singer/Rapper,20.0,24,10.0,95076389.58865467,3686784.0806454127,estimated
+Nick Viall | S24,Nick Viall,Peta Murgatroyd,TV Personality,36.0,24,7.0,43114822.125677705,3335776.16900913,estimated
+Sasha Pieterse | S25,Sasha Pieterse,Gleb Savchenko,Actor/Actress,21.0,25,5.0,19832509.004338812,1371504.5285776244,estimated
+Frankie Muniz | S25,Frankie Muniz,Witney Carson,Actor/Actress,31.0,25,10.0,85748953.43216754,4286103.026113656,estimated
+Jordan Fisher | S25,Jordan Fisher,Lindsay Arnold,Actor/Actress,23.0,25,10.0,90635806.104447,4023358.3735567173,estimated
+Derek Fisher | S25,Derek Fisher,Sharna Burgess,Athlete,43.0,25,4.0,13566692.404636636,777573.172868781,estimated
+Nikki Bella | S25,Nikki Bella,Artem Chigvintsev,Athlete,33.0,25,7.0,40515812.40792278,3145462.58639415,estimated
+Terrell Owens | S25,Terrell Owens,Cheryl Burke,Athlete,43.0,25,8.0,52713384.88498966,3757444.9053795952,estimated
+Victoria Arlen | S25,Victoria Arlen,Valentin Chmerkovskiy,Athlete,22.0,25,9.0,69341988.92731996,4182662.24246709,estimated
+Barbara Corcoran | S25,Barbara Corcoran,Keo Motsepe,Other,68.0,25,2.0,5839401.01075617,313837.58234994876,estimated
+Lindsey Stirling | S25,Lindsey Stirling,Mark Ballas,Other,31.0,25,10.0,94922653.03329493,3700082.6682208716,estimated
+Debbie Gibson | S25,Debbie Gibson,Alan Bersten,Singer/Rapper,47.0,25,2.0,5610634.958380019,248114.6166419409,estimated
+Nick Lachey | S25,Nick Lachey,Peta Murgatroyd,Singer/Rapper,43.0,25,6.0,31011945.64430347,2529884.9910658756,estimated
+Drew Scott | S25,Drew Scott,Emma Slater,TV Personality,39.0,25,10.0,85058619.79095975,4314486.95595755,estimated
+Vanessa Lachey | S25,Vanessa Lachey,Maksim Chmerkoskiy,TV Personality,36.0,25,7.0,45874417.96172803,3478599.730541309,estimated
+Jamie Anderson | S26,Jamie Anderson,Artem Chigvintsev,Athlete,27.0,26,1.0,2553467.010419168,90181.03810247494,estimated
+Johnny Damon | S26,Johnny Damon,Emma Slater,Athlete,44.0,26,1.0,2570455.7892544265,96691.61246736023,estimated
+Kareem Abdul-Jabbar | S26,Kareem Abdul-Jabbar,Lindsay Arnold,Athlete,71.0,26,2.0,7874957.777363358,911713.2570875764,estimated
+Arike Ogunbowale | S26,Arike Ogunbowale,Gleb Savchenko,Athlete,21.0,26,2.0,8177459.424282122,995608.6800590907,estimated
+Jennie Finch Daigle | S26,Jennie Finch Daigle,Keo Motsepe,Athlete,37.0,26,3.0,16254680.527183436,1923942.2182415358,estimated
+Chris Mazdzer | S26,Chris Mazdzer,Witney Carson,Athlete,29.0,26,3.0,17658520.482112955,2076948.6271379648,estimated
+Mirai Nagasu | S26,Mirai Nagasu,Alan Bersten,Athlete,25.0,26,3.0,18768894.020544495,2155602.0713036503,estimated
+Tonya Harding | S26,Tonya Harding,Sasha Farber,Athlete,47.0,26,4.0,31958407.471164253,2416621.1131704897,estimated
+Josh Norman | S26,Josh Norman,Sharna Burgess,Athlete,30.0,26,4.0,31644325.44583338,2440852.2120747208,estimated
+Adam Rippon | S26,Adam Rippon,Jenna Johnson,Athlete,28.0,26,4.0,32842695.854517877,2337944.238779298,estimated
+Juan Pablo Di Pace | S27,Juan Pablo Di Pace,Cheryl Burke,Actor/Actress,39.0,27,8.0,64549069.59026,3793427.4310349287,estimated
+Evanna Lynch | S27,Evanna Lynch,Keo Motsepe,Actor/Actress,27.0,27,9.0,73575570.62024762,4093983.770087432,estimated
+Nancy McKeon | S27,Nancy McKeon,Valentin Chmerkovskiy,Actor/Actress,52.0,27,3.0,9011874.330763731,418900.7813363685,estimated
+John Schneider | S27,John Schneider,Emma Slater,Actor/Actress,58.0,27,7.0,41306534.10527008,3209019.7501102234,estimated
+Milo Manheim | S27,Milo Manheim,Witney Carson,Actor/Actress,17.0,27,9.0,78835469.60760508,3851318.8656791262,estimated
+Danelle Umstead | S27,Danelle Umstead,Artem Chigvintsev,Athlete,46.0,27,2.0,4732775.137657644,11978.491203926524,estimated
+Mary Lou Retton | S27,Mary Lou Retton,Sasha Farber,Athlete,50.0,27,6.0,33780209.08369668,2827790.954657546,estimated
+DeMarcus Ware | S27,DeMarcus Ware,Lindsay Arnold,Athlete,36.0,27,7.0,46249825.415944666,3493271.0817850716,estimated
+Nikki Glaser | S27,Nikki Glaser,Gleb Savchenko,Comedian,34.0,27,1.0,1852046.146474907,141167.29395557393,estimated
+Bobby Bones | S27,Bobby Bones,Sharna Burgess,Other,38.0,27,9.0,74606868.21091078,4058034.2337896386,estimated
+Tinashe | S27,Tinashe,Brandon Armstrong,Singer/Rapper,25.0,27,4.0,18316144.209792994,1721210.9917636958,estimated
+Alexis Ren | S27,Alexis Ren,Alan Bersten,Other,21.0,27,9.0,82263075.73650864,3611891.6459269575,estimated
+Joe Amabile | S27,Joe Amabile,Jenna Johnson,TV Personality,32.0,27,8.0,50853256.04946748,3669115.0371687016,estimated
+Kate Flannery | S28,Kate Flannery,Pasha Pashkov,Actor/Actress,55.0,28,8.0,48925982.21108117,3553896.2722687637,estimated
+James Van Der Beek | S28,James Van Der Beek,Emma Slater,Actor/Actress,42.0,28,10.0,80985817.86543822,4438683.154761396,estimated
+Kel Mitchell | S28,Kel Mitchell,Witney Carson,Actor/Actress,41.0,28,11.0,98040500.84472466,4468365.944709344,estimated
+Ray Lewis | S28,Ray Lewis,Cheryl Burke,Athlete,44.0,28,11.0,,,withdrew
+Lamar Odom | S28,Lamar Odom,Peta Murgatroyd,Athlete,39.0,28,4.0,10702889.251109347,192598.4793704316,estimated
+Sailor Brinkley-Cook | S28,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Model,21.0,28,6.0,29881598.168595754,2388043.652412714,estimated
+Sean Spicer | S28,Sean Spicer,Lindsay Arnold,Other,48.0,28,9.0,59288999.84743975,4010863.4709763424,estimated
+Mary Wilson | S28,Mary Wilson,Brandon Armstrong,Singer/Rapper,75.0,28,2.0,5696804.9603871,272721.8615662042,estimated
+Lauren Alaina | S28,Lauren Alaina,Gleb Savchenko,Singer/Rapper,24.0,28,11.0,98566546.62773919,4441867.587945446,estimated
+Ally Brooke | S28,Ally Brooke,Sasha Farber,Singer/Rapper,26.0,28,11.0,104915974.33921695,4034842.7235885044,estimated
+Karamo Brown | S28,Karamo Brown,Jenna Johnson,TV Personality,38.0,28,7.0,38956118.32619464,3005891.698511103,estimated
+Hannah Brown | S28,Hannah Brown,Alan Bersten,TV Personality,24.0,28,11.0,102063996.18418114,4237939.410802766,estimated
+Anne Heche | S29,Anne Heche,Keo Motsepe,Actor/Actress,51.0,29,4.0,12372842.660665307,527336.3629472423,estimated
+Jesse Metcalfe | S29,Jesse Metcalfe,Sharna Burgess,Actor/Actress,41.0,29,5.0,18497061.09790529,1124106.1789095679,estimated
+Chrishell Stause | S29,Chrishell Stause,Gleb Savchenko,Actor/Actress,39.0,29,8.0,45966807.25324609,3330778.816862208,estimated
+Skai Jackson | S29,Skai Jackson,Alan Bersten,Actor/Actress,18.0,29,10.0,76704100.66168752,4489701.63266683,estimated
+Justina Machado | S29,Justina Machado,Sasha Farber,Actor/Actress,48.0,29,11.0,98695725.14780909,4435195.464886998,estimated
+Charles Oakley | S29,Charles Oakley,Emma Slater,Athlete,56.0,29,2.0,4419344.38793431,63699.719718143795,estimated
+Veron Davis | S29,Veron Davis,Peta Murgatroyd,Athlete,36.0,29,6.0,25905776.33229039,1809852.2445806353,estimated
+Johnny Weir | S29,Johnny Weir,Britt Stewart,Athlete,36.0,29,10.0,79101990.69597812,4471184.906576747,estimated
+Nev Schulman | S29,Nev Schulman,Jenna Johnson,Other,35.0,29,11.0,105479963.4733201,3990605.8470522985,estimated
+AJ McLean | S29,AJ McLean,Cheryl Burke,Singer/Rapper,42.0,29,9.0,69347020.56302911,4182613.089310413,estimated
+Nelly | S29,Nelly,Daniella Karagach,Singer/Rapper,45.0,29,11.0,98609132.5568064,4439675.209880337,estimated
+Kaitlyn Bristowe | S29,Kaitlyn Bristowe,Artem Chigvintsev,TV Personality,35.0,29,11.0,103029028.34085074,4173005.114582758,estimated
+Carole Baskin | S29,Carole Baskin,Pasha Pashkov,TV Personality,59.0,29,3.0,8511034.131634481,301139.4572399061,estimated
+Monica Aldama | S29,Monica Aldama,Valentin Chmerkovskiy,TV Personality,48.0,29,7.0,41659050.487306654,3235769.6219674684,estimated
+Jeannie Mai | S29,Jeannie Mai,Brandon Armstrong,TV Personality,41.0,29,11.0,,,withdrew
+Martin Kove | S30,Martin Kove,Britt Stewart,Actor/Actress,75.0,30,2.0,4320300.630760935,86425.16939039875,estimated
+Brian Austin Green | S30,Brian Austin Green,Sharna Burgess,Actor/Actress,48.0,30,4.0,12766911.38124111,609405.5147850646,estimated
+Melora Hardin | S30,Melora Hardin,Artem Chigvintsev,Actor/Actress,54.0,30,9.0,70826492.6939201,4162348.9728396204,estimated
+Matt James | S30,Matt James,Lindsay Arnold,Athlete,29.0,30,4.0,12770808.539467694,610220.6302789395,estimated
+"Mike ""The Miz"" Mizanin | S30","Mike ""The Miz"" Mizanin",Witney Carson,Athlete,40.0,30,7.0,39771705.500584066,3081204.4385820567,estimated
+Suni Lee | S30,Suni Lee,Sasha Farber,Athlete,18.0,30,9.0,70276390.83000918,4171235.685181577,estimated
+Iman Shumpert | S30,Iman Shumpert,Daniella Karagach,Athlete,31.0,30,10.0,82640922.2164815,4397114.158447172,estimated
+Cody Rigsby | S30,Cody Rigsby,Cheryl Burke,Other,34.0,30,10.0,88577276.06196907,4147371.6122882226,estimated
+Melanie C | S30,Melanie C,Gleb Savchenko,Singer/Rapper,47.0,30,5.0,24588947.962745115,2155212.647374237,estimated
+Jimmie Allen | S30,Jimmie Allen,Emma Slater,Singer/Rapper,36.0,30,8.0,56887480.70252212,3873513.76527568,estimated
+Olivia Jade | S30,Olivia Jade,Valentin Chmerkovskiy,Other,21.0,30,8.0,61807242.52750504,3865355.1268098303,estimated
+JoJo Siwa | S30,JoJo Siwa,Jenna Johnson,Other,18.0,30,10.0,94174491.8503284,3763065.469928306,estimated
+Christine Chiu | S30,Christine Chiu,Pasha Pashkov,TV Personality,38.0,30,3.0,9485472.109225178,532598.4885025499,estimated
+Kenya Moore | S30,Kenya Moore,Brandon Armstrong,TV Personality,50.0,30,6.0,31785314.732593678,2620371.6920408187,estimated
+Amanda Kloots | S30,Amanda Kloots,Alan Bersten,TV Personality,39.0,30,10.0,92456102.57798775,3897075.0161291314,estimated
+Jason Lewis | S31,Jason Lewis,Peta Murgatroyd,Actor/Actress,51.0,31,1.0,2083042.2595486587,74479.52323536717,estimated
+Cheryl Ladd | S31,Cheryl Ladd,Louis van Amstel,Actor/Actress,71.0,31,3.0,8736115.905070513,353674.0938325152,estimated
+Selma Blair | S31,Selma Blair,Sasha Farber,Actor/Actress,50.0,31,10.0,,,withdrew
+Joseph Baena | S31,Joseph Baena,Daniella Karagach,Actor/Actress,24.0,31,5.0,20742892.73251077,1535367.1973866564,estimated
+Trevor Donovan | S31,Trevor Donovan,Emma Slater,Actor/Actress,39.0,31,9.0,67332872.20110692,4191554.9344984773,estimated
+Daniel Durant | S31,Daniel Durant,Britt Stewart,Actor/Actress,32.0,31,9.0,67085605.629897006,4191166.64807168,estimated
+Wayne Brady | S31,Wayne Brady,Witney Carson,Comedian,50.0,31,10.0,90280643.41935723,4046163.4425237533,estimated
+Sam Champion | S31,Sam Champion,Cheryl Burke,Other,61.0,31,4.0,16677612.141333971,1417505.7671353035,estimated
+Jessie James Decker | S31,Jessie James Decker,Alan Bersten,Singer/Rapper,34.0,31,6.0,33027446.013715476,2754024.6044651703,estimated
+Jordin Sparks | S31,Jordin Sparks,Brandon Armstrong,Singer/Rapper,32.0,31,7.0,45521044.422909625,3463747.0775716268,estimated
+Heidi D'Amelio | S31,Heidi D'Amelio,Artem Chigvintsev,Other,50.0,31,8.0,62219093.28978732,3857619.8405562965,estimated
+Charli D'Amelio | S31,Charli D'Amelio,Mark Ballas,Other,18.0,31,10.0,97527060.16979419,3457793.825521672,estimated
+Teresa Giudice | S31,Teresa Giudice,Pasha Pashkov,TV Personality,50.0,31,2.0,5670915.051963492,265308.48208128323,estimated
+Vinny Guadagnino | S31,Vinny Guadagnino,Koko Iwasaki,TV Personality,34.0,31,8.0,50582725.83518578,3654392.642830458,estimated
+Shangela | S31,Shangela,Gleb Savchenko,TV Personality,40.0,31,10.0,90161460.95046909,4053683.585832479,estimated
+Gabby Windey | S31,Gabby Windey,Valentin Chmerkovskiy,TV Personality,31.0,31,10.0,94288509.40026107,3753651.6172662796,estimated
+Jamie Lynn Spears | S32,Jamie Lynn Spears,Alan Bersten,Actor/Actress,32.0,32,2.0,4960049.273573376,70066.36628260421,estimated
+Mira Sorvino | S32,Mira Sorvino,Gleb Savchenko,Actor/Actress,55.0,32,5.0,20490120.15132788,1490358.7030498574,estimated
+Barry Williams | S32,Barry Williams,Peta Murgatroyd,Actor/Actress,68.0,32,8.0,49120739.139819905,3566628.344900085,estimated
+Alyson Hannigan | S32,Alyson Hannigan,Sasha Farber,Actor/Actress,49.0,32,11.0,92543048.82312304,4681544.282756607,estimated
+Xochitl Gomez | S32,Xochitl Gomez,Valentin Chmerkovskiy,Actor/Actress,17.0,32,11.0,104182953.19186519,4090298.0032720687,estimated
+Adrian Peterson | S32,Adrian Peterson,Britt Stewart,Athlete,38.0,32,4.0,13493920.310704138,762224.6268319222,estimated
+Matt Walsh | S32,Matt Walsh,Koko Iwasaki,Comedian,58.0,32,1.0,2170418.93959365,46537.20841204773,estimated
+Tyson Beckford | S32,Tyson Beckford,Jenna Johnson,Model,52.0,32,3.0,9307204.20496988,489599.6424800468,estimated
+Jason Mraz | S32,Jason Mraz,Daniella Karagach,Singer/Rapper,46.0,32,11.0,108263639.3902285,3751571.5468383147,estimated
+Lele Pons | S32,Lele Pons,Brandon Armstrong,Other,27.0,32,7.0,45293884.034767166,3453665.5702600703,estimated
+Harry Jowsey | S32,Harry Jowsey,Rylee Arnold,TV Personality,26.0,32,9.0,61029087.65121171,4079455.805336632,estimated
+Mauricio Umansky | S32,Mauricio Umansky,Emma Slater,TV Personality,53.0,32,6.0,30179738.871874016,2426530.5175280925,estimated
+Charity Lawson | S32,Charity Lawson,Artem Chigvintsev,TV Personality,27.0,32,11.0,105133717.37513326,4017926.819551556,estimated
+Ariana Madix | S32,Ariana Madix,Pasha Pashkov,TV Personality,38.0,32,11.0,103943331.9451947,4107931.649443943,estimated
+Tori Spelling | S33,Tori Spelling,Pasha Pashkov,Actor/Actress,51.0,33,2.0,5335959.070430523,171104.53456940854,estimated
+Eric Roberts | S33,Eric Roberts,Britt Stewart,Actor/Actress,68.0,33,3.0,9104534.859996546,440999.7335449571,estimated
+Reginald VelJohnson | S33,Reginald VelJohnson,Emma Slater,Actor/Actress,74.0,33,3.0,9156956.524119236,453537.36371936207,estimated
+Chandler Kinney | S33,Chandler Kinney,Brandon Armstrong,Actor/Actress,24.0,33,9.0,79037564.44193363,3839020.339450311,estimated
+Dwight Howard  | S33,Dwight Howard ,Daniella Karagach,Athlete,38.0,33,7.0,47268646.94543168,3527339.7092839014,estimated
+Danny Amendola | S33,Danny Amendola,Witney Carson,Athlete,39.0,33,9.0,77521072.19028135,3925872.999264885,estimated
+Stephen Nedoroscik | S33,Stephen Nedoroscik,Rylee Arnold,Athlete,26.0,33,9.0,76769365.34612438,3964310.5119954813,estimated
+Ilona Maher | S33,Ilona Maher,Alan Bersten,Athlete,28.0,33,9.0,75043240.29055458,4041126.0753130335,estimated
+Anna Delvey | S33,Anna Delvey,Ezra Sosa,Other,33.0,33,2.0,6423017.263418425,485712.074562309,estimated
+Brooks Nader | S33,Brooks Nader,Gleb Savchenko,Model,27.0,33,4.0,16646566.755996022,1411450.9555713776,estimated
+Phaedra Parks | S33,Phaedra Parks,Val Chmerkovskiy,TV Personality,51.0,33,5.0,26300209.09305395,2381079.7532385797,estimated
+Jenn Tran | S33,Jenn Tran,Sasha Farber,TV Personality,26.0,33,6.0,38225414.4072823,3147088.102065707,estimated
+Joey Graziadei | S33,Joey Graziadei,Jenna Johnson,TV Personality,29.0,33,9.0,82314479.94527954,3607791.953448459,estimated
+Corey Feldman | S34,Corey Feldman,Jenna Johnson,Actor/Actress,54.0,34,2.0,4465209.929425748,52974.34149925036,estimated
+Danielle Fishel | S34,Danielle Fishel,Pasha Pashkov,Actor/Actress,44.0,34,8.0,47248307.62940714,3434184.492559441,estimated
+Elaine Hendrix | S34,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),Actor/Actress,55.0,34,11.0,97116007.0956225,4512331.114453847,estimated
+Baron Davis | S34,Baron Davis,Britt Stewart,Athlete,46.0,34,2.0,4629489.780442689,13560.499969039125,estimated
+Jordan Chiles | S34,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),Athlete,24.0,34,11.0,99454233.31345008,4394699.7429211605,estimated
+Andy Richter | S34,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Comedian,59.0,34,9.0,52359199.69755224,3577333.865434901,estimated
+Robert Irwin | S34,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),Other,22.0,34,11.0,107090343.68494433,3856602.847987005,estimated
+Hilaria Baldwin | S34,Hilaria Baldwin,Gleb Savchenko,Other,41.0,34,4.0,16390099.6410562,1361066.4553471906,estimated
+Lauren Jauregui | S34,Lauren Jauregui,Brandon Armstrong,Singer/Rapper,29.0,34,3.0,9627761.230238628,567050.7923435502,estimated
+Scott Hoying | S34,Scott Hoying,Rylee Arnold,Singer/Rapper,34.0,34,6.0,29102260.01288586,2283941.195356498,estimated
+Alix Earle | S34,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),Other,24.0,34,11.0,106843796.71157295,3877869.746509689,estimated
+Jen Affleck | S34,Jen Affleck,Jan Ravnik,TV Personality,26.0,34,7.0,39064499.22192959,3016190.8637706097,estimated
+Whitney Leavitt | S34,Whitney Leavitt,Mark Ballas,TV Personality,32.0,34,10.0,88623027.09053361,4144828.364361616,estimated
+Dylan Efron | S34,Dylan Efron,Daniella Karagach (Rumer Willis week 9),TV Personality,33.0,34,11.0,102280419.94002484,4223708.643676254,estimated

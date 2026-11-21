@@ -1,0 +1,7 @@
+metric,value
+A_without_prior,0.9517241379310345
+A_with_prior,0.9655172413793104
+delta_A,0.01379310344827589
+n_hit,276.0
+n_den,290.0
+baseline_random,0.2663590623935451

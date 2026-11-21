@@ -1,0 +1,19 @@
+\clearpage
+\section*{Memorandum}
+MEMORANDUM
+
+To: Producers, Dancing with the Stars
+From: Modeling Team, 2026 MCM Problem C
+Re: How judge scores and fan votes should be combined in future seasons
+
+SUMMARY OF WHAT WE DID. Using 34 seasons of the show's public data (2,777 celebrity-weeks, 297 elimination events), we reconstructed the latent weekly fan votes that the show never releases, validated the reconstruction against the actual elimination record, and then replayed history under alternative combination rules. Our inversion recovers the actually eliminated couple 67.0% of the time from scores alone (bottom-two in 89.6% of events; AUC 0.959), far above the 42.8% judge-share baseline — the recovered votes are trustworthy enough to reason with.
+
+KEY FINDING 1 — THE COMBINATION RULE MATTERS, MORE THAN YOU THINK. Applying both of the show's historical rules to the same reconstructed fan votes, the rank and percentage rules disagree in 48.7% of all elimination weeks. The choice of rule is not cosmetic: in season 9 the percentage rule crowns Mya champion while the rank rule does not; Bristol Palin is runner-up under the percentage rule (2nd) but exits one week earlier under the rank rule (4th); the z-scored variant is the most judge-consistent of the three. Shock eliminations of top-3 fan favorites are nearly eliminated under the percentage rule (0.3% vs. 3.8% rank / 5.0% z-scored).
+
+KEY FINDING 2 — SEASON 28+ DIVERGENCE IS THE DANCE-OFF, NOT THE RULE. Plain percentage combination reproduces 89.2% of post-2018 cuts without the dance-off stage, but only 50.8% with it. The judges' live dance-off choice — which is nowhere in your data and cannot be audited — is the single largest unexplained component of the modern record. If the goal is a defensible competition, restrict the dance-off to the finale or replace it with a deterministic, pre-registered judge floor.
+
+KEY FINDING 3 — AGE IS JUDGED MORE HARSHLY THAN FANS JUDGE IT. The judges' channel is roughly 2.5 times more age-sensitive than the fans' (-0.477 vs. -0.158 per centered decade); several industry effects even flip sign between the two channels. Casting decisions aimed at judge-fan convergence should account for this asymmetry rather than assuming both audiences punish the same traits equally.
+
+RECOMMENDATIONS. (1) Adopt percentage-based combination with a pre-registered top-quartile judge floor — it preserves fan voice while making every cut auditable in advance. (2) Restrict the judges' dance-off to the finale only, or replace it with the deterministic floor. (3) Pre-register the exact combination rule each season — 48.7% of eliminations are attributable to rule choice rather than to performance alone, and publishing the rule in advance would defuse future Bobby-Bones-style controversies before they start. (4) If casting seeks judge-fan harmony, pair older celebrities with partners whose recent casts show strong judge-channel support.
+
+CAVEATS. Our fan-vote estimates are relative weekly shares with honest, sometimes wide, 90% intervals (median 0.095 share points; wider in late and contentious weeks). Absolute vote totals, and the judges' live dance-off deliberations, remain outside any reconstruction — findings about exact finishing positions in individual weeks should be read with those intervals in mind, even though the season-level patterns are robust to full uncertainty propagation and leave-one-season-out checks.

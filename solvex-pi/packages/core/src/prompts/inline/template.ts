@@ -1,3 +1,5 @@
+import { SHARED_DATA_DIR } from "../../workspace/paths.js";
+
 /** 内联提示词模板渲染：保留旧 f-string 的 {var} 占位符语义。
  *  \{var} 只匹配简单标识符，LaTeX 的 {\includegraphics...} 不会被误替换。 */
 export function renderTemplate(tpl: string, vars: Record<string, unknown>): string {
@@ -11,21 +13,33 @@ export const HANDOFF_HINT =
   "{status, issues, fixInstructions, summaryPath}; the system prefers it over text markers.\n";
 
 /**
- * P1 运行时执行策略（ADR-0008）。逐字迁移的提示词资产保持不动，只在运行时追加
- * 覆盖说明 —— 沿用 HANDOFF_HINT 的「追加而非改写」模式，T1.2 逐字快照继续成立。
+ * P1 运行时策略（ADR-0008 / ADR-0011 / ADR-0012 / ADR-0014）。
  *
- * 背景：旧 Python 运行时的 arxiv_search / web_search / webReader 在 Pi SDK 1.5.0
- * 中并不存在；逐字提示词里的 "SEARCH (strongly recommended)" 会驱动模型改用
- * bash + curl 模拟联网检索，请求超时后无限重试，永远走不到 WRITE 步骤。
+ * 网络与工具规则沿用 ADR-0008/0011：工具清单由代码发现、以清单为准，不模拟缺失的工具，不联网。
+ * ADR-0014 起 P1 不再「先写计划、写完即停、不许看数据」：基准里规划者从没看过数据就定下复现率 ≥0.85、
+ * PPC、LOO 这类目标，实现做不到、评审判不通过；各模型又各自解析原始 CSV，重复犯同类数据错误
+ * （r3 只用了 335/3,335 行、r5 把 0 分周当成有成绩、标反了规则）。现在 P1 先检查数据、建共享数据集，
+ * 再基于它写计划。策略里不出现任何具体工具名。
  */
-export const OFFLINE_PLAN_POLICY =
-  "\n\n=== RUNTIME EXECUTION POLICY (overrides the tool notes above) ===\n" +
-  "The legacy search tools arxiv_search, web_search and webReader are NOT registered in this runtime. " +
-  "Do NOT call them, and do NOT emulate them with bash, curl, wget, pip install or any other network access: " +
-  "network requests are unavailable here and will time out.\n" +
-  "The `write` tool IS registered. Use it as your FIRST action to create the deliverable at the exact absolute path given in the task prompt. " +
-  "Do not explore the filesystem, do not search for the dataset (it is already provided), and do not install packages.\n" +
-  "Once the file is written, stop.\n";
+export const PLANNING_POLICY =
+  "\n\n=== PHASE 1 RUNTIME POLICY ===\n" +
+  "The AVAILABLE TOOLS section is generated from the tools actually registered in this session; it is authoritative. " +
+  "Call only the tools listed there. Never emulate a tool that is absent from that list with shell commands, " +
+  "URL fetches, package installs or any other direct network access — such requests are unavailable and will time out.\n" +
+  "If a search tool IS listed, you may use it for a bounded literature check (a few calls at most); " +
+  "if none is listed, rely on your own knowledge.\n" +
+  "You own Phase 1 and have full access to the workspace: you may inspect files, execute code and create files anywhere. Work in three steps, in order:\n" +
+  "1. INSPECT THE DATA. The dataset is already in the workspace (see DATA FILES / the data directory); do not search " +
+  "elsewhere for it and do not install packages. Load it with code and check columns, row counts, value ranges, " +
+  "missing or zero values, the group/season/week structure, and anomalies (withdrawals, ties, annotations inside " +
+  "names, duplicated or inconsistently spelled categories, rule changes over time).\n" +
+  `2. BUILD THE SHARED DATASET in ${SHARED_DATA_DIR}/: a script prep_data.py that builds it from the raw files; ` +
+  "one or more cleaned, analysis-ready CSV tables; data_dictionary.md (every column, units, how special cases are " +
+  "encoded, row counts); and checks.md (the validation assertions you ran and their results). Every model in " +
+  "Phase 2 will load this dataset as-is and may not modify it, so fix parsing problems here, once.\n" +
+  "3. WRITE THE MASTER PLAN at the exact absolute path given in the task. Base every model on the shared dataset, " +
+  "name the files it should load, and set validation targets that this data can actually support.\n" +
+  "Stop once the shared dataset and the master plan both exist.\n";
 
 /**
  * P2 结果契约（ADR-0009）。逐字模板常量不改，只在 renderImplement 输出末尾追加。
@@ -46,7 +60,21 @@ export const RESULTS_CONTRACT =
   "If a plotting dependency is missing, report the exact ImportError instead of skipping silently.\n" +
   "4. If computation genuinely failed, still write the summary with the real error message, " +
   "the files that WERE produced, and an explicit failure status.\n" +
+  "5. REPRODUCIBILITY CONTRACT: put an entry script run.py in your output directory. Running `python3 run.py` " +
+  "from that directory must regenerate every output (results.json, CSV/JSON files, figures) from the input data, " +
+  "deterministically (fix every random seed). run.py must write results.json: one JSON object with every headline " +
+  "number (estimates, intervals, fit statistics, validation scores, counts). Every number in results_summary.md " +
+  "must be copied from results.json. After you finish, SolveX re-runs run.py and compares results.json; a crash " +
+  "or any mismatch is sent back to you to fix.\n" +
   "Write results_summary.md as one of your FINAL actions. Do not stop before it exists.\n";
+
+/** P1 建好共享数据集后追加到 P2 实现提示（ADR-0014）。 */
+export const sharedDataNote = (absSharedDir: string): string =>
+  "\n\n=== SHARED DATASET (prepared and validated in Phase 1) ===\n" +
+  `A cleaned, analysis-ready dataset is in ${absSharedDir}/ — read data_dictionary.md and checks.md there first. ` +
+  "Load your data from these tables instead of re-parsing the raw files. The directory is read-only for you: " +
+  "do not modify it (changes are reverted). If you find a genuine problem in it, work around it in your own " +
+  "code and report it under 'Issues or Limitations'.\n";
 
 /**
  * P4 工作区发现策略（ADR-0009）。writing 角色现在拥有 ls/find/grep/bash/read，
