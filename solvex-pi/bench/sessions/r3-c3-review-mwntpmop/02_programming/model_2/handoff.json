@@ -1,0 +1,13 @@
+{
+  "status": "SATISFIED",
+  "issues": [
+    "Scale-dependence of percentage-rule composite (raw judge totals vs. latent v) — FIXED via share normalization 50*s_sh + 50*v_sh within each week",
+    "Consistency target missed (0.523 < 0.85) — FIXED via two-pass coordinate ascent (grid [-4,4], 101 pts, 20 sweeps) and dual-sided repair (step 0.15, n_iter 200); overall replication now 0.896 (0.922 on no-double-elim seasons)",
+    "Survival-curve finalists marked at NaN exit week — FIXED, exit week = last competed week",
+    "Phi implemented as per-week eliminated-set inequality rather than per-contestant — SIMPLIFICATION NOTED in results_summary.md Limitations",
+    "Garbled character in Limitation 3 — FIXED",
+    "Dead variable spont removed"
+  ],
+  "fixInstructions": "Applied fixes 1-4 from review; regenerated fan_favor_index.csv, rule_replay_flip_table.csv, controversy_cases.csv, recommendation_matrix.csv, divergence_cases.csv, elimination_consistency.csv (+repair_diagnostics.csv), fan_vote_estimates.csv, and figures 1-4 with seed 20260115",
+  "summaryPath": "results_summary.md"
+}

@@ -1,0 +1,379 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/base/articl
+e.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/base/size10
+.clo))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsmath/ams
+math.sty
+For additional information on amsmath, use the `?' option.
+
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsmath/ams
+text.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsmath/ams
+gen.sty))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsmath/ams
+bsy.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsmath/ams
+opn.sty))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsfonts/am
+ssymb.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsfonts/am
+sfonts.sty))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics/gr
+aphicx.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics/ke
+yval.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics/gr
+aphics.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics/tr
+ig.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics-cf
+g/graphics.cfg)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics-de
+f/pdftex.def)))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/booktabs/bo
+oktabs.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/float/float
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/caption/cap
+tion.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/caption/cap
+tion3.sty))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/caption/sub
+caption.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/geometry/ge
+ometry.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/iftex/ifv
+tex.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/iftex/ift
+ex.sty)))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/hyperref/hy
+perref.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/kvsetkeys/k
+vsetkeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/kvdefinek
+eys/kvdefinekeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/pdfescape
+/pdfescape.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/ltxcmds/l
+txcmds.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/pdftexcmd
+s/pdftexcmds.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/infwarerr
+/infwarerr.sty)))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/hycolor/hyc
+olor.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/hyperref/na
+meref.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/refcount/re
+fcount.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/gettitles
+tring/gettitlestring.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/kvoptions/k
+voptions.sty)))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/etoolbox/et
+oolbox.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/stringenc
+/stringenc.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/hyperref/pd
+1enc.def)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/intcalc/i
+ntcalc.sty)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/hyperref/pu
+enc.def)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/url/url.sty
+)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/bitset/bi
+tset.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/bigintcal
+c/bigintcalc.sty)))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/hyperref/hp
+dftex.def
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/rerunfilech
+eck/rerunfilecheck.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/generic/uniquecou
+nter/uniquecounter.sty)))
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/l3backend/l
+3backend-pdftex.def) (./main.aux)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/context/base/mkii
+/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/epstopdf-pk
+g/epstopdf-base.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/latexconfig
+/epstopdf-sys.cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics/co
+lor.sty
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics-cf
+g/color.cfg)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/graphics/ma
+thcolor.ltx)) (./main.out) (./main.out)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsfonts/um
+sa.fd)
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/amsfonts/um
+sb.fd) (./main.toc [1{/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/
+fonts/map/pdftex/updmap/pdftex.map}] [2]) [3] [4{/opt/homebrew/Cellar/texlive/2
+0260301_3/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (20.2019pt too wide) in paragraph at lines 88--89
+\OT1/cmr/m/n/10 tope $\OMS/cmsy/m/n/10 F[] \ \OT1/cmr/m/n/10 ^^A[]$. Within tha
+t poly-tope the pos-te-rior con-cen-trates around the prior mean $[](\OML/cmm/m
+/it/10 ^^Rs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 = [] []\OT1/cmr/m/n/10 (\OML/cmm/m
+/it/10 ^^Rs\OT1/cmr/m/n/10 )$;
+[5] [6] [7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 188.
+
+[8]
+(/opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/tex/latex/base/omlcmr
+.fd) [9]
+Overfull \hbox (5.98218pt too wide) in paragraph at lines 271--272
+[]\OT1/cmr/bx/n/10 The scat-ter in Fig-ure [][]1[][] \OT1/cmr/m/n/10 shows \OT1
+/cmr/m/it/10 sys-tem-atic \OT1/cmr/m/n/10 pop-u-lar-ity de-vi-a-tions from the 
+45$[]$perfect-quality-correlation
+[10] [11 <../02_programming/model_1/figures/fig1_fan_vs_judge_scatter.png>]
+[12 <../02_programming/model_1/figures/fig2_uncertainty_heatmap.png>] [13 <../0
+2_programming/model_1/figures/fig3_controversy_trajectories.png>] [14]
+Overfull \hbox (33.16321pt too wide) in paragraph at lines 365--366
+\OT1/cmr/m/n/10 sumed: 3 season-weeks fail to con-verge within 200 re-pair it-e
+r-a-tions and are flagged in \OT1/cmtt/m/n/10 elimination[]consistency.csv
+[15] [16]
+Overfull \hbox (14.64642pt too wide) in paragraph at lines 469--478
+ [][] 
+[17] [18 <../02_programming/model_2/figures/fan_favor_by_era.png>] [19 <../02_p
+rogramming/model_2/figures/flip_counts_by_season.png>] [20 <../02_programming/m
+odel_2/figures/survival_curves_controversies.png>] [21] [22]
+Overfull \hbox (51.49696pt too wide) in paragraph at lines 642--643
+\OT1/cmr/m/n/10 fect $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\O
+T1/cmr/m/n/10 20$ to $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\O
+T1/cmr/m/n/10 45$, CIs ex-clud-ing zero). The full list (\OT1/cmtt/m/n/10 pro[]
+rankings[]fan[]channel.csv\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10 pro[]rankings[]bot
+tom[]fan.csv\OT1/cmr/m/n/10 )
+[23] [24 <../02_programming/model_3/figures/forest_delta.png>] [25 <../02_progr
+amming/model_3/figures/variance_partition.png>] [26 <../02_programming/model_3/
+figures/pro_effect_ranking.png> <../02_programming/model_3/figures/loso_validat
+ion.png>]
+Underfull \hbox (badness 8113) in paragraph at lines 714--715
+[]\OT1/cmr/m/n/10 Do pros and traits mat-ter
+[27]
+
+! LaTeX Error: Unicode character з (U+0437)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...ence preference, or (c) more robust to з
+                                                  аболеваний. Our ...
+
+
+! LaTeX Error: Unicode character а (U+0430)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...ce preference, or (c) more robust to за
+                                                  болеваний. Our re...
+
+
+! LaTeX Error: Unicode character б (U+0431)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ... preference, or (c) more robust to заб
+                                                  олеваний. Our resu...
+
+
+! LaTeX Error: Unicode character о (U+043E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...reference, or (c) more robust to забо
+                                                  леваний. Our result...
+
+
+! LaTeX Error: Unicode character л (U+043B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...ference, or (c) more robust to забол
+                                                  еваний. Our results ...
+
+
+! LaTeX Error: Unicode character е (U+0435)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...rence, or (c) more robust to заболе
+                                                  ваний. Our results su...
+
+
+! LaTeX Error: Unicode character в (U+0432)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...nce, or (c) more robust to заболев
+                                                  аний. Our results supp...
+
+
+! LaTeX Error: Unicode character а (U+0430)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...e, or (c) more robust to заболева
+                                                  ний. Our results suppor...
+
+
+! LaTeX Error: Unicode character н (U+043D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ... or (c) more robust to заболеван
+                                                  ий. Our results support ...
+
+
+! LaTeX Error: Unicode character и (U+0438)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...r (c) more robust to заболевани
+                                                  й. Our results support th...
+
+
+! LaTeX Error: Unicode character й (U+0439)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.755 ...(c) more robust to заболеваний
+                                                  . Our results support thre...
+
+[28]
+Overfull \hbox (12.2361pt too wide) in paragraph at lines 775--776
+[]\OT1/cmr/bx/n/10 Prior tilt ($\OML/cmm/m/it/10 ^^R$\OT1/cmr/bx/n/10 ). \OT1/c
+mr/m/n/10 Sweep-ing $\OML/cmm/m/it/10 ^^R \OMS/cmsy/m/n/10 2 f\OT1/cmr/m/n/10 3
+\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 12\OMS/c
+msy/m/n/10 g$ \OT1/cmr/m/n/10 shifts the bound-ary be-tween ``judge-proportiona
+l'' and ``popularity-
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 778.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 778.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 778.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 786.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 786.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 786.
+
+[29] [30] [31] [32] [33]
+Overfull \hbox (33.36514pt too wide) in paragraph at lines 931--935
+\OT1/cmtt/m/n/10 elimination[]consistency.csv\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10
+ controversy[]cases.csv\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10 divergence[]cases.csv
+\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10 rule[]replay[]flip[]table.csv\OT1/cmr/m/n/10
+ ,
+
+Overfull \hbox (29.96024pt too wide) in paragraph at lines 931--935
+\OT1/cmtt/m/n/10 fan[]favor[]index.csv\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10 recomm
+endation[]matrix.csv \OT1/cmr/m/n/10 (M2); \OT1/cmtt/m/n/10 delta[]summary.csv\
+OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10 pro[]rankings[]fan[]channel.csv\OT1/cmr/m/n/1
+0 ,
+[34] [35] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)</opt/homebrew/Cellar/texli
+ve/20260301_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/
+homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx9.pfb></opt/homebrew/Cellar/texlive/20260301_3/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/t
+exlive/20260301_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb></opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi5.pfb></opt/homebrew/Cellar/texlive/20260301_3
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cella
+r/texlive/20260301_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
+</opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20260301_
+3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/homebrew/Cell
+ar/texlive/20260301_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></opt/homebrew/Cellar/texlive/20260301_3/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cella
+r/texlive/20260301_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy9.pfb></opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20260301
+_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/homebrew/Ce
+llar/texlive/20260301_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.p
+fb></opt/homebrew/Cellar/texlive/20260301_3/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb></opt/homebrew/Cellar/texlive/20260301_3/share/texmf-di
+st/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (35 pages, 2171490 bytes).
+Transcript written on main.log.

@@ -1,0 +1,11 @@
+,beta_J,beta_F,E_g,se_E,z,p,p_adj,sig_FDR
+age,-0.00148,-0.00273,0.00125,0.00279,0.4474,0.65458,False,0.72732
+age_sq,-5e-05,2e-05,-6e-05,3e-05,-1.91929,0.05495,False,0.10989
+prior_fame_proxy,0.11888,0.38963,-0.27075,0.0089,-30.42774,0.0,True,0.0
+"C(industry_clean, Treatment(reference='Actor/Actress'))[T.Athlete]",-0.09265,0.0301,-0.12275,0.0198,-6.19925,0.0,True,0.0
+"C(industry_clean, Treatment(reference='Actor/Actress'))[T.Comedian]",0.11293,-0.01482,0.12775,0.04907,2.60335,0.00923,True,0.02496
+"C(industry_clean, Treatment(reference='Actor/Actress'))[T.Model]",-0.05447,0.00191,-0.05638,0.04661,-1.20972,0.22639,False,0.32341
+"C(industry_clean, Treatment(reference='Actor/Actress'))[T.Singer/Rapper]",-0.00457,0.00548,-0.01005,0.02243,-0.44801,0.65414,False,0.72732
+"C(industry_clean, Treatment(reference='Actor/Actress'))[T.Social Media Personality]",-0.00961,-0.13072,0.12111,0.04701,2.57638,0.00998,True,0.02496
+"C(industry_clean, Treatment(reference='Actor/Actress'))[T.TV Personality]",-0.04372,-0.04211,-0.00161,0.02189,-0.07338,0.9415,False,0.9415
+"C(industry_clean, Treatment(reference='Actor/Actress'))[T.other]",-0.08855,-0.04269,-0.04586,0.0299,-1.53379,0.12508,False,0.20847

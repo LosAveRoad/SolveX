@@ -1,5 +1,10 @@
 # 迁移实施完成状态（2026-11-05）
 
+> **后续修订（2026-11-06，ADR-0011）**：CP1 的「提示词逐字迁移」对
+> `modeling.system.md` 已改为「除工具段与 WORKFLOW 外逐字保留」——工具清单改由运行时
+> 代码发现并注入。归档基线 `docs/legacy-prompts/expected-r2.json` 未改动，历史证据链保留；
+> 下表为迁移当时的验收状态，现行口径见 `docs/adr/0011-tool-discovery-in-prompts.md`。
+
 > 配套：`SolveX-Pi-Migration.md` v1.1（设计规格）、`SolveX-Pi-Migration-Plan.md`（实施计划）。
 > 结论：**有条件 Go** —— 代码、测试、文档与可运行演示全部就绪；最终 Go/No-Go 待真实模型凭据补齐后签字。
 

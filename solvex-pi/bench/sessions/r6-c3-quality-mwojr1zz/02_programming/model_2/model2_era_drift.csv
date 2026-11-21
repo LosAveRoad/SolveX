@@ -1,0 +1,4 @@
+era,n_rows,mean_logit_fanshare,mean_fanshare,mean_abs_gap_fan_judge,mean_withinweek_fanjudge_spearman,median_topbottom_share_ratio
+2005-2012 (S1-17),1264,-2.1708,0.1313,0.052,0.539,6.03
+2013-2020 (S18-27),811,-2.3097,0.1184,0.0551,0.51,7.33
+2021-2025 (S28-34),702,-2.4129,0.104,0.0432,0.465,6.69

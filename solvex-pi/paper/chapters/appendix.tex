@@ -1,0 +1,112 @@
+%=====================================================================
+% Appendices (inserted after \appendix in the main file)
+%=====================================================================
+
+\section{Complete Season-Level Statistics}\label{app:seasons}
+
+Table~\ref{tab:seasonstats} reports every season from 1 to 34. ``C--W'' counts couple--weeks,
+``Wks'' counts competition weeks, and ``Elim.'' counts weeks with at least one elimination.
+Hit rate is the mean posterior percent-rule hit probability over eliminating weeks only.
+
+\input{chapters/tab_seasonstats.tex}
+
+\section{Variable Dictionary}\label{app:variables}
+
+The three analysis files use the following columns. All shares are within-week quantities;
+all posterior quantities come from the $8{,}000$-draw hit-and-run sampler.
+
+\begin{table}[H]
+\centering
+\caption{Column dictionary for the reconstructed panels.}
+\label{tab:dictionary}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{9.4cm}}
+\toprule
+Column(s) & Meaning \\
+\midrule
+\multicolumn{2}{l}{\emph{fan\_vote\_estimates.csv (24 columns, 2{,}777 rows)}} \\
+\midrule
+\texttt{season, week} & season and competition week identifiers \\
+\texttt{celebrity, pro, industry, age} & contestant and partner attributes \\
+\texttt{J, njudges} & weekly judge total and number of scoring judges \\
+\texttt{pJ, rankJ} & judge share and ordinal judge rank ($1$ = best) \\
+\texttt{pF\_med, pF\_lo, pF\_hi} & posterior median and $90\%$ interval bounds of fan share \\
+\texttt{pF\_mean, pF\_sd, W} & posterior mean, standard deviation, and within-week sum \\
+\texttt{pF\_med\_renorm, rankF} & renormalised fan share and its ordinal rank \\
+\texttt{comb\_pct, comb\_rank} & percent-combined and rank-combined scores \\
+\texttt{eliminated, placement, results, exit\_code} & observed outcome fields \\
+\midrule
+\multicolumn{2}{l}{\emph{weekly\_consistency.csv (17 columns, 335 rows)}} \\
+\midrule
+\texttt{n\_couples, n\_exiting, bottom\_two} & weekly field size, number eliminated, judge-save flag \\
+\texttt{sampler, rhat, ess, n\_constraints} & sampler name, convergence and geometry diagnostics \\
+\texttt{kappa\_pct, kappa\_rank} & recorded consistency statistics (see Section~\ref{sec:diagnostics}) \\
+\texttt{p\_hit\_pct, p\_hit\_rank} & posterior hit probabilities under the two rules \\
+\texttt{brier\_pct, brier\_rank} & Brier scores under the two rules \\
+\texttt{tau\_pct, spearman\_pct} & weekly rank-agreement statistics \\
+\midrule
+\multicolumn{2}{l}{\emph{couple\_weeks\_model3.csv (30 columns, 2{,}777 rows)}} \\
+\midrule
+\texttt{industry\_raw, industry} & original and collapsed industry categories \\
+\texttt{country, us\_home} & home country and US-home indicator \\
+\texttt{pro\_id, celebrity\_id, season\_id} & grouping identifiers for hierarchical effects \\
+\texttt{pF, rF, w\_fan} & Model~3 fan channel, its rank, and fan weight \\
+\texttt{pF\_med, pF\_lo, pF\_hi, pF\_sd, W} & Model~1 estimates joined onto the covariate panel \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Figure Inventory}\label{app:figures}
+
+The paper contains \textbf{18 figures}. The original five appear in Sections~\ref{sec:m1}
+and~\ref{sec:m3}; the thirteen added in the extended analysis are listed below. All are
+rendered at $170$ dpi from the CSV artifacts without manual retouching.
+
+\begin{table}[H]
+\centering
+\caption{Figures added in the extended analysis.}
+\label{tab:figurelist}
+\begin{tabular}{c>{\raggedright\arraybackslash}p{7.2cm}>{\raggedright\arraybackslash}p{6.4cm}}
+\toprule
+\# & File & Content \\
+\midrule
+1  & \texttt{fig01\_panel\_overview.png}       & panel size, field size, judge totals, ages \\
+2  & \texttt{fig02\_raw\_judge\_scores.png}    & raw judge-score descriptives \\
+3  & \texttt{fig03\_season\_dynamics.png}      & season-level shares, intervals, hit rates \\
+4  & \texttt{fig04\_uncertainty\_structure.png}& drivers of interval width \\
+5  & \texttt{fig05\_judge\_fan\_channels.png}  & level and rank channel disagreement \\
+6  & \texttt{fig06\_elimination\_evidence.png}& non-circular judge-only benchmark \\
+7  & \texttt{fig07\_fusion\_weight\_frontier.png} & counterfactual weight scan \\
+8  & \texttt{fig08\_regime\_break.png}         & identification of the season-28 boundary \\
+9  & \texttt{fig09\_rule\_disagreement.png}   & rank vs.\ percent disagreement map \\
+10 & \texttt{fig10\_sampler\_diagnostics.png} & $\hat R$, ESS, constraints, validation statistics \\
+11 & \texttt{fig11\_controversy\_trajectories.png} & four season-long contestant paths \\
+12 & \texttt{fig12\_covariate\_channels.png}  & age, industry and partner effects \\
+13 & \texttt{fig13\_interval\_robust\_replay.png} & uncertainty-aware counterfactuals \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Reproduction Steps}\label{app:reproduce}
+
+From the \texttt{solvex-pi} workspace root, with the generated session directory present:
+
+{\sloppy
+\begin{enumerate}
+  \item \texttt{python3 analyze\_extended.py} --- recomputes every statistic, writes
+        \texttt{chapters/extended\_stats.json} and the generated tables;
+  \item \texttt{python3 figures\_extended.py} --- renders the thirteen figures into
+        \texttt{04\_paper/figures\_ext/};
+  \item \texttt{python3 split\_tables.py} --- splits the generated table bundles into the
+        per-label files included by the paper;
+  \item \texttt{tectonic -X compile main\_extended.tex --outdir . --keep-logs}, run twice so
+        that the table of contents and all cross-references resolve.
+\end{enumerate}
+}
+
+The only external requirements are Python with \texttt{pandas}, \texttt{numpy} and
+\texttt{matplotlib}, and a TeX engine supporting \texttt{graphicx}, \texttt{booktabs},
+\texttt{longtable}, \texttt{float} and \texttt{hyperref}. No network access, no model API
+call and no random seed is needed to reproduce this extended analysis: it is a deterministic
+function of the four CSV files listed in Section~\ref{sec:reproducibility}.
+
+%=====================================================================

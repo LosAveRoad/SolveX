@@ -1,0 +1,52 @@
+======================================================================
+V1. FORWARD TEST — unconditional prior P(correct elimination), lift,
+    and posterior replication (sampler-correctness footnote)
+======================================================================
+weeks with eliminations: 264
+unconditional prior P(correct elimination): mean = 0.3409, median = 0.1917, min = 0.0000
+information lift (1/mean): 2.9x on average
+posterior replication probability = 1.000 (footnote: draws are conditioned on feasibility by construction, so repl_prob validates sampler correctness, not predictive power)
+=> the elimination constraint is the binding information source; the prior alone reproduces eliminations only a small fraction of the time (see mean), while posterior draws reproduce them 100% of the time by construction.
+
+======================================================================
+V2. HOLD-OUT CHECK — point estimate reproduces final ORDERINGS
+======================================================================
+  finale ordering VIOLATED: S27 W9
+  finale ordering VIOLATED: S33 W9
+elimination weeks tested: 257; violations: 0
+finale weeks tested: 34; ordering violations: 2
+
+======================================================================
+V3. RULE SENSITIVITY — same data under the OPPOSITE combination rule
+======================================================================
+weeks tested (S3+): 254; weeks where the two rules pick DIFFERENT eliminations on the identical fan-vector: 21 (8.3%)
+examples (season, week, actual rule, actual elim, other-rule elim):
+   (3, 5, 'pct', ['Willa Ford'], ['Jerry Springer'])
+   (15, 6, 'pct', ['Sabrina Bryan'], ['Emmitt Smith'])
+   (16, 10, 'pct', ['Alexandra Raisman'], ['Jacoby Jones'])
+   (17, 5, 'pct', ['Christina Milian'], ['Jack Osbourne'])
+   (18, 10, 'pct', ['James Maslow'], ['Candace Cameron Bure'])
+   (20, 9, 'pct', ['Nastia Liukin'], ['Noah Galloway'])
+   (21, 9, 'pct', ['Alexa PenaVega'], ['Nick Carter'])
+   (21, 11, 'pct', ['Carlos PenaVega'], ['Alek Skarlatos'])
+   (22, 8, 'pct', ['Jodie Sweetin'], ['Wanya Morris'])
+   (24, 6, 'pct', ['Heather Morris'], ['Nick Viall'])
+   (24, 9, 'pct', ['Simone Biles'], ['Normani'])
+   (27, 4, 'pct', ['Tinashe'], ['Bobby Bones'])
+   (27, 8, 'pct', ['Juan Pablo Di Pace', 'Joe Amabile'], ['Bobby Bones', 'Joe Amabile'])
+   (30, 3, 'rank', ['Christine Chiu'], ['Olivia Jade'])
+   (31, 1, 'rank', ['Jason Lewis'], ['Shangela'])
+
+======================================================================
+V4. CERTAINTY ANALYSIS — is CI width constant across contestants/weeks?
+======================================================================
+corr(90% CI width, judge share) = 0.357
+corr(90% CI width, week)        = 0.255
+corr(90% CI width, n_active)    = -0.334
+corr(CV, judge share)           = -0.874
+narrow-CI weeks (width < 0.5*median): 248 rows; wide-CI rows (> 2x median): 0
+90% CI width: mean=0.241, median=0.249, IQR=[0.225,0.280], max=0.463
+
+=> certainty is NOT uniform: it scales with (a) judge share (dominant couples are
+   tightly pinned by the dominance constraint) and (b) week index (finals have
+   fewer couples and stronger margins).

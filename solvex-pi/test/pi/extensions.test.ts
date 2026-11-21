@@ -41,4 +41,16 @@ describe("T3.3 自定义工具扩展", () => {
     expect(await handler({ toolName: "write", input: { path: "02_programming/model_1/a.py" } })).toBeUndefined();
     expect(await handler({ toolName: "read", input: { path: "../outside" } })).toBeDefined();
   });
+  it("传入 cwd 时按绝对路径比较：拦截绝对路径改写共享 master_plan，放行自己目录的绝对/相对写入（实测回归）", async () => {
+    let handler: any;
+    const cwd = "/ws/run1";
+    safetyExtension({ on: (_e: string, h: any) => { handler = h; } }, ["02_programming/model_1/"], cwd);
+    expect((await handler({ toolName: "write", input: { path: "/ws/run1/01_modeling/master_plan.md" } })).block).toBe(true);
+    expect((await handler({ toolName: "write", input: { path: "01_modeling/master_plan.md" } })).block).toBe(true);
+    expect((await handler({ toolName: "edit", input: { path: "/ws/run1/02_programming/model_2/a.py" } })).block).toBe(true);
+    expect((await handler({ toolName: "write", input: { path: "/ws/run1/02_programming/model_1x/a.py" } })).block).toBe(true);
+    expect(await handler({ toolName: "write", input: { path: "/ws/run1/02_programming/model_1/a.py" } })).toBeUndefined();
+    expect(await handler({ toolName: "write", input: { path: "02_programming/model_1/figures/f.png" } })).toBeUndefined();
+    expect(await handler({ toolName: "read", input: { path: "/ws/run1/01_modeling/master_plan.md" } })).toBeUndefined();
+  });
 });

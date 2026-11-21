@@ -1,0 +1,71 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Problem Background and Motivation}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Data Description}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Our Approach: An Identification-First, Three-Model Pipeline}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Honesty About What the Data Can and Cannot Identify}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Paper Outline}{5}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Model 1: Maximum-Entropy Fan-Vote Inversion (ME-FVI)}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problem Statement}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Implementation}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Results}{7}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Feasibility: every recorded elimination is consistent with the rule}{7}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Certainty is real but not uniform}{8}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Calibrated reproduction rates and where calibration fails}{8}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}The inferred votes are not an artifact}{8}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Judges alone would have eliminated a different show}{9}{subsubsection.2.4.5}%
+\contentsline {subsubsection}{\numberline {2.4.6}Point estimates, divergences, and the controversy cases}{9}{subsubsection.2.4.6}%
+\contentsline {subsubsection}{\numberline {2.4.7}Hold-out check}{9}{subsubsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.5}Figures}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Validation Summary and Open Review Issues}{13}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Model 2: Counterfactual Season Re-Play Under Rank, Percent, and Save Rules (CSR)}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Problem Statement}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{13}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Implementation}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Results}{15}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Elimination-chain reproduction}{15}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Winner and top-3 flip probabilities}{15}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Does one rule favor fan votes?}{16}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}The judges-save propensity}{16}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}The four controversy celebrities}{16}{subsubsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.5}Figures}{17}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Validation, Reproducibility, and Open Review Issues}{20}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Model 3: Decomposed Judge/Fan Effects and the Fairness-Optimized Rule (DFE-FO)}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problem Statement}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{21}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Implementation}{22}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Results}{22}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Trait effects: small, and dominated by couple-level variation}{22}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Pro-dancer effects}{22}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Fairness--excitement Pareto grid}{22}{subsubsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.5}Figures}{23}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Validation and Open Review Issues}{25}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Results and Analysis Across Models}{26}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Integrated Findings}{26}{subsection.5.1}%
+\contentsline {paragraph}{1. Fan votes consistent with every elimination exist, and are not extreme.}{26}{section*.17}%
+\contentsline {paragraph}{2. Certainty is structural and non-uniform.}{26}{section*.18}%
+\contentsline {paragraph}{3. Rule choice matters enormously, but neither rule systematically favors fans.}{26}{section*.19}%
+\contentsline {paragraph}{4. The judges-save mechanism is a modest but real judge-side corrective.}{26}{section*.20}%
+\contentsline {paragraph}{5. Celebrity demographics barely move either audience.}{26}{section*.21}%
+\contentsline {subsection}{\numberline {5.2}The Controversies, Revisited}{27}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Answering the Problem's Questions Directly}{27}{subsection.5.3}%
+\contentsline {paragraph}{Consistency of fan-vote estimates with eliminations.}{27}{section*.22}%
+\contentsline {paragraph}{Certainty and its uniformity.}{27}{section*.23}%
+\contentsline {paragraph}{Rank vs percentage across seasons.}{27}{section*.24}%
+\contentsline {paragraph}{Controversy celebrities and the judges-save.}{27}{section*.25}%
+\contentsline {paragraph}{A proposed fairer/better system.}{27}{section*.26}%
+\contentsline {section}{\numberline {6}Sensitivity Analysis}{28}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Sensitivity of Model 1}{28}{subsection.6.1}%
+\contentsline {paragraph}{Prior and objective.}{28}{section*.28}%
+\contentsline {paragraph}{Bootstrap concentration cap.}{28}{section*.29}%
+\contentsline {paragraph}{Solver path.}{28}{section*.30}%
+\contentsline {subsection}{\numberline {6.2}Sensitivity of Model 2 to the Combination Weight}{28}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Sensitivity to Unmodeled Show Mechanics}{29}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}What Would Change the Conclusions?}{29}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Discussion}{29}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Interpretation}{29}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Strengths of the Approach}{29}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Limitations}{30}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Comparison with Simpler Approaches}{30}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Conclusion}{30}{section.8}%
+\contentsline {section}{References}{32}{section*.31}%

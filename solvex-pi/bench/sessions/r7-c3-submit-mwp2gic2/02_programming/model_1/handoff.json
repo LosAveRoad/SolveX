@@ -1,0 +1,25 @@
+{
+  "status": "SATISFIED",
+  "issues": [
+    "Fused Dempster conflict K_w is frame-size dominated (median ~0.996 for 13-couple casts vs 0.045 for 3-couple finals); it is exported as a diagnostic only, with certainty driven by the panel discount q_w and the frailty posterior instead.",
+    "Catalog coverage of realized eliminations is not assessable at the nominal 90% level (an eliminated couple's phi must be the weekly minimum a priori); coverage is reported via the Dirichlet-marginal overlap test (100%) and the P(elim) reliability curve (AUC 0.959, Brier 0.047) instead.",
+    "Partner leave-one-out strength carries a small temporal leak (all-time partner history); a strict leave-one-SEASON-out hazard refit bounds the effect at +0.008 pp AUC.",
+    "Diana Nyad (S18) has elim_week 2 but scores only in week 1; she is handled by the censored-at-last-scored-week convention (single documented exception)."
+  ],
+  "fixInstructions": "Re-run with 'python3 run.py' from this directory; it deterministically regenerates fanvote_estimates.csv, results.json, and all 5 figures from the shared dataset. Set SEED to change the Monte-Carlo draw set; set TAU to change the frailty loading on phi (TAU=0.5/1.5 also reported in results.json phi.top1_hit_by_tau).",
+  "summaryPath": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r7-c3-submit-mwp2gic2/02_programming/model_1/results_summary.md",
+  "headline": {
+    "top1_hit_phi": 0.670,
+    "top2_hit_phi": 0.896,
+    "auc_p_elim": 0.959,
+    "brier_all": 0.047,
+    "kendall_tau_phi_vs_placement": 0.799,
+    "sigma_u": 0.646,
+    "gamma_selected": 8.0,
+    "m0_selected": 200.0,
+    "median_width90": 0.095,
+    "danced_week_rows": 2777,
+    "elimination_events": 297,
+    "seasons": 34
+  }
+}

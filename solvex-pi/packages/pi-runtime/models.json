@@ -1,10 +1,21 @@
 {
   "providers": {
-    "openai-compatible": {
-      "baseUrl": "$SOLVEX_OPENAI_BASE_URL",
+    "deepseek": {
+      "baseUrl": "https://api.deepseek.com",
       "api": "openai-completions",
-      "apiKey": "$SOLVEX_OPENAI_API_KEY",
-      "models": []
+      "apiKey": "$DEEPSEEK_API_KEY",
+      "models": [
+        {
+          "id": "deepseek-flash",
+          "name": "DeepSeek-V4.1-Flash",
+          "api": "openai-completions",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "contextWindow": 1000000,
+          "maxTokens": 32768
+        }
+      ]
     }
   }
 }

@@ -2,14 +2,15 @@ import { describe, it, expect } from "vitest";
 import { parseArgs, HELP } from "../../apps/cli/src/args.js";
 
 describe("T4.1 CLI 参数解析（与旧版 1:1 兼容）", () => {
-  it("-p/-d/-r/--from-model/-w/--session-dir/--strict/--concurrency 全覆盖", () => {
+  it("-p/-d/-r/-w/--session-dir/--strict/--concurrency 全覆盖", () => {
     const a = parseArgs(["run", "-p", "p.md", "-d", "d1", "-d", "d2", "-r", "s1",
-      "--from-model", "2", "-w", "--session-dir", "/tmp/s", "--strict", "--concurrency", "5"]);
+      "-w", "--session-dir", "/tmp/s", "--strict", "--concurrency", "5"]);
     expect(a.command).toBe("run");
     expect(a.problem).toBe("p.md");
     expect(a.data).toEqual(["d1", "d2"]);
     expect(a.resume).toBe("s1");
-    expect(a.fromModel).toBe(2);
+    // 续跑基于会话日志，不再需要「从第 N 个模型开始」（旧参数只起开关作用，与帮助文本不符）
+    expect(HELP).not.toContain("--from-model");
     expect(a.skipToWriting).toBe(true);
     expect(a.sessionDir).toBe("/tmp/s");
     expect(a.strict).toBe(true);
@@ -28,8 +29,14 @@ describe("T4.1 CLI 参数解析（与旧版 1:1 兼容）", () => {
   });
   it("帮助文本列出旧参数与新增参数", () => {
     for (const k of ["--problem", "--data", "--resume", "--skip-to-writing",
-                     "--concurrency", "--strict"])
+                     "--concurrency", "--strict", "--mcp-config", "--mcp-preset"])
       expect(HELP).toContain(k);
+  });
+  it("--mcp-config / --mcp-preset 透传配置路径与内置预设", () => {
+    const a = parseArgs(["run", "--mcp-config", "/tmp/mcp.json", "--mcp-preset", "deepseek"]);
+    expect(a.mcpConfig).toBe("/tmp/mcp.json");
+    expect(a.mcpPreset).toBe("deepseek");
+    expect(parseArgs(["serve", "--mcp-config", "/tmp/mcp.json"]).mcpConfig).toBe("/tmp/mcp.json");
   });
 
   it("演示模式不作为公开选项暴露，未知选项直接报错", () => {

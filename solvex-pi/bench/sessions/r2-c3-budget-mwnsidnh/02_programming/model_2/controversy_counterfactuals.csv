@@ -1,0 +1,17 @@
+celebrity,season,rule,p_win,p_top3,mean_placement,observed_place
+Jerry Rice,2,RANK,0.039,0.458,4.106,2.0
+Jerry Rice,2,PCT,0.074,0.291,4.719,2.0
+Jerry Rice,2,JUDGE_SAVE,0.039,0.458,4.106,2.0
+Jerry Rice,2,PROPOSED,0.08,0.29,5.446,2.0
+Billy Ray Cyrus,4,RANK,0.0,0.003,8.554,5.0
+Billy Ray Cyrus,4,PCT,0.0,0.17,7.434,5.0
+Billy Ray Cyrus,4,JUDGE_SAVE,0.0,0.003,8.554,5.0
+Billy Ray Cyrus,4,PROPOSED,0.0,0.171,6.799,5.0
+Bristol Palin,11,RANK,0.0,0.32,5.082,3.0
+Bristol Palin,11,PCT,0.0,0.219,5.469,3.0
+Bristol Palin,11,JUDGE_SAVE,0.0,0.32,5.082,3.0
+Bristol Palin,11,PROPOSED,0.0,0.219,6.478,3.0
+Bobby Bones,27,RANK,0.348,0.992,1.805,1.0
+Bobby Bones,27,PCT,1.0,1.0,1.0,1.0
+Bobby Bones,27,JUDGE_SAVE,0.348,0.992,1.805,1.0
+Bobby Bones,27,PROPOSED,0.985,1.0,1.015,1.0

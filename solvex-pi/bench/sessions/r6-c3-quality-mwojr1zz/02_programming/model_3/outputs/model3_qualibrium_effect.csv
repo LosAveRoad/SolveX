@@ -1,0 +1,422 @@
+season,celebrity,med_place_percent,med_place_qualibrium,delta
+1,Evander Holyfield,5.0,5.0,0.0
+1,Joey McIntyre,3.0,3.0,0.0
+1,John O'Hurley,1.0,1.0,0.0
+1,Kelly Monaco,1.0,1.0,0.0
+1,Rachel Hunter,0.0,0.0,0.0
+1,Trista Sutter,0.0,0.0,0.0
+2,Drew Lachey,1.0,0.0,-1.0
+2,George Hamilton,5.0,5.0,0.0
+2,Giselle Fernandez,0.0,0.0,0.0
+2,Jerry Rice,1.0,0.0,-1.0
+2,Kenny Mayne,0.0,10.0,10.0
+2,Lisa Rinna,4.0,4.0,0.0
+2,Master P,7.0,7.0,0.0
+2,Stacy Keibler,1.0,0.0,-1.0
+2,Tatum O'Neal,9.0,9.0,0.0
+2,Tia Carrere,6.0,6.0,0.0
+3,Emmitt Smith,0.0,0.0,0.0
+3,Harry Hamlin,9.0,9.0,0.0
+3,Jerry Springer,6.0,6.0,0.0
+3,Joey Lawrence,4.0,4.0,0.0
+3,Mario Lopez,0.0,0.0,0.0
+3,Monique Coleman,5.0,5.0,0.0
+3,Sara Evans,8.0,7.0,-1.0
+3,Shanna Moakler,0.0,0.0,0.0
+3,Tucker Carlson,11.0,11.0,0.0
+3,Vivica A. Fox,0.0,0.0,0.0
+3,Willa Ford,9.0,9.0,0.0
+4,Apolo Anton Ohno,1.0,1.0,0.0
+4,Billy Ray Cyrus,5.0,5.0,0.0
+4,Clyde Drexler,8.0,8.0,0.0
+4,Heather Mills,0.0,0.0,0.0
+4,Ian Ziering,4.0,4.0,0.0
+4,Joey Fatone,1.0,1.0,0.0
+4,John Ratzenberger,7.0,7.0,0.0
+4,Laila Ali,1.0,1.0,0.0
+4,Leeza Gibbons,0.0,0.0,0.0
+4,Paulina Porizkova,0.0,0.0,0.0
+4,Shandi Finnessey,0.0,0.0,0.0
+5,Albert Reed,0.0,0.0,0.0
+5,Cameron Mathison,5.0,0.0,-5.0
+5,Floyd Mayweather Jr.,0.0,0.0,0.0
+5,Helio Castroneves,1.0,1.0,0.0
+5,Jane Seymour,6.0,6.0,0.0
+5,Jennie Garth,4.0,4.0,0.0
+5,Josie Maran,12.0,12.0,0.0
+5,Marie Osmond,1.0,1.0,0.0
+5,Mark Cuban,8.0,8.0,0.0
+5,Mel B,1.0,1.0,0.0
+5,Sabrina Bryan,0.0,0.0,0.0
+5,Wayne Newton,10.0,10.0,0.0
+6,Adam Carolla,9.0,9.0,0.0
+6,Cristian de la Fuente,1.0,1.0,0.0
+6,Jason Taylor,1.0,1.0,0.0
+6,Kristi Yamaguchi,1.0,1.0,0.0
+6,Mario,5.0,0.0,-5.0
+6,Marissa Jaret Winokur,4.0,4.0,0.0
+6,Marlee Matlin,7.0,7.0,0.0
+6,Monica Seles,12.0,12.0,0.0
+6,Penn Jillette,0.0,0.0,0.0
+6,Priscilla Presley,8.0,8.0,0.0
+6,Shannon Elizabeth,0.0,0.0,0.0
+6,Steve Guttenberg,11.0,10.0,-1.0
+7,Brooke Burke,1.0,1.0,0.0
+7,Cloris Leachman,8.0,8.0,0.0
+7,Cody Linley,5.0,5.0,0.0
+7,Jeffrey Ross,13.0,13.0,0.0
+7,Kim Kardashian,0.0,0.0,0.0
+7,Lance Bass,1.0,1.0,0.0
+7,Maurice Greene,6.0,6.0,0.0
+7,Misty May-Treanor,0.0,0.0,0.0
+7,Rocco DiSpirito,10.0,10.0,0.0
+7,Susan Lucci,7.0,7.0,0.0
+7,Ted McGinley,0.0,0.0,0.0
+7,Toni Braxton,0.0,0.0,0.0
+7,Warren Sapp,1.0,1.0,0.0
+8,Belinda Carlisle,0.0,0.0,0.0
+8,Chuck Wicks,0.0,0.0,0.0
+8,David Alan Grier,0.0,0.0,0.0
+8,Denise Richards,0.0,0.0,0.0
+8,Gilles Marini,1.0,1.0,0.0
+8,Holly Madison,11.0,11.0,0.0
+8,Lawrence Taylor,7.0,7.0,0.0
+8,Lil' Kim,0.0,0.0,0.0
+8,Melissa Rycroft,1.0,1.0,0.0
+8,Shawn Johnson,1.0,1.0,0.0
+8,Steve Wozniak,11.0,11.0,0.0
+8,Steve-O,8.0,8.0,0.0
+8,Ty Murray,4.0,4.0,0.0
+9,Aaron Carter,6.0,6.0,0.0
+9,Ashley Hamiliton,0.0,0.0,0.0
+9,Chuck Liddell,0.0,0.0,0.0
+9,Debi Mazar,0.0,0.0,0.0
+9,Donny Osmond,1.0,1.0,0.0
+9,Joanna Krupa,5.0,5.0,0.0
+9,Kathy Ireland,14.0,14.0,0.0
+9,Kelly Osbourne,1.0,1.0,0.0
+9,Louie Vito,10.0,10.0,0.0
+9,Macy Gray,0.0,0.0,0.0
+9,Mark Dacascos,8.0,8.0,0.0
+9,Melissa Joan Hart,10.0,10.0,0.0
+9,Michael Irvin,8.0,8.0,0.0
+9,Mya,1.0,1.0,0.0
+9,Natalie Coughlin,0.0,0.0,0.0
+9,Tom DeLay,0.0,0.0,0.0
+10,Aiden Turner,0.0,0.0,0.0
+10,Buzz Aldrin,10.0,10.0,0.0
+10,Chad Ochocinco,4.0,4.0,0.0
+10,Erin Andrews,1.0,1.0,0.0
+10,Evan Lysacek,1.0,1.0,0.0
+10,Jake Pavelka,7.0,7.0,0.0
+10,Kate Gosselin,8.0,8.0,0.0
+10,Nicole Scherzinger,1.0,1.0,0.0
+10,Niecy Nash,5.0,5.0,0.0
+10,Pamela Anderson,0.0,0.0,0.0
+10,Shannen Doherty,0.0,0.0,0.0
+11,Audrina Patridge,0.0,0.0,0.0
+11,Brandy,4.0,4.0,0.0
+11,Bristol Palin,1.0,1.0,0.0
+11,David Hasselhoff,0.0,0.0,0.0
+11,Florence Henderson,8.0,8.0,0.0
+11,Jennifer Grey,1.0,1.0,0.0
+11,Kurt Warner,5.0,5.0,0.0
+11,Kyle Massey,1.0,1.0,0.0
+11,Margaret Cho,10.0,10.0,0.0
+11,Michael Bolton,11.0,11.0,0.0
+11,Rick Fox,6.0,6.0,0.0
+11,The Situation,9.0,9.0,0.0
+12,Chelsea Kane,1.0,1.0,0.0
+12,Chris Jericho,7.0,7.0,0.0
+12,Hines Ward,1.0,1.0,0.0
+12,Kendra Wilkinson,8.0,8.0,0.0
+12,Kirstie Alley,1.0,1.0,0.0
+12,Mike Catherwood,0.0,0.0,0.0
+12,Petra Nemcova,8.0,8.0,0.0
+12,Ralph Macchio,4.0,4.0,0.0
+12,Romeo,6.0,6.0,0.0
+12,Sugar Ray Leonard,0.0,0.0,0.0
+12,Wendy Williams,10.0,10.0,0.0
+13,Carson Kressley,8.0,8.0,0.0
+13,Chaz Bono,7.0,7.0,0.0
+13,Chynna Phillips,0.0,0.0,0.0
+13,David Arquette,0.0,0.0,0.0
+13,Elisabetta Canalis,0.0,0.0,0.0
+13,Hope Solo,4.0,4.0,0.0
+13,J.R. Martinez,1.0,1.0,0.0
+13,Kristin Cavallari,0.0,0.0,0.0
+13,Metta World Peace (Ron),12.0,0.0,-12.0
+13,Nancy Grace,5.0,5.0,0.0
+13,Ricki Lake,1.0,1.0,0.0
+13,Rob Kardashian,1.0,1.0,0.0
+14,Donald Driver,0.0,0.0,0.0
+14,Gavin DeGraw,9.0,9.0,0.0
+14,Gladys Knight,8.0,8.0,0.0
+14,Jack Wagner,0.0,0.0,0.0
+14,Jaleel White,0.0,0.0,0.0
+14,Katherine Jenkins,4.0,4.0,0.0
+14,Maria Menounos,6.0,6.0,0.0
+14,Martina Navratilova,12.0,12.0,0.0
+14,Melissa Gilbert,6.0,6.0,0.0
+14,Roshon Fegan,0.0,0.0,0.0
+14,Sherri Sheperd,0.0,0.0,0.0
+14,William Levy,0.0,0.0,0.0
+15,Apolo Anton Ohno,5.0,5.0,0.0
+15,Bristol Palin,11.0,11.0,0.0
+15,Drew Lachey,11.0,11.0,0.0
+15,Emmitt Smith,5.0,5.0,0.0
+15,Gilles Marini,7.0,7.0,0.0
+15,Helio Castroneves,0.0,0.0,0.0
+15,Joey Fatone,0.0,0.0,0.0
+15,Kelly Monaco,1.0,1.0,0.0
+15,Kirstie Alley,7.0,7.0,0.0
+15,Melissa Rycroft,1.0,1.0,0.0
+15,Pamela Anderson,13.0,13.0,0.0
+15,Sabrina Bryan,0.0,0.0,0.0
+15,Shawn Johnson,1.0,1.0,0.0
+16,Alexandra Raisman,5.0,5.0,0.0
+16,Andy Dick,8.0,8.0,0.0
+16,D. L. Hughley,10.0,10.0,0.0
+16,Dorothy Hamill,0.0,0.0,0.0
+16,Ingo Rademacher,6.0,6.0,0.0
+16,Jacoby Jones,0.0,0.0,0.0
+16,Kellie Pickler,1.0,1.0,0.0
+16,Lisa Vanderpump,11.0,11.0,0.0
+16,Sean Lowe,7.0,7.0,0.0
+16,Victor Ortiz,9.0,9.0,0.0
+16,Wynonna Judd,12.0,12.0,0.0
+16,Zendaya,1.0,1.0,0.0
+17,Amber Riley,1.0,1.0,0.0
+17,Bill Engvall,4.0,4.0,0.0
+17,Bill Nye,11.0,11.0,0.0
+17,Brant Daugherty,0.0,0.0,0.0
+17,Christina Milian,0.0,0.0,0.0
+17,Corbin Bleu,0.0,0.0,0.0
+17,Elizabeth Berkley Lauren,7.0,7.0,0.0
+17,Jack Osbourne,0.0,0.0,0.0
+17,Keyshawn Johnson,0.0,0.0,0.0
+17,Leah Remini,5.0,9.0,4.0
+17,"Nicole ""Snooki"" Polizzi",0.0,0.0,0.0
+17,Valerie Harper,10.0,10.0,0.0
+18,Amy Purdy,0.0,0.0,0.0
+18,Billy Dee Williams,11.0,11.0,0.0
+18,Candace Cameron Bure,0.0,0.0,0.0
+18,Charlie White,6.0,6.0,0.0
+18,Cody Simpson,0.0,0.0,0.0
+18,Danica McKellar,0.0,0.0,0.0
+18,Diana Nyad,0.0,0.0,0.0
+18,Drew Carey,9.0,9.0,0.0
+18,James Maslow,5.0,5.0,0.0
+18,Meryl Davis,1.0,1.0,0.0
+18,NeNe Leakes,8.0,8.0,0.0
+18,Sean Avery,0.0,0.0,0.0
+19,Alfonso Ribeiro,1.0,1.0,0.0
+19,Antonio Sabato Jr.,9.0,9.0,0.0
+19,Bethany Mota,4.0,4.0,0.0
+19,Betsey Johnson,13.0,12.0,-1.0
+19,Janel Parrish,0.0,0.0,0.0
+19,Jonathan Bennett,10.0,10.0,0.0
+19,Lea Thompson,0.0,0.0,0.0
+19,Lolo Jones,0.0,0.0,0.0
+19,Michael Waltrip,7.0,7.0,0.0
+19,Randy Couture,11.0,11.0,0.0
+19,Sadie Robertson,1.0,1.0,0.0
+19,Tavis Smiley,0.0,0.0,0.0
+19,Tommy Chong,5.0,5.0,0.0
+20,Charlotte McKinney,0.0,0.0,0.0
+20,Chris Soules,6.0,6.0,0.0
+20,Michael Sam,0.0,0.0,0.0
+20,Nastia Liukin,4.0,4.0,0.0
+20,Noah Galloway,0.0,0.0,0.0
+20,Patti LaBelle,8.0,8.0,0.0
+20,Redfoo,0.0,0.0,0.0
+20,Riker Lynch,0.0,0.0,0.0
+20,Robert Herjavec,6.0,6.0,0.0
+20,Rumer Willis,0.0,0.0,0.0
+20,Suzanne Somers,9.0,9.0,0.0
+20,Willow Shields,0.0,0.0,0.0
+21,Alek Skarlatos,0.0,0.0,0.0
+21,Alexa PenaVega,9.0,9.0,0.0
+21,Andy Grammer,8.0,8.0,0.0
+21,Bindi Irwin,0.0,0.0,0.0
+21,Carlos PenaVega,6.0,6.0,0.0
+21,Chaka Khan,13.0,13.0,0.0
+21,Gary Busey,11.0,11.0,0.0
+21,Hayes Grier,0.0,0.0,0.0
+21,Kim Zolciak-Biermann,0.0,0.0,0.0
+21,Nick Carter,1.0,1.0,0.0
+21,Paula Deen,10.0,10.0,0.0
+21,Tamar Braxton,7.0,7.0,0.0
+21,Victor Espinoza,0.0,0.0,0.0
+22,Antonio Brown,5.0,5.0,0.0
+22,Doug Flutie,9.0,9.0,0.0
+22,Geraldo Rivera,12.0,12.0,0.0
+22,Ginger Zee,0.0,0.0,0.0
+22,Jodie Sweetin,8.0,8.0,0.0
+22,Kim Fields,0.0,0.0,0.0
+22,Marla Maples,0.0,0.0,0.0
+22,Mischa Barton,11.0,11.0,0.0
+22,Nyle DiMarco,0.0,0.0,0.0
+22,Paige VanZant,0.0,0.0,0.0
+22,Von Miller,8.0,0.0,-8.0
+22,Wanya Morris,5.0,5.0,0.0
+23,Amber Rose,9.0,9.0,0.0
+23,Babyface,11.0,11.0,0.0
+23,Calvin Johnson Jr.,1.0,1.0,0.0
+23,Jake T. Austin,0.0,0.0,0.0
+23,James Hinchcliffe,1.0,1.0,0.0
+23,Jana Kramer,4.0,4.0,0.0
+23,Laurie Hernandez,1.0,1.0,0.0
+23,Marilu Henner,6.0,6.0,0.0
+23,Maureen McCormick,0.0,0.0,0.0
+23,Rick Perry,12.0,12.0,0.0
+23,Ryan Lochte,8.0,8.0,0.0
+23,Terra Jole,7.0,7.0,0.0
+23,Vanilla Ice,11.0,11.0,0.0
+24,Bonner Bolton,5.0,5.0,0.0
+24,Charo,0.0,0.0,0.0
+24,Chris Kattan,0.0,0.0,0.0
+24,David Ross,0.0,0.0,0.0
+24,Erika Jayne,9.0,9.0,0.0
+24,Heather Morris,0.0,0.0,0.0
+24,Mr. T,10.0,10.0,0.0
+24,Nancy Kerrigan,0.0,0.0,0.0
+24,Nick Viall,7.0,7.0,0.0
+24,Normani,0.0,0.0,0.0
+24,Rashad Jennings,0.0,0.0,0.0
+24,Simone Biles,4.0,4.0,0.0
+25,Barbara Corcoran,13.0,13.0,0.0
+25,Debbie Gibson,0.0,0.0,0.0
+25,Derek Fisher,11.0,11.0,0.0
+25,Drew Scott,4.0,4.0,0.0
+25,Frankie Muniz,0.0,0.0,0.0
+25,Jordan Fisher,1.0,1.0,0.0
+25,Lindsey Stirling,1.0,1.0,0.0
+25,Nick Lachey,9.0,9.0,0.0
+25,Nikki Bella,8.0,8.0,0.0
+25,Sasha Pieterse,0.0,0.0,0.0
+25,Terrell Owens,8.0,8.0,0.0
+25,Vanessa Lachey,0.0,0.0,0.0
+25,Victoria Arlen,6.0,6.0,0.0
+26,Adam Rippon,1.0,1.0,0.0
+26,Arike Ogunbowale,0.0,0.0,0.0
+26,Chris Mazdzer,6.0,6.0,0.0
+26,Jamie Anderson,0.0,0.0,0.0
+26,Jennie Finch Daigle,6.0,6.0,0.0
+26,Johnny Damon,10.0,10.0,0.0
+26,Josh Norman,1.0,1.0,0.0
+26,Kareem Abdul-Jabbar,8.0,8.0,0.0
+26,Mirai Nagasu,6.0,6.0,0.0
+26,Tonya Harding,1.0,1.0,0.0
+27,Alexis Ren,1.0,0.0,-1.0
+27,Bobby Bones,1.0,6.0,5.0
+27,Danelle Umstead,0.0,12.0,12.0
+27,DeMarcus Ware,8.0,8.0,0.0
+27,Evanna Lynch,1.0,0.0,-1.0
+27,Joe Amabile,6.0,6.0,0.0
+27,John Schneider,9.0,9.0,0.0
+27,Juan Pablo Di Pace,0.0,0.0,0.0
+27,Mary Lou Retton,0.0,0.0,0.0
+27,Milo Manheim,1.0,0.0,-1.0
+27,Nancy McKeon,0.0,0.0,0.0
+27,Nikki Glaser,0.0,0.0,0.0
+27,Tinashe,0.0,0.0,0.0
+28,Ally Brooke,1.0,1.0,0.0
+28,Hannah Brown,1.0,1.0,0.0
+28,James Van Der Beek,6.0,6.0,0.0
+28,Karamo Brown,0.0,0.0,0.0
+28,Kate Flannery,0.0,0.0,0.0
+28,Kel Mitchell,1.0,1.0,0.0
+28,Lamar Odom,11.0,11.0,0.0
+28,Lauren Alaina,1.0,1.0,0.0
+28,Mary Wilson,0.0,0.0,0.0
+28,Ray Lewis,0.0,0.0,0.0
+28,Sailor Brinkley-Cook,0.0,0.0,0.0
+28,Sean Spicer,7.0,7.0,0.0
+29,AJ McLean,8.0,8.0,0.0
+29,Anne Heche,0.0,0.0,0.0
+29,Carole Baskin,14.0,14.0,0.0
+29,Charles Oakley,0.0,0.0,0.0
+29,Chrishell Stause,9.0,9.0,0.0
+29,Jeannie Mai,0.0,0.0,0.0
+29,Jesse Metcalfe,12.0,12.0,0.0
+29,Johnny Weir,7.0,7.0,0.0
+29,Justina Machado,1.0,1.0,0.0
+29,Kaitlyn Bristowe,1.0,1.0,0.0
+29,Monica Aldama,10.0,10.0,0.0
+29,Nelly,1.0,1.0,0.0
+29,Nev Schulman,1.0,1.0,0.0
+29,Skai Jackson,7.0,7.0,0.0
+29,Veron Davis,0.0,0.0,0.0
+30,Amanda Kloots,1.0,1.0,0.0
+30,Brian Austin Green,13.0,13.0,0.0
+30,Christine Chiu,0.0,0.0,0.0
+30,Cody Rigsby,1.0,1.0,0.0
+30,Iman Shumpert,1.0,1.0,0.0
+30,Jimmie Allen,8.0,8.0,0.0
+30,JoJo Siwa,1.0,1.0,0.0
+30,Kenya Moore,10.0,10.0,0.0
+30,Martin Kove,15.0,15.0,0.0
+30,Matt James,13.0,13.0,0.0
+30,Melanie C,0.0,0.0,0.0
+30,Melora Hardin,6.0,6.0,0.0
+30,"Mike ""The Miz"" Mizanin",9.0,9.0,0.0
+30,Olivia Jade,8.0,8.0,0.0
+30,Suni Lee,6.0,6.0,0.0
+31,Charli D'Amelio,1.0,1.0,0.0
+31,Cheryl Ladd,14.0,14.0,0.0
+31,Daniel Durant,7.0,7.0,0.0
+31,Gabby Windey,1.0,1.0,0.0
+31,Heidi D'Amelio,9.0,9.0,0.0
+31,Jason Lewis,0.0,0.0,0.0
+31,Jessie James Decker,0.0,0.0,0.0
+31,Jordin Sparks,0.0,0.0,0.0
+31,Joseph Baena,0.0,0.0,0.0
+31,Sam Champion,13.0,13.0,0.0
+31,Selma Blair,0.0,0.0,0.0
+31,Shangela,1.0,1.0,0.0
+31,Teresa Giudice,0.0,0.0,0.0
+31,Trevor Donovan,7.0,7.0,0.0
+31,Vinny Guadagnino,9.0,9.0,0.0
+31,Wayne Brady,1.0,1.0,0.0
+32,Adrian Peterson,0.0,0.0,0.0
+32,Alyson Hannigan,1.0,1.0,0.0
+32,Ariana Madix,1.0,1.0,0.0
+32,Barry Williams,8.0,8.0,0.0
+32,Charity Lawson,1.0,1.0,0.0
+32,Harry Jowsey,6.0,6.0,0.0
+32,Jamie Lynn Spears,0.0,0.0,0.0
+32,Jason Mraz,1.0,1.0,0.0
+32,Lele Pons,0.0,0.0,0.0
+32,Matt Walsh,0.0,0.0,0.0
+32,Mauricio Umansky,12.0,11.0,-1.0
+32,Mira Sorvino,0.0,0.0,0.0
+32,Tyson Beckford,12.0,12.0,0.0
+32,Xochitl Gomez,1.0,1.0,0.0
+33,Anna Delvey,0.0,0.0,0.0
+33,Brooks Nader,0.0,0.0,0.0
+33,Chandler Kinney,1.0,1.0,0.0
+33,Danny Amendola,1.0,1.0,0.0
+33,Dwight Howard,6.0,6.0,0.0
+33,Eric Roberts,11.0,11.0,0.0
+33,Ilona Maher,1.0,1.0,0.0
+33,Jenn Tran,0.0,0.0,0.0
+33,Joey Graziadei,1.0,1.0,0.0
+33,Phaedra Parks,8.0,8.0,0.0
+33,Reginald VelJohnson,11.0,11.0,0.0
+33,Stephen Nedoroscik,1.0,1.0,0.0
+33,Tori Spelling,0.0,0.0,0.0
+34,Alix Earle,1.0,1.0,0.0
+34,Andy Richter,7.0,7.0,0.0
+34,Baron Davis,0.0,0.0,0.0
+34,Corey Feldman,14.0,14.0,0.0
+34,Danielle Fishel,0.0,0.0,0.0
+34,Dylan Efron,1.0,1.0,0.0
+34,Elaine Hendrix,1.0,1.0,0.0
+34,Hilaria Baldwin,0.0,0.0,0.0
+34,Jen Affleck,0.0,0.0,0.0
+34,Jordan Chiles,1.0,1.0,0.0
+34,Lauren Jauregui,12.0,12.0,0.0
+34,Robert Irwin,1.0,1.0,0.0
+34,Scott Hoying,10.0,10.0,0.0
+34,Whitney Leavitt,0.0,0.0,0.0

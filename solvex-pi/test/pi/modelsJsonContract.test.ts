@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { mkdtempSync, writeFileSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateModelCatalog } from "@solvex/core";
 
@@ -25,13 +25,18 @@ function writeCatalog(models: unknown, apiKey = "$SOLVEX_TEST_KEY"): string {
   return p;
 }
 
+/** 凭据存储隔离到临时目录，避免 SDK 写 ~/.pi/agent/auth.json.lock（受限环境会拒绝删除）。 */
+const runtimeOpts = (p: string) => ({
+  modelsPath: p, authPath: join(dirname(p), "auth.json"), allowModelNetwork: false,
+});
+
 describe("Pi SDK 1.5.0 models.json 契约（离线、无真实凭据）", () => {
   it("合规 catalog：SDK 加载无错误、模型可解析、$VAR 凭据被识别", async () => {
     process.env.SOLVEX_TEST_KEY = "sk-not-a-real-key";
     const p = writeCatalog([model]);
     expect(validateModelCatalog(JSON.parse(readFileSync(p, "utf-8"))).ok).toBe(true);
     const { ModelRuntime } = await import(SDK_ENTRY);
-    const rt = await ModelRuntime.create({ modelsPath: p, allowModelNetwork: false });
+    const rt = await ModelRuntime.create(runtimeOpts(p));
     expect(rt.getError()).toBeUndefined();
     expect(rt.getModel("test-provider", "contract-model")?.id).toBe("contract-model");
     expect(rt.hasConfiguredAuth("test-provider")).toBe(true);
@@ -42,7 +47,7 @@ describe("Pi SDK 1.5.0 models.json 契约（离线、无真实凭据）", () => 
     const p = writeCatalog(["contract-model"]);
     expect(validateModelCatalog(JSON.parse(readFileSync(p, "utf-8"))).ok).toBe(false);
     const { ModelRuntime } = await import(SDK_ENTRY);
-    const rt = await ModelRuntime.create({ modelsPath: p, allowModelNetwork: false });
+    const rt = await ModelRuntime.create(runtimeOpts(p));
     expect(rt.getError()).toMatch(/Invalid models\.json schema/);
     expect(rt.getProvider("test-provider")).toBeUndefined();
   }, 60_000);
@@ -51,7 +56,7 @@ describe("Pi SDK 1.5.0 models.json 契约（离线、无真实凭据）", () => 
     process.env.SOLVEX_TEST_KEY = "sk-not-a-real-key";
     const p = writeCatalog([model], "$ENV:SOLVEX_TEST_KEY");
     const { ModelRuntime } = await import(SDK_ENTRY);
-    const rt = await ModelRuntime.create({ modelsPath: p, allowModelNetwork: false });
+    const rt = await ModelRuntime.create(runtimeOpts(p));
     expect(rt.hasConfiguredAuth("test-provider")).toBe(false);
   }, 60_000);
 });

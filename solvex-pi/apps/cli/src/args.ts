@@ -4,12 +4,13 @@ export type CliArgs = {
   problem?: string;
   data: string[];
   resume?: string;
-  fromModel?: number;
   skipToWriting: boolean;
   sessionDir?: string;
   strict: boolean;
   concurrency: number;
   port: number;
+  mcpConfig?: string;
+  mcpPreset?: string;
   sessionId?: string;
   interactive: boolean;
   help: boolean;
@@ -26,15 +27,19 @@ export const HELP = `SolveX — 多模型数学建模流水线（Pi SDK 编排�
 run 选项（与旧版 1:1 兼容）:
   -p, --problem FILE             问题文本 .md/.txt
   -d, --data PATH                数据文件/目录（可重复）
-  -r, --resume ID                续跑 session，跳过已完成的模型
-      --from-model N             从第 N 个模型续跑
+  -r, --resume ID                续跑 session：已完成的 Agent 调用从会话日志回放，
+                                 中断的从日志接着跑，其余照常执行
   -w, --skip-to-writing          仅执行 P3 聚合 + P4 写作
       --session-dir DIR          覆盖 ~/.solvex/sessions
       --concurrency N            并行上限（默认 3；=1 等价旧版串行）
       --strict                   Critical 问题阻断进入 P4
+      --mcp-config FILE          MCP 服务配置（默认 ~/.solvex/mcp.json）
+      --mcp-preset NAME          一键启用内置搜索预设（写入上述配置，幂等）
   -h, --help                     显示帮助
 
-运行前需在 WebUI 的「模型设置」中配置至少一个可用的模型 provider 凭据。
+运行前需提供至少一个模型 provider 凭据：推荐写进项目根 .env（模板 .env.example），
+CLI / WebUI 启动时自动加载；也可在 WebUI「模型设置」里临时注入（只进内存，重启即丢）。
+shell 中已 export 的同名变量优先，可用 SOLVEX_ENV_FILE 指定其它 .env 路径。
 无参数运行 solvex run 时进入交互式问题输入。
 `;
 
@@ -53,12 +58,13 @@ export function parseArgs(argv: string[]): CliArgs {
       case "-p": case "--problem": a.problem = rest[++i]; break;
       case "-d": case "--data": a.data.push(rest[++i]); break;
       case "-r": case "--resume": a.resume = rest[++i]; break;
-      case "--from-model": a.fromModel = Number(rest[++i]); break;
       case "-w": case "--skip-to-writing": a.skipToWriting = true; break;
       case "--session-dir": a.sessionDir = rest[++i]; break;
       case "--strict": a.strict = true; break;
       case "--concurrency": a.concurrency = Math.max(1, Number(rest[++i]) || 3); break;
       case "--port": a.port = Number(rest[++i]) || 8000; break;
+      case "--mcp-config": a.mcpConfig = rest[++i]; break;
+      case "--mcp-preset": a.mcpPreset = rest[++i]; break;
       default:
         // 明确拒绝未知选项，避免旧版演示开关被静默忽略后误入真实模型调用。
         if (x.startsWith("-")) throw new Error(`未知选项: ${x}`);

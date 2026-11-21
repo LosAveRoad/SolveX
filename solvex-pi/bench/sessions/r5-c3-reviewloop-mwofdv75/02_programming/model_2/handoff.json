@@ -1,0 +1,6 @@
+{
+ "status": "COMPLETE_REVISION_2",
+ "issues": [],
+ "fixInstructions": "All review-round-1 fixes applied and re-run: (1) load_seasons now counts a week as scored iff summed judge points > 0, so active sets shrink with real eliminations and elim_by_week maps only that week's eliminee(s); (2) run_model2 recomputes hit rate as P(observed week-w outcome among truly active couples) - genuine at 0.362 (mode) vs 0.217 shuffled; permutation test discriminating; (3) SEASON_RULE set to RANK for S1-2 and S28-34, PERCENT S3-27; (4) fan-favour index recomputed on a consistent standing vector (PERCENT higher in 11/34, mean 0.965 vs RANK 0.978) and all summary numbers regenerated from the CSVs; fig3 caption corrected. If Phase-1 Model-1 posterior draw files become available, replace eng.sample_posterior in engine.py with a loader and rerun run_model2.py.",
+ "summaryPath": "/Users/mac/Documents/学习/找工作/SolveX/bench/sessions/r5-c3-reviewloop-mwofdv75/02_programming/model_2/results_summary.md"
+}

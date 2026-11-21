@@ -1,0 +1,79 @@
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b0, beta, s_pro, s_seas, z_pro, z_seas, phi]
+pro levels: 60 raw -> 55 after cleaning
+panel: 2777 couple-weeks, 408 couples, 335 weeks
+elimination weeks: 264, ALL reproduced by construction; fans decisive (judge-worst order overridden) in 158 (59.8%)
+fitting JUDGE channel (NUTS) ...
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 12 seconds.
+The rhat statistic is larger than 1.01 for some parameters. This indicates problems during sampling. See https://arxiv.org/abs/1903.08008 for details
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b0, beta, s_pro, s_seas, z_pro, z_seas, phi]
+JUDGE channel: max Rhat = 1.010
+fitting FAN   channel (NUTS) ...
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 13 seconds.
+FAN channel: max Rhat = 1.008
+{
+ "age_z": {
+  "fan_mean": -0.14762531520953479,
+  "fan_hdi": [
+   -0.17311014151319687,
+   -0.12120066245720391
+  ],
+  "judge_mean": -0.11865380454134467,
+  "judge_hdi": [
+   -0.13668656557065406,
+   -0.10061484908939768
+  ],
+  "delta_mean": -0.028971510668190134,
+  "delta_hdi": [
+   -0.061570900796392006,
+   0.005410520646277131
+  ],
+  "prob_fan_gt_judge": 0.04725
+ },
+ "athlete": {
+  "fan_mean": -0.005013888041019725,
+  "fan_hdi": [
+   -0.06520562450975884,
+   0.052998036241024324
+  ],
+  "judge_mean": 0.0020986962211809704,
+  "judge_hdi": [
+   -0.04061342820576373,
+   0.04465655250447089
+  ],
+  "delta_mean": -0.007112584262200696,
+  "delta_hdi": [
+   -0.07845648160715424,
+   0.07512700126981511
+  ],
+  "prob_fan_gt_judge": 0.4045
+ },
+ "fame_tier": {
+  "fan_mean": 0.0377958013505726,
+  "fan_hdi": [
+   -0.038288618271850115,
+   0.11207912056141446
+  ],
+  "judge_mean": -0.012160027299236724,
+  "judge_hdi": [
+   -0.06745396157655752,
+   0.04013880236193456
+  ],
+  "delta_mean": 0.049955828649809325,
+  "delta_hdi": [
+   -0.04473312894400062,
+   0.15378362755162978
+  ],
+  "prob_fan_gt_judge": 0.87475
+ }
+}
+wRMSE (target=identified fan share): model 0.5313757287564368 | judge-proportional baseline 0.3070606242479695 | uniform baseline 0.33904105603553886
+running LOSO validation (34 seasons x 2 channels, MAP) ...
+LOSO fan-share wRMSE: model 0.5180 | judge-proportional 0.1985 | uniform 0.2445
+LOSO elimination metrics — model: {'elim_weeks': 297, 'hit_bottom2': 0.4208754208754209, 'mean_norm_rank_err': 0.33297817035190774} | judge-prop: {'elim_weeks': 297, 'hit_bottom2': 0.6195286195286195, 'mean_norm_rank_err': 0.2153039254049355} | uniform: {'elim_weeks': 297, 'hit_bottom2': 0.6195286195286195, 'mean_norm_rank_err': 0.2153039254049355}
+DONE in 85.4 sec
+deltas: {'age_z': -0.029, 'athlete': -0.007, 'fame_tier': 0.05}
+var part fan: {'pro_random_%': 36.0, 'season_random_%': 44.8, 'fixed_effects_%': 19.2} | judge: {'pro_random_%': 11.4, 'season_random_%': 61.5, 'fixed_effects_%': 27.1}

@@ -17,7 +17,8 @@ export type Issue = {
   model?: string;
 };
 
-export type Usage = { input: number; output: number; cost?: number };
+/** input 为未命中缓存的输入（含 cacheWrite），cacheRead 为命中缓存的输入；三者之和才是真实计费 token。 */
+export type Usage = { input: number; output: number; cacheRead?: number; cost?: number };
 export type UsageDetail = {
   input: number; output: number; cacheRead: number; cacheWrite: number;
   totalTokens: number; cost: number;
@@ -36,7 +37,9 @@ export type StageNode = {
 export type RunSummary = {
   sessionId: string;
   status: "running" | "completed" | "failed" | "aborted";
-  models: { name: string; dir: string; verdict: string; issues: Issue[] }[];
+  models: { name: string; dir: string; verdict: string; issues: Issue[];
+    /** 交叉评审进行了几轮（最多 MAX_REVIEW_ROUNDS）。 */
+    reviewRounds?: number }[];
   usageByTask: Record<string, Usage>;
   issues: Issue[];
   elapsedMs: number;

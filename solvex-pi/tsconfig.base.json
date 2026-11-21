@@ -33,6 +33,12 @@
       "@earendil-works/pi-coding-agent": [
         "packages/pi-runtime/node_modules/@earendil-works/pi-coding-agent/dist/index.d.ts"
       ],
+      "@earendil-works/pi-mcp": [
+        "packages/pi-runtime/node_modules/@earendil-works/pi-mcp/dist/index.d.ts"
+      ],
+      "@earendil-works/pi-mcp/testing": [
+        "packages/pi-runtime/node_modules/@earendil-works/pi-mcp/dist/testing/index.d.ts"
+      ],
       "@solvex/web": [
         "apps/web/src/server.ts"
       ]

@@ -1,0 +1,100 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Problem Background and Motivation}{2}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Data Description}{2}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Our Approach: Three Interlocking Models}{3}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Paper Outline}{3}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Model 1: Constrained Bayesian Inverse Model for Hidden Fan Votes}{4}{section.2}\protected@file@percent }
+\newlabel{sec:model1}{{2}{4}{Model 1: Constrained Bayesian Inverse Model for Hidden Fan Votes}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Problem Statement}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Feasible set.}{4}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Prior.}{4}{section*.3}\protected@file@percent }
+\newlabel{eq:hazard}{{1}{4}{Prior}{equation.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Posterior.}{4}{section*.4}\protected@file@percent }
+\newlabel{eq:posterior}{{2}{4}{Posterior}{equation.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Certainty measure.}{5}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Implementation}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Results}{5}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Prior.}{5}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Posterior fan shares.}{5}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Consistency with observed eliminations.}{5}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Recovered controversy pathways.}{6}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Predicted uncertainty by week.}{6}{section*.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Posterior fan-vote share pathways (mean, 95\% credible band) across competition weeks for the four controversy cases --- Jerry Rice (S2), Billy Ray Cyrus (S4), Bristol Palin (S11), and Bobby Bones (S27) --- with within-week judge ranks beneath. Bristol Palin's support climbs from 0.088 to 0.288 while her judge rank stays 3rd--8th; Bobby Bones's climbs toward 0.44-equivalent support late in season 27 despite bottom-half judge ranks. Bands are widest in early weeks (weak constraints) and narrowest near the finale.}}{7}{figure.caption.11}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:fanpathways}{{1}{7}{Posterior fan-vote share pathways (mean, 95\% credible band) across competition weeks for the four controversy cases --- Jerry Rice (S2), Billy Ray Cyrus (S4), Bristol Palin (S11), and Bobby Bones (S27) --- with within-week judge ranks beneath. Bristol Palin's support climbs from 0.088 to 0.288 while her judge rank stays 3rd--8th; Bobby Bones's climbs toward 0.44-equivalent support late in season 27 despite bottom-half judge ranks. Bands are widest in early weeks (weak constraints) and narrowest near the finale}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Certainty profile by week index. Mean posterior coefficient of variation (CV) and 95\% credible-interval width of weekly fan shares, split by combination rule (rank rule vs.\ percentage rule). Early-week shares are prior-dominated and wide; late-week shares are pinned down by accumulated elimination constraints. The mean CI width at baseline $\sigma = 0.35$ is 0.145, versus 0.085 at $\sigma = 0.20$ and 0.312 at $\sigma = 0.75$.}}{7}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:uncweek}{{2}{7}{Certainty profile by week index. Mean posterior coefficient of variation (CV) and 95\% credible-interval width of weekly fan shares, split by combination rule (rank rule vs.\ percentage rule). Early-week shares are prior-dominated and wide; late-week shares are pinned down by accumulated elimination constraints. The mean CI width at baseline $\sigma = 0.35$ is 0.145, versus 0.085 at $\sigma = 0.20$ and 0.312 at $\sigma = 0.75$}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Hold-out calibration: distribution of the prior-only replay probability of the observed eliminated couple over the 232 elimination-weeks (mean 0.267, median 0.235, max 0.875; 10.8\% of weeks $\ge 0.5$). The prior alone beats the uniform $1/n \approx 0.10$--$0.16$ baseline by $2\times $--$2.5\times $, confirming that fans weakly track judge quality but with substantial popularity noise, and that eliminations carry genuine identifying information beyond the prior.}}{8}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:holdout}{{3}{8}{Hold-out calibration: distribution of the prior-only replay probability of the observed eliminated couple over the 232 elimination-weeks (mean 0.267, median 0.235, max 0.875; 10.8\% of weeks $\ge 0.5$). The prior alone beats the uniform $1/n \approx 0.10$--$0.16$ baseline by $2\times $--$2.5\times $, confirming that fans weakly track judge quality but with substantial popularity noise, and that eliminations carry genuine identifying information beyond the prior}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Validation}{8}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations of Model 1.}{8}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Model 2: Counterfactual Rules Laboratory}{8}{section.3}\protected@file@percent }
+\newlabel{sec:model2}{{3}{8}{Model 2: Counterfactual Rules Laboratory}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Problem Statement}{8}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{9}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:proposed}{{3}{9}{Mathematical Formulation}{equation.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Implementation}{9}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Results}{9}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Historical-replay validation.}{9}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Controversial couples.}{10}{section*.16}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Controversial-couple counterfactuals: probability of winning and mean placement (in parentheses) under each aggregation rule, from 1{,}000 posterior draws per week.}}{10}{table.caption.17}\protected@file@percent }
+\newlabel{tab:controversy}{{1}{10}{Controversial-couple counterfactuals: probability of winning and mean placement (in parentheses) under each aggregation rule, from 1{,}000 posterior draws per week}{table.caption.17}{}}
+\@writefile{toc}{\contentsline {paragraph}{Rule-level averages.}{10}{section*.18}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Rule-level averages across simulable seasons (33--34 each).}}{10}{table.caption.19}\protected@file@percent }
+\newlabel{tab:ruleavg}{{2}{10}{Rule-level averages across simulable seasons (33--34 each)}{table.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces P(win) and P(2nd--3rd) for the four controversial couples under each aggregation rule. Bobby Bones's S27 title is rule-dependent (100\% under PCT, 35\% under JUDGE\_SAVE); Bristol Palin's observed third place is a rank-method artifact.}}{11}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:controversy}{{4}{11}{P(win) and P(2nd--3rd) for the four controversial couples under each aggregation rule. Bobby Bones's S27 title is rule-dependent (100\% under PCT, 35\% under JUDGE\_SAVE); Bristol Palin's observed third place is a rank-method artifact}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Fan-power vs.\ judge-power scatter; one point per season, colored by Kendall $\tau $ between counterfactual mean placement and average judge rank. Most seasons show near-zero divergence from the historical rule's choice, but a handful of PCT seasons are extreme outliers in both directions.}}{12}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:fanjudge}{{5}{12}{Fan-power vs.\ judge-power scatter; one point per season, colored by Kendall $\tau $ between counterfactual mean placement and average judge rank. Most seasons show near-zero divergence from the historical rule's choice, but a handful of PCT seasons are extreme outliers in both directions}{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Mean normalized survival entropy by rule. PROPOSED is the most exciting rule (0.918); JUDGE\_SAVE the least (0.612), the mechanical result of the judges' tie-break collapsing the bottom-two pool early.}}{12}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:excitement}{{6}{12}{Mean normalized survival entropy by rule. PROPOSED is the most exciting rule (0.918); JUDGE\_SAVE the least (0.612), the mechanical result of the judges' tie-break collapsing the bottom-two pool early}{figure.caption.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Validation}{13}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Model 3: Hierarchical Attribution Model}{13}{section.4}\protected@file@percent }
+\newlabel{sec:model3}{{4}{13}{Model 3: Hierarchical Attribution Model}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Problem Statement}{13}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{13}{subsection.4.2}\protected@file@percent }
+\newlabel{eq:fan}{{4}{13}{Mathematical Formulation}{equation.4}{}}
+\newlabel{eq:delta}{{5}{13}{Mathematical Formulation}{equation.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Implementation}{13}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Results}{14}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Star sanity check.}{14}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Pro-dancer effects.}{14}{section*.24}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Pro-dancer effect scatter: judge-channel effect $\theta ^J$ vs.\ fan-channel effect $\theta ^F$ (BLUPs, logit scale). Points above the $\Delta =0$ diagonal are fan specialists (Cheryl Burke, Charlotte Jorgensen); points below are technique specialists (Derek Hough, Valentin Chmerkovskiy, Jenna Johnson).}}{15}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:proscatter}{{7}{15}{Pro-dancer effect scatter: judge-channel effect $\theta ^J$ vs.\ fan-channel effect $\theta ^F$ (BLUPs, logit scale). Points above the $\Delta =0$ diagonal are fan specialists (Cheryl Burke, Charlotte Jorgensen); points below are technique specialists (Derek Hough, Valentin Chmerkovskiy, Jenna Johnson)}{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {paragraph}{Covariate divergence.}{15}{section*.26}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Covariate divergence ($\Delta = \beta ^F - \beta ^J$) between fan and judge channels.}}{15}{table.caption.27}\protected@file@percent }
+\newlabel{tab:divergence}{{3}{15}{Covariate divergence ($\Delta = \beta ^F - \beta ^J$) between fan and judge channels}{table.caption.27}{}}
+\@writefile{toc}{\contentsline {paragraph}{Week effects.}{16}{section*.28}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Covariate divergence forest plot: $\Delta = \beta ^F - \beta ^J$ with 95\% CIs and $P(\Delta > 0)$ per covariate. The fame proxy ($\Delta = +0.815$, $P=0.917$) stands out as the single clearest judge/fan divergence; age and industry effects are statistically indistinguishable between channels.}}{16}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:forest}{{8}{16}{Covariate divergence forest plot: $\Delta = \beta ^F - \beta ^J$ with 95\% CIs and $P(\Delta > 0)$ per covariate. The fame proxy ($\Delta = +0.815$, $P=0.917$) stands out as the single clearest judge/fan divergence; age and industry effects are statistically indistinguishable between channels}{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Left: top/bottom pro-dancer BLUPs on the judge vs.\ fan channel (caterpillar plot with 90\% credible intervals); right: placement variance decomposition (judge-fit 79.7\%, fan-fit 20.0\%, pro effect 0.09\%, demographics 0.26\%).}}{17}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:caterpillar}{{9}{17}{Left: top/bottom pro-dancer BLUPs on the judge vs.\ fan channel (caterpillar plot with 90\% credible intervals); right: placement variance decomposition (judge-fit 79.7\%, fan-fit 20.0\%, pro effect 0.09\%, demographics 0.26\%)}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Age-effect divergence curve: fan-minus-judge relative effect vs.\ celebrity age (16--82), with saddle near age 48. The near-flat divergence confirms age affects the two channels symmetrically.}}{17}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:agecurve}{{10}{17}{Age-effect divergence curve: fan-minus-judge relative effect vs.\ celebrity age (16--82), with saddle near age 48. The near-flat divergence confirms age affects the two channels symmetrically}{figure.caption.31}{}}
+\@writefile{toc}{\contentsline {paragraph}{Placement variance decomposition.}{17}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Validation}{18}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations of Model 3.}{18}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results and Analysis}{18}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{18}{Results and Analysis}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Integrated Findings Across All Models}{18}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Fairness and Excitement Trade-off}{19}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Sensitivity Analysis}{19}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Prior width $\sigma $.}{19}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sampler diagnostics.}{19}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Rule ablation.}{19}{section*.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{19}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Strengths.}{19}{section*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Weaknesses and threats to validity.}{19}{section*.38}\protected@file@percent }
+\bibcite{comap2026}{1}
+\bibcite{strictly}{2}
+\bibcite{gelman}{3}
+\bibcite{statsmodels}{4}
+\bibcite{lmg1980}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{20}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Recommendations to producers.}{20}{section*.39}\protected@file@percent }
+\gdef \@abspage@last{20}

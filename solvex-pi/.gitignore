@@ -6,5 +6,18 @@ coverage/
 .env.local
 *.env
 
+# 本地真实凭据：忽略 .env，但模板 .env.example 可以提交
+.env
+!.env.example
+
 # Parent repo .gitignore excludes any `workspace/` dir; re-include core workspace module
 !packages/core/src/workspace/
+
+# 本地代理记忆、根目录的零散运行产物
+.workbuddy/
+/02_programming/
+# 基准会话里的临时目录和大体积二进制（可由 run.py 重新生成）
+bench/sessions/*/.solvex/scratch/
+*.npz
+*.npy
+.DS_Store

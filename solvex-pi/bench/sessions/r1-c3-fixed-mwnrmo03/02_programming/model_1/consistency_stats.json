@@ -1,0 +1,129 @@
+{
+  "n_couple_weeks": 2864,
+  "n_constraint": 2336,
+  "n_prior": 528,
+  "elimination_events": 264,
+  "reproduced": 231,
+  "consistency_pct": 87.5,
+  "prior_baseline_pct": 21.6,
+  "mean_ci_width_share": 0.3458,
+  "mean_W_ratio": 1.0434,
+  "logW_regression": {
+    "intercept": -0.48801137620849144,
+    "week": -0.02227665987491719,
+    "abs_r": 5.499764946173552
+  },
+  "infeasible_weeks": [
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      10
+    ]
+  ],
+  "conflicts_first20": [
+    [
+      6,
+      2,
+      "not minimal"
+    ],
+    [
+      7,
+      1,
+      "not minimal"
+    ],
+    [
+      8,
+      4,
+      "not minimal"
+    ],
+    [
+      9,
+      1,
+      "not minimal"
+    ],
+    [
+      9,
+      6,
+      "not minimal"
+    ],
+    [
+      9,
+      7,
+      "not minimal"
+    ],
+    [
+      14,
+      8,
+      "not minimal"
+    ],
+    [
+      15,
+      3,
+      "not minimal"
+    ],
+    [
+      15,
+      8,
+      "not minimal"
+    ],
+    [
+      15,
+      9,
+      "not minimal"
+    ],
+    [
+      18,
+      2,
+      "not minimal"
+    ],
+    [
+      20,
+      8,
+      "not minimal"
+    ],
+    [
+      21,
+      2,
+      "not minimal"
+    ],
+    [
+      22,
+      7,
+      "not minimal"
+    ],
+    [
+      22,
+      9,
+      "not minimal"
+    ],
+    [
+      23,
+      4,
+      "not minimal"
+    ],
+    [
+      24,
+      7,
+      "not minimal"
+    ],
+    [
+      25,
+      2,
+      "not minimal"
+    ],
+    [
+      25,
+      7,
+      "not minimal"
+    ],
+    [
+      26,
+      1,
+      "not minimal"
+    ]
+  ],
+  "vote_scale": 1000000
+}

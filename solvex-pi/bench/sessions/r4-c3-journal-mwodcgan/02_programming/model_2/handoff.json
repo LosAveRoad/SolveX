@@ -1,0 +1,10 @@
+{
+  "status": "FAILURE",
+  "issues": [
+    "run_model2.py crashed with KeyError: 'Jgap' in the judges-save bottom-two pair construction (line ~187); output/ and figures/ directories are empty.",
+    "Fix: attach Jgap=float(J_saved - J_elim) to each wk_pairs record in the kappa-fitting loop, then re-run python3 run_model2.py.",
+    "Support modules dwts_common.py and fanvote_model1.py import and run correctly (34 seasons parsed, score tables verified)."
+  ],
+  "fixInstructions": "Edit run_model2.py: in the bottom-two loop, build each pair record as dict(season=s, week=w, eliminated=<elim celeb>, other=<other celeb>, Jgap=float(Jsaved - Jelim)) and ensure the eliminated contestant's label-side J comes from celeb-side score dict, not the replay-side dicts. Then execute python3 run_model2.py to regenerate model2 CSVs and figures.",
+  "summaryPath": "results_summary.md"
+}

@@ -1,0 +1,2444 @@
+{
+  "panel": {
+    "couple_weeks": 2777,
+    "seasons": 34,
+    "season_min": 1,
+    "season_max": 34,
+    "weeks_in_consistency": 335,
+    "eliminating_weeks": 266,
+    "eliminated_rows": 308,
+    "raw_contestants": 421,
+    "raw_seasons": 34,
+    "week_min": 1,
+    "week_max": 11
+  },
+  "shares": {
+    "pF_med_mean": 0.0993,
+    "pF_med_median": 0.0832,
+    "pF_med_p05": 0.0214,
+    "pF_med_p95": 0.2365,
+    "pF_med_max": 0.5093,
+    "pF_med_min": 0.0052,
+    "pJ_mean": 0.1206,
+    "pJ_median": 0.1043,
+    "pJ_max": 0.5046,
+    "pearson_qJ_qF": 0.807,
+    "spearman_qJ_qF": 0.6598,
+    "pearson_rankJ_rankF": 0.153,
+    "spearman_rankJ_rankF": 0.0794,
+    "pF_sd_mean": 0.088,
+    "pF_sd_median": 0.0835,
+    "ci_width_mean": 0.3283,
+    "ci_width_median": 0.3126,
+    "ci_width_min": 0.0222,
+    "ci_width_max": 0.8978,
+    "ci_width_p05": 0.0653,
+    "ci_width_p95": 0.6071
+  },
+  "uncertainty": {
+    "corr_ci_ncouples": -0.6488,
+    "corr_ci_week": 0.5632,
+    "corr_ci_judgesd": 0.1429,
+    "corr_ci_constraints": -0.4273,
+    "corr_sd_ncouples": -0.6516,
+    "ci_by_era": {
+      "bottom-two": {
+        "mean": 0.3062,
+        "median": 0.286,
+        "p05": 0.1205,
+        "p95": 0.5445,
+        "n": 702
+      },
+      "percent": {
+        "mean": 0.3315,
+        "median": 0.317,
+        "p05": 0.0557,
+        "p95": 0.6225,
+        "n": 1997
+      },
+      "rank": {
+        "mean": 0.4455,
+        "median": 0.4598,
+        "p05": 0.1023,
+        "p95": 0.7618,
+        "n": 78
+      }
+    },
+    "ci_by_ncouples": {
+      "3": 0.7587,
+      "4": 0.542,
+      "5": 0.486,
+      "6": 0.4094,
+      "7": 0.3837,
+      "8": 0.3438,
+      "9": 0.3254,
+      "10": 0.2941,
+      "11": 0.2683,
+      "12": 0.2544,
+      "13": 0.2316,
+      "14": 0.2206,
+      "15": 0.2175,
+      "16": 0.1916
+    }
+  },
+  "eras": {
+    "rank": {
+      "couple_weeks": 78,
+      "weeks": 14,
+      "eliminating_weeks": 10,
+      "mean_hit_pct": 1.0,
+      "mean_hit_rank": 0.0,
+      "mean_ci": 0.4455,
+      "mean_kappa_pct": 1.0,
+      "mean_kappa_rank": 0.0,
+      "mean_brier_pct": 0.0,
+      "mean_spearman": 0.4755,
+      "mean_tau": 0.3771
+    },
+    "percent": {
+      "couple_weeks": 1997,
+      "weeks": 248,
+      "eliminating_weeks": 200,
+      "mean_hit_pct": 1.0,
+      "mean_hit_rank": 0.001,
+      "mean_ci": 0.3315,
+      "mean_kappa_pct": 1.0,
+      "mean_kappa_rank": 0.005,
+      "mean_brier_pct": 0.0069,
+      "mean_spearman": 0.4932,
+      "mean_tau": 0.386
+    },
+    "bottom-two": {
+      "couple_weeks": 702,
+      "weeks": 73,
+      "eliminating_weeks": 56,
+      "mean_hit_pct": 0.4004,
+      "mean_hit_rank": 0.005,
+      "mean_ci": 0.3062,
+      "mean_kappa_pct": 1.0,
+      "mean_kappa_rank": 0.0,
+      "mean_brier_pct": 0.5473,
+      "mean_spearman": 0.4881,
+      "mean_tau": 0.3776
+    }
+  },
+  "judge_save": {
+    "bt_weeks": 56,
+    "nbt_weeks": 210,
+    "bt_hit": 0.4004,
+    "nbt_hit": 1.0,
+    "bt_brier": 0.5473,
+    "nbt_brier": 0.0066,
+    "bt_kappa": 1.0,
+    "nbt_kappa": 1.0,
+    "override_share": 0.5996
+  },
+  "seasons": [
+    {
+      "season": 1,
+      "era": "rank",
+      "couple_weeks": 26,
+      "weeks": 6,
+      "elim_weeks": 3,
+      "pF": 0.2025,
+      "pJ": 0.2308,
+      "ci": 0.5519,
+      "hit": 1.0,
+      "rhat": 1.0129,
+      "bottom_two": 0
+    },
+    {
+      "season": 2,
+      "era": "rank",
+      "couple_weeks": 52,
+      "weeks": 8,
+      "elim_weeks": 7,
+      "pF": 0.1302,
+      "pJ": 0.1538,
+      "ci": 0.3922,
+      "hit": 1.0,
+      "rhat": 1.0299,
+      "bottom_two": 0
+    },
+    {
+      "season": 3,
+      "era": "percent",
+      "couple_weeks": 64,
+      "weeks": 10,
+      "elim_weeks": 7,
+      "pF": 0.1337,
+      "pJ": 0.1562,
+      "ci": 0.3964,
+      "hit": 1.0,
+      "rhat": 1.0737,
+      "bottom_two": 0
+    },
+    {
+      "season": 4,
+      "era": "percent",
+      "couple_weeks": 74,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1125,
+      "pJ": 0.1351,
+      "ci": 0.3604,
+      "hit": 1.0,
+      "rhat": 1.0675,
+      "bottom_two": 0
+    },
+    {
+      "season": 5,
+      "era": "percent",
+      "couple_weeks": 75,
+      "weeks": 10,
+      "elim_weeks": 9,
+      "pF": 0.11,
+      "pJ": 0.1333,
+      "ci": 0.3578,
+      "hit": 1.0,
+      "rhat": 1.0906,
+      "bottom_two": 0
+    },
+    {
+      "season": 6,
+      "era": "percent",
+      "couple_weeks": 76,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1098,
+      "pJ": 0.1316,
+      "ci": 0.3497,
+      "hit": 1.0,
+      "rhat": 1.0593,
+      "bottom_two": 0
+    },
+    {
+      "season": 7,
+      "era": "percent",
+      "couple_weeks": 75,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1121,
+      "pJ": 0.1333,
+      "ci": 0.3462,
+      "hit": 1.0,
+      "rhat": 1.0982,
+      "bottom_two": 0
+    },
+    {
+      "season": 8,
+      "era": "percent",
+      "couple_weeks": 91,
+      "weeks": 11,
+      "elim_weeks": 9,
+      "pF": 0.1005,
+      "pJ": 0.1209,
+      "ci": 0.3225,
+      "hit": 1.0,
+      "rhat": 1.0674,
+      "bottom_two": 0
+    },
+    {
+      "season": 9,
+      "era": "percent",
+      "couple_weeks": 92,
+      "weeks": 10,
+      "elim_weeks": 9,
+      "pF": 0.09,
+      "pJ": 0.1087,
+      "ci": 0.2869,
+      "hit": 1.0,
+      "rhat": 1.2124,
+      "bottom_two": 0
+    },
+    {
+      "season": 10,
+      "era": "percent",
+      "couple_weeks": 74,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1131,
+      "pJ": 0.1351,
+      "ci": 0.3571,
+      "hit": 1.0,
+      "rhat": 1.0544,
+      "bottom_two": 0
+    },
+    {
+      "season": 11,
+      "era": "percent",
+      "couple_weeks": 75,
+      "weeks": 10,
+      "elim_weeks": 9,
+      "pF": 0.1113,
+      "pJ": 0.1333,
+      "ci": 0.3501,
+      "hit": 1.0,
+      "rhat": 1.0502,
+      "bottom_two": 0
+    },
+    {
+      "season": 12,
+      "era": "percent",
+      "couple_weeks": 74,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1121,
+      "pJ": 0.1351,
+      "ci": 0.3606,
+      "hit": 1.0,
+      "rhat": 1.0762,
+      "bottom_two": 0
+    },
+    {
+      "season": 13,
+      "era": "percent",
+      "couple_weeks": 75,
+      "weeks": 10,
+      "elim_weeks": 9,
+      "pF": 0.1119,
+      "pJ": 0.1333,
+      "ci": 0.3447,
+      "hit": 1.0,
+      "rhat": 1.0533,
+      "bottom_two": 0
+    },
+    {
+      "season": 14,
+      "era": "percent",
+      "couple_weeks": 82,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1008,
+      "pJ": 0.122,
+      "ci": 0.3291,
+      "hit": 1.0,
+      "rhat": 1.1104,
+      "bottom_two": 0
+    },
+    {
+      "season": 15,
+      "era": "percent",
+      "couple_weeks": 83,
+      "weeks": 10,
+      "elim_weeks": 7,
+      "pF": 0.0999,
+      "pJ": 0.1205,
+      "ci": 0.3177,
+      "hit": 1.0,
+      "rhat": 1.112,
+      "bottom_two": 0
+    },
+    {
+      "season": 16,
+      "era": "percent",
+      "couple_weeks": 84,
+      "weeks": 10,
+      "elim_weeks": 9,
+      "pF": 0.0964,
+      "pJ": 0.119,
+      "ci": 0.3358,
+      "hit": 1.0,
+      "rhat": 1.0918,
+      "bottom_two": 0
+    },
+    {
+      "season": 17,
+      "era": "percent",
+      "couple_weeks": 92,
+      "weeks": 11,
+      "elim_weeks": 9,
+      "pF": 0.0981,
+      "pJ": 0.1196,
+      "ci": 0.3256,
+      "hit": 1.0,
+      "rhat": 1.0662,
+      "bottom_two": 0
+    },
+    {
+      "season": 18,
+      "era": "percent",
+      "couple_weeks": 80,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1033,
+      "pJ": 0.125,
+      "ci": 0.3333,
+      "hit": 1.0,
+      "rhat": 1.0616,
+      "bottom_two": 0
+    },
+    {
+      "season": 19,
+      "era": "percent",
+      "couple_weeks": 94,
+      "weeks": 11,
+      "elim_weeks": 10,
+      "pF": 0.0953,
+      "pJ": 0.117,
+      "ci": 0.3211,
+      "hit": 1.0,
+      "rhat": 1.0859,
+      "bottom_two": 0
+    },
+    {
+      "season": 20,
+      "era": "percent",
+      "couple_weeks": 82,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.101,
+      "pJ": 0.122,
+      "ci": 0.3198,
+      "hit": 1.0,
+      "rhat": 1.0908,
+      "bottom_two": 0
+    },
+    {
+      "season": 21,
+      "era": "percent",
+      "couple_weeks": 93,
+      "weeks": 11,
+      "elim_weeks": 7,
+      "pF": 0.0965,
+      "pJ": 0.1183,
+      "ci": 0.3244,
+      "hit": 1.0,
+      "rhat": 1.086,
+      "bottom_two": 0
+    },
+    {
+      "season": 22,
+      "era": "percent",
+      "couple_weeks": 85,
+      "weeks": 10,
+      "elim_weeks": 7,
+      "pF": 0.0961,
+      "pJ": 0.1176,
+      "ci": 0.325,
+      "hit": 1.0,
+      "rhat": 1.0531,
+      "bottom_two": 0
+    },
+    {
+      "season": 23,
+      "era": "percent",
+      "couple_weeks": 97,
+      "weeks": 11,
+      "elim_weeks": 9,
+      "pF": 0.0919,
+      "pJ": 0.1134,
+      "ci": 0.3125,
+      "hit": 1.0,
+      "rhat": 1.0694,
+      "bottom_two": 0
+    },
+    {
+      "season": 24,
+      "era": "percent",
+      "couple_weeks": 81,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.1021,
+      "pJ": 0.1235,
+      "ci": 0.332,
+      "hit": 1.0,
+      "rhat": 1.059,
+      "bottom_two": 0
+    },
+    {
+      "season": 25,
+      "era": "percent",
+      "couple_weeks": 90,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.0908,
+      "pJ": 0.1111,
+      "ci": 0.3013,
+      "hit": 1.0,
+      "rhat": 1.1132,
+      "bottom_two": 0
+    },
+    {
+      "season": 26,
+      "era": "percent",
+      "couple_weeks": 27,
+      "weeks": 4,
+      "elim_weeks": 3,
+      "pF": 0.1291,
+      "pJ": 0.1481,
+      "ci": 0.3439,
+      "hit": 1.0,
+      "rhat": 1.0272,
+      "bottom_two": 0
+    },
+    {
+      "season": 27,
+      "era": "percent",
+      "couple_weeks": 82,
+      "weeks": 9,
+      "elim_weeks": 7,
+      "pF": 0.0906,
+      "pJ": 0.1098,
+      "ci": 0.2876,
+      "hit": 1.0,
+      "rhat": 1.0999,
+      "bottom_two": 0
+    },
+    {
+      "season": 28,
+      "era": "bottom-two",
+      "couple_weeks": 92,
+      "weeks": 11,
+      "elim_weeks": 7,
+      "pF": 0.0959,
+      "pJ": 0.1196,
+      "ci": 0.3536,
+      "hit": 0.3708,
+      "rhat": 1.0561,
+      "bottom_two": 7
+    },
+    {
+      "season": 29,
+      "era": "bottom-two",
+      "couple_weeks": 115,
+      "weeks": 11,
+      "elim_weeks": 9,
+      "pF": 0.0758,
+      "pJ": 0.0957,
+      "ci": 0.284,
+      "hit": 0.4328,
+      "rhat": 1.0788,
+      "bottom_two": 9
+    },
+    {
+      "season": 30,
+      "era": "bottom-two",
+      "couple_weeks": 105,
+      "weeks": 10,
+      "elim_weeks": 8,
+      "pF": 0.0763,
+      "pJ": 0.0952,
+      "ci": 0.2758,
+      "hit": 0.5178,
+      "rhat": 1.0647,
+      "bottom_two": 8
+    },
+    {
+      "season": 31,
+      "era": "bottom-two",
+      "couple_weeks": 107,
+      "weeks": 10,
+      "elim_weeks": 9,
+      "pF": 0.0747,
+      "pJ": 0.0935,
+      "ci": 0.2695,
+      "hit": 0.4924,
+      "rhat": 1.1139,
+      "bottom_two": 9
+    },
+    {
+      "season": 32,
+      "era": "bottom-two",
+      "couple_weeks": 100,
+      "weeks": 11,
+      "elim_weeks": 9,
+      "pF": 0.0877,
+      "pJ": 0.11,
+      "ci": 0.3289,
+      "hit": 0.2171,
+      "rhat": 1.0463,
+      "bottom_two": 9
+    },
+    {
+      "season": 33,
+      "era": "bottom-two",
+      "couple_weeks": 77,
+      "weeks": 9,
+      "elim_weeks": 6,
+      "pF": 0.0944,
+      "pJ": 0.1169,
+      "ci": 0.3384,
+      "hit": 0.4609,
+      "rhat": 1.0943,
+      "bottom_two": 6
+    },
+    {
+      "season": 34,
+      "era": "bottom-two",
+      "couple_weeks": 106,
+      "weeks": 11,
+      "elim_weeks": 8,
+      "pF": 0.0822,
+      "pJ": 0.1038,
+      "ci": 0.3115,
+      "hit": 0.3298,
+      "rhat": 1.0639,
+      "bottom_two": 8
+    }
+  ],
+  "direction_diagnostic": {
+    "comb_pct": {
+      "argmin": 1.0,
+      "argmax": 0.0,
+      "weeks": 266
+    },
+    "comb_rank": {
+      "argmin": 0.0038,
+      "argmax": 0.9286,
+      "weeks": 266
+    },
+    "pJ": {
+      "argmin": 0.4436,
+      "argmax": 0.0338,
+      "weeks": 266
+    },
+    "pF_med_renorm": {
+      "argmin": 1.0,
+      "argmax": 0.0,
+      "weeks": 266
+    },
+    "rankJ": {
+      "argmin": 0.0338,
+      "argmax": 0.4436,
+      "weeks": 266
+    },
+    "rankF": {
+      "argmin": 0.0,
+      "argmax": 1.0,
+      "weeks": 266
+    }
+  },
+  "replay_direction": {
+    "percent": "min",
+    "rank": "max"
+  },
+  "weight_scan": {
+    "percent_all": [
+      {
+        "w": 0.0,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.05,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.1,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.15,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.2,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.25,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.3,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.35,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.4,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.45,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.5,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.55,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.6,
+        "hit": 0.9962,
+        "weeks": 266
+      },
+      {
+        "w": 0.65,
+        "hit": 0.985,
+        "weeks": 266
+      },
+      {
+        "w": 0.7,
+        "hit": 0.9624,
+        "weeks": 266
+      },
+      {
+        "w": 0.75,
+        "hit": 0.9549,
+        "weeks": 266
+      },
+      {
+        "w": 0.8,
+        "hit": 0.9135,
+        "weeks": 266
+      },
+      {
+        "w": 0.85,
+        "hit": 0.8609,
+        "weeks": 266
+      },
+      {
+        "w": 0.9,
+        "hit": 0.7632,
+        "weeks": 266
+      },
+      {
+        "w": 0.95,
+        "hit": 0.6053,
+        "weeks": 266
+      },
+      {
+        "w": 1.0,
+        "hit": 0.4436,
+        "weeks": 266
+      }
+    ],
+    "percent_early": [
+      {
+        "w": 0.0,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.05,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.1,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.15,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.2,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.25,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.3,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.35,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.4,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.45,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.5,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.55,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.6,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.65,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.7,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.75,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.8,
+        "hit": 0.981,
+        "weeks": 210
+      },
+      {
+        "w": 0.85,
+        "hit": 0.9238,
+        "weeks": 210
+      },
+      {
+        "w": 0.9,
+        "hit": 0.8095,
+        "weeks": 210
+      },
+      {
+        "w": 0.95,
+        "hit": 0.6381,
+        "weeks": 210
+      },
+      {
+        "w": 1.0,
+        "hit": 0.4571,
+        "weeks": 210
+      }
+    ],
+    "percent_late": [
+      {
+        "w": 0.0,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.05,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.1,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.15,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.2,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.25,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.3,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.35,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.4,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.45,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.5,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.55,
+        "hit": 1.0,
+        "weeks": 56
+      },
+      {
+        "w": 0.6,
+        "hit": 0.9821,
+        "weeks": 56
+      },
+      {
+        "w": 0.65,
+        "hit": 0.9286,
+        "weeks": 56
+      },
+      {
+        "w": 0.7,
+        "hit": 0.8214,
+        "weeks": 56
+      },
+      {
+        "w": 0.75,
+        "hit": 0.7857,
+        "weeks": 56
+      },
+      {
+        "w": 0.8,
+        "hit": 0.6607,
+        "weeks": 56
+      },
+      {
+        "w": 0.85,
+        "hit": 0.625,
+        "weeks": 56
+      },
+      {
+        "w": 0.9,
+        "hit": 0.5893,
+        "weeks": 56
+      },
+      {
+        "w": 0.95,
+        "hit": 0.4821,
+        "weeks": 56
+      },
+      {
+        "w": 1.0,
+        "hit": 0.3929,
+        "weeks": 56
+      }
+    ],
+    "rank_all": [
+      {
+        "w": 0.0,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.05,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.1,
+        "hit": 1.0,
+        "weeks": 266
+      },
+      {
+        "w": 0.15,
+        "hit": 0.9962,
+        "weeks": 266
+      },
+      {
+        "w": 0.2,
+        "hit": 0.9887,
+        "weeks": 266
+      },
+      {
+        "w": 0.25,
+        "hit": 0.9887,
+        "weeks": 266
+      },
+      {
+        "w": 0.3,
+        "hit": 0.9737,
+        "weeks": 266
+      },
+      {
+        "w": 0.35,
+        "hit": 0.9586,
+        "weeks": 266
+      },
+      {
+        "w": 0.4,
+        "hit": 0.9474,
+        "weeks": 266
+      },
+      {
+        "w": 0.45,
+        "hit": 0.9398,
+        "weeks": 266
+      },
+      {
+        "w": 0.5,
+        "hit": 0.9286,
+        "weeks": 266
+      },
+      {
+        "w": 0.55,
+        "hit": 0.8947,
+        "weeks": 266
+      },
+      {
+        "w": 0.6,
+        "hit": 0.8647,
+        "weeks": 266
+      },
+      {
+        "w": 0.65,
+        "hit": 0.8496,
+        "weeks": 266
+      },
+      {
+        "w": 0.7,
+        "hit": 0.7932,
+        "weeks": 266
+      },
+      {
+        "w": 0.75,
+        "hit": 0.703,
+        "weeks": 266
+      },
+      {
+        "w": 0.8,
+        "hit": 0.6429,
+        "weeks": 266
+      },
+      {
+        "w": 0.85,
+        "hit": 0.5902,
+        "weeks": 266
+      },
+      {
+        "w": 0.9,
+        "hit": 0.5075,
+        "weeks": 266
+      },
+      {
+        "w": 0.95,
+        "hit": 0.485,
+        "weeks": 266
+      },
+      {
+        "w": 1.0,
+        "hit": 0.4436,
+        "weeks": 266
+      }
+    ],
+    "rank_early": [
+      {
+        "w": 0.0,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.05,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.1,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.15,
+        "hit": 0.9952,
+        "weeks": 210
+      },
+      {
+        "w": 0.2,
+        "hit": 0.9952,
+        "weeks": 210
+      },
+      {
+        "w": 0.25,
+        "hit": 0.9952,
+        "weeks": 210
+      },
+      {
+        "w": 0.3,
+        "hit": 0.9762,
+        "weeks": 210
+      },
+      {
+        "w": 0.35,
+        "hit": 0.9619,
+        "weeks": 210
+      },
+      {
+        "w": 0.4,
+        "hit": 0.9524,
+        "weeks": 210
+      },
+      {
+        "w": 0.45,
+        "hit": 0.9429,
+        "weeks": 210
+      },
+      {
+        "w": 0.5,
+        "hit": 0.9333,
+        "weeks": 210
+      },
+      {
+        "w": 0.55,
+        "hit": 0.9143,
+        "weeks": 210
+      },
+      {
+        "w": 0.6,
+        "hit": 0.8952,
+        "weeks": 210
+      },
+      {
+        "w": 0.65,
+        "hit": 0.8857,
+        "weeks": 210
+      },
+      {
+        "w": 0.7,
+        "hit": 0.8238,
+        "weeks": 210
+      },
+      {
+        "w": 0.75,
+        "hit": 0.7238,
+        "weeks": 210
+      },
+      {
+        "w": 0.8,
+        "hit": 0.6619,
+        "weeks": 210
+      },
+      {
+        "w": 0.85,
+        "hit": 0.5952,
+        "weeks": 210
+      },
+      {
+        "w": 0.9,
+        "hit": 0.5143,
+        "weeks": 210
+      },
+      {
+        "w": 0.95,
+        "hit": 0.4952,
+        "weeks": 210
+      },
+      {
+        "w": 1.0,
+        "hit": 0.4571,
+        "weeks": 210
+      }
+    ],
+    "percent_lo": [
+      {
+        "w": 0.0,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.05,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.1,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.15,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.2,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.25,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.3,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.35,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.4,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.45,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.5,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.55,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.6,
+        "hit": 0.9762,
+        "weeks": 210
+      },
+      {
+        "w": 0.65,
+        "hit": 0.9238,
+        "weeks": 210
+      },
+      {
+        "w": 0.7,
+        "hit": 0.819,
+        "weeks": 210
+      },
+      {
+        "w": 0.75,
+        "hit": 0.7476,
+        "weeks": 210
+      },
+      {
+        "w": 0.8,
+        "hit": 0.6905,
+        "weeks": 210
+      },
+      {
+        "w": 0.85,
+        "hit": 0.5619,
+        "weeks": 210
+      },
+      {
+        "w": 0.9,
+        "hit": 0.519,
+        "weeks": 210
+      },
+      {
+        "w": 0.95,
+        "hit": 0.5,
+        "weeks": 210
+      },
+      {
+        "w": 1.0,
+        "hit": 0.4571,
+        "weeks": 210
+      }
+    ],
+    "percent_hi": [
+      {
+        "w": 0.0,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.05,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.1,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.15,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.2,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.25,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.3,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.35,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.4,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.45,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.5,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.55,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.6,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.65,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.7,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.75,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.8,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.85,
+        "hit": 1.0,
+        "weeks": 210
+      },
+      {
+        "w": 0.9,
+        "hit": 0.9762,
+        "weeks": 210
+      },
+      {
+        "w": 0.95,
+        "hit": 0.8476,
+        "weeks": 210
+      },
+      {
+        "w": 1.0,
+        "hit": 0.4571,
+        "weeks": 210
+      }
+    ]
+  },
+  "rule_disagreement": {
+    "total_weeks": 266,
+    "disagree_weeks": 24,
+    "disagree_rate": 0.0902,
+    "by_season": [
+      {
+        "season": 1,
+        "rate": 0.0,
+        "n": 3
+      },
+      {
+        "season": 2,
+        "rate": 0.0,
+        "n": 7
+      },
+      {
+        "season": 3,
+        "rate": 0.0,
+        "n": 7
+      },
+      {
+        "season": 4,
+        "rate": 0.0,
+        "n": 8
+      },
+      {
+        "season": 5,
+        "rate": 0.0,
+        "n": 9
+      },
+      {
+        "season": 6,
+        "rate": 0.0,
+        "n": 8
+      },
+      {
+        "season": 7,
+        "rate": 0.0,
+        "n": 8
+      },
+      {
+        "season": 8,
+        "rate": 0.0,
+        "n": 9
+      },
+      {
+        "season": 9,
+        "rate": 0.1111,
+        "n": 9
+      },
+      {
+        "season": 10,
+        "rate": 0.0,
+        "n": 8
+      },
+      {
+        "season": 11,
+        "rate": 0.0,
+        "n": 9
+      },
+      {
+        "season": 12,
+        "rate": 0.0,
+        "n": 8
+      },
+      {
+        "season": 13,
+        "rate": 0.1111,
+        "n": 9
+      },
+      {
+        "season": 14,
+        "rate": 0.125,
+        "n": 8
+      },
+      {
+        "season": 15,
+        "rate": 0.2857,
+        "n": 7
+      },
+      {
+        "season": 16,
+        "rate": 0.0,
+        "n": 9
+      },
+      {
+        "season": 17,
+        "rate": 0.2222,
+        "n": 9
+      },
+      {
+        "season": 18,
+        "rate": 0.0,
+        "n": 8
+      },
+      {
+        "season": 19,
+        "rate": 0.0,
+        "n": 10
+      },
+      {
+        "season": 20,
+        "rate": 0.375,
+        "n": 8
+      },
+      {
+        "season": 21,
+        "rate": 0.2857,
+        "n": 7
+      },
+      {
+        "season": 22,
+        "rate": 0.0,
+        "n": 7
+      },
+      {
+        "season": 23,
+        "rate": 0.1111,
+        "n": 9
+      },
+      {
+        "season": 24,
+        "rate": 0.25,
+        "n": 8
+      },
+      {
+        "season": 25,
+        "rate": 0.0,
+        "n": 8
+      },
+      {
+        "season": 26,
+        "rate": 0.3333,
+        "n": 3
+      },
+      {
+        "season": 27,
+        "rate": 0.1429,
+        "n": 7
+      },
+      {
+        "season": 28,
+        "rate": 0.1429,
+        "n": 7
+      },
+      {
+        "season": 29,
+        "rate": 0.0,
+        "n": 9
+      },
+      {
+        "season": 30,
+        "rate": 0.125,
+        "n": 8
+      },
+      {
+        "season": 31,
+        "rate": 0.1111,
+        "n": 9
+      },
+      {
+        "season": 32,
+        "rate": 0.1111,
+        "n": 9
+      },
+      {
+        "season": 33,
+        "rate": 0.3333,
+        "n": 6
+      },
+      {
+        "season": 34,
+        "rate": 0.125,
+        "n": 8
+      }
+    ]
+  },
+  "diagnostics": {
+    "rhat": {
+      "n": 335,
+      "mean": 1.028,
+      "sd": 0.0263,
+      "min": 0.9998,
+      "p05": 1.0009,
+      "median": 1.0221,
+      "p95": 1.0768,
+      "max": 1.2124
+    },
+    "ess": {
+      "n": 335,
+      "mean": 7547.0525,
+      "sd": 200.9646,
+      "min": 7103.0692,
+      "p05": 7267.3522,
+      "median": 7538.3044,
+      "p95": 8000.0,
+      "max": 8000.0
+    },
+    "n_constraints": {
+      "n": 335,
+      "mean": 6.7731,
+      "sd": 5.2645,
+      "min": 0.0,
+      "p05": 0.0,
+      "median": 7.0,
+      "p95": 16.6,
+      "max": 30.0
+    },
+    "p_hit_pct": {
+      "n": 266,
+      "mean": 0.8738,
+      "sd": 0.2864,
+      "min": 0.0894,
+      "p05": 0.1866,
+      "median": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "p_hit_rank": {
+      "n": 266,
+      "mean": 0.0018,
+      "sd": 0.0139,
+      "min": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.0002,
+      "max": 0.1763
+    },
+    "brier_pct": {
+      "n": 266,
+      "mean": 0.1204,
+      "sd": 0.2612,
+      "min": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.7606,
+      "max": 0.9465
+    },
+    "kappa_pct": {
+      "n": 266,
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "p05": 1.0,
+      "median": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "kappa_rank": {
+      "n": 266,
+      "mean": 0.0038,
+      "sd": 0.0613,
+      "min": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 1.0
+    },
+    "tau_pct": {
+      "n": 314,
+      "mean": 0.369,
+      "sd": 0.2653,
+      "min": -0.3333,
+      "p05": -0.0667,
+      "median": 0.3571,
+      "p95": 0.8,
+      "max": 1.0
+    },
+    "spearman_pct": {
+      "n": 314,
+      "mean": 0.4728,
+      "sd": 0.2901,
+      "min": -0.4,
+      "p05": -0.0381,
+      "median": 0.4835,
+      "p95": 0.9004,
+      "max": 1.0
+    },
+    "n_couples": {
+      "n": 335,
+      "mean": 8.2896,
+      "sd": 3.19,
+      "min": 2.0,
+      "p05": 3.0,
+      "median": 8.0,
+      "p95": 13.0,
+      "max": 16.0
+    },
+    "rhat_above_11": 6,
+    "ess_below_7500": 136
+  },
+  "divergence": {
+    "diff_mean": -0.0,
+    "diff_sd": 0.0403,
+    "diff_p05": -0.0804,
+    "diff_p95": 0.0573,
+    "abs_rank_gap_mean": 3.2733,
+    "abs_rank_gap_median": 2.5,
+    "abs_rank_gap_p90": 7.0,
+    "rank_gap_ge2": 0.6579,
+    "by_era": {
+      "bottom-two": {
+        "mean": -0.0,
+        "sd": 0.0236,
+        "rank_gap": 3.4658
+      },
+      "percent": {
+        "mean": -0.0,
+        "sd": 0.0438,
+        "rank_gap": 3.2344
+      },
+      "rank": {
+        "mean": -0.0,
+        "sd": 0.0598,
+        "rank_gap": 2.5385
+      }
+    },
+    "eliminated": {
+      "pF": 0.0323,
+      "pJ": 0.1184,
+      "ci": 0.0905,
+      "n": 308
+    },
+    "survived": {
+      "pF": 0.1076,
+      "pJ": 0.1209,
+      "ci": 0.358,
+      "n": 2469
+    }
+  },
+  "covariates": {
+    "age_bins": [
+      {
+        "bin": "<=26",
+        "n": 670,
+        "fan": 0.1079,
+        "judge": 0.1335,
+        "age": 21.8806
+      },
+      {
+        "bin": "27-34",
+        "n": 755,
+        "fan": 0.1088,
+        "judge": 0.1303,
+        "age": 30.6583
+      },
+      {
+        "bin": "35-43",
+        "n": 697,
+        "fan": 0.0972,
+        "judge": 0.1191,
+        "age": 38.792
+      },
+      {
+        "bin": ">43",
+        "n": 655,
+        "fan": 0.0816,
+        "judge": 0.098,
+        "age": 54.826
+      }
+    ],
+    "corr_age_fan": -0.1659,
+    "corr_age_judge": -0.2437,
+    "industry": [
+      {
+        "industry": "Athlete",
+        "n": 658,
+        "fan": 0.1057,
+        "judge": 0.1266
+      },
+      {
+        "industry": "Actor",
+        "n": 882,
+        "fan": 0.1004,
+        "judge": 0.1234
+      },
+      {
+        "industry": "Singer",
+        "n": 414,
+        "fan": 0.1003,
+        "judge": 0.1246
+      },
+      {
+        "industry": "TV/Media",
+        "n": 660,
+        "fan": 0.0944,
+        "judge": 0.1118
+      },
+      {
+        "industry": "Other",
+        "n": 87,
+        "fan": 0.0913,
+        "judge": 0.1031
+      },
+      {
+        "industry": "Model",
+        "n": 76,
+        "fan": 0.0761,
+        "judge": 0.1123
+      }
+    ],
+    "home": [
+      {
+        "us_home": 0.0,
+        "n": 375,
+        "fan": 0.0986,
+        "judge": 0.122
+      },
+      {
+        "us_home": 1.0,
+        "n": 2402,
+        "fan": 0.0994,
+        "judge": 0.1204
+      }
+    ],
+    "pro_top": [
+      {
+        "pro": "Julianne Hough",
+        "n": 41,
+        "fan": 0.1203
+      },
+      {
+        "pro": "Derek Hough",
+        "n": 164,
+        "fan": 0.1167
+      },
+      {
+        "pro": "Lacey Schwimmer",
+        "n": 41,
+        "fan": 0.1135
+      },
+      {
+        "pro": "Mark Ballas",
+        "n": 166,
+        "fan": 0.1116
+      },
+      {
+        "pro": "Kym Johnson",
+        "n": 93,
+        "fan": 0.1114
+      },
+      {
+        "pro": "Maksim Chmerkoskiy",
+        "n": 121,
+        "fan": 0.11
+      }
+    ],
+    "pro_bottom": [
+      {
+        "pro": "Artem Chigvintsev",
+        "n": 81,
+        "fan": 0.0769
+      },
+      {
+        "pro": "Tristan MacManus",
+        "n": 21,
+        "fan": 0.076
+      },
+      {
+        "pro": "Pasha Pashkov",
+        "n": 37,
+        "fan": 0.0759
+      },
+      {
+        "pro": "Keo Motsepe",
+        "n": 35,
+        "fan": 0.0748
+      },
+      {
+        "pro": "Brandon Armstrong",
+        "n": 45,
+        "fan": 0.0658
+      },
+      {
+        "pro": "Britt Stewart",
+        "n": 30,
+        "fan": 0.0643
+      }
+    ]
+  },
+  "controversy_trajectories": {
+    "Jerry Rice": [
+      {
+        "week": 1,
+        "pJ": 0.1077,
+        "pF": 0.1315,
+        "comb": 0.2392,
+        "rankJ": 5.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 2,
+        "pJ": 0.115,
+        "pF": 0.115,
+        "comb": 0.23,
+        "rankJ": 4.0,
+        "rankF": 5.0,
+        "elim": false
+      },
+      {
+        "week": 3,
+        "pJ": 0.1044,
+        "pF": 0.142,
+        "comb": 0.2464,
+        "rankJ": 7.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 4,
+        "pJ": 0.1519,
+        "pF": 0.1512,
+        "comb": 0.3031,
+        "rankJ": 5.0,
+        "rankF": 3.0,
+        "elim": false
+      },
+      {
+        "week": 5,
+        "pJ": 0.1523,
+        "pF": 0.2119,
+        "comb": 0.3642,
+        "rankJ": 5.0,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 6,
+        "pJ": 0.1729,
+        "pF": 0.256,
+        "comb": 0.429,
+        "rankJ": 4.5,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 7,
+        "pJ": 0.201,
+        "pF": 0.353,
+        "comb": 0.554,
+        "rankJ": 4.0,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 8,
+        "pJ": 0.3162,
+        "pF": 0.3502,
+        "comb": 0.6664,
+        "rankJ": 3.0,
+        "rankF": 1.0,
+        "elim": false
+      }
+    ],
+    "Billy Ray Cyrus": [
+      {
+        "week": 1,
+        "pJ": 0.0631,
+        "pF": 0.0847,
+        "comb": 0.1478,
+        "rankJ": 11.0,
+        "rankF": 9.0,
+        "elim": false
+      },
+      {
+        "week": 2,
+        "pJ": 0.0857,
+        "pF": 0.0859,
+        "comb": 0.1716,
+        "rankJ": 7.5,
+        "rankF": 9.0,
+        "elim": false
+      },
+      {
+        "week": 3,
+        "pJ": 0.0963,
+        "pF": 0.0992,
+        "comb": 0.1955,
+        "rankJ": 7.0,
+        "rankF": 7.0,
+        "elim": false
+      },
+      {
+        "week": 4,
+        "pJ": 0.1105,
+        "pF": 0.1147,
+        "comb": 0.2252,
+        "rankJ": 5.5,
+        "rankF": 5.0,
+        "elim": false
+      },
+      {
+        "week": 5,
+        "pJ": 0.0966,
+        "pF": 0.1354,
+        "comb": 0.232,
+        "rankJ": 7.0,
+        "rankF": 4.0,
+        "elim": false
+      },
+      {
+        "week": 6,
+        "pJ": 0.1235,
+        "pF": 0.1773,
+        "comb": 0.3008,
+        "rankJ": 6.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 7,
+        "pJ": 0.123,
+        "pF": 0.2682,
+        "comb": 0.3912,
+        "rankJ": 6.0,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 8,
+        "pJ": 0.1514,
+        "pF": 0.0718,
+        "comb": 0.2232,
+        "rankJ": 5.0,
+        "rankF": 5.0,
+        "elim": true
+      }
+    ],
+    "Bristol Palin": [
+      {
+        "week": 1,
+        "pJ": 0.0793,
+        "pF": 0.0894,
+        "comb": 0.1687,
+        "rankJ": 7.5,
+        "rankF": 6.0,
+        "elim": false
+      },
+      {
+        "week": 2,
+        "pJ": 0.0995,
+        "pF": 0.0986,
+        "comb": 0.1981,
+        "rankJ": 3.5,
+        "rankF": 5.0,
+        "elim": false
+      },
+      {
+        "week": 3,
+        "pJ": 0.086,
+        "pF": 0.1192,
+        "comb": 0.2051,
+        "rankJ": 9.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 4,
+        "pJ": 0.0894,
+        "pF": 0.1541,
+        "comb": 0.2434,
+        "rankJ": 8.0,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 5,
+        "pJ": 0.0989,
+        "pF": 0.1568,
+        "comb": 0.2557,
+        "rankJ": 8.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 6,
+        "pJ": 0.1353,
+        "pF": 0.1724,
+        "comb": 0.3077,
+        "rankJ": 6.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 7,
+        "pJ": 0.1559,
+        "pF": 0.206,
+        "comb": 0.3618,
+        "rankJ": 6.0,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 8,
+        "pJ": 0.1774,
+        "pF": 0.2511,
+        "comb": 0.4284,
+        "rankJ": 5.0,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 9,
+        "pJ": 0.2325,
+        "pF": 0.3201,
+        "comb": 0.5525,
+        "rankJ": 4.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 10,
+        "pJ": 0.3092,
+        "pF": 0.3445,
+        "comb": 0.6537,
+        "rankJ": 3.0,
+        "rankF": 1.0,
+        "elim": false
+      }
+    ],
+    "Bobby Bones": [
+      {
+        "week": 1,
+        "pJ": 0.0784,
+        "pF": 0.0763,
+        "comb": 0.1547,
+        "rankJ": 6.0,
+        "rankF": 8.0,
+        "elim": false
+      },
+      {
+        "week": 2,
+        "pJ": 0.0721,
+        "pF": 0.097,
+        "comb": 0.1691,
+        "rankJ": 10.0,
+        "rankF": 5.0,
+        "elim": false
+      },
+      {
+        "week": 3,
+        "pJ": 0.0849,
+        "pF": 0.1114,
+        "comb": 0.1962,
+        "rankJ": 8.0,
+        "rankF": 2.0,
+        "elim": false
+      },
+      {
+        "week": 4,
+        "pJ": 0.0862,
+        "pF": 0.1327,
+        "comb": 0.2189,
+        "rankJ": 9.0,
+        "rankF": 3.0,
+        "elim": false
+      },
+      {
+        "week": 5,
+        "pJ": 0.0946,
+        "pF": 0.1098,
+        "comb": 0.2044,
+        "rankJ": 8.0,
+        "rankF": 4.0,
+        "elim": false
+      },
+      {
+        "week": 6,
+        "pJ": 0.0961,
+        "pF": 0.1345,
+        "comb": 0.2306,
+        "rankJ": 7.5,
+        "rankF": 3.0,
+        "elim": false
+      },
+      {
+        "week": 7,
+        "pJ": 0.1218,
+        "pF": 0.1552,
+        "comb": 0.277,
+        "rankJ": 6.5,
+        "rankF": 3.0,
+        "elim": false
+      },
+      {
+        "week": 8,
+        "pJ": 0.1398,
+        "pF": 0.2592,
+        "comb": 0.3989,
+        "rankJ": 6.0,
+        "rankF": 1.0,
+        "elim": false
+      },
+      {
+        "week": 9,
+        "pJ": 0.2338,
+        "pF": 0.2722,
+        "comb": 0.5059,
+        "rankJ": 4.0,
+        "rankF": 1.0,
+        "elim": false
+      }
+    ]
+  },
+  "raw": {
+    "contestants": 421,
+    "seasons": 34,
+    "age_mean": 38.7862,
+    "age_min": 14.0,
+    "age_max": 82.0,
+    "industry_counts": {
+      "Actor/Actress": 128,
+      "Athlete": 95,
+      "TV Personality": 67,
+      "Singer/Rapper": 61,
+      "Model": 17,
+      "Comedian": 12,
+      "Social Media Personality": 8,
+      "Racing Driver": 4,
+      "Radio Personality": 4,
+      "Entrepreneur": 4,
+      "News Anchor": 3,
+      "Politician": 3
+    },
+    "placements": {
+      "Eliminated Week 2": 40,
+      "Eliminated Week 7": 36,
+      "Eliminated Week 8": 36,
+      "Eliminated Week 4": 35,
+      "2nd Place": 34,
+      "1st Place": 34
+    },
+    "judge_score_n": 18524,
+    "judge_score_mean": 5.2351,
+    "judge_score_sd": 3.9415,
+    "judge_score_min": 0.0,
+    "judge_score_max": 13.3333
+  },
+  "correlation_matrix": {
+    "pJ~pF_med": {
+      "pearson": 0.8324,
+      "spearman": 0.6765
+    },
+    "pJ~pF_med_renorm": {
+      "pearson": 0.807,
+      "spearman": 0.6598
+    },
+    "pJ~comb_pct": {
+      "pearson": 0.9411,
+      "spearman": 0.883
+    },
+    "rankJ~rankF": {
+      "pearson": 0.153,
+      "spearman": 0.0794
+    }
+  },
+  "relative_uncertainty": {
+    "corr_cirel_ncouples": 0.2606,
+    "corr_cirel_week": -0.2414,
+    "ci_rel_mean": 2.8327,
+    "ci_rel_median": 2.9513,
+    "by_week": [
+      {
+        "week": 1,
+        "n": 421,
+        "ci": 0.2602,
+        "ci_rel": 3.223,
+        "n_couples": 12.64,
+        "pF": 0.0609
+      },
+      {
+        "week": 2,
+        "n": 404,
+        "ci": 0.2377,
+        "ci_rel": 2.8428,
+        "n_couples": 12.16,
+        "pF": 0.0673
+      },
+      {
+        "week": 3,
+        "n": 360,
+        "ci": 0.2776,
+        "ci_rel": 2.9658,
+        "n_couples": 10.92,
+        "pF": 0.0748
+      },
+      {
+        "week": 4,
+        "n": 326,
+        "ci": 0.2967,
+        "ci_rel": 2.8758,
+        "n_couples": 10.01,
+        "pF": 0.084
+      },
+      {
+        "week": 5,
+        "n": 288,
+        "ci": 0.3275,
+        "ci_rel": 2.8809,
+        "n_couples": 9.01,
+        "pF": 0.0923
+      },
+      {
+        "week": 6,
+        "n": 261,
+        "ci": 0.3539,
+        "ci_rel": 2.8458,
+        "n_couples": 8.26,
+        "pF": 0.1032
+      },
+      {
+        "week": 7,
+        "n": 228,
+        "ci": 0.368,
+        "ci_rel": 2.6542,
+        "n_couples": 7.35,
+        "pF": 0.117
+      },
+      {
+        "week": 8,
+        "n": 191,
+        "ci": 0.4167,
+        "ci_rel": 2.5185,
+        "n_couples": 6.21,
+        "pF": 0.1426
+      },
+      {
+        "week": 9,
+        "n": 152,
+        "ci": 0.4663,
+        "ci_rel": 2.3258,
+        "n_couples": 5.12,
+        "pF": 0.1792
+      },
+      {
+        "week": 10,
+        "n": 109,
+        "ci": 0.6151,
+        "ci_rel": 2.3406,
+        "n_couples": 4.03,
+        "pF": 0.2382
+      },
+      {
+        "week": 11,
+        "n": 37,
+        "ci": 0.5755,
+        "ci_rel": 2.3896,
+        "n_couples": 4.19,
+        "pF": 0.2138
+      }
+    ],
+    "by_field": [
+      {
+        "bin": "2-5",
+        "n": 322,
+        "ci": 0.5595,
+        "ci_rel": 2.3004,
+        "pF": 0.2185
+      },
+      {
+        "bin": "6-8",
+        "n": 654,
+        "ci": 0.3744,
+        "ci_rel": 2.6474,
+        "pF": 0.1183
+      },
+      {
+        "bin": "9-11",
+        "n": 1001,
+        "ci": 0.2966,
+        "ci_rel": 2.94,
+        "pF": 0.0799
+      },
+      {
+        "bin": "12-16",
+        "n": 800,
+        "ci": 0.2372,
+        "ci_rel": 3.064,
+        "pF": 0.0599
+      }
+    ]
+  },
+  "judge_baseline": {
+    "rank": {
+      "weeks": 10,
+      "judge_only_hit": 0.4,
+      "judge_rank_only_hit": 0.4
+    },
+    "percent": {
+      "weeks": 200,
+      "judge_only_hit": 0.46,
+      "judge_rank_only_hit": 0.46
+    },
+    "bottom-two": {
+      "weeks": 56,
+      "judge_only_hit": 0.3929,
+      "judge_rank_only_hit": 0.3929
+    }
+  },
+  "eliminated_judge_position": {
+    "n": 308,
+    "mean_normalised_rank": 0.7805,
+    "share_worst": 0.4221
+  },
+  "regime_break": {
+    "26": {
+      "couple_weeks": 27,
+      "ci": 0.3439,
+      "hit": 1.0,
+      "brier": 0.0382,
+      "bt_weeks": 0,
+      "pF": 0.1291
+    },
+    "27": {
+      "couple_weeks": 82,
+      "ci": 0.2876,
+      "hit": 1.0,
+      "brier": 0.0112,
+      "bt_weeks": 0,
+      "pF": 0.0906
+    },
+    "28": {
+      "couple_weeks": 92,
+      "ci": 0.3536,
+      "hit": 0.3708,
+      "brier": 0.5667,
+      "bt_weeks": 7,
+      "pF": 0.0959
+    },
+    "29": {
+      "couple_weeks": 115,
+      "ci": 0.284,
+      "hit": 0.4328,
+      "brier": 0.4883,
+      "bt_weeks": 9,
+      "pF": 0.0758
+    }
+  },
+  "controversy_stats": {
+    "Jerry Rice": {
+      "weeks": 8,
+      "mean_pF": 0.2139,
+      "mean_pJ": 0.1652,
+      "mean_rankJ": 4.6875,
+      "max_rankJ": 7.0,
+      "fan_exceeds_judge_weeks": 6,
+      "eliminated_weeks": 0
+    },
+    "Billy Ray Cyrus": {
+      "weeks": 8,
+      "mean_pF": 0.1296,
+      "mean_pJ": 0.1063,
+      "mean_rankJ": 6.875,
+      "max_rankJ": 11.0,
+      "fan_exceeds_judge_weeks": 7,
+      "eliminated_weeks": 1
+    },
+    "Bristol Palin": {
+      "weeks": 10,
+      "mean_pF": 0.1912,
+      "mean_pJ": 0.1463,
+      "mean_rankJ": 6.0,
+      "max_rankJ": 9.0,
+      "fan_exceeds_judge_weeks": 9,
+      "eliminated_weeks": 0
+    },
+    "Bobby Bones": {
+      "weeks": 9,
+      "mean_pF": 0.1498,
+      "mean_pJ": 0.112,
+      "mean_rankJ": 7.2222,
+      "max_rankJ": 10.0,
+      "fan_exceeds_judge_weeks": 8,
+      "eliminated_weeks": 0
+    }
+  }
+}

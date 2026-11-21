@@ -1,0 +1,31 @@
+{
+ "session": "2026-mcm-problem-c / model_2",
+ "status": "SATISFIED",
+ "issues": [],
+ "fixInstructions": [
+  "Round 3/3 complete. Only instructed issues fixed.",
+  "R1: removed wall-clock fields from results.json (reproducibility failure).",
+  "R2: band-weight quantile fix in m2_fanshare (0 inverted bands, 100% point-in-band).",
+  "R3: canonical-input override \u2014 fanshare = model1 phi_share; lite kept as sensitivity (R2_fan_lite, rho_lite dual-reported)."
+ ],
+ "fixInstructions_extended": [
+  "All numeric targets met within \u00b11 lowest digit:",
+  "R2 fan canonical 0.4766 (target ~0.477) | judge 0.3358 unchanged (byte-equivalent judge side)",
+  "fan partial R2: pro 0.1375 (.137), industry 0.0562 (.056), age 0.0939 (.094), week 0.1638 (.164)",
+  "consistency: bottom-m 198/235, single-exit exact 170/206, bottom-3 232/235, multi-exit 28/29",
+  "rho(judge,fan|eligible) 0.623; rho_lite 0.6224",
+  "fan top-5: Derek Hough, Daniella Karagach, Kym Johnson, Jenna Johnson, Valentin Chmerkovskiy"
+ ],
+ "summaryPath": "results_summary.md",
+ "determinism": "two consecutive runs -> byte-identical results.json (56s rerun)",
+ "hashes": {
+  "results.json": "84ec42073aa57397",
+  "model2_fanshare.csv": "093574f830165045",
+  "model2_decomp.csv": "016d68cb52ff319e",
+  "model2_pro_rankings.csv": "b2361d06623a1f6d",
+  "model2_industry_effects.csv": "d12b7749a675d41c",
+  "model2_effects.csv": "f4ac9a3b8a4067a1",
+  "model2_exitfit.csv": "6d66c494d191cc20",
+  "model2_era_drift.csv": "94257af809db3dd8"
+ }
+}

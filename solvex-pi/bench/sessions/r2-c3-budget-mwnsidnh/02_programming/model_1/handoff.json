@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "issues": [
+    "Write access to 01_modeling/master_plan.md is blocked in this parallel task (allowed prefix is 02_programming/model_1/ only); the master plan mirroring the required three model sections was saved to 02_programming/model_1/master_plan.md instead.",
+    "Eliminations identify only a feasible polytope of fan shares, so posterior estimates are prior-relative (popularity-hazard GLM prior); absolute fan-vote totals are not identifiable, only within-week shares.",
+    "Season 28+ assumed to use the rank rule (exact switch season unknown per problem statement); double-elimination weeks and 10 withdrawals excluded from constraints; Diana Nyad S18 W2 dropped (no exit-week judge scores).",
+    "Hold-out validation is prior-based (posterior is defined by the elimination itself): mean prior-only replay probability of observed eliminations is 0.267, roughly 2-2.5x a random-guess baseline of 1/n.",
+    "Hit-and-run/HMC on the polytope was replaced by exact rejection sampling of the logistic-normal prior truncated to the feasible set (simpler and unbiased; per-week acceptance rate 20.6% mean retained as diagnostic)."
+  ],
+  "fixInstructions": "Rerun from session root: PYTHONPATH=02_programming/model_1 python 02_programming/model_1/run_model1.py (data path is relative to session root), then python 02_programming/model_1/make_figures.py. Adjust SIGMA / SIGMA_GRID in run_model1.py for prior-spread sensitivity; adjust RANK_SEASONS in dwts_common.py if the rank-rule switch season is revised.",
+  "summaryPath": "02_programming/model_1/results_summary.md"
+}

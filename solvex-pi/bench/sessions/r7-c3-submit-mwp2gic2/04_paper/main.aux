@@ -1,0 +1,164 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Problem Background and Motivation}{3}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Data Description}{4}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Our Approach in Brief}{4}{subsection.1.3}\protected@file@percent }
+\newlabel{sec:modelintro}{{1.3}{4}{Our Approach in Brief}{subsection.1.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Pipeline schematic and deliverable map. The shared preprocessing layer (\texttt  {prep\_data.py}, all checks passing) produces three tables --- \texttt  {contestants.csv} (421 rows), \texttt  {weekly\_scores.csv} (2{,}777 danced celebrity-weeks), and \texttt  {week\_panel.csv} (335 season-weeks). Model 1 consumes the judge scores plus the elimination record and produces the single shared latent quantity $\hat  \phi $ with its uncertainty bands; Models 2 and 3 consume $\hat  \phi $ \emph  {without refitting it}, guaranteeing one consistent latent-vote story throughout the report.}}{5}{table.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:deliverablemap}{{1}{5}{Pipeline schematic and deliverable map. The shared preprocessing layer (\texttt {prep\_data.py}, all checks passing) produces three tables --- \texttt {contestants.csv} (421 rows), \texttt {weekly\_scores.csv} (2{,}777 danced celebrity-weeks), and \texttt {week\_panel.csv} (335 season-weeks). Model 1 consumes the judge scores plus the elimination record and produces the single shared latent quantity $\hat \phi $ with its uncertainty bands; Models 2 and 3 consume $\hat \phi $ \emph {without refitting it}, guaranteeing one consistent latent-vote story throughout the report}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Paper Outline}{5}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Model 1: Sub-Seasonal Survival Inversion of Latent Fan Votes}{5}{section.2}\protected@file@percent }
+\newlabel{sec:model1}{{2}{5}{Model 1: Sub-Seasonal Survival Inversion of Latent Fan Votes}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Problem Statement}{5}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{6}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}The latent-vote model}{6}{subsubsection.2.2.1}\protected@file@percent }
+\newlabel{eq:multinomial}{{1}{6}{The latent-vote model}{equation.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Stage A: discrete-time cloglog hazard}{6}{subsubsection.2.2.2}\protected@file@percent }
+\newlabel{eq:hazard}{{2}{6}{Stage A: discrete-time cloglog hazard}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Stage B: Dempster--Shafer belief layer}{6}{subsubsection.2.2.3}\protected@file@percent }
+\newlabel{eq:mass}{{3}{6}{Stage B: Dempster--Shafer belief layer}{equation.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Stage C: fusion into $\hat  \phi $ and Beta pseudo-ballot bands}{7}{subsubsection.2.2.4}\protected@file@percent }
+\newlabel{eq:fusion}{{6}{7}{Stage C: fusion into $\hat \phi $ and Beta pseudo-ballot bands}{equation.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Implementation}{7}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Key design choices.}{7}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Interlude: the two-stage read on elimination, in one example}{7}{subsubsection.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Results}{7}{subsection.2.4}\protected@file@percent }
+\newlabel{sec:m1res}{{2.4}{7}{Results}{subsection.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Headline validation}{7}{subsubsection.2.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Model 1 headline validation (in-sample; results.json values).}}{8}{table.caption.4}\protected@file@percent }
+\newlabel{tab:m1headline}{{2}{8}{Model 1 headline validation (in-sample; results.json values)}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Hazard coefficients (Stage A)}{8}{subsubsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Frailty as the fan-pressure signal}{8}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.4}Belief layer and certainty (uncertainty quantification)}{8}{subsubsection.2.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.5}Iconic contestant trajectories}{8}{subsubsection.2.4.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Estimated weekly fan-vote share $\hat  \phi $ (solid, with 90\% bands) versus judge percentile (dashed) for Bobby Bones (S27), Jerry Rice (S2), Bristol Palin (S11), and Joey Graziadei (S33). Vertical dotted lines mark each contestant's exit (or the finale). Bones and Palin ride a belief-frailty fusion to sustained $\hat  \phi $ far above their judge percentile; Graziadei tracks judges closely, evidence the estimator does not create spurious conflict.}}{9}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:m1iconic}{{1}{9}{Estimated weekly fan-vote share $\hat \phi $ (solid, with 90\% bands) versus judge percentile (dashed) for Bobby Bones (S27), Jerry Rice (S2), Bristol Palin (S11), and Joey Graziadei (S33). Vertical dotted lines mark each contestant's exit (or the finale). Bones and Palin ride a belief-frailty fusion to sustained $\hat \phi $ far above their judge percentile; Graziadei tracks judges closely, evidence the estimator does not create spurious conflict}{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Judge-panel conflict diagnostics per season-week: (a) panel disagreement $(1-q_w)$ and (b) fused Dempster conflict $K_w$. The $K$ panel is dominated by frame size (e.g.\ 13-couple premiere casts vs.\ 3-couple finals), demonstrating that raw Dempster conflict in large singleton frames measures cast size more than disagreement; this is why certainty layers use the panel discount instead.}}{9}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:m1conflict}{{2}{9}{Judge-panel conflict diagnostics per season-week: (a) panel disagreement $(1-q_w)$ and (b) fused Dempster conflict $K_w$. The $K$ panel is dominated by frame size (e.g.\ 13-couple premiere casts vs.\ 3-couple finals), demonstrating that raw Dempster conflict in large singleton frames measures cast size more than disagreement; this is why certainty layers use the panel discount instead}{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Median 90\%-band width (share points) by week-in-season, stratified by judge-disagreement tertile. Intervals widen from $\approx $0.085 in week 1 to $\approx $0.114 in week 6+; contentious weeks (upper tertile of panel disagreement) are wider still. Uncertainty is therefore contestant- and week-specific, not a fixed constant.}}{10}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:m1certainty}{{3}{10}{Median 90\%-band width (share points) by week-in-season, stratified by judge-disagreement tertile. Intervals widen from $\approx $0.085 in week 1 to $\approx $0.114 in week 6+; contentious weeks (upper tertile of panel disagreement) are wider still. Uncertainty is therefore contestant- and week-specific, not a fixed constant}{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Reliability of Monte-Carlo $P(\text  {eliminated})$: decile means of predicted vs.\ observed probability track the diagonal (mean predicted 0.109 vs.\ observed event rate 0.108; AUC 0.959; Brier 0.047). Inset: distribution of predicted probabilities --- properly concentrated near zero for safe couples.}}{10}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:m1calibration}{{4}{10}{Reliability of Monte-Carlo $P(\text {eliminated})$: decile means of predicted vs.\^^Mobserved probability track the diagonal (mean predicted 0.109 vs.\ observed event rate 0.108; AUC 0.959; Brier 0.047). Inset: distribution of predicted probabilities --- properly concentrated near zero for safe couples}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Couple-level latent fan pressure $\hat  u$ versus mean judge percentile, with OLS fit. The near-flat slope ($\mathrm  {corr} = +0.113$) confirms the frailty captures fan support \emph  {unexplained} by judges; iconic fan favorites (Bobby Bones, Bristol Palin, Jerry Rice) sit in the favorable-frailty half-plane despite modest judge percentiles.}}{11}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:m1frailty}{{5}{11}{Couple-level latent fan pressure $\hat u$ versus mean judge percentile, with OLS fit. The near-flat slope ($\mathrm {corr} = +0.113$) confirms the frailty captures fan support \emph {unexplained} by judges; iconic fan favorites (Bobby Bones, Bristol Palin, Jerry Rice) sit in the favorable-frailty half-plane despite modest judge percentiles}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Validation and Consistency Checks}{11}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Model 1 Limitations}{11}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Model 2: Judge--Fan Fusion Engine --- Rank vs.\ Percentage Combination Rules}{12}{section.3}\protected@file@percent }
+\newlabel{sec:model2}{{3}{12}{Model 2: Judge--Fan Fusion Engine --- Rank vs.\ Percentage Combination Rules}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Problem Statement}{12}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{12}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}The fan-vote model behind the counterfactual engine}{12}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}The two combination rules, formalized}{12}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Counterfactual replay}{13}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Results}{13}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:m2results}{{3.3}{13}{Results}{subsection.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Headline replay validation}{13}{subsubsection.3.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Era-correct replay validation (S1--2 = rank era; S3--27 = percentage era; S28+ = rank + judges' dance-off era).}}{13}{table.caption.10}\protected@file@percent }
+\newlabel{tab:replay-valid}{{3}{13}{Era-correct replay validation (S1--2 = rank era; S3--27 = percentage era; S28+ = rank + judges' dance-off era)}{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}The S28+ puzzle: the dance-off stage, not the combination rule}{13}{subsubsection.3.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces S28+ event-weighted reproduction by rule and stage (from \texttt  {s28plus\_rule\_overlay.csv}).}}{13}{table.caption.11}\protected@file@percent }
+\newlabel{tab:s28plus}{{4}{13}{S28+ event-weighted reproduction by rule and stage (from \texttt {s28plus\_rule\_overlay.csv})}{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Eight named controversies under both rules}{14}{subsubsection.3.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Eight controversies: final placement (1 = best) under the observed rule and under counterfactual combination rules R (rank), P (percentage), Z (z-scored), from \texttt  {controversy\_table.csv}.}}{14}{table.caption.12}\protected@file@percent }
+\newlabel{tab:controversies}{{5}{14}{Eight controversies: final placement (1 = best) under the observed rule and under counterfactual combination rules R (rank), P (percentage), Z (z-scored), from \texttt {controversy\_table.csv}}{table.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Placement flow for the eight named controversies: observed placement (left) versus the replayed placement under the rank rule (R) and the percentage rule (P). The Bristol Palin (S11), Bobby Bones (S27), and Sabrina Bryan (S15) rows show the widest observed-to-counterfactual gaps.}}{14}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:m2flow}{{6}{14}{Placement flow for the eight named controversies: observed placement (left) versus the replayed placement under the rank rule (R) and the percentage rule (P). The Bristol Palin (S11), Bobby Bones (S27), and Sabrina Bryan (S15) rows show the widest observed-to-counterfactual gaps}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Bobby Bones (S27): estimated weekly fan share $\hat  \phi $ with 90\% band and the judge-share overlay. His $\hat  \phi $ sits consistently above the judge share (e.g.\ 0.19 vs.\ 0.17 in week 1, rising to 0.35 in the finale against a judge share of 0.25) --- the fan support that carried him despite low judges' scores.}}{15}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:m2bones}{{7}{15}{Bobby Bones (S27): estimated weekly fan share $\hat \phi $ with 90\% band and the judge-share overlay. His $\hat \phi $ sits consistently above the judge share (e.g.\ 0.19 vs.\ 0.17 in week 1, rising to 0.35 in the finale against a judge share of 0.25) --- the fan support that carried him despite low judges' scores}{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Jerry Rice (S2): estimated weekly fan share with 90\% band and judge-share overlay. His fan share climbs steadily as judges' scores stagnate, the signature of the season-2 controversy that motivated the show's switch to percentage combination.}}{15}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:m2rice}{{8}{15}{Jerry Rice (S2): estimated weekly fan share with 90\% band and judge-share overlay. His fan share climbs steadily as judges' scores stagnate, the signature of the season-2 controversy that motivated the show's switch to percentage combination}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Fan-vote flip elasticity: final placement of each focal contestant under rules R and P as the fan-vote multiplier scales from $\times 1$ (base) through $\times 16$.}}{16}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:m2flip}{{9}{16}{Fan-vote flip elasticity: final placement of each focal contestant under rules R and P as the fan-vote multiplier scales from $\times 1$ (base) through $\times 16$}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.4}Fan-vote flip elasticity}{16}{subsubsection.3.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5}Which rule is more judge-consistent, and which favors fans?}{16}{subsubsection.3.3.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Recommendation metrics per combination rule, averaged over 34 seasons.}}{16}{table.caption.17}\protected@file@percent }
+\newlabel{tab:rule-metrics}{{6}{16}{Recommendation metrics per combination rule, averaged over 34 seasons}{table.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Judge-consistency $\tau $ versus fan-voice Gini per rule, all 34 seasons (each point a season). The R--Z cluster sits high-tau; the P cluster drifts toward fan-voice dominance.}}{17}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:m2tauvsqini}{{10}{17}{Judge-consistency $\tau $ versus fan-voice Gini per rule, all 34 seasons (each point a season). The R--Z cluster sits high-tau; the P cluster drifts toward fan-voice dominance}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Era-correct replay validation: per-season cut-match rate. S1--2 (rank, 100\%) and S3--27 (percentage, 99.2\%) validate the engine; S28+ (49.0\%) reflects the unmodeled judges' dance-off.}}{17}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:m2validation}{{11}{17}{Era-correct replay validation: per-season cut-match rate. S1--2 (rank, 100\%) and S3--27 (percentage, 99.2\%) validate the engine; S28+ (49.0\%) reflects the unmodeled judges' dance-off}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces HDI-bound sensitivity: controversy placements at the 90\% band edges of the focal celebrity's $\hat  \phi $. Seven of eight verdicts are fully robust; the single adverse edge is Bobby Bones under P (3rd at the base and at the upper edge, 4th at the lower edge).}}{17}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:m2hdi}{{12}{17}{HDI-bound sensitivity: controversy placements at the 90\% band edges of the focal celebrity's $\hat \phi $. Seven of eight verdicts are fully robust; the single adverse edge is Bobby Bones under P (3rd at the base and at the upper edge, 4th at the lower edge)}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Dance-off overlay (S28+): per-season counts of elimination weeks in which adding the judges' choice stage changes the cut, and the number of couples whose placement shifts. The stage changes the cut in 2--5 of 6--9 elimination weeks per season and shifts 5--11 placements.}}{18}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:m2danceoff}{{13}{18}{Dance-off overlay (S28+): per-season counts of elimination weeks in which adding the judges' choice stage changes the cut, and the number of couples whose placement shifts. The stage changes the cut in 2--5 of 6--9 elimination weeks per season and shifts 5--11 placements}{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.6}Headline: rank vs.\ percentage across all 34 seasons}{18}{subsubsection.3.3.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Weekly rule-disagreement rate $\gamma _s$ per season (mean 0.468, median 0.444). Three seasons (S1, S25, S26) show zero disagreement --- the two rules are interchangeable there --- while season 9 peaks at 0.889.}}{18}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:m2gamma}{{14}{18}{Weekly rule-disagreement rate $\gamma _s$ per season (mean 0.468, median 0.444). Three seasons (S1, S25, S26) show zero disagreement --- the two rules are interchangeable there --- while season 9 peaks at 0.889}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Median relative 90\%-band width of $\hat  \phi $ by week-in-season (certainty by week): bands widen as the cast shrinks and the season deepens.}}{19}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:m2bandwidth}{{15}{19}{Median relative 90\%-band width of $\hat \phi $ by week-in-season (certainty by week): bands widen as the cast shrinks and the season deepens}{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Validation}{19}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Model 3: Celebrity-Covariate Impact Model}{19}{section.4}\protected@file@percent }
+\newlabel{sec:model3}{{4}{19}{Model 3: Celebrity-Covariate Impact Model}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Problem Statement}{19}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{19}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}D1 --- judges' channel (longitudinal mixed model)}{19}{subsubsection.4.2.1}\protected@file@percent }
+\newlabel{eq:d1}{{13}{19}{D1 --- judges' channel (longitudinal mixed model)}{equation.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}D2 --- fans' channel (weighted binomial GEE)}{20}{subsubsection.4.2.2}\protected@file@percent }
+\newlabel{eq:d2}{{14}{20}{D2 --- fans' channel (weighted binomial GEE)}{equation.14}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}D3 --- differential (fan vs.\ judge disagreement) channel}{20}{subsubsection.4.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}D4 --- survival linkage}{20}{subsubsection.4.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Implementation}{20}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Results}{20}{subsection.4.4}\protected@file@percent }
+\newlabel{sec:m3res}{{4.4}{20}{Results}{subsection.4.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}D1 --- judges' channel: age is the dominant trait}{20}{subsubsection.4.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Forest plot of trait effects on the three channels (judges', fans', differential) with 95\% confidence intervals. Age is significant and negative everywhere; the differential panel isolates the traits where fans and judges disagree in direction.}}{21}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:m3forest}{{16}{21}{Forest plot of trait effects on the three channels (judges', fans', differential) with 95\% confidence intervals. Age is significant and negative everywhere; the differential panel isolates the traits where fans and judges disagree in direction}{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}D2 --- fans' channel: the same direction, much smaller magnitude}{21}{subsubsection.4.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}D3 --- the differential channel: fans forgive age more than judges do}{21}{subsubsection.4.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Mean over/under-rating $R_{iw}$ by celebrity industry (fans vs.\ judges). Positive bars: industries fans rate above the judges; negative bars: industries the judges undervalue relative to the fans.}}{21}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:m3differential}{{17}{21}{Mean over/under-rating $R_{iw}$ by celebrity industry (fans vs.\ judges). Positive bars: industries fans rate above the judges; negative bars: industries the judges undervalue relative to the fans}{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.4}D4 --- survival linkage: traits act through the score channels}{21}{subsubsection.4.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Cox step-1 vs.\ step-2 survival effects.}}{22}{table.caption.26}\protected@file@percent }
+\newlabel{tab:m3survival}{{7}{22}{Cox step-1 vs.\ step-2 survival effects}{table.caption.26}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.5}Counterfactual casting archetypes}{22}{subsubsection.4.4.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Eight counterfactual cast archetypes.}}{22}{table.caption.27}\protected@file@percent }
+\newlabel{tab:m3archetypes}{{8}{22}{Eight counterfactual cast archetypes}{table.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Simulated survival trajectories for the eight cast archetypes with uncertainty bands. The youngest social-media archetype and the eldest TV-host archetype are separated by several hundredths of survival probability by week 9.}}{22}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:m3arch}{{18}{22}{Simulated survival trajectories for the eight cast archetypes with uncertainty bands. The youngest social-media archetype and the eldest TV-host archetype are separated by several hundredths of survival probability by week 9}{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Professional-partner effects: mean judge score versus mean estimated fan share per partner (groups with at least 93 danced-weeks). Partner tenure separates the two channels: some partners raise judge scores but not fan share, and vice versa.}}{23}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:m3partner}{{19}{23}{Professional-partner effects: mean judge score versus mean estimated fan share per partner (groups with at least 93 danced-weeks). Partner tenure separates the two channels: some partners raise judge scores but not fan share, and vice versa}{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Mean and 90th-percentile width of the $\hat  \phi $ 90\% posterior interval by week-in-season: uncertainty grows as the season deepens (fewer couples $\Rightarrow $ wider relative intervals), documenting why certainty is contestant- and week-specific.}}{23}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:m3certainty}{{20}{23}{Mean and 90th-percentile width of the $\hat \phi $ 90\% posterior interval by week-in-season: uncertainty grows as the season deepens (fewer couples $\Rightarrow $ wider relative intervals), documenting why certainty is contestant- and week-specific}{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Validation}{23}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:m3valid}{{4.5}{23}{Validation}{subsection.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Model 3 Limitations}{24}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results and Analysis: Integrated Findings}{24}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{24}{Results and Analysis: Integrated Findings}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Answering Q1: The Fan-Vote Estimates Are Consistent With the Record}{24}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Answering Q1 (certainty): Certainty Is Contestant- and Week-Specific}{24}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Answering Q2: The Two Rules Diverge in Nearly Half of Elimination Weeks}{24}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Answering Q3: Traits Move the Two Channels Differently}{25}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}The Central Interpretive Claim}{25}{subsection.5.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Integrated 34-season summary (era-correct replay engine; shared $\hat  \phi $ from Model 1).}}{25}{table.caption.31}\protected@file@percent }
+\newlabel{tab:integrated}{{9}{25}{Integrated 34-season summary (era-correct replay engine; shared $\hat \phi $ from Model 1)}{table.caption.31}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Sensitivity Analysis}{25}{section.6}\protected@file@percent }
+\newlabel{sec:sensitivity}{{6}{25}{Sensitivity Analysis}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}HDI-Bound Sensitivity of the Controversy Verdicts}{25}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}The Calibration Ridge in Model 2}{25}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Covariate-Effect Robustness}{25}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}What Would Falsify the Findings}{26}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{26}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{26}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}What We Learned, and What We Cannot Know}{26}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Strengths}{26}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Limitations}{26}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}A Proposed More Fair Combination System}{27}{subsection.7.4}\protected@file@percent }
+\newlabel{sec:proposed}{{7.4}{27}{A Proposed More Fair Combination System}{subsection.7.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{27}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{27}{Conclusion}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Summary of Findings}{27}{subsection.8.1}\protected@file@percent }
+\bibcite{comap2026}{1}
+\bibcite{shafer1976}{2}
+\bibcite{dempster1967}{3}
+\bibcite{cox1972}{4}
+\bibcite{kalbfleisch2002}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Recommendations to the Producers}{28}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Future Work}{28}{subsection.8.3}\protected@file@percent }
+\bibcite{hastie2008}{6}
+\bibcite{liang1986}{7}
+\bibcite{lairdware1982}{8}
+\gdef \@abspage@last{29}

@@ -1,0 +1,57 @@
+celebrity,season,multiplier,R_placement,P_placement
+Jerry Rice,2,0.125,3.0,6.0
+Jerry Rice,2,0.25,3.0,4.0
+Jerry Rice,2,0.5,3.0,3.0
+Jerry Rice,2,2.0,2.0,1.0
+Jerry Rice,2,4.0,2.0,1.0
+Jerry Rice,2,8.0,2.0,1.0
+Jerry Rice,2,16.0,2.0,1.0
+Billy Ray Cyrus,4,0.125,11.0,11.0
+Billy Ray Cyrus,4,0.25,10.0,10.0
+Billy Ray Cyrus,4,0.5,8.0,8.0
+Billy Ray Cyrus,4,2.0,5.0,3.0
+Billy Ray Cyrus,4,4.0,3.0,1.0
+Billy Ray Cyrus,4,8.0,3.0,1.0
+Billy Ray Cyrus,4,16.0,3.0,1.0
+Bristol Palin,11,0.125,7.0,8.0
+Bristol Palin,11,0.25,7.0,7.0
+Bristol Palin,11,0.5,7.0,5.0
+Bristol Palin,11,2.0,4.0,2.0
+Bristol Palin,11,4.0,2.0,1.0
+Bristol Palin,11,8.0,2.0,1.0
+Bristol Palin,11,16.0,2.0,1.0
+Bobby Bones,27,0.125,7.0,9.0
+Bobby Bones,27,0.25,7.0,7.0
+Bobby Bones,27,0.5,5.0,5.0
+Bobby Bones,27,2.0,4.0,2.0
+Bobby Bones,27,4.0,2.0,1.0
+Bobby Bones,27,8.0,2.0,1.0
+Bobby Bones,27,16.0,2.0,1.0
+Mya,9,0.125,4.0,5.0
+Mya,9,0.25,3.0,3.0
+Mya,9,0.5,2.0,2.0
+Mya,9,2.0,2.0,1.0
+Mya,9,4.0,2.0,1.0
+Mya,9,8.0,2.0,1.0
+Mya,9,16.0,2.0,1.0
+Donny Osmond,9,0.125,2.0,5.0
+Donny Osmond,9,0.25,2.0,4.0
+Donny Osmond,9,0.5,2.0,3.0
+Donny Osmond,9,2.0,1.0,2.0
+Donny Osmond,9,4.0,1.0,1.0
+Donny Osmond,9,8.0,1.0,1.0
+Donny Osmond,9,16.0,1.0,1.0
+Sabrina Bryan,5,0.125,7.0,9.0
+Sabrina Bryan,5,0.25,7.0,9.0
+Sabrina Bryan,5,0.5,7.0,8.0
+Sabrina Bryan,5,2.0,6.0,5.0
+Sabrina Bryan,5,4.0,5.0,4.0
+Sabrina Bryan,5,8.0,3.0,3.0
+Sabrina Bryan,5,16.0,1.0,1.0
+Sabrina Bryan,15,0.125,3.0,11.0
+Sabrina Bryan,15,0.25,3.0,10.0
+Sabrina Bryan,15,0.5,3.0,9.0
+Sabrina Bryan,15,2.0,2.0,4.0
+Sabrina Bryan,15,4.0,1.0,1.0
+Sabrina Bryan,15,8.0,1.0,1.0
+Sabrina Bryan,15,16.0,1.0,1.0

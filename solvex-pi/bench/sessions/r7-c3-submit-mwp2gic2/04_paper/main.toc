@@ -1,0 +1,73 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Problem Background and Motivation}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Data Description}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Our Approach in Brief}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Paper Outline}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Model 1: Sub-Seasonal Survival Inversion of Latent Fan Votes}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problem Statement}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{6}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}The latent-vote model}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Stage A: discrete-time cloglog hazard}{6}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Stage B: Dempster--Shafer belief layer}{6}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Stage C: fusion into $\hat \phi $ and Beta pseudo-ballot bands}{7}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Implementation}{7}{subsection.2.3}%
+\contentsline {paragraph}{Key design choices.}{7}{section*.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Interlude: the two-stage read on elimination, in one example}{7}{subsubsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.4}Results}{7}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Headline validation}{7}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Hazard coefficients (Stage A)}{8}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Frailty as the fan-pressure signal}{8}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Belief layer and certainty (uncertainty quantification)}{8}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Iconic contestant trajectories}{8}{subsubsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.5}Validation and Consistency Checks}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Model 1 Limitations}{11}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Model 2: Judge--Fan Fusion Engine --- Rank vs.\ Percentage Combination Rules}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Problem Statement}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{12}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}The fan-vote model behind the counterfactual engine}{12}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}The two combination rules, formalized}{12}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Counterfactual replay}{13}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Results}{13}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Headline replay validation}{13}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}The S28+ puzzle: the dance-off stage, not the combination rule}{13}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Eight named controversies under both rules}{14}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Fan-vote flip elasticity}{16}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Which rule is more judge-consistent, and which favors fans?}{16}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.6}Headline: rank vs.\ percentage across all 34 seasons}{18}{subsubsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.4}Validation}{19}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Model 3: Celebrity-Covariate Impact Model}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problem Statement}{19}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{19}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}D1 --- judges' channel (longitudinal mixed model)}{19}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}D2 --- fans' channel (weighted binomial GEE)}{20}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}D3 --- differential (fan vs.\ judge disagreement) channel}{20}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}D4 --- survival linkage}{20}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Implementation}{20}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Results}{20}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}D1 --- judges' channel: age is the dominant trait}{20}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}D2 --- fans' channel: the same direction, much smaller magnitude}{21}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}D3 --- the differential channel: fans forgive age more than judges do}{21}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}D4 --- survival linkage: traits act through the score channels}{21}{subsubsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Counterfactual casting archetypes}{22}{subsubsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.5}Validation}{23}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Model 3 Limitations}{24}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Results and Analysis: Integrated Findings}{24}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Answering Q1: The Fan-Vote Estimates Are Consistent With the Record}{24}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Answering Q1 (certainty): Certainty Is Contestant- and Week-Specific}{24}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Answering Q2: The Two Rules Diverge in Nearly Half of Elimination Weeks}{24}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Answering Q3: Traits Move the Two Channels Differently}{25}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}The Central Interpretive Claim}{25}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Sensitivity Analysis}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}HDI-Bound Sensitivity of the Controversy Verdicts}{25}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}The Calibration Ridge in Model 2}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Covariate-Effect Robustness}{25}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}What Would Falsify the Findings}{26}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Discussion}{26}{section.7}%
+\contentsline {subsection}{\numberline {7.1}What We Learned, and What We Cannot Know}{26}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Strengths}{26}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Limitations}{26}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}A Proposed More Fair Combination System}{27}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Conclusion}{27}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Summary of Findings}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Recommendations to the Producers}{28}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Future Work}{28}{subsection.8.3}%

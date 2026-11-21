@@ -1,4 +1,5 @@
 import { spawn, spawnSync } from "node:child_process";
+import { resolve as resolvePath } from "node:path";
 import { Object as TObject, String as TString } from "typebox";
 
 /** ADR-0009：Python 绘图依赖缺失时给出可执行的指引，避免模型静默跳过 figures。 */
@@ -51,14 +52,29 @@ export function hasPathEscape(input: unknown): boolean {
 
 const WRITE_TOOLS = new Set(["write", "edit", "str_replace_editor"]);
 
-/** tool_call 拦截：路径逃逸 + 并行 writablePrefixes 越界（R11）。 */
-export function safetyExtension(pi: any, writablePrefixes?: string[]): void {
+/** 统一成以 cwd 为基准的绝对 POSIX 路径；模型可能给相对路径，也可能给提示词里的绝对路径。 */
+function toAbs(p: string, cwd?: string): string {
+  const s = p.replace(/\\/g, "/");
+  return cwd ? resolvePath(cwd, s).replace(/\\/g, "/") : s;
+}
+
+/** tool_call 拦截：路径逃逸 + 并行 writablePrefixes 越界（R11）。
+ *  传入 cwd 时前缀与目标路径都先解析成绝对路径再比较：首轮实测中模型 3/3 使用绝对路径写入，
+ *  旧的「相对前缀 startsWith」既拦不住越界写，也会误拦合法的绝对路径写入。 */
+export function safetyExtension(pi: any, writablePrefixes?: string[], cwd?: string): void {
+  const prefixes = writablePrefixes?.map((pref) => {
+    const abs = toAbs(pref, cwd);
+    return abs.endsWith("/") ? abs : `${abs}/`;
+  });
   pi.on("tool_call", async (event: any) => {
     if (hasPathEscape(event?.input)) return { block: true, reason: "Path escapes workspace" };
-    if (writablePrefixes?.length && WRITE_TOOLS.has(event?.toolName)) {
-      const p = String(event?.input?.path ?? event?.input?.file_path ?? "").replace(/\\/g, "/");
-      if (p && !writablePrefixes.some((pref) => p.startsWith(pref.replace(/\\/g, "/"))))
-        return { block: true, reason: `Write outside allowed prefixes: ${p}` };
+    if (prefixes?.length && WRITE_TOOLS.has(event?.toolName)) {
+      const raw = String(event?.input?.path ?? event?.input?.file_path ?? "");
+      const p = toAbs(raw, cwd);
+      if (raw && !prefixes.some((pref) => p.startsWith(pref)))
+        return { block: true, reason:
+          `Write outside allowed prefixes: ${raw}. This parallel task may only write under ${writablePrefixes!.join(", ")}; ` +
+          `shared files such as 01_modeling/master_plan.md are read-only here.` };
     }
     return undefined;
   });

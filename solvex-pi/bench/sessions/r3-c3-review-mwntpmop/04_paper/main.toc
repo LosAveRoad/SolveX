@@ -1,0 +1,88 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}The Hidden Variable of a Televised Democracy}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Data Description}{4}{subsection.1.2}%
+\contentsline {paragraph}{What the data do and do not contain.}{5}{section*.2}%
+\contentsline {subsection}{\numberline {1.3}Our Approach: Three Linked Models}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Pipeline Logic and an Honest Framing of Uncertainty}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Paper Outline}{6}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}A Note on Honesty in Uncertainty Reporting}{6}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Model 1: Bayesian Fan-Vote Inversion (Elimination-Constraint Sampler)}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problem Statement}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Notation and Combination Rules}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Feasible Region}{7}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Prior and Posterior}{7}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Point Estimate via Maximum-Margin Inverse Optimization}{8}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Implementation}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Parsing and Panel Construction}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Exact Rejection Sampling of the Truncated Dirichlet}{8}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Inverse Optimization for $v_0$}{8}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}Results}{8}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Headline Posterior Statistics}{8}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Extreme Cases and Interpretable Deviations}{10}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Certainty Is Not Uniform --- and We Say So}{10}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Figures}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Validation}{13}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Model 2: Counterfactual Rule Engine --- Rank vs.\ Percentage vs.\ Judges-Save}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Problem Statement}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{14}{subsection.3.2}%
+\contentsline {paragraph}{(a) Fan-favor index $\kappa $ (per season, per rule).}{14}{section*.9}%
+\contentsline {paragraph}{(b) Weekly elimination reproducibility.}{14}{section*.10}%
+\contentsline {paragraph}{(c) Distribution of finishing positions for a focus celebrity $C$.}{14}{section*.11}%
+\contentsline {paragraph}{(d) Divergence detection.}{14}{section*.12}%
+\contentsline {subsection}{\numberline {3.3}Implementation}{15}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Three Rules Vectorized}{15}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Search and Repair}{15}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Robustness Design Decisions}{15}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Results}{15}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Headline: The Percentage Rule Favors Fans}{15}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Controversial Contestants: The Four Case Studies}{16}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Auto-Detected Divergence Cases}{16}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Did the Judges-Save Change the Show?}{16}{subsubsection.3.4.4}%
+\contentsline {paragraph}{The bottom-two proxy assumption.}{17}{section*.15}%
+\contentsline {subsection}{\numberline {3.5}Figures}{18}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Validation}{20}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Model 3: Hierarchical Driver Model --- Who Moves Judges vs.\ Fans?}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problem Statement}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{21}{subsection.4.2}%
+\contentsline {paragraph}{Judge channel.}{21}{section*.21}%
+\contentsline {paragraph}{Fan channel.}{21}{section*.22}%
+\contentsline {paragraph}{Contrasts.}{21}{section*.23}%
+\contentsline {paragraph}{Variance partition.}{21}{section*.24}%
+\contentsline {paragraph}{Priors.}{21}{section*.25}%
+\contentsline {subsection}{\numberline {4.3}Implementation}{22}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Results}{22}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Channel Contrasts: Only Age Is Decisively Channel-Differentiated}{22}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Pro Effects: The Fan Channel's Dominant Driver}{22}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Pro Effect Rankings}{23}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Identification Caveat, Stated Honestly}{23}{subsubsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Model Fit vs.\ Baselines}{23}{subsubsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.5}Figures}{24}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Validation}{26}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Results and Analysis}{27}{section.5}%
+\contentsline {subsection}{\numberline {5.1}The Answer to the Show's Central Question}{27}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Certainty in the Fan Vote Estimates}{27}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Fan Votes vs.\ Judge Scores: Not the Same Audience}{28}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Revisiting the Season-2 and Season-27 Narratives}{28}{subsection.5.4}%
+\contentsline {paragraph}{Why certainty cannot be uniform.}{28}{section*.34}%
+\contentsline {subsection}{\numberline {5.5}The ``Fairness'' Question}{29}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Sensitivity Analysis}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}What Model 1's Prior Does and Does Not Drive}{29}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Model 1 $\rightarrow $ Model 2 Propagation}{29}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Fixed $\tau $, Fixed Save Proxy, and Other Known Approximations}{30}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Model 3's Identification Boundaries}{30}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Which Conclusions Are Robust?}{30}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Discussion}{31}{section.7}%
+\contentsline {subsection}{\numberline {7.1}What We Built, and Why the Design Hangs Together}{31}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Strengths}{31}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Limitations}{31}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Comparison with Simpler Approaches}{31}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Implications for Show Design Beyond Vote Combination}{32}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Conclusion}{32}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Findings}{32}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Recommendations in Order of Confidence}{33}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Limitations and Future Work}{33}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Final Word}{33}{subsection.8.4}%
+\contentsline {section}{Appendix A: Memo to DWTS Producers}{34}{section*.35}%
+\contentsline {section}{Appendix B: Reproducibility}{34}{section*.41}%
+\contentsline {section}{References}{35}{section*.42}%

@@ -1,0 +1,32 @@
+,coef,se,p
+const,5.2251,0.0366,0.0
+u_i,3.8827,0.0326,0.0
+pro_score,0.1137,0.064,0.0756
+u_i:pro,-0.0258,0.081,0.7504
+age_z,0.0033,0.0237,0.8889
+athlete,0.0244,0.0268,0.3617
+ind_Astronaut,-0.0011,0.0772,0.9889
+ind_Athlete,0.0244,0.0268,0.3617
+ind_Beauty Pagent,0.0817,0.0887,0.3571
+ind_Comedian,0.0711,0.1216,0.5584
+ind_Con artist,0.0467,0.1063,0.6605
+ind_Conservationist,0.1576,0.0844,0.0617
+ind_Entrepreneur,0.1145,0.1632,0.4829
+ind_Fashion Designer,0.0228,0.0547,0.6774
+ind_Fitness Instructor,0.2985,0.0393,0.0
+ind_Journalist,0.5202,0.0576,0.0
+ind_Magician,-0.296,0.0491,0.0
+ind_Military,0.1653,0.0484,0.0006
+ind_Model,-0.1433,0.0854,0.0935
+ind_Motivational Speaker,0.2043,0.0415,0.0
+ind_Musician,0.1876,0.0486,0.0001
+ind_News Anchor,0.0067,0.0931,0.9426
+ind_Politician,-0.2274,0.2667,0.3937
+ind_Producer,-0.0064,0.0464,0.891
+ind_Racing Driver,0.072,0.0543,0.185
+ind_Radio Personality,0.0219,0.137,0.873
+ind_Singer/Rapper,-0.0442,0.059,0.454
+ind_Social Media Personality,0.1487,0.0809,0.066
+ind_Social media personality,0.1578,0.0821,0.0546
+ind_Sports Broadcaster,-0.1511,0.0848,0.075
+ind_TV Personality,-0.024,0.0612,0.6946

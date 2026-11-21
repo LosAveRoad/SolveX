@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   renderPlan, renderPlanRetry, renderImplement, renderSummaryRetry,
   renderRevision, renderFix, renderPaper,
-  modelingSystem, writingSystem, HANDOFF_HINT, OFFLINE_PLAN_POLICY,
+  modelingSystem, writingSystem, HANDOFF_HINT, PLANNING_POLICY,
   RESULTS_CONTRACT, WORKSPACE_DISCOVERY_POLICY,
 } from "@solvex/core";
 
@@ -66,16 +66,27 @@ describe("T1.5 内联 5 段提示词（附录 A）", () => {
     expect(RESULTS_CONTRACT).toContain("Key Numerical Results");
     expect(WORKSPACE_DISCOVERY_POLICY).toContain("02_programming/");
   });
-  it("ADR-0008：P1 运行时追加离线执行策略，逐字模板本身不改", () => {
+  it("ADR-0008/0011/0014：P1 策略保留网络规则、不硬编码工具名，并要求先看数据、建共享数据集再写计划", () => {
     for (const s of [renderPlan(V), renderPlanRetry(V), modelingSystem()]) {
-      expect(s).toContain("RUNTIME EXECUTION POLICY");
-      expect(s).toContain("The `write` tool IS registered");
-      expect(s).toContain("network requests are unavailable");
-      expect(s).toContain("arxiv_search");
+      expect(s).toContain("PHASE 1 RUNTIME POLICY");
+      expect(s).toContain("such requests are unavailable");
+      expect(s).toContain("If a search tool IS listed");
+      expect(s).toContain("INSPECT THE DATA");
+      expect(s).toContain("BUILD THE SHARED DATASET in 01_modeling/shared_data/");
+      expect(s).toContain("data_dictionary.md");
+      expect(s).not.toContain("FIRST action");                       // 不再「先写计划、写完即停」
+      expect(s).not.toContain("Do not explore the filesystem");
+      expect(s).not.toContain("arxiv_search");
     }
-    expect(OFFLINE_PLAN_POLICY).toContain("FIRST action");
+    expect(PLANNING_POLICY).not.toMatch(/\b(write|read|bash|grep|find|ls|edit|python_execute)\b/);
     // 内联模板常量（逐字资产）不得被改写
     expect(renderPlan(V)).toContain("write a multi-model");
     expect(renderPlan(V)).toContain("## Model N: Name");
+  });
+  it("ADR-0014：结果契约要求 run.py + results.json，摘要数字只能抄自 results.json", () => {
+    const s = renderImplement(V);
+    expect(s).toContain("REPRODUCIBILITY CONTRACT");
+    expect(s).toContain("python3 run.py");
+    expect(s).toContain("Every number in results_summary.md must be copied from results.json");
   });
 });

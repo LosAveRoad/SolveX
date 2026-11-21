@@ -29,10 +29,39 @@ const ENV_KEYS: Record<string, string> = {
   anthropic: "ANTHROPIC_API_KEY", openai: "OPENAI_API_KEY", google: "GOOGLE_API_KEY",
 };
 
+/** 模型端点与参数全部由用户填写；这里只是回显结构，绝不含明文密钥。 */
+export type EndpointView = {
+  id: string; baseUrl: string; api: string; keyEnvVar: string; models: string[];
+  contextWindow: number; maxTokens: number; reasoning: boolean; vision: boolean;
+  cost: { input: number; output: number; cacheRead: number; cacheWrite: number };
+};
+export type EndpointInput = {
+  id: string; baseUrl: string; api: string; apiKey?: string; models: string[];
+  contextWindow?: number; maxTokens?: number; reasoning?: boolean; vision?: boolean;
+  cost?: Partial<EndpointView["cost"]>;
+};
+
+const ENV_REF_NAME = /^\$\{?([A-Za-z_][A-Za-z0-9_]*)\}?$/;
+function envVarFromRef(ref: unknown): string {
+  const m = ENV_REF_NAME.exec(String(ref ?? "").trim());
+  return m ? m[1] : "";
+}
+function positive(v: unknown, fallback: number): number {
+  const n = Number(v); return Number.isFinite(n) && n > 0 ? Math.floor(n) : fallback;
+}
+function nonNeg(v: unknown): number {
+  const n = Number(v); return Number.isFinite(n) && n >= 0 ? n : 0;
+}
+function normalizeCost(c: any): EndpointView["cost"] {
+  return { input: nonNeg(c?.input), output: nonNeg(c?.output),
+           cacheRead: nonNeg(c?.cacheRead), cacheWrite: nonNeg(c?.cacheWrite) };
+}
+
 export class ModelConfigService {
   private readonly runtimeKeys = new Map<string, string>(); // 只内存，绝不落盘、不进日志
+  private readonly envVars = new Map<string, string>(); // provider -> 环境变量名（绝不存值）
   private catalog: ModelDescriptor[] = STATIC_MODELS.map((m) => ({ ...m }));
-  private endpoints: { id: string; baseUrl: string; api: string; models: string[] }[] = [];
+  private endpoints: EndpointView[] = [];
 
   constructor(private readonly opts: { configPath?: string; modelsPath?: string } = {}) {
     this.refreshSync();
@@ -44,26 +73,56 @@ export class ModelConfigService {
   }
 
   private refreshSync(): void {
+    this.envVars.clear();
     const p = this.modelsPath;
     if (!existsSync(p)) return;
     try {
       const raw = JSON.parse(readFileSync(p, "utf-8"));
       if (!validateModelCatalog(raw).ok) return;
-      this.endpoints = Object.entries(raw.providers ?? {}).map(([id, v]: [string, any]) => ({
-        id, baseUrl: String(v.baseUrl), api: String(v.api),
-        // SDK 合规的 models 是对象数组；对外仍暴露 id 字符串列表
-        models: (v.models ?? []).map((m: any) => typeof m === "string" ? m : String(m?.id ?? "")),
-      }));
+      const views: EndpointView[] = [];
       const extra: ModelDescriptor[] = [];
-      for (const e of this.endpoints) for (const id of e.models)
-        extra.push({ provider: e.id, id, reasoning: false, input: ["text"],
-          available: false, source: "models.json" });
+      for (const [id, v] of Object.entries(raw.providers ?? {}) as [string, any][]) {
+        // 自定义端点的 apiKey 只允许 $VAR / ${VAR}；记住变量名即可判断 .env 是否已提供凭据。
+        const name = envVarFromRef(v?.apiKey);
+        if (name) this.envVars.set(id, name);
+        const list = (Array.isArray(v.models) ? v.models : []) as any[];
+        const first = typeof list[0] === "object" ? list[0] : {};
+        views.push({
+          id, baseUrl: String(v.baseUrl), api: String(v.api), keyEnvVar: name,
+          models: list.map((m) => typeof m === "string" ? m : String(m?.id ?? "")),
+          contextWindow: positive(first.contextWindow, 128000),
+          maxTokens: positive(first.maxTokens, 8192),
+          reasoning: Boolean(first.reasoning),
+          vision: Array.isArray(first.input) && first.input.includes("image"),
+          cost: normalizeCost(first.cost),
+        });
+        // catalog 的能力与限额同样取自用户填写的参数，不再硬编码。
+        for (const m of list) {
+          const mid = typeof m === "string" ? m : String(m?.id ?? "");
+          if (!mid) continue;
+          const def = typeof m === "object" ? m : {};
+          const c = normalizeCost(def.cost);
+          const vision = Array.isArray(def.input) && def.input.includes("image");
+          extra.push({ provider: id, id: mid, reasoning: Boolean(def.reasoning),
+            input: vision ? ["text", "image"] : ["text"],
+            contextLimit: positive(def.contextWindow, 128000),
+            maxOutput: positive(def.maxTokens, 8192),
+            price: { input: c.input, output: c.output },
+            available: false, source: "models.json" });
+        }
+      }
+      this.endpoints = views;
       this.catalog = [...STATIC_MODELS.map((m) => ({ ...m })), ...extra];
     } catch { /* 保留静态 catalog */ }
   }
 
+  /** 内置 provider 用约定变量名，自定义端点用 models.json 里声明的 $VAR 名；只回变量名。 */
+  envVarForProvider(provider: string): string | undefined {
+    return ENV_KEYS[provider] ?? this.envVars.get(provider);
+  }
+
   private availability(m: ModelDescriptor): ModelDescriptor {
-    const env = ENV_KEYS[m.provider];
+    const env = this.envVarForProvider(m.provider);
     const ok = this.runtimeKeys.has(m.provider) || (env ? Boolean(process.env[env]) : false);
     return { ...m, available: ok };
   }
@@ -77,7 +136,7 @@ export class ModelConfigService {
       config,
       thinkingLevels: [...THINKING_LEVELS],
       credentials: [...new Set(this.catalog.map((m) => m.provider))].map((provider) => {
-        const env = ENV_KEYS[provider];
+        const env = this.envVarForProvider(provider);
         const fromEnv = env ? process.env[env] : undefined;
         const fromRuntime = this.runtimeKeys.get(provider);
         return { provider,
@@ -85,7 +144,7 @@ export class ModelConfigService {
           masked: fromRuntime ? maskKey(fromRuntime) : fromEnv ? maskKey(fromEnv) : "",
           status: fromRuntime || fromEnv ? "ok" : "missing" };
       }),
-      endpoints: this.endpoints.map((e) => ({ ...e })), // 不含 apiKey
+      endpoints: this.endpoints.map((e) => ({ ...e })), // 含全部用户参数，但绝不含明文 apiKey
     };
   }
 
@@ -107,7 +166,7 @@ export class ModelConfigService {
     await runtime.setRuntimeApiKey(provider, key);
     this.runtimeKeys.set(provider, key);
   }
-  setEndpoints(endpoints: { id: string; baseUrl: string; api: string; apiKey?: string; models: string[] }[]): void {
+  setEndpoints(endpoints: EndpointInput[]): void {
     const providers: Record<string, any> = {};
     for (const e of endpoints) {
       // Pi SDK 1.5.0 只认 "$VAR" / "${VAR}"；旧写法 "$ENV:VAR" 在此转换。
@@ -116,14 +175,17 @@ export class ModelConfigService {
         ? e.apiKey.startsWith("$ENV:") ? "$" + e.apiKey.slice(5)
           : /^\$\{?[A-Za-z_]/.test(e.apiKey) ? e.apiKey : "$SOLVEX_API_KEY"
         : "$SOLVEX_API_KEY";
+      const cost = normalizeCost(e.cost);
       providers[e.id] = {
         baseUrl: e.baseUrl, api: e.api, apiKey: ref,
-        // SDK schema：models 必须是对象数组，cost 需含四个字段，否则整份
-        // models.json 校验失败，所有自定义 provider 会被静默丢弃。
+        // SDK schema：models 必须是对象数组、cost 四字段齐全；其余参数全部来自用户填写。
         models: e.models.map((id) => ({
-          id, name: id, api: e.api, reasoning: false, input: ["text"],
-          cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-          contextWindow: 128000, maxTokens: 8192,
+          id, name: id, api: e.api,
+          reasoning: Boolean(e.reasoning),
+          input: e.vision ? ["text", "image"] : ["text"],
+          cost,
+          contextWindow: positive(e.contextWindow, 128000),
+          maxTokens: positive(e.maxTokens, 8192),
         })),
       };
     }

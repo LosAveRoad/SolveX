@@ -25,7 +25,8 @@ export const AVAILABLE_TOOLS: ReadonlySet<string> =
 export const ROLE_TOOLS: Record<Role, string[]> = {
   modeling: ["read", "grep", "find", "ls", "bash", "python_execute", "write", "edit"],
   programming: ["read", "write", "edit", "bash", "python_execute"],
-  review: ["read", "grep", "find", "ls"],
+  // ADR-0014：评审可以跑代码核对数字；不能改实现由编排层的文件快照还原保证（写拦截管不到代码执行）。
+  review: ["read", "grep", "find", "ls", "bash", "python_execute"],
   writing: ["read", "write", "edit", "ls", "find", "grep", "bash", "python_execute"],
   visualization: ["read", "write", "edit", "bash", "python_execute"],
 };

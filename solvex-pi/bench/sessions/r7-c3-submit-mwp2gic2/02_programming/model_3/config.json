@@ -1,0 +1,6 @@
+{
+  "use_model1_if_present": false,
+  "seed": 42,
+  "alpha0": 1.0,
+  "note": "run.py must stay reproducible from shared_data alone; Model 1's phi_hat is cross-checked (agreement stats reported) but not adopted by default. Flip this flag to adopt."
+}

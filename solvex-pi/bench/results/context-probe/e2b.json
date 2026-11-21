@@ -1,0 +1,16 @@
+[
+ {
+  "seed": 11,
+  "prompt_tokens": 444699,
+  "recall": 5,
+  "answer": "Aurora: 574354\nBasalt: 686963\nCobalt: 998485\nDune: 919166\nEmber: 588269Need respond exactly five lines Name: number, fro",
+  "secs": 28.4
+ },
+ {
+  "seed": 23,
+  "prompt_tokens": 443395,
+  "recall": 5,
+  "answer": "Aurora: 917241\nBasalt: 403999\nCobalt: 969943\nDune: 187609\nEmber: 117906",
+  "secs": 29.8
+ }
+]

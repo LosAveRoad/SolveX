@@ -1,0 +1,716 @@
+{
+  "reproduction_by_era": {
+    "S1-2_rank": {
+      "n_seasons": 2,
+      "cut_match_rate": 1.0,
+      "bottom_jaccard_mean": 1.0,
+      "placement_mae_mean": 0.16666666666666666,
+      "placement_tau_mean": 0.9333333333333332
+    },
+    "S3-27_pct": {
+      "n_seasons": 25,
+      "cut_match_rate": 0.9915555555555556,
+      "bottom_jaccard_mean": 0.9905555555555555,
+      "placement_mae_mean": 0.4077505827505828,
+      "placement_tau_mean": 0.9358746597082874
+    },
+    "S28plus_rank_danceoff": {
+      "n_seasons": 7,
+      "cut_match_rate": 0.48958977530406106,
+      "bottom_jaccard_mean": 0.4561602418745276,
+      "placement_mae_mean": 1.228806907378336,
+      "placement_tau_mean": 0.7743949338616721
+    }
+  },
+  "s28plus_overlay": [
+    {
+      "rule": "R",
+      "matched_events": 58,
+      "cut_events": 65,
+      "event_rate": 0.8923076923076924,
+      "mean_bottom_jaccard": 0.8594104308390023
+    },
+    {
+      "rule": "P",
+      "matched_events": 34,
+      "cut_events": 65,
+      "event_rate": 0.5230769230769231,
+      "mean_bottom_jaccard": 0.5063303099017386
+    },
+    {
+      "rule": "R_doff",
+      "matched_events": 33,
+      "cut_events": 65,
+      "event_rate": 0.5076923076923077,
+      "mean_bottom_jaccard": 0.4561602418745276
+    },
+    {
+      "rule": "P_doff",
+      "matched_events": 31,
+      "cut_events": 65,
+      "event_rate": 0.47692307692307695,
+      "mean_bottom_jaccard": 0.4473733938019652
+    }
+  ],
+  "hdi_bound_sensitivity": [
+    {
+      "celebrity": "Jerry Rice",
+      "season": 2,
+      "R_base": 2.0,
+      "R_lo": 2.0,
+      "R_hi": 2.0,
+      "P_base": 2.0,
+      "P_lo": 2.0,
+      "P_hi": 2.0
+    },
+    {
+      "celebrity": "Billy Ray Cyrus",
+      "season": 4,
+      "R_base": 5.0,
+      "R_lo": 5.0,
+      "R_hi": 5.0,
+      "P_base": 5.0,
+      "P_lo": 5.0,
+      "P_hi": 5.0
+    },
+    {
+      "celebrity": "Bristol Palin",
+      "season": 11,
+      "R_base": 4.0,
+      "R_lo": 4.0,
+      "R_hi": 4.0,
+      "P_base": 2.0,
+      "P_lo": 2.0,
+      "P_hi": 2.0
+    },
+    {
+      "celebrity": "Bobby Bones",
+      "season": 27,
+      "R_base": 5.0,
+      "R_lo": 5.0,
+      "R_hi": 5.0,
+      "P_base": 3.0,
+      "P_lo": 4.0,
+      "P_hi": 3.0
+    },
+    {
+      "celebrity": "Mya",
+      "season": 9,
+      "R_base": 2.0,
+      "R_lo": 2.0,
+      "R_hi": 2.0,
+      "P_base": 1.0,
+      "P_lo": 1.0,
+      "P_hi": 1.0
+    },
+    {
+      "celebrity": "Donny Osmond",
+      "season": 9,
+      "R_base": 1.0,
+      "R_lo": 1.0,
+      "R_hi": 1.0,
+      "P_base": 2.0,
+      "P_lo": 2.0,
+      "P_hi": 2.0
+    },
+    {
+      "celebrity": "Sabrina Bryan",
+      "season": 5,
+      "R_base": 7.0,
+      "R_lo": 7.0,
+      "R_hi": 7.0,
+      "P_base": 7.0,
+      "P_lo": 7.0,
+      "P_hi": 7.0
+    },
+    {
+      "celebrity": "Sabrina Bryan",
+      "season": 15,
+      "R_base": 3.0,
+      "R_lo": 3.0,
+      "R_hi": 3.0,
+      "P_base": 8.0,
+      "P_lo": 8.0,
+      "P_hi": 8.0
+    }
+  ],
+  "shared_data_copies": {
+    "fanvote_estimates.csv": "ok",
+    "rule_replay.csv": "ok",
+    "controversy_table.csv": "ok"
+  },
+  "meta": {
+    "seed": 42,
+    "n_seasons": 34,
+    "n_season_weeks": 335,
+    "n_couple_weeks": 2780,
+    "n_elim_obs": 298
+  },
+  "calibration": {
+    "alpha": 1.5,
+    "beta": 0.0,
+    "sigma": 0.05,
+    "composite_loglik": -47.36804671917155,
+    "trace": [
+      {
+        "block": 1,
+        "alpha": 1.5,
+        "beta": 0.0,
+        "sigma": 0.05,
+        "loglik": -72.12068819858007
+      },
+      {
+        "block": 2,
+        "alpha": 1.5,
+        "beta": 0.0,
+        "sigma": 0.05,
+        "loglik": -47.36804671917155
+      },
+      {
+        "block": 3,
+        "alpha": 0.1,
+        "beta": 1.5,
+        "sigma": 0.05,
+        "loglik": -47.95875775991264
+      },
+      {
+        "block": "refine",
+        "alpha": 0.1,
+        "beta": 1.5,
+        "sigma": 0.05,
+        "loglik": -47.95875775991264
+      }
+    ],
+    "n_params_U": 421
+  },
+  "phi_certainty": {
+    "n_cells": 2780,
+    "mean_phi_hat": 0.12050359712230216,
+    "median_rel_band_width": 0.15785780642814845,
+    "band_width_p10_abs": 0.00489771701030371,
+    "band_width_p90_abs": 0.03463369075921945
+  },
+  "reproduction_pooled": {
+    "cut_match_rate": 0.888706391647568,
+    "bottom_jaccard_mean": 0.881088546529723,
+    "placement_mae_mean": 0.5626101839337134,
+    "placement_tau_mean": 0.9024793440119281,
+    "n_seasons": 34
+  },
+  "gamma": {
+    "mean_gamma_s": 0.46793884220354803,
+    "median_gamma_s": 0.4444444444444444,
+    "n_seasons_zero_disagreement": 3,
+    "seasons_zero": [
+      1,
+      25,
+      26
+    ],
+    "max_gamma_season": 9,
+    "max_gamma_value": 0.8888888888888888,
+    "per_season": [
+      {
+        "season": 1,
+        "weeks_with_elim": 3,
+        "disagreement_weeks_R_vs_P": 0,
+        "gamma_s": 0.0
+      },
+      {
+        "season": 2,
+        "weeks_with_elim": 7,
+        "disagreement_weeks_R_vs_P": 3,
+        "gamma_s": 0.42857142857142855
+      },
+      {
+        "season": 3,
+        "weeks_with_elim": 7,
+        "disagreement_weeks_R_vs_P": 3,
+        "gamma_s": 0.42857142857142855
+      },
+      {
+        "season": 4,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 5,
+        "gamma_s": 0.625
+      },
+      {
+        "season": 5,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 1,
+        "gamma_s": 0.1111111111111111
+      },
+      {
+        "season": 6,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 5,
+        "gamma_s": 0.625
+      },
+      {
+        "season": 7,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 6,
+        "gamma_s": 0.75
+      },
+      {
+        "season": 8,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 7,
+        "gamma_s": 0.7777777777777778
+      },
+      {
+        "season": 9,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 8,
+        "gamma_s": 0.8888888888888888
+      },
+      {
+        "season": 10,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 5,
+        "gamma_s": 0.625
+      },
+      {
+        "season": 11,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 7,
+        "gamma_s": 0.7777777777777778
+      },
+      {
+        "season": 12,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 6,
+        "gamma_s": 0.75
+      },
+      {
+        "season": 13,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 7,
+        "gamma_s": 0.7777777777777778
+      },
+      {
+        "season": 14,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 5,
+        "gamma_s": 0.625
+      },
+      {
+        "season": 15,
+        "weeks_with_elim": 7,
+        "disagreement_weeks_R_vs_P": 2,
+        "gamma_s": 0.2857142857142857
+      },
+      {
+        "season": 16,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 3,
+        "gamma_s": 0.375
+      },
+      {
+        "season": 17,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 4,
+        "gamma_s": 0.4444444444444444
+      },
+      {
+        "season": 18,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 5,
+        "gamma_s": 0.625
+      },
+      {
+        "season": 19,
+        "weeks_with_elim": 10,
+        "disagreement_weeks_R_vs_P": 4,
+        "gamma_s": 0.4
+      },
+      {
+        "season": 20,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 5,
+        "gamma_s": 0.625
+      },
+      {
+        "season": 21,
+        "weeks_with_elim": 7,
+        "disagreement_weeks_R_vs_P": 3,
+        "gamma_s": 0.42857142857142855
+      },
+      {
+        "season": 22,
+        "weeks_with_elim": 7,
+        "disagreement_weeks_R_vs_P": 2,
+        "gamma_s": 0.2857142857142857
+      },
+      {
+        "season": 23,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 1,
+        "gamma_s": 0.1111111111111111
+      },
+      {
+        "season": 24,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 2,
+        "gamma_s": 0.25
+      },
+      {
+        "season": 25,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 0,
+        "gamma_s": 0.0
+      },
+      {
+        "season": 26,
+        "weeks_with_elim": 3,
+        "disagreement_weeks_R_vs_P": 0,
+        "gamma_s": 0.0
+      },
+      {
+        "season": 27,
+        "weeks_with_elim": 7,
+        "disagreement_weeks_R_vs_P": 3,
+        "gamma_s": 0.42857142857142855
+      },
+      {
+        "season": 28,
+        "weeks_with_elim": 7,
+        "disagreement_weeks_R_vs_P": 4,
+        "gamma_s": 0.5714285714285714
+      },
+      {
+        "season": 29,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 4,
+        "gamma_s": 0.4444444444444444
+      },
+      {
+        "season": 30,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 5,
+        "gamma_s": 0.625
+      },
+      {
+        "season": 31,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 3,
+        "gamma_s": 0.3333333333333333
+      },
+      {
+        "season": 32,
+        "weeks_with_elim": 9,
+        "disagreement_weeks_R_vs_P": 4,
+        "gamma_s": 0.4444444444444444
+      },
+      {
+        "season": 33,
+        "weeks_with_elim": 6,
+        "disagreement_weeks_R_vs_P": 4,
+        "gamma_s": 0.6666666666666666
+      },
+      {
+        "season": 34,
+        "weeks_with_elim": 8,
+        "disagreement_weeks_R_vs_P": 3,
+        "gamma_s": 0.375
+      }
+    ]
+  },
+  "controversies": [
+    {
+      "celebrity": "Jerry Rice",
+      "season": 2,
+      "obs_placement": 2.0,
+      "obs_results": "2nd Place",
+      "R_placement": 2.0,
+      "P_placement": 2.0,
+      "Z_placement": 2.0,
+      "obs_rule_placement": 2.0,
+      "R_doff_placement": 2.0,
+      "danceoff_flips_in_season": 3,
+      "mean_judge_score": 7.506941666666666,
+      "R_place_x0.125": 3.0,
+      "P_place_x0.125": 6.0,
+      "R_place_x0.25": 3.0,
+      "P_place_x0.25": 4.0,
+      "R_place_x0.5": 3.0,
+      "P_place_x0.5": 3.0,
+      "R_place_x2": 2.0,
+      "P_place_x2": 1.0,
+      "R_place_x4": 2.0,
+      "P_place_x4": 1.0,
+      "R_place_x8": 2.0,
+      "P_place_x8": 1.0,
+      "R_place_x16": 2.0,
+      "P_place_x16": 1.0
+    },
+    {
+      "celebrity": "Billy Ray Cyrus",
+      "season": 4,
+      "obs_placement": 5.0,
+      "obs_results": "Eliminated Week 8",
+      "R_placement": 5.0,
+      "P_placement": 5.0,
+      "Z_placement": 7.0,
+      "obs_rule_placement": 5.0,
+      "R_doff_placement": 6.0,
+      "danceoff_flips_in_season": 7,
+      "mean_judge_score": 6.333333333333333,
+      "R_place_x0.125": 11.0,
+      "P_place_x0.125": 11.0,
+      "R_place_x0.25": 10.0,
+      "P_place_x0.25": 10.0,
+      "R_place_x0.5": 8.0,
+      "P_place_x0.5": 8.0,
+      "R_place_x2": 5.0,
+      "P_place_x2": 3.0,
+      "R_place_x4": 3.0,
+      "P_place_x4": 1.0,
+      "R_place_x8": 3.0,
+      "P_place_x8": 1.0,
+      "R_place_x16": 3.0,
+      "P_place_x16": 1.0
+    },
+    {
+      "celebrity": "Bristol Palin",
+      "season": 11,
+      "obs_placement": 3.0,
+      "obs_results": "3rd Place",
+      "R_placement": 4.0,
+      "P_placement": 2.0,
+      "Z_placement": 5.0,
+      "obs_rule_placement": 2.0,
+      "R_doff_placement": 2.0,
+      "danceoff_flips_in_season": 8,
+      "mean_judge_score": 7.368046666666667,
+      "R_place_x0.125": 7.0,
+      "P_place_x0.125": 8.0,
+      "R_place_x0.25": 7.0,
+      "P_place_x0.25": 7.0,
+      "R_place_x0.5": 7.0,
+      "P_place_x0.5": 5.0,
+      "R_place_x2": 4.0,
+      "P_place_x2": 2.0,
+      "R_place_x4": 2.0,
+      "P_place_x4": 1.0,
+      "R_place_x8": 2.0,
+      "P_place_x8": 1.0,
+      "R_place_x16": 2.0,
+      "P_place_x16": 1.0
+    },
+    {
+      "celebrity": "Bobby Bones",
+      "season": 27,
+      "obs_placement": 1.0,
+      "obs_results": "1st Place",
+      "R_placement": 5.0,
+      "P_placement": 3.0,
+      "Z_placement": 5.0,
+      "obs_rule_placement": 3.0,
+      "R_doff_placement": 3.0,
+      "danceoff_flips_in_season": 3,
+      "mean_judge_score": 7.462962962962964,
+      "R_place_x0.125": 7.0,
+      "P_place_x0.125": 9.0,
+      "R_place_x0.25": 7.0,
+      "P_place_x0.25": 7.0,
+      "R_place_x0.5": 5.0,
+      "P_place_x0.5": 5.0,
+      "R_place_x2": 4.0,
+      "P_place_x2": 2.0,
+      "R_place_x4": 2.0,
+      "P_place_x4": 1.0,
+      "R_place_x8": 2.0,
+      "P_place_x8": 1.0,
+      "R_place_x16": 2.0,
+      "P_place_x16": 1.0
+    },
+    {
+      "celebrity": "Mya",
+      "season": 9,
+      "obs_placement": 2.0,
+      "obs_results": "2nd Place",
+      "R_placement": 2.0,
+      "P_placement": 1.0,
+      "Z_placement": 1.0,
+      "obs_rule_placement": 1.0,
+      "R_doff_placement": 1.0,
+      "danceoff_flips_in_season": 10,
+      "mean_judge_score": 9.477766666666666,
+      "R_place_x0.125": 4.0,
+      "P_place_x0.125": 5.0,
+      "R_place_x0.25": 3.0,
+      "P_place_x0.25": 3.0,
+      "R_place_x0.5": 2.0,
+      "P_place_x0.5": 2.0,
+      "R_place_x2": 2.0,
+      "P_place_x2": 1.0,
+      "R_place_x4": 2.0,
+      "P_place_x4": 1.0,
+      "R_place_x8": 2.0,
+      "P_place_x8": 1.0,
+      "R_place_x16": 2.0,
+      "P_place_x16": 1.0
+    },
+    {
+      "celebrity": "Donny Osmond",
+      "season": 9,
+      "obs_placement": 1.0,
+      "obs_results": "1st Place",
+      "R_placement": 1.0,
+      "P_placement": 2.0,
+      "Z_placement": 2.0,
+      "obs_rule_placement": 2.0,
+      "R_doff_placement": 2.0,
+      "danceoff_flips_in_season": 10,
+      "mean_judge_score": 8.822206666666666,
+      "R_place_x0.125": 2.0,
+      "P_place_x0.125": 5.0,
+      "R_place_x0.25": 2.0,
+      "P_place_x0.25": 4.0,
+      "R_place_x0.5": 2.0,
+      "P_place_x0.5": 3.0,
+      "R_place_x2": 1.0,
+      "P_place_x2": 2.0,
+      "R_place_x4": 1.0,
+      "P_place_x4": 1.0,
+      "R_place_x8": 1.0,
+      "P_place_x8": 1.0,
+      "R_place_x16": 1.0,
+      "P_place_x16": 1.0
+    },
+    {
+      "celebrity": "Sabrina Bryan",
+      "season": 5,
+      "obs_placement": 7.0,
+      "obs_results": "Eliminated Week 6",
+      "R_placement": 7.0,
+      "P_placement": 7.0,
+      "Z_placement": 7.0,
+      "obs_rule_placement": 7.0,
+      "R_doff_placement": 7.0,
+      "danceoff_flips_in_season": 8,
+      "mean_judge_score": 9.0,
+      "R_place_x0.125": 7.0,
+      "P_place_x0.125": 9.0,
+      "R_place_x0.25": 7.0,
+      "P_place_x0.25": 9.0,
+      "R_place_x0.5": 7.0,
+      "P_place_x0.5": 8.0,
+      "R_place_x2": 6.0,
+      "P_place_x2": 5.0,
+      "R_place_x4": 5.0,
+      "P_place_x4": 4.0,
+      "R_place_x8": 3.0,
+      "P_place_x8": 3.0,
+      "R_place_x16": 1.0,
+      "P_place_x16": 1.0
+    },
+    {
+      "celebrity": "Sabrina Bryan",
+      "season": 15,
+      "obs_placement": 8.0,
+      "obs_results": "Eliminated Week 6",
+      "R_placement": 3.0,
+      "P_placement": 8.0,
+      "Z_placement": 2.0,
+      "obs_rule_placement": 8.0,
+      "R_doff_placement": 4.0,
+      "danceoff_flips_in_season": 9,
+      "mean_judge_score": 8.881944444444445,
+      "R_place_x0.125": 3.0,
+      "P_place_x0.125": 11.0,
+      "R_place_x0.25": 3.0,
+      "P_place_x0.25": 10.0,
+      "R_place_x0.5": 3.0,
+      "P_place_x0.5": 9.0,
+      "R_place_x2": 2.0,
+      "P_place_x2": 4.0,
+      "R_place_x4": 1.0,
+      "P_place_x4": 1.0,
+      "R_place_x8": 1.0,
+      "P_place_x8": 1.0,
+      "R_place_x16": 1.0,
+      "P_place_x16": 1.0
+    }
+  ],
+  "danceoff_overlay": [
+    {
+      "season": 28,
+      "elim_weeks": 7,
+      "weeks_danceoff_changes_cut": 2,
+      "changed_weeks": "2;6",
+      "n_placements_shifted": 6
+    },
+    {
+      "season": 29,
+      "elim_weeks": 9,
+      "weeks_danceoff_changes_cut": 5,
+      "changed_weeks": "2;4;7;8;10",
+      "n_placements_shifted": 9
+    },
+    {
+      "season": 30,
+      "elim_weeks": 8,
+      "weeks_danceoff_changes_cut": 4,
+      "changed_weeks": "3;4;5;9",
+      "n_placements_shifted": 11
+    },
+    {
+      "season": 31,
+      "elim_weeks": 9,
+      "weeks_danceoff_changes_cut": 3,
+      "changed_weeks": "5;7;8",
+      "n_placements_shifted": 5
+    },
+    {
+      "season": 32,
+      "elim_weeks": 9,
+      "weeks_danceoff_changes_cut": 5,
+      "changed_weeks": "2;4;5;6;7",
+      "n_placements_shifted": 6
+    },
+    {
+      "season": 33,
+      "elim_weeks": 6,
+      "weeks_danceoff_changes_cut": 3,
+      "changed_weeks": "2;4;6",
+      "n_placements_shifted": 6
+    },
+    {
+      "season": 34,
+      "elim_weeks": 8,
+      "weeks_danceoff_changes_cut": 5,
+      "changed_weeks": "2;4;7;8;10",
+      "n_placements_shifted": 11
+    }
+  ],
+  "recommendation_avg": {
+    "R": {
+      "tau": -0.7555357421173248,
+      "gini": 0.5455472625071822,
+      "shock_rate": 0.03830850522026993
+    },
+    "P": {
+      "tau": -0.6180975462658177,
+      "gini": 0.5587843914824823,
+      "shock_rate": 0.00326797385620915
+    },
+    "Z": {
+      "tau": -0.7990347002535636,
+      "gini": 0.5296051061579806,
+      "shock_rate": 0.05045730413377472
+    }
+  },
+  "figures": {
+    "F4_gamma_by_season": "weekly disagreement rate between rules per season",
+    "F5_placement_flow": "controversy placements under each rule",
+    "F6_tau_vs_gini": "judge-consistency vs fan-impact per rule",
+    "F7_bobbybones_phi.png": "Bobby Bones S27 fan-vote trajectory with 90% band",
+    "F7_jerryrice_phi.png": "Jerry Rice S2 fan-vote trajectory with 90% band",
+    "F8_bandwidth_by_week": "certainty of \u03c6\u0302 across weeks",
+    "F9_validation_by_season": "era-correct replay reproduction per season",
+    "F10_flip_curves": "controversy flip curves (placement vs fan multiplier)",
+    "F11_danceoff_flips": "dance-off overlay effect by season (S28+)",
+    "F12_hdi_sensitivity": "HDI-bound sensitivity of controversy placements"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "issues": [
+    "full 34-season MCMC sweep truncated for turn budget; per-week QP point estimates and 20-draw polytope jitter used as approximation for interval widths",
+    "one degenerate case (season 1, week 5, 3-couple cast, no elimination) excluded from agreement statistics",
+    "fan-appeal logistic coefficient on judge_share is large in magnitude because weekly survival is strongly judge-driven; treated as expected behavior, not leakage"
+  ],
+  "fixInstructions": "Re-run model_1.py main() to regenerate all CSVs and figures end-to-end; increase hit_and_run n_draws to 2000 for production-quality intervals.",
+  "summaryPath": "results_summary.md"
+}

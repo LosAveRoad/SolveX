@@ -1,0 +1,29 @@
+{
+  "providers": {
+    "mistralgw": {
+      "baseUrl": "http://127.0.0.1:8788/v1",
+      "api": "openai-completions",
+      "apiKey": "$MISTRAL_GW_KEY",
+      "compat": {
+        "supportsStore": false,
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": true,
+        "maxTokensField": "max_tokens",
+        "thinkingFormat": "openai"
+      },
+      "models": [
+        {
+          "id": "zai-glm-5-3-flash",
+          "name": "GLM 5.3 Flash (via mistral-gateway)",
+          "api": "openai-completions",
+          "reasoning": true,
+          "thinkingLevelMap": { "minimal": "low", "low": "low", "medium": "high", "high": "high", "xhigh": "max", "max": "max" },
+          "input": ["text", "image"],
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "contextWindow": 524288,
+          "maxTokens": 32768
+        }
+      ]
+    }
+  }
+}

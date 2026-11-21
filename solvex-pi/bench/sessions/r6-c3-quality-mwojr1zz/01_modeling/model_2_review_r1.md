@@ -1,0 +1,29 @@
+The review is saved to `01_modeling/model_2_review.md`. Conclusion:
+
+## Review conclusion for Model 2
+
+**What I verified by rerunning code (all independent re-implementations under `.solvex/scratch/`, no implementation changes):**
+
+- **Determinism**: re-ran `run.py` end-to-end (~55 s) — results.json and all 4 key CSVs came back md5-identical. The determinism claim is real.
+- **~20 of 21 headline numbers reproduce exactly** under independent recomputation: MAP nll 436.58, β=1.387, θ=−0.0001; exit recovery MAP 97/235 vs judge-only 88/235; post-mean bottom-3 184/235 vs 179/235; single-exit 81/206 vs 82/206; R² 0.3358/0.3924; all partial R² blocks to 4 decimals; restricted pro R² (0.1284→0.0874 judge, 0.1195→0.0780 fan, fame control 0.206/0.209); CV certainty stats; era gap/ratio columns; known-elite pro ranks (Derek #1, Valentin #3, Mark #5, Cheryl #15 among 41 eligible); gradient check 2.4e-6; Harrell RCS basis exact; age/week curve shapes; swap best/median values.
+- **One numerical error found**: the counterfactual worst-pro fan share "1.8%" is a clipping artifact in `run.py::counterfactual_swap` (`np.clip(logit, -4, 4)`); the unclipped logit is −4.672 → true value **0.93%** — a ~2× misstatement in a headline exhibit.
+- **One mislabeled statistic**: the era-drift "rank correlation" 0.884–0.900 is actually mean **Pearson**; the true Spearman is ≈0.97, flat across eras.
+- **Two coding defects**: `_center_contrast` prefix mismatch makes the documented "row-weighted centered contrast" a silent no-op (reported effects are raw reference-coding offsets; orderings/ρ/R² unaffected but interpretation mislabeled), and the pro/industry permutation null uses a differently-coded design (conservative — p-values are not inflated, but the stated protocol doesn't match the code).
+- **Summary-text slips**: ineligible Charlotte Jorgensen inserted in the eligible top-5; "Cheryl #15 of 52" should be "#15 of 41 eligible"; the exit-recovery bullet mixes MAP and posterior-mean stages and overstates "MAP beats judge-only" (81 < 82 on single-exit weeks).
+
+**Verdict**: the pipeline is substantially sound, honest about its failures, fully deterministic, and cheap to fix — but because one headline number is wrong and several reported quantities don't match their stated methodology, acceptance requires one revision pass.
+
+VERIFICATION_RESULT: NEEDS_REVISION
+## Issues Found:
+1. **`run.py::counterfactual_swap`** — worst-pro fan share reported 0.018 (1.8%) for Koko Iwasaki is inflated by `np.clip(x @ fitF["b"], -4, 4)` inside the sigmoid; unclipped logit −4.672 → true probability **0.0093 (0.93%)**. Best (0.1656) and median (0.0643) are unaffected.
+2. **`model2_analysis.platform_drift`** — `mean_withinweek_fanjudge_corr` (0.900/0.884/0.884) is mean **Pearson**, but results_summary.md presents it as the fan–judge "rank correlation"; true mean Spearman is ≈0.972/0.969/0.971, essentially flat.
+3. **`model2_analysis._center_contrast`** — prefix mismatch ("P_Derek Hough" vs data label "Derek Hough") makes all weight lookups miss, so `center=0` always; reported "centered effects" are raw dummy offsets from the dropped reference (Alan Bersten shows −0.0 instead of ≈ −0.109). Orderings, ρ=0.988, R² and p-values are unaffected.
+4. **`model2_analysis.permutation_decomp`** — pro/industry nulls rebuild dummies with `drop_first=False` minus first column, giving a null design with different rank/structure than the observed `drop_first=True` design (null mean 0.080 vs observed 0.125, judge-pro). Conservative, not anti-conservative (verified: i.i.d. 52-level null ≈ 0.019), but it deviates from the plan's stated protocol.
+5. **`results_summary.md` text** — top-5 list wrongly includes ineligible Charlotte Jorgensen (real eligible top-5: Derek Hough, Artem Chigvintsev, Valentin Chmerkovskiy, Corky Ballas, Mark Ballas); "Cheryl Burke #15 of 52" should be "#15 of 41 eligible"; the exit-recovery bullet mixes MAP-stage (97/235) and posterior-mean (81/206, 184/235) numbers without labels and claims MAP beats judge-only on single-exit weeks when it does not (81 < 82).
+
+## Fix Instructions:
+1. In `run.py::counterfactual_swap`, replace the clipped sigmoid with `scipy.special.expit(x @ fitF["b"])` (or drop the clip); rerun and update `results.json` → `counterfactual_swap.predictions_judge_z_and_fanshare.worst[1]` to ≈0.009 and the "−1.505 / 1.8%" line in results_summary.md to "−1.505 / 0.9%".
+2. In `model2_analysis.platform_drift`, either use `method="spearman"` or rename the column/key to `..._pearson` in model2_era_drift.csv, results.json, and the era-drift bullet of results_summary.md — whichever the paper text will claim.
+3. In `_center_contrast`, strip the "P_"/"I_" prefix from design level names before the weight lookup (or key `w` by "P_"+label/"I_"+label), and set the reference's weight `wv[0] = 1 − wv[1:].sum()` so the center is a true row-weighted contrast; rerun and confirm Alan Bersten's row ≈ −0.109 (judge) with all rankings/ρ unchanged.
+4. In `permutation_decomp`, rebuild permuted pro/industry blocks with the same `drop_first=True` coding and identical column set as the observed design (permuted reference labels → zero row); rerun those permutations and update model2_decomp.csv/results.json bullets; add one sentence documenting the per-block permutation scheme (pro/industry/age: run-level within season; week: within-run; multi: within-season).
+5. In results_summary.md: restate the eligible judge top-5, fix "#15 of 41 eligible", and relabel the exit-recovery bullet with stages (MAP bottom-m 97/235; posterior-mean single-exit 81/206, bottom-3 184/235), correcting "MAP beats judge-only where identification is possible" to acknowledge 81 < 82 on single-exit exact recovery with aggregate wins (97 vs 88; 184 vs 179) stated explicitly.

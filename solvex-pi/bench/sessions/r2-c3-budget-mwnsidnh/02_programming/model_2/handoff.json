@@ -1,0 +1,8 @@
+{
+  "status": "PARTIAL",
+  "issues": [
+    "season 25 failed: ValueError: shape mismatch: value array of shape (1,2) could not be broadcast to indexing result of shape (1000,1)"
+  ],
+  "fixInstructions": "See results_summary.md Issues or Limitations; failed seasons can be re-run by raising max_batches.",
+  "summaryPath": "/Users/mac/Documents/\u5b66\u4e60/\u627e\u5de5\u4f5c/SolveX/bench/sessions/r2-c3-budget-mwnsidnh/02_programming/model_2/results_summary.md"
+}

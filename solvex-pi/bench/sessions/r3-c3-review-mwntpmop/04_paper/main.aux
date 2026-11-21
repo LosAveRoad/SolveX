@@ -1,0 +1,171 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{4}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}The Hidden Variable of a Televised Democracy}{4}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Data Description}{4}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What the data do and do not contain.}{5}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Our Approach: Three Linked Models}{5}{subsection.1.3}\protected@file@percent }
+\newlabel{eq:intro-prior}{{1}{5}{Our Approach: Three Linked Models}{equation.1}{}}
+\newlabel{eq:intro-kappa}{{2}{5}{Our Approach: Three Linked Models}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Pipeline Logic and an Honest Framing of Uncertainty}{5}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Paper Outline}{6}{subsection.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6}A Note on Honesty in Uncertainty Reporting}{6}{subsection.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Model 1: Bayesian Fan-Vote Inversion (Elimination-Constraint Sampler)}{6}{section.2}\protected@file@percent }
+\newlabel{sec:model1}{{2}{6}{Model 1: Bayesian Fan-Vote Inversion (Elimination-Constraint Sampler)}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Problem Statement}{6}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{7}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Notation and Combination Rules}{7}{subsubsection.2.2.1}\protected@file@percent }
+\newlabel{eq:rank-rule}{{7}{7}{Notation and Combination Rules}{equation.7}{}}
+\newlabel{eq:pct-rule}{{8}{7}{Notation and Combination Rules}{equation.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Feasible Region}{7}{subsubsection.2.2.2}\protected@file@percent }
+\newlabel{eq:feasible}{{9}{7}{Feasible Region}{equation.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Prior and Posterior}{7}{subsubsection.2.2.3}\protected@file@percent }
+\newlabel{eq:m1-prior}{{10}{7}{Prior and Posterior}{equation.10}{}}
+\newlabel{eq:m1-post}{{11}{7}{Prior and Posterior}{equation.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Point Estimate via Maximum-Margin Inverse Optimization}{8}{subsubsection.2.2.4}\protected@file@percent }
+\newlabel{eq:m1-v0}{{12}{8}{Point Estimate via Maximum-Margin Inverse Optimization}{equation.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Implementation}{8}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Parsing and Panel Construction}{8}{subsubsection.2.3.1}\protected@file@percent }
+\newlabel{sec:m1-parsing}{{2.3.1}{8}{Parsing and Panel Construction}{subsubsection.2.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Exact Rejection Sampling of the Truncated Dirichlet}{8}{subsubsection.2.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Inverse Optimization for $v_0$}{8}{subsubsection.2.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Results}{8}{subsection.2.4}\protected@file@percent }
+\newlabel{sec:model1-results}{{2.4}{8}{Results}{subsection.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Headline Posterior Statistics}{8}{subsubsection.2.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Posterior summary of fan-share estimates over 2{,}777 contestant-weeks (335 season-weeks, 34 seasons). ``Width'' is the 90\% credible-interval width.}}{9}{table.caption.3}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:m1-stats}{{1}{9}{Posterior summary of fan-share estimates over 2{,}777 contestant-weeks (335 season-weeks, 34 seasons). ``Width'' is the 90\% credible-interval width}{table.caption.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Weekly diagnostics across the 335 season-weeks (summary of weekly\_diagnostics.csv). ``Margin'' is the max-min composite margin achieved by the point estimate $v_0$; margins are scale-comparable only within a rule (rank-rule margins and percentage-rule margins are different units), so the reported range is descriptive rather than cross-rule.}}{9}{table.caption.4}\protected@file@percent }
+\newlabel{tab:m1-weekly}{{2}{9}{Weekly diagnostics across the 335 season-weeks (summary of weekly\_diagnostics.csv). ``Margin'' is the max-min composite margin achieved by the point estimate $v_0$; margins are scale-comparable only within a rule (rank-rule margins and percentage-rule margins are different units), so the reported range is descriptive rather than cross-rule}{table.caption.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Elimination-consistency summary for the Model 1 point estimate, by validation battery.}}{9}{table.caption.5}\protected@file@percent }
+\newlabel{tab:m1-consistency}{{3}{9}{Elimination-consistency summary for the Model 1 point estimate, by validation battery}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Extreme Cases and Interpretable Deviations}{10}{subsubsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Certainty Is Not Uniform --- and We Say So}{10}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Figures}{11}{subsection.2.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Posterior mean fan share vs.\ judge share for all 2{,}777 contestant-weeks, split by combination rule. The 45\ensuremath  {^\circ }\ line is ``fan votes exactly proportional to judge scores.'' Points cluster near but systematically deviate from the line ($r = 0.839$ pooled), revealing identifiable popularity effects beyond dance quality.}}{11}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:m1-scatter}{{1}{11}{Posterior mean fan share vs.\ judge share for all 2{,}777 contestant-weeks, split by combination rule. The 45\degree \ line is ``fan votes exactly proportional to judge scores.'' Points cluster near but systematically deviate from the line ($r = 0.839$ pooled), revealing identifiable popularity effects beyond dance quality}{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Mean 90\% credible-interval width by season-week (weeks 1--11 horizontally, seasons 1--34 vertically). Certainty tightens toward the finale (bottom-right band) and is systematically wider in early weeks and in the S28+ judges-save era.}}{12}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:m1-heatmap}{{2}{12}{Mean 90\% credible-interval width by season-week (weeks 1--11 horizontally, seasons 1--34 vertically). Certainty tightens toward the finale (bottom-right band) and is systematically wider in early weeks and in the S28+ judges-save era}{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Weekly fan-vs-judge trajectories for the six celebrities with the largest average fan--judge divergence in the posterior. Couples hopscotching around the 45\ensuremath  {^\circ }\ line (e.g., high fan share / low judge share trajectories) are the raw material that later fuels the ``controversial finalist'' outcomes analyzed in Model 2.}}{13}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:m1-controversy}{{3}{13}{Weekly fan-vs-judge trajectories for the six celebrities with the largest average fan--judge divergence in the posterior. Couples hopscotching around the 45\degree \ line (e.g., high fan share / low judge share trajectories) are the raw material that later fuels the ``controversial finalist'' outcomes analyzed in Model 2}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Validation}{13}{subsection.2.6}\protected@file@percent }
+\newlabel{sec:m1-validation}{{2.6}{13}{Validation}{subsection.2.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Model 2: Counterfactual Rule Engine --- Rank vs.\ Percentage vs.\ Judges-Save}{14}{section.3}\protected@file@percent }
+\newlabel{sec:model2}{{3}{14}{Model 2: Counterfactual Rule Engine --- Rank vs.\ Percentage vs.\ Judges-Save}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Problem Statement}{14}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{14}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(a) Fan-favor index $\kappa $ (per season, per rule).}{14}{section*.9}\protected@file@percent }
+\newlabel{eq:kappa}{{13}{14}{(a) Fan-favor index $\kappa $ (per season, per rule)}{equation.13}{}}
+\@writefile{toc}{\contentsline {paragraph}{(b) Weekly elimination reproducibility.}{14}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(c) Distribution of finishing positions for a focus celebrity $C$.}{14}{section*.11}\protected@file@percent }
+\newlabel{eq:pwin}{{14}{14}{(c) Distribution of finishing positions for a focus celebrity $C$}{equation.14}{}}
+\@writefile{toc}{\contentsline {paragraph}{(d) Divergence detection.}{14}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Implementation}{15}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Three Rules Vectorized}{15}{subsubsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Search and Repair}{15}{subsubsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Robustness Design Decisions}{15}{subsubsection.3.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Results}{15}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Headline: The Percentage Rule Favors Fans}{15}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Fan-favor index $\kappa = \mathrm  {corr}(\text  {composite}, \mathrm  {rank}(v)) - \mathrm  {corr}(\text  {composite}, \mathrm  {rank}(s))$, mean across 34 seasons, by rule. Positive $\kappa $ means the composite mechanically tilts toward fans \emph  {holding fan behavior fixed}. 95\% Monte-Carlo CIs in brackets.}}{15}{table.caption.13}\protected@file@percent }
+\newlabel{tab:m2-kappa}{{4}{15}{Fan-favor index $\kappa = \mathrm {corr}(\text {composite}, \mathrm {rank}(v)) - \mathrm {corr}(\text {composite}, \mathrm {rank}(s))$, mean across 34 seasons, by rule. Positive $\kappa $ means the composite mechanically tilts toward fans \emph {holding fan behavior fixed}. 95\% Monte-Carlo CIs in brackets}{table.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Controversial Contestants: The Four Case Studies}{16}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Counterfactual outcomes for the four named controversy cases under each combination rule, using Model 1's posterior fan-vote draws (300 replays per season per rule). ``Actual'' is the real recorded finish. Mean simulated placement is in parentheses.}}{16}{table.caption.14}\protected@file@percent }
+\newlabel{tab:m2-controversy}{{5}{16}{Counterfactual outcomes for the four named controversy cases under each combination rule, using Model 1's posterior fan-vote draws (300 replays per season per rule). ``Actual'' is the real recorded finish. Mean simulated placement is in parentheses}{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Auto-Detected Divergence Cases}{16}{subsubsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4}Did the Judges-Save Change the Show?}{16}{subsubsection.3.4.4}\protected@file@percent }
+\newlabel{sec:m2-save}{{3.4.4}{16}{Did the Judges-Save Change the Show?}{subsubsection.3.4.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{The bottom-two proxy assumption.}{17}{section*.15}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Reproduction of actual eliminations across all 34 seasons, by rule, with era-level breakdown. ``Match'' is the fraction of season-weeks in which the rule's replay (with point-estimate fan votes) eliminates the same contestant the show eliminated.}}{17}{table.caption.16}\protected@file@percent }
+\newlabel{tab:m2-match}{{6}{17}{Reproduction of actual eliminations across all 34 seasons, by rule, with era-level breakdown. ``Match'' is the fraction of season-weeks in which the rule's replay (with point-estimate fan votes) eliminates the same contestant the show eliminated}{table.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Recommendation matrix: the three rules compared on the four dimensions that matter for adoption. ``Mean weekly flip vs.\ other rules'' is averaged over the two pairwise flip fractions per season; ``Mean P(finalist), controversy cases'' is the average finalist probability of the four named cases under that rule.}}{18}{table.caption.17}\protected@file@percent }
+\newlabel{tab:m2-recommendation}{{7}{18}{Recommendation matrix: the three rules compared on the four dimensions that matter for adoption. ``Mean weekly flip vs.\ other rules'' is averaged over the two pairwise flip fractions per season; ``Mean P(finalist), controversy cases'' is the average finalist probability of the four named cases under that rule}{table.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Figures}{18}{subsection.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Fan-favor index $\kappa $ by rule and era. The percentage rule (used in seasons 3--27) shows a systematically positive tilt toward fans ($\kappa \approx +0.13$) relative to the rank rule used before and after; the judges-save inherits the rank rule's neutrality. Error bars are 95\% Monte-Carlo bands.}}{18}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:m2-fanfavor}{{4}{18}{Fan-favor index $\kappa $ by rule and era. The percentage rule (used in seasons 3--27) shows a systematically positive tilt toward fans ($\kappa \approx +0.13$) relative to the rank rule used before and after; the judges-save inherits the rank rule's neutrality. Error bars are 95\% Monte-Carlo bands}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Per-season weekly flip fraction: the share of weeks in which the eliminated couple would differ under each rule vs.\ the other two. Percentage-rule weeks flip more often, underscoring how often the choice of method has changed DWTS history.}}{19}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:m2-flips}{{5}{19}{Per-season weekly flip fraction: the share of weeks in which the eliminated couple would differ under each rule vs.\ the other two. Percentage-rule weeks flip more often, underscoring how often the choice of method has changed DWTS history}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Survival curves for the four controversy celebrities under each combination rule. Bobby Bones's actual S27 trajectory (champion) is in the upper tail of the percentage-rule simulations but the lower tail of the rank rule's, illustrating the rule-dependence of his title.}}{20}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:m2-survival}{{6}{20}{Survival curves for the four controversy celebrities under each combination rule. Bobby Bones's actual S27 trajectory (champion) is in the upper tail of the percentage-rule simulations but the lower tail of the rank rule's, illustrating the rule-dependence of his title}{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Validation}{20}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Model 3: Hierarchical Driver Model --- Who Moves Judges vs.\ Fans?}{21}{section.4}\protected@file@percent }
+\newlabel{sec:model3}{{4}{21}{Model 3: Hierarchical Driver Model --- Who Moves Judges vs.\ Fans?}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Problem Statement}{21}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{21}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Judge channel.}{21}{section*.21}\protected@file@percent }
+\newlabel{eq:m3-judge}{{15}{21}{Judge channel}{equation.15}{}}
+\@writefile{toc}{\contentsline {paragraph}{Fan channel.}{21}{section*.22}\protected@file@percent }
+\newlabel{eq:m3-fan}{{16}{21}{Fan channel}{equation.16}{}}
+\@writefile{toc}{\contentsline {paragraph}{Contrasts.}{21}{section*.23}\protected@file@percent }
+\newlabel{eq:delta}{{17}{21}{Contrasts}{equation.17}{}}
+\@writefile{toc}{\contentsline {paragraph}{Variance partition.}{21}{section*.24}\protected@file@percent }
+\newlabel{eq:varpart}{{18}{21}{Variance partition}{equation.18}{}}
+\@writefile{toc}{\contentsline {paragraph}{Priors.}{21}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Implementation}{22}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Results}{22}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Channel Contrasts: Only Age Is Decisively Channel-Differentiated}{22}{subsubsection.4.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Per-channel fixed-effect coefficients on the logit scale (posterior mean, 95\% HDI). The \emph  {fan} column is the driver of Model 1's identified fan share; the \emph  {judge} column drives observed judge share.}}{22}{table.caption.26}\protected@file@percent }
+\newlabel{tab:m3-coeffs}{{8}{22}{Per-channel fixed-effect coefficients on the logit scale (posterior mean, 95\% HDI). The \emph {fan} column is the driver of Model 1's identified fan share; the \emph {judge} column drives observed judge share}{table.caption.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces $\Delta = \beta ^{\text  {fan}} - \beta ^{\text  {judge}}$, posterior mean [95\% HDI], with P($\Delta > 0$). $\Delta > 0$: the characteristic helps the fan channel more than the judge channel. Sample: 2{,}777 couple-weeks, 34 seasons.}}{22}{table.caption.27}\protected@file@percent }
+\newlabel{tab:m3-delta}{{9}{22}{$\Delta = \beta ^{\text {fan}} - \beta ^{\text {judge}}$, posterior mean [95\% HDI], with P($\Delta > 0$). $\Delta > 0$: the characteristic helps the fan channel more than the judge channel. Sample: 2{,}777 couple-weeks, 34 seasons}{table.caption.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Pro Effects: The Fan Channel's Dominant Driver}{22}{subsubsection.4.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Share of explained logit variance by component, per channel. ``Pro identity'' $\sigma ^2_{\text  {pro}} = 0.315$ in the fan channel vs.\ $0.076$ in the judge channel; ``season climate'' $\sigma ^2_{\text  {season}} = 0.341$ (fan) vs.\ $0.187$ (judge).}}{23}{table.caption.28}\protected@file@percent }
+\newlabel{tab:m3-varpart}{{10}{23}{Share of explained logit variance by component, per channel. ``Pro identity'' $\sigma ^2_{\text {pro}} = 0.315$ in the fan channel vs.\ $0.076$ in the judge channel; ``season climate'' $\sigma ^2_{\text {season}} = 0.341$ (fan) vs.\ $0.187$ (judge)}{table.caption.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}Pro Effect Rankings}{23}{subsubsection.4.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.4}Identification Caveat, Stated Honestly}{23}{subsubsection.4.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.5}Model Fit vs.\ Baselines}{23}{subsubsection.4.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Figures}{24}{subsection.4.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Forest plot of channel-contrast coefficients $\Delta = \beta ^{\text  {fan}} - \beta ^{\text  {judge}}$ with 95\% HDIs. Only the age contrast decisively excludes zero; athletes and high-fame celebrities help both channels roughly equally.}}{24}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:m3-forest}{{7}{24}{Forest plot of channel-contrast coefficients $\Delta = \beta ^{\text {fan}} - \beta ^{\text {judge}}$ with 95\% HDIs. Only the age contrast decisively excludes zero; athletes and high-fame celebrities help both channels roughly equally}{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Variance-partition comparison across the two channels. Pro identity dominates the fan channel (49.6\%); season climate dominates the judge channel (57.6\%).}}{25}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:m3-varpart}{{8}{25}{Variance-partition comparison across the two channels. Pro identity dominates the fan channel (49.6\%); season climate dominates the judge channel (57.6\%)}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Top-10 and bottom-5 pro effects in the fan channel with 95\% CIs. Effects range from $+0.43$ (largest boost) to $-0.45$ (largest penalty) on the logit scale, dwarfing the age and fame contrasts.}}{26}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:m3-pro}{{9}{26}{Top-10 and bottom-5 pro effects in the fan channel with 95\% CIs. Effects range from $+0.43$ (largest boost) to $-0.45$ (largest penalty) on the logit scale, dwarfing the age and fame contrasts}{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Leave-one-season-out (LOSO) validation: predicted vs.\ observed within-week fan shares across held-out seasons, with per-season weighted RMSE. Performance is stable across eras; the model generalizes beyond any single season.}}{26}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:m3-loso}{{10}{26}{Leave-one-season-out (LOSO) validation: predicted vs.\ observed within-week fan shares across held-out seasons, with per-season weighted RMSE. Performance is stable across eras; the model generalizes beyond any single season}{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Validation}{26}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results and Analysis}{27}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{27}{Results and Analysis}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}The Answer to the Show's Central Question}{27}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Integrated results across the three models.}}{27}{table.caption.33}\protected@file@percent }
+\newlabel{tab:integrated}{{11}{27}{Integrated results across the three models}{table.caption.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Certainty in the Fan Vote Estimates}{27}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Fan Votes vs.\ Judge Scores: Not the Same Audience}{28}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Revisiting the Season-2 and Season-27 Narratives}{28}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why certainty cannot be uniform.}{28}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}The ``Fairness'' Question}{29}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Sensitivity Analysis}{29}{section.6}\protected@file@percent }
+\newlabel{sec:sensitivity}{{6}{29}{Sensitivity Analysis}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}What Model 1's Prior Does and Does Not Drive}{29}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Model 1 $\rightarrow $ Model 2 Propagation}{29}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Fixed $\tau $, Fixed Save Proxy, and Other Known Approximations}{30}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Model 3's Identification Boundaries}{30}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Which Conclusions Are Robust?}{30}{subsection.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{31}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{31}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}What We Built, and Why the Design Hangs Together}{31}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Strengths}{31}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Limitations}{31}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Comparison with Simpler Approaches}{31}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Implications for Show Design Beyond Vote Combination}{32}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{32}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{32}{Conclusion}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Findings}{32}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Recommendations in Order of Confidence}{33}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Limitations and Future Work}{33}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Final Word}{33}{subsection.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix A: Memo to DWTS Producers}{34}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix B: Reproducibility}{34}{section*.41}\protected@file@percent }
+\bibcite{comap2026}{1}
+\bibcite{gelman2013}{2}
+\bibcite{carpenter2017}{3}
+\bibcite{kendall1938}{4}
+\bibcite{glicko}{5}
+\bibcite{maskin}{6}
+\bibcite{vehtari2017}{7}
+\bibcite{hastie2009}{8}
+\bibcite{robert2004}{9}
+\bibcite{betancourt2017}{10}
+\@writefile{toc}{\contentsline {section}{References}{35}{section*.42}\protected@file@percent }
+\gdef \@abspage@last{35}

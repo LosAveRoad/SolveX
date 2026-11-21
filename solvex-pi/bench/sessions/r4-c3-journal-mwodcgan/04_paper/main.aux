@@ -1,0 +1,138 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{4}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Problem Background and Motivation}{4}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Data Description}{4}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Our Approach: An Identification-First, Three-Model Pipeline}{5}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Honesty About What the Data Can and Cannot Identify}{5}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Paper Outline}{5}{subsection.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Model 1: Maximum-Entropy Fan-Vote Inversion (ME-FVI)}{6}{section.2}\protected@file@percent }
+\newlabel{sec:m1}{{2}{6}{Model 1: Maximum-Entropy Fan-Vote Inversion (ME-FVI)}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Problem Statement}{6}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Mathematical Formulation}{6}{subsection.2.2}\protected@file@percent }
+\newlabel{eq:pct}{{1}{6}{Mathematical Formulation}{equation.1}{}}
+\newlabel{eq:elimcon}{{2}{6}{Mathematical Formulation}{equation.2}{}}
+\newlabel{eq:gmax}{{3}{6}{Mathematical Formulation}{equation.3}{}}
+\newlabel{eq:maxent}{{4}{7}{Mathematical Formulation}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Implementation}{7}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Results}{7}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Feasibility: every recorded elimination is consistent with the rule}{7}{subsubsection.2.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Certainty is real but not uniform}{8}{subsubsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Calibrated reproduction rates and where calibration fails}{8}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.4}The inferred votes are not an artifact}{8}{subsubsection.2.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.5}Judges alone would have eliminated a different show}{9}{subsubsection.2.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.6}Point estimates, divergences, and the controversy cases}{9}{subsubsection.2.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.7}Hold-out check}{9}{subsubsection.2.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Figures}{10}{subsection.2.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Model 1 --- 90\%-interval half-width of inferred fan-share estimates vs.\ week number within the season (percentage rule; band shows the IQR across seasons and contestants). Certainty improves sharply toward the finale: fewer survivors and wider judge spread shrink the feasible set. Certainty is therefore a structural property of the week, not a constant.}}{10}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:m1cert}{{1}{10}{Model 1 --- 90\%-interval half-width of inferred fan-share estimates vs.\^^Mweek number within the season (percentage rule; band shows the IQR across seasons and contestants). Certainty improves sharply toward the finale: fewer survivors and wider judge spread shrink the feasible set. Certainty is therefore a structural property of the week, not a constant}{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Model 1 --- heatmap of mean judge--fan divergence ($\bar  {G} = F^* - J$) across the 34 seasons (rows) and competition weeks (columns), \textbf  {percentage rule only}. Because the rank-rule rows lack a comparable judge-share definition under the two-rule normalization used, no rank-rule panel is shown and no ``season-28 rank-rule shift'' is claimed from this figure (an earlier draft caption did so; corrected). More saturated cells are weeks where fan support deviated most from judge share --- candidate controversy weeks.}}{11}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:m1gap}{{2}{11}{Model 1 --- heatmap of mean judge--fan divergence ($\bar {G} = F^* - J$) across the 34 seasons (rows) and competition weeks (columns), \textbf {percentage rule only}. Because the rank-rule rows lack a comparable judge-share definition under the two-rule normalization used, no rank-rule panel is shown and no ``season-28 rank-rule shift'' is claimed from this figure (an earlier draft caption did so; corrected). More saturated cells are weeks where fan support deviated most from judge share --- candidate controversy weeks}{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Model 1 --- the four documented controversies. Each panel shows judge share (squares/markers) vs.\ inferred fan share (points with 90\% bands) across the celebrity's competing weeks, under both rules where applicable. In all four cases the inferred fan share sits above the judge share for most of the run --- the signature of a fan-driven run: Jerry Rice (S2, runner-up), Billy Ray Cyrus (S4, 5th), Bristol Palin (S11, 3rd), Bobby Bones (S27, winner).}}{12}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:m1cases}{{3}{12}{Model 1 --- the four documented controversies. Each panel shows judge share (squares/markers) vs.\ inferred fan share (points with 90\% bands) across the celebrity's competing weeks, under both rules where applicable. In all four cases the inferred fan share sits above the judge share for most of the run --- the signature of a fan-driven run: Jerry Rice (S2, runner-up), Billy Ray Cyrus (S4, 5th), Bristol Palin (S11, 3rd), Bobby Bones (S27, winner)}{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Model 1 --- calibration diagnostics. \textbf  {Left}: exact-LP $\gamma _{\max }$ distribution per week with each week's theoretical bound $1/n_s$ overlaid (all 264 points satisfy the bound; max 0.197 at four-survivor weeks as expected). \textbf  {Middle}: band half-width vs.\ $\gamma _{\max }$, Pearson $r = 0.13$ --- only a weak association, correcting the earlier over-claim. \textbf  {Right}: reproduction-rate histograms for the calibrated model vs.\ the uniform-Dirichlet null (mean 0.74 vs.\ 0.23; 253/264 weeks at single-week $p<0.01$).}}{12}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:m1cal}{{4}{12}{Model 1 --- calibration diagnostics. \textbf {Left}: exact-LP $\gamma _{\max }$ distribution per week with each week's theoretical bound $1/n_s$ overlaid (all 264 points satisfy the bound; max 0.197 at four-survivor weeks as expected). \textbf {Middle}: band half-width vs.\ $\gamma _{\max }$, Pearson $r = 0.13$ --- only a weak association, correcting the earlier over-claim. \textbf {Right}: reproduction-rate histograms for the calibrated model vs.\ the uniform-Dirichlet null (mean 0.74 vs.\^^M0.23; 253/264 weeks at single-week $p<0.01$)}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Validation Summary and Open Review Issues}{13}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Model 2: Counterfactual Season Re-Play Under Rank, Percent, and Save Rules (CSR)}{13}{section.3}\protected@file@percent }
+\newlabel{sec:m2}{{3}{13}{Model 2: Counterfactual Season Re-Play Under Rank, Percent, and Save Rules (CSR)}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Problem Statement}{13}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Mathematical Formulation}{13}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:rankrule}{{5}{14}{Mathematical Formulation}{equation.5}{}}
+\newlabel{eq:pctrule}{{6}{14}{Mathematical Formulation}{equation.6}{}}
+\newlabel{eq:save}{{7}{14}{Mathematical Formulation}{equation.7}{}}
+\newlabel{eq:fanfavor}{{11}{14}{Mathematical Formulation}{equation.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Implementation}{14}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Results}{15}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Elimination-chain reproduction}{15}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Winner and top-3 flip probabilities}{15}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Model 2 --- season replay summary (selected seasons; full table in \texttt  {outputs/season\_replay\_summary.csv}). Winners are the most frequent simulated winner per variant over $K=150$ replicates; $\Phi $ = winner-flip probability; \texttt  {exact} = fraction of replicates reproducing the recorded elimination chain.}}{15}{table.caption.6}\protected@file@percent }
+\newlabel{tab:replay}{{1}{15}{Model 2 --- season replay summary (selected seasons; full table in \texttt {outputs/season\_replay\_summary.csv}). Winners are the most frequent simulated winner per variant over $K=150$ replicates; $\Phi $ = winner-flip probability; \texttt {exact} = fraction of replicates reproducing the recorded elimination chain}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Does one rule favor fan votes?}{16}{subsubsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4}The judges-save propensity}{16}{subsubsection.3.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.5}The four controversy celebrities}{16}{subsubsection.3.4.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Model 2 --- controversy celebrities under the four replay variants. ``Median place'' is the median simulated final placement; ``win prob'' the median win probability across replicates (from \texttt  {model2\_key\_results.json}). ``alt'' denotes the rule \emph  {other} than the one in force in that contestant's season; NaN = placement not reached in simulated finals.}}{16}{table.caption.7}\protected@file@percent }
+\newlabel{tab:controversy}{{2}{16}{Model 2 --- controversy celebrities under the four replay variants. ``Median place'' is the median simulated final placement; ``win prob'' the median win probability across replicates (from \texttt {model2\_key\_results.json}). ``alt'' denotes the rule \emph {other} than the one in force in that contestant's season; NaN = placement not reached in simulated finals}{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Figures}{17}{subsection.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Model 2 --- winner flip probability by season (RANK vs PCT replay, $K=150$ replicates). The average is $0.489$; season 21 (Bindi Irwin) and season 13 are the extremes. No season is immune: even the least sensitive season has a $\ge 0.24$ probability of a different winner under the alternate rule, and top-3 flips exceed 0.75 in 17/34 seasons.}}{17}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:m2flip}{{5}{17}{Model 2 --- winner flip probability by season (RANK vs PCT replay, $K=150$ replicates). The average is $0.489$; season 21 (Bindi Irwin) and season 13 are the extremes. No season is immune: even the least sensitive season has a $\ge 0.24$ probability of a different winner under the alternate rule, and top-3 flips exceed 0.75 in 17/34 seasons}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Model 2 --- counterfactual final placements of the four controversy celebrities under each replay variant (median over replicates).Jerry Rice and Bristol Palin move dramatically between rules; Billy Ray Cyrus is rule-robust; Bobby Bones wins under most variants with material probability.}}{18}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:m2controversy}{{6}{18}{Model 2 --- counterfactual final placements of the four controversy celebrities under each replay variant (median over replicates).Jerry Rice and Bristol Palin move dramatically between rules; Billy Ray Cyrus is rule-robust; Bobby Bones wins under most variants with material probability}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Model 2 --- $\alpha $ sensitivity for selected seasons (1, 2, 4, 11, 27, 28, 34): agreement of the replayed elimination sequence with a judge-only elimination sequence as the judge weight $\alpha $ sweeps $0 \to 1$. Agreement rises with $\alpha $ in most seasons (e.g., season 1: $0.453 \to 0.713$), but \emph  {declines} in seasons 2 and 27 for $\alpha > 0.5$ --- the two controversy seasons --- where a judge-heavy rule would have eliminated fan-popular couples (Rice, Bones) contrary to the recorded history that fans sustained them.}}{18}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:m2alpha}{{7}{18}{Model 2 --- $\alpha $ sensitivity for selected seasons (1, 2, 4, 11, 27, 28, 34): agreement of the replayed elimination sequence with a judge-only elimination sequence as the judge weight $\alpha $ sweeps $0 \to 1$. Agreement rises with $\alpha $ in most seasons (e.g., season 1: $0.453 \to 0.713$), but \emph {declines} in seasons 2 and 27 for $\alpha > 0.5$ --- the two controversy seasons --- where a judge-heavy rule would have eliminated fan-popular couples (Rice, Bones) contrary to the recorded history that fans sustained them}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Model 2 --- convergence of flip-probability estimates with replicate count. Estimates are stable within Monte-Carlo error well before the full 150 replicates, supporting the stability of the headline numbers in Table~\ref {tab:replay}.}}{19}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:m2conv}{{8}{19}{Model 2 --- convergence of flip-probability estimates with replicate count. Estimates are stable within Monte-Carlo error well before the full 150 replicates, supporting the stability of the headline numbers in Table~\ref {tab:replay}}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Model 2 --- divergence map of judge-share vs fan-share percentiles across couple-weeks, colored by (survival) status. The map shows that judge-fan disagreement is broadly distributed rather than confined to late-season weeks or particular eras, which is why both rules occasionally produce divergent outcomes in every season.}}{20}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:m2map}{{9}{20}{Model 2 --- divergence map of judge-share vs fan-share percentiles across couple-weeks, colored by (survival) status. The map shows that judge-fan disagreement is broadly distributed rather than confined to late-season weeks or particular eras, which is why both rules occasionally produce divergent outcomes in every season}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Validation, Reproducibility, and Open Review Issues}{20}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Model 3: Decomposed Judge/Fan Effects and the Fairness-Optimized Rule (DFE-FO)}{21}{section.4}\protected@file@percent }
+\newlabel{sec:m3}{{4}{21}{Model 3: Decomposed Judge/Fan Effects and the Fairness-Optimized Rule (DFE-FO)}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Problem Statement}{21}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{21}{subsection.4.2}\protected@file@percent }
+\newlabel{eq:judge_eq}{{12}{21}{Mathematical Formulation}{equation.12}{}}
+\newlabel{eq:fan_eq}{{13}{21}{Mathematical Formulation}{equation.13}{}}
+\newlabel{eq:delta}{{14}{21}{Mathematical Formulation}{equation.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Implementation}{22}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Results}{22}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Trait effects: small, and dominated by couple-level variation}{22}{subsubsection.4.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Pro-dancer effects}{22}{subsubsection.4.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}Fairness--excitement Pareto grid}{22}{subsubsection.4.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Model 3 --- headline trait effects (posterior means, 95\% credible intervals, from \texttt  {trait\_effects.csv}). No interval excludes zero.}}{23}{table.caption.13}\protected@file@percent }
+\newlabel{tab:traits}{{3}{23}{Model 3 --- headline trait effects (posterior means, 95\% credible intervals, from \texttt {trait\_effects.csv}). No interval excludes zero}{table.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Figures}{23}{subsection.4.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Model 3 --- pro-dancer judge-appeal vs.\ fan-appeal biplot, with the six largest $|\Delta _p|$ professionals annotated. Read with the run's caveat: the judge-side effects were degenerate (all $\theta ^J_p = 0$) in the as-executed configuration, so the judge axis carries no information; the fan-appeal spread reflects genuine between-pro dispersion in fan support.}}{23}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:m3biplot}{{10}{23}{Model 3 --- pro-dancer judge-appeal vs.\ fan-appeal biplot, with the six largest $|\Delta _p|$ professionals annotated. Read with the run's caveat: the judge-side effects were degenerate (all $\theta ^J_p = 0$) in the as-executed configuration, so the judge axis carries no information; the fan-appeal spread reflects genuine between-pro dispersion in fan support}{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Model 3 --- trait-effect forest plot, judge equation vs.\ fan equation, with 95\% credible intervals. Every interval spans zero: celebrity age and industry have no reliably estimable effect on either audience at this sample size.}}{24}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:m3forest}{{11}{24}{Model 3 --- trait-effect forest plot, judge equation vs.\ fan equation, with 95\% credible intervals. Every interval spans zero: celebrity age and industry have no reliably estimable effect on either audience at this sample size}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Model 3 --- fairness vs.\ mean upset rate over the $(\omega ,\tau )$ grid, colored by $\omega $ (judge weight). The frontier is monotone: judge-only weighting ($\omega = 1$) achieves $\approx 0.999$ merit protection with near-zero upsets, while fan-only weighting ($\omega = 0$) produces upsets in $\approx 96\%$ of simulated weeks. The recorded ``optimum'' at $\omega =0$ is a column-semantics artifact (corrected in the text); the suspense bonus $\tau $ adds no identifiable effect.}}{25}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:m3pareto}{{12}{25}{Model 3 --- fairness vs.\ mean upset rate over the $(\omega ,\tau )$ grid, colored by $\omega $ (judge weight). The frontier is monotone: judge-only weighting ($\omega = 1$) achieves $\approx 0.999$ merit protection with near-zero upsets, while fan-only weighting ($\omega = 0$) produces upsets in $\approx 96\%$ of simulated weeks. The recorded ``optimum'' at $\omega =0$ is a column-semantics artifact (corrected in the text); the suspense bonus $\tau $ adds no identifiable effect}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Validation and Open Review Issues}{25}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results and Analysis Across Models}{26}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{26}{Results and Analysis Across Models}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Integrated Findings}{26}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{1. Fan votes consistent with every elimination exist, and are not extreme.}{26}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{2. Certainty is structural and non-uniform.}{26}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{3. Rule choice matters enormously, but neither rule systematically favors fans.}{26}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{4. The judges-save mechanism is a modest but real judge-side corrective.}{26}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{5. Celebrity demographics barely move either audience.}{26}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}The Controversies, Revisited}{27}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Answering the Problem's Questions Directly}{27}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Consistency of fan-vote estimates with eliminations.}{27}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Certainty and its uniformity.}{27}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Rank vs percentage across seasons.}{27}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Controversy celebrities and the judges-save.}{27}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{A proposed fairer/better system.}{27}{section*.26}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Integrated results with uncertainty status. ``Validated'' numbers are read directly from output artifacts cross-checked in this writing phase; ``provisional'' numbers come from engines with unresolved review issues and should be treated as indicative.}}{28}{table.caption.27}\protected@file@percent }
+\newlabel{tab:integrated}{{4}{28}{Integrated results with uncertainty status. ``Validated'' numbers are read directly from output artifacts cross-checked in this writing phase; ``provisional'' numbers come from engines with unresolved review issues and should be treated as indicative}{table.caption.27}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Sensitivity Analysis}{28}{section.6}\protected@file@percent }
+\newlabel{sec:sensitivity}{{6}{28}{Sensitivity Analysis}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Sensitivity of Model 1}{28}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Prior and objective.}{28}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bootstrap concentration cap.}{28}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Solver path.}{28}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Sensitivity of Model 2 to the Combination Weight}{28}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Sensitivity to Unmodeled Show Mechanics}{29}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}What Would Change the Conclusions?}{29}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{29}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{29}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Interpretation}{29}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Strengths of the Approach}{29}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Limitations}{30}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Comparison with Simpler Approaches}{30}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{30}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{30}{Conclusion}{section.8}{}}
+\bibcite{comap2026}{1}
+\bibcite{dwtsdata}{2}
+\bibcite{jaynes2003}{3}
+\bibcite{shore1980}{4}
+\bibcite{gelman2013}{5}
+\bibcite{vehtari2017}{6}
+\bibcite{saaty1980}{7}
+\bibcite{virtanen2020}{8}
+\bibcite{huangfu2018}{9}
+\bibcite{efron1994}{10}
+\bibcite{agresti2002}{11}
+\@writefile{toc}{\contentsline {section}{References}{32}{section*.31}\protected@file@percent }
+\gdef \@abspage@last{32}
